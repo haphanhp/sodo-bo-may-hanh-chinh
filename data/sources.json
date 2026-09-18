@@ -1454,5 +1454,533 @@
     "accessed_date": "2026-09-18",
     "reliability": "official",
     "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-251",
+    "title": "Bí thư Thành ủy Hà Nội",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Nông nghiệp & Môi trường"
+    },
+    "type": "news",
+    "url": "https://nongnghiepmoitruong.vn/thanh-pho-ha-noi-tag96381/",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-252",
+    "title": "Thông tin tỉnh thành: Thành phố Huế",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=3609",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-253",
+    "title": "Đồng chí Phan Thăng An giữ chức Bí thư Tỉnh ủy Cao Bằng",
+    "publisher": {
+      "organization_id": null,
+      "name": "VietnamPlus"
+    },
+    "type": "news",
+    "url": "https://www.vietnamplus.vn/dong-chi-phan-thang-an-giu-chuc-bi-thu-tinh-uy-cao-bang-post1080784.vnp",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-254",
+    "title": "Đồng chí Trần Tiến Dũng được bầu giữ chức Bí thư Tỉnh ủy Điện Biên",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Điện tử Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://baochinhphu.vn/dong-chi-tran-tien-dung-duoc-bau-giu-chuc-bi-thu-tinh-uy-dien-biennhiem-ky-2025-2030-102251016171719613.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-255",
+    "title": "Ông Nguyễn Duy Lâm tái đắc cử Bí thư Hà Tĩnh",
+    "publisher": {
+      "organization_id": null,
+      "name": "VnExpress"
+    },
+    "type": "news",
+    "url": "https://vnexpress.net/ong-nguyen-duy-lam-tai-dac-cu-bi-thu-ha-tinh-4945983.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-256",
+    "title": "Tiểu sử đồng chí Lê Minh Ngân, tân Bí thư Tỉnh ủy Lai Châu",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/tieu-su-dong-chi-le-minh-ngan-tan-bi-thu-tinh-uy-lai-chau-119250919093414814.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-257",
+    "title": "Đồng chí Hoàng Quốc Khánh giữ chức Bí thư Tỉnh ủy Lạng Sơn",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Nhân Dân"
+    },
+    "type": "news",
+    "url": "https://nhandan.vn/dong-chi-hoang-quoc-khanh-giu-chuc-bi-thu-tinh-uy-lang-son-post915447.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-258",
+    "title": "Đồng chí Nguyễn Khắc Thận giữ chức Bí thư Tỉnh ủy Nghệ An",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Điện tử Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://baochinhphu.vn/dong-chi-nguyen-khac-than-giu-chuc-bi-thu-tinh-uy-nghe-an-102251111114314254.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-259",
+    "title": "Bí thư Tỉnh ủy Cao Bằng được điều động, chỉ định làm Bí thư Tỉnh ủy Quảng Ninh",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Người Lao Động"
+    },
+    "type": "news",
+    "url": "https://nld.com.vn/bi-thu-tinh-uy-cao-bang-duoc-dieu-dong-chi-dinh-lam-bi-thu-tinh-uy-quang-ninh-196251203101654314.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-260",
+    "title": "Đồng chí Hoàng Quốc Khánh giữ chức Bí thư Tỉnh ủy Lạng Sơn (bài cùng đợt, có Sơn La)",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Nhân Dân"
+    },
+    "type": "news",
+    "url": "https://nhandan.vn/dong-chi-hoang-quoc-khanh-giu-chuc-bi-thu-tinh-uy-lang-son-post915447.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-261",
+    "title": "Tiểu sử đồng chí Hầu A Lềnh",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/tieu-su-dong-chi-hau-a-lenh-tan-bi-thu-tinh-uy-ha-giang-119250122131829317.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-262",
+    "title": "Bộ Chính trị chỉ định đồng chí Dương Quốc Huy giữ chức Bí thư Tỉnh ủy Lào Cai",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT tỉnh Lào Cai"
+    },
+    "type": "government_portal",
+    "url": "https://www.laocai.gov.vn/tin-thoi-su/bo-chinh-tri-chi-dinh-dong-chi-duong-quoc-huy-giu-chuc-bi-thu-tinh-uy-lao-cai-nhiem-ky-2025-2030-1567574",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-263",
+    "title": "Ông Trịnh Xuân Trường làm Bí thư Tỉnh ủy Thái Nguyên",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Tuổi Trẻ"
+    },
+    "type": "news",
+    "url": "https://tuoitre.vn/ong-trinh-viet-hung-lam-bi-thu-tinh-uy-lao-cai-ong-trinh-xuan-truong-lam-bi-thu-tinh-uy-thai-nguyen-20250929093239189.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-264",
+    "title": "Tiểu sử đồng chí Phạm Đại Dương, tân Bí thư Tỉnh ủy Phú Thọ",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/tieu-su-dong-chi-pham-dai-duong-tan-bi-thu-tinh-uy-phu-tho-119260109161326785.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-265",
+    "title": "Đồng chí Nguyễn Hồng Thái được chỉ định giữ chức Bí thư Tỉnh ủy Bắc Ninh",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Điện tử Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://baochinhphu.vn/dong-chi-nguyen-hong-thai-duoc-chi-dinh-giu-chuc-bi-thu-tinh-uy-bac-ninh-102250930131857715.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-266",
+    "title": "Đồng chí Phạm Quang Ngọc giữ chức Bí thư Tỉnh ủy Hưng Yên",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Hưng Yên"
+    },
+    "type": "news",
+    "url": "https://baohungyen.vn/dong-chi-pham-quang-ngoc-uy-vien-ban-chap-hanh-trung-uong-dang-chu-tich-ubnd-tinh-giu-chuc-bi-thu-ti-3193591.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-267",
+    "title": "Ông Lê Ngọc Châu làm Bí thư Thành ủy Hải Phòng",
+    "publisher": {
+      "organization_id": null,
+      "name": "VnExpress"
+    },
+    "type": "news",
+    "url": "https://vnexpress.net/ong-le-ngoc-chau-lam-bi-thu-thanh-uy-hai-phong-5012781.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-268",
+    "title": "Tiểu sử đồng chí Trần Huy Tuấn, tân Bí thư Tỉnh ủy Ninh Bình",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/tieu-su-dong-chi-tran-huy-tuan-tan-bi-thu-tinh-uy-ninh-binh-119260303185512873.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-269",
+    "title": "Đồng chí Nguyễn Văn Phương được điều động, chỉ định giữ chức Bí thư Tỉnh ủy Quảng Trị",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Điện tử Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://baochinhphu.vn/dong-chi-nguyen-van-phuong-duoc-dieu-dong-chi-dinh-giu-chuc-bi-thu-tinh-uy-quang-tri-102251017113945435.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-270",
+    "title": "Đồng chí Lê Ngọc Quang giữ chức Bí thư Thành ủy Đà Nẵng nhiệm kỳ 2025-2030",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Điện tử Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://baochinhphu.vn/dong-chi-le-ngoc-quang-giu-chuc-bi-thu-thanh-uy-da-nang-nhiem-ky-2025-2030-102251016195341205.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-271",
+    "title": "Đồng chí Hồ Văn Niên giữ chức Bí thư Tỉnh ủy Quảng Ngãi",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Quảng Ngãi"
+    },
+    "type": "news",
+    "url": "https://baoquangngai.vn/dong-chi-ho-van-nien-giu-chuc-bi-thu-tinh-uy-quang-ngai-3559556.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-272",
+    "title": "Gia Lai có tân Bí thư Tỉnh ủy",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Tuổi Trẻ"
+    },
+    "type": "news",
+    "url": "https://tuoitre.vn/nld/gia-lai-co-tan-bi-thu-tinh-uy-196251003111526662.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-273",
+    "title": "Đồng chí Trần Phong được bầu giữ chức Bí thư Tỉnh ủy Khánh Hòa",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Khánh Hòa"
+    },
+    "type": "news",
+    "url": "https://baokhanhhoa.vn/tin-noi-bat-trang-chu/202603/dong-chi-tran-phong-duoc-bau-giu-chuc-bi-thu-tinh-uy-khanh-hoa-4c5693f/",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-274",
+    "title": "Đồng chí Y Thanh Hà Niê Kđăm giữ chức Bí thư Tỉnh ủy Lâm Đồng nhiệm kỳ 2025-2030",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/dong-chi-y-thanh-ha-nie-kdam-giu-chuc-bi-thu-tinh-uy-lam-dong-nhiem-ky-2025-2030-119251010121356001.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-275",
+    "title": "Đồng chí Lương Nguyễn Minh Triết giữ chức Bí thư Tỉnh ủy Đắk Lắk",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Đắk Lắk"
+    },
+    "type": "news",
+    "url": "https://baodaklak.vn/chinh-tri/xay-dung-dang/202510/dong-chi-luong-nguyen-minh-triet-giu-chuc-bi-thu-tinh-uy-dak-lak-6a70f96/",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-276",
+    "title": "Tiểu sử đồng chí Vũ Hồng Văn, Bí thư Tỉnh ủy Đồng Nai",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/tieu-su-dong-chi-vu-hong-van-bi-thu-tinh-uy-dong-nai-119250930122534293.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-277",
+    "title": "Tỉnh ủy Tây Ninh (Wikipedia, dẫn PLO)",
+    "publisher": {
+      "organization_id": null,
+      "name": "Wikipedia tiếng Việt"
+    },
+    "type": "news",
+    "url": "https://vi.wikipedia.org/wiki/T%E1%BB%89nh_%E1%BB%A7y_T%C3%A2y_Ninh",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-278",
+    "title": "Ông Đỗ Thanh Bình làm Bí thư Thành ủy Cần Thơ",
+    "publisher": {
+      "organization_id": null,
+      "name": "VnExpress"
+    },
+    "type": "news",
+    "url": "https://vnexpress.net/ong-do-thanh-binh-lam-bi-thu-thanh-uy-can-tho-5101552.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-279",
+    "title": "Tiểu sử đồng chí Trần Văn Lâu, Bí thư Tỉnh ủy Vĩnh Long",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/tieu-su-dong-chi-tran-van-lau-bi-thu-tinh-uy-vinh-long-119251003132744177.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-280",
+    "title": "Ông Ngô Chí Cường giữ chức Bí thư Tỉnh ủy Đồng Tháp",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Điện tử Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://baochinhphu.vn/ong-ngo-chi-cuong-giu-chuc-bi-thu-tinh-uy-dong-thap-102251001111223475.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-281",
+    "title": "Tiểu sử đồng chí Nguyễn Hồ Hải, tân Bí thư Tỉnh ủy Cà Mau",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/tieu-su-dong-chi-nguyen-ho-hai-tan-bi-thu-tinh-uy-ca-mau-119250119112015878.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-282",
+    "title": "Bí thư Cần Thơ Lê Quang Tùng làm Bí thư An Giang",
+    "publisher": {
+      "organization_id": null,
+      "name": "VnExpress"
+    },
+    "type": "news",
+    "url": "https://vnexpress.net/bi-thu-can-tho-le-quang-tung-lam-bi-thu-an-giang-5101449.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-283",
+    "title": "Thượng tướng Lê Đức Thái làm Bí thư Tỉnh ủy Thanh Hóa",
+    "publisher": {
+      "organization_id": null,
+      "name": "VnExpress"
+    },
+    "type": "news",
+    "url": "https://vnexpress.net/thuong-tuong-le-duc-thai-lam-bi-thu-tinh-uy-thanh-hoa-5060381.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
   }
 ]

@@ -18,7 +18,7 @@ updated: 2026-09-18
 
 #### Trạng thái tổng quan
 
-- Phase hiện tại: **Phase 5 ĐÃ XONG — app hiện có: data engine, 56 cơ quan (thượng tầng + 34 tỉnh/thành), sơ đồ có phân trang 6 ô, bảng chi tiết, tìm kiếm toàn cục. Tiếp theo: Phase 6 (thủ tục) hoặc Phase 9 (dữ liệu lịch sử)**
+- Phase hiện tại: **Phase 5 ĐÃ XONG — app hiện có: data engine, 56 cơ quan / 88 người / 89 chức vụ / 124 nguồn, sơ đồ có phân trang 6 ô, bảng chi tiết, tìm kiếm toàn cục (357 mục). Tiếp theo: Phase 6 (thủ tục) hoặc Phase 9 (dữ liệu lịch sử)**
 - **⚠️ Phạm vi thu hẹp (user chốt 2026-09-18)**: chỉ đào sâu **cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương**. Cấp xã/phường/đặc khu **KHÔNG cần trụ sở/SĐT/lãnh đạo riêng từng xã** (việc đào sâu chi tiết đó dừng ở đây). Riêng phần **danh sách TÊN đầy đủ** cấp xã: user yêu cầu làm cho xong luôn ngay trong ngày — Pro tự tra 100% qua WebSearch/WebFetch (file 17-21), **đã hoàn tất cả nước 34/34 tỉnh/thành**. Prompt #20–#24 giữ nguyên trong `Promts-sodobmhc.md` nhưng KHÔNG giao acc Free (Pro đã tự làm xong). → Thu thập dữ liệu thô cấp xã xem như **ĐÃ ĐỦ HOÀN TOÀN** cho Phase 10. — song song, dữ liệu thô cấp tỉnh/thành (mục 03) vẫn tiếp tục thu thập độc lập
 - Cập nhật lần cuối: 2026-09-18
 
@@ -78,9 +78,17 @@ updated: 2026-09-18
 
 #### Phase 6 — Thủ tục hành chính (Procedures)
 
-- [ ] Workflow các bước (nộp hồ sơ → kiểm tra → thẩm định → phê duyệt → nhận kết quả)
-- [ ] Documents / forms liên quan
-- [ ] Cơ quan chịu trách nhiệm / cơ quan tiếp nhận
+- **⚠️ Thu hẹp phạm vi (user chốt 2026-09-18)**: KHÔNG cần workflow chi tiết từng bước (nộp hồ sơ → thẩm định → phê duyệt...), KHÔNG cần forms/biểu mẫu cụ thể. Chỉ cần: (1) LIỆT KÊ tên thủ tục, (2) cơ quan nào phụ trách/tiếp nhận, (3) LINK trực tiếp tới trang chính thức (ưu tiên dichvucong.gov.vn — Cổng dịch vụ công quốc gia, hoặc trang thủ tục của Bộ/cơ quan cấp tỉnh liên quan) để người dân tự bấm vào làm tiếp — vai trò của app là "chỉ đường", không phải làm hộ.
+- **📌 Chốt Mức 3 (user quyết định 2026-09-18)**: liệt kê thủ tục + cơ quan phụ trách + LINK RIÊNG dẫn đúng tới trang dịch vụ công (dichvucong.gov.vn hoặc trang Bộ/Sở) cho từng thủ tục — không chỉ link chung. Số liệu nền: cả nước có **1.261 thủ tục cấp tỉnh** (danh sách thống nhất toàn quốc, không phải 34 bản khác nhau) + thủ tục cấp trung ương (số chưa xác định chính xác), KHÔNG tính 463 thủ tục cấp xã (ngoài phạm vi). Chia thành **17 prompt (Prompt #25–#41 trong `Promts-sodobmhc.md`)**, 1 prompt/1 Bộ-cơ quan (khớp 17 đơn vị đã có ở file 02-05), xoay vòng 5 acc Free + Pro tự nhận 1 phần để rút ngắn về khoảng 2-3 phiên.
+- [x] ✅ Prompt #40 (Thanh tra Chính phủ) + #41 (Văn phòng Chính phủ) — Pro tự làm ngay (2 cơ quan ít thủ tục cho dân nhất), xem `22-thu-tuc-thanhtra-vpcp.md`.
+⚠️ **Phát hiện 2 phiên Cowork chạy song song trong ngày 18/9/2026** — xem chi tiết đầy đủ (danh sách file trùng, cần gộp) tại mục "Danh sách 17 lượt gán" trong `Promts-sodobmhc.md`. Tóm tắt: **17/17 prompt (#25–#41) đã có dữ liệu**, nhưng 6 prompt (#25, #28, #29, #30, #31, #33) có 2 file trùng chưa gộp; 5 prompt (#35–#39) chỉ có 1 bản (phiên B, lượt 1, có thể còn thiếu vài lĩnh vực nhỏ).
+- [x] ✅ Prompt #25–#27 (Quốc phòng, Công an, Ngoại giao) — xem `23-thu-tuc-quocphong-conganquoc-ngoaigiao.md` (lượt 1+2) + `35-thu-tuc-quocphong-v2.md` (bản v2 riêng cho #25, chưa gộp).
+- [x] ✅ Prompt #28–#31 (Nội vụ, Tư pháp, Tài chính, Công Thương) — xem `37-40-thu-tuc-*-v2.md` (đầy đủ hơn) + `31-34-thu-tuc-*.md` (lượt 1, bản khác, chưa gộp).
+- [x] ✅ Prompt #32–#33 (Nông nghiệp-Môi trường, Xây dựng) — xem `24-thu-tuc-nnmt-xaydung.md` (đủ cả 2, không trùng) + `36-thu-tuc-xaydung-lot2-gtvt.md` (bản khác riêng cho phần GTVT của #33, chưa gộp).
+- [x] ✅ Prompt #34 (VHTTDL) — xem `25-thu-tuc-vhttdl.md`, không trùng.
+- [x] ✅ Prompt #35–#39 (Khoa học-Công nghệ, Giáo dục-Đào tạo, Y tế, Dân tộc-Tôn giáo, Ngân hàng Nhà nước) — xem `26-thu-tuc-khcn.md`, `27-thu-tuc-giaoduc.md`, `28-thu-tuc-yte.md`, `29-thu-tuc-dantoctongiao.md`, `30-thu-tuc-nhnn.md` (đều lượt 1, mỗi Bộ còn ghi rõ vài lĩnh vực nhỏ chưa tra).
+- [ ] Việc còn lại: gộp 6 cặp file trùng (#25, #28, #29, #30, #31, #33) thành 1 bản thống nhất mỗi Bộ; cân nhắc bổ sung lượt 2 cho #35–#39 nếu muốn đầy đủ hơn. **🎉 Phase 6 coi như đã có dữ liệu ở mức Mức 3 cho toàn bộ 17 Bộ/cơ quan — phần còn lại là dọn dẹp/gộp file, không phải tra cứu mới.**
+- [ ] 💡 Ý tưởng (chưa triển khai, đánh giá sau nếu workload cho phép): 1 ô "hỏi nhanh" trong tab thủ tục, gọi API DeepSeek (hoặc LLM khác) để trả lời câu hỏi thủ tục của người dân nhanh hơn, kèm dẫn link đúng chỗ ở trên. Đây là tính năng build (cần API key, cần code gọi API từ `index.html`/JS), KHÔNG phải việc thu thập dữ liệu thô — để dành xem xét ở giai đoạn build UI Phase 6, không ưu tiên ngay bây giờ.
 
 #### Phase 7 — Văn bản pháp luật (Documents)
 
@@ -102,7 +110,7 @@ updated: 2026-09-18
 
 - [x] ✅ Cấp trung ương: Quốc hội, Chủ tịch nước (tách `position-chu-tich-nuoc` + `org-vpctn-vn`), Chính phủ, TAND tối cao, VKSND tối cao — đã vào `data/*.json` ở Phase 2
 - [x] ✅ Các Bộ / cơ quan ngang Bộ — đủ 17/17, đã vào `data/*.json` ở Phase 2
-- [x] ✅ Cấp tỉnh / thành phố trực thuộc trung ương — đủ **34/34** (27 tỉnh + 7 TP), có trụ sở, SĐT, fax, email, website, Chủ tịch UBND, ghi chú sáp nhập/trung tâm hành chính và nguồn. Còn thiếu: Bí thư Tỉnh/Thành ủy (dữ liệu thô đã có ở `11-bi-thu-tinh-thanh-va-doi-chieu.md`, chưa ráp vào JSON)
+- [x] ✅ Cấp tỉnh / thành phố trực thuộc trung ương — đủ **34/34** (27 tỉnh + 7 TP), có trụ sở, SĐT, fax, email, website, Chủ tịch UBND, ghi chú sáp nhập/trung tâm hành chính và nguồn. **Đã nạp thêm 33 Bí thư Tỉnh/Thành ủy** (từ `11-bi-thu-tinh-thanh-va-doi-chieu.md` + file 07), kèm ngày nhậm chức. Còn thiếu DUY NHẤT: Bí thư Thành ủy TP.HCM (file thô không có) — cần 1 lượt tra bổ sung. Tây Ninh chỉ có nguồn Wikipedia dẫn PLO, nên đối chiếu lại
 - [x] ~~Cấp huyện / quận / thị xã~~ — KHÔNG áp dụng (đã kết thúc hoạt động 01/7/2025, chỉ giữ giá trị lịch sử)
 - [ ] Cấp xã / phường / đặc khu — **chỉ nạp ở mức liệt kê**: tổng số + cơ cấu (số xã / phường / đặc khu) theo từng tỉnh, KHÔNG nạp tên từng đơn vị
 - [ ] Đối chiếu chéo nguồn, backup GitHub định kỳ

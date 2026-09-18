@@ -42,6 +42,9 @@ export function search(docs, q, { limit = 24 } = {}){
     else if (d.labelN.startsWith(nq)) score += 60;
     else if (d.labelN.includes(nq)) score += 40;
     if (d.hay.includes(nq)) score += 10;
+    const inLabel = terms.filter(t => d.labelN.includes(t)).length;
+    score += inLabel * 12;                       // khớp ở TÊN quan trọng hơn khớp ở phần mô tả
+    if (inLabel === terms.length) score += 35;   // tên chứa đủ mọi từ khoá
     score += { organizations: 6, people: 5, positions: 4, procedures: 3, documents: 2 }[d.type] ?? 0;
     hits.push({ ...d, score });
   }

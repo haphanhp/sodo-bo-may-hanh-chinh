@@ -1114,5 +1114,665 @@
     ],
     "last_verified": "2026-09-18",
     "notes": "Tỉnh mới = An Giang + Kiên Giang cũ; trung tâm tại phường Rạch Giá (TP Rạch Giá cũ). Đã đối chiếu chéo ở Prompt #14, khớp."
+  },
+  {
+    "id": "person-tran-duc-thang",
+    "name": {
+      "vi": "Trần Đức Thắng"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-thanh-uy-ha-noi",
+        "organization_id": "org-tp-ha-noi",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-251"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-nguyen-dinh-trung",
+    "name": {
+      "vi": "Nguyễn Đình Trung"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-thanh-uy-hue",
+        "organization_id": "org-tp-hue",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-252"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Ghi nhận từ batch Prompt #10, chưa đối chiếu chéo riêng."
+  },
+  {
+    "id": "person-phan-thang-an",
+    "name": {
+      "vi": "Phan Thăng An"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-cao-bang",
+        "organization_id": "org-tinh-cao-bang",
+        "from": "2025-12-03",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-253"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-tran-tien-dung",
+    "name": {
+      "vi": "Trần Tiến Dũng"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-dien-bien",
+        "organization_id": "org-tinh-dien-bien",
+        "from": "2025-10-16",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-254"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-nguyen-duy-lam",
+    "name": {
+      "vi": "Nguyễn Duy Lâm"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-ha-tinh",
+        "organization_id": "org-tinh-ha-tinh",
+        "from": "2025-03-01",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-255"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tái cử 2/10/2025."
+  },
+  {
+    "id": "person-le-minh-ngan",
+    "name": {
+      "vi": "Lê Minh Ngân"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-lai-chau",
+        "organization_id": "org-tinh-lai-chau",
+        "from": "2025-09-19",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-256"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-hoang-quoc-khanh",
+    "name": {
+      "vi": "Hoàng Quốc Khánh"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-lang-son",
+        "organization_id": "org-tinh-lang-son",
+        "from": "2025-10-15",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-257"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-nguyen-khac-than",
+    "name": {
+      "vi": "Nguyễn Khắc Thận"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-nghe-an",
+        "organization_id": "org-tinh-nghe-an",
+        "from": "2025-11-11",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-258"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-quan-minh-cuong",
+    "name": {
+      "vi": "Quản Minh Cường"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-quang-ninh",
+        "organization_id": "org-tinh-quang-ninh",
+        "from": "2025-12-03",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-259"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-hoang-van-nghiem",
+    "name": {
+      "vi": "Hoàng Văn Nghiệm"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-son-la",
+        "organization_id": "org-tinh-son-la",
+        "from": "2025-10-15",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-260"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-hau-a-lenh",
+    "name": {
+      "vi": "Hầu A Lềnh"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-tuyen-quang",
+        "organization_id": "org-tinh-tuyen-quang",
+        "from": "2025-09-06",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-261"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-duong-quoc-huy",
+    "name": {
+      "vi": "Dương Quốc Huy"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-lao-cai",
+        "organization_id": "org-tinh-lao-cai",
+        "from": "2026-02-28",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-262"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-trinh-xuan-truong",
+    "name": {
+      "vi": "Trịnh Xuân Trường"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-thai-nguyen",
+        "organization_id": "org-tinh-thai-nguyen",
+        "from": "2025-09-29",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-263"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-pham-dai-duong",
+    "name": {
+      "vi": "Phạm Đại Dương"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-phu-tho",
+        "organization_id": "org-tinh-phu-tho",
+        "from": "2026-01-09",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-264"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-nguyen-hong-thai",
+    "name": {
+      "vi": "Nguyễn Hồng Thái"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-bac-ninh",
+        "organization_id": "org-tinh-bac-ninh",
+        "from": "2025-09-30",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-265"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-pham-quang-ngoc",
+    "name": {
+      "vi": "Phạm Quang Ngọc"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-hung-yen",
+        "organization_id": "org-tinh-hung-yen",
+        "from": "2026-04-09",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-266"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Nguyên Chủ tịch UBND tỉnh, chuyển sang giữ chức Bí thư (9–10/4/2026)."
+  },
+  {
+    "id": "person-le-ngoc-chau",
+    "name": {
+      "vi": "Lê Ngọc Châu"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-thanh-uy-hai-phong",
+        "organization_id": "org-tp-hai-phong",
+        "from": "2026-04-10",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-267"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Nguyên Chủ tịch UBND TP Hải Phòng."
+  },
+  {
+    "id": "person-tran-huy-tuan",
+    "name": {
+      "vi": "Trần Huy Tuấn"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-ninh-binh",
+        "organization_id": "org-tinh-ninh-binh",
+        "from": "2026-03-02",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-268"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Nguyên Chủ tịch UBND tỉnh Ninh Bình."
+  },
+  {
+    "id": "person-nguyen-van-phuong",
+    "name": {
+      "vi": "Nguyễn Văn Phương"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-quang-tri",
+        "organization_id": "org-tinh-quang-tri",
+        "from": "2025-10-17",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-269"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-le-ngoc-quang",
+    "name": {
+      "vi": "Lê Ngọc Quang"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-thanh-uy-da-nang",
+        "organization_id": "org-tp-da-nang",
+        "from": "2025-10-16",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-270"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-ho-van-nien",
+    "name": {
+      "vi": "Hồ Văn Niên"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-quang-ngai",
+        "organization_id": "org-tinh-quang-ngai",
+        "from": "2025-09-26",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-271"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Ngày nhậm chức ghi ~26/9/2025, chưa chốt chính xác."
+  },
+  {
+    "id": "person-thai-dai-ngoc",
+    "name": {
+      "vi": "Thái Đại Ngọc"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-gia-lai",
+        "organization_id": "org-tinh-gia-lai",
+        "from": "2025-10-03",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-272"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-tran-phong",
+    "name": {
+      "vi": "Trần Phong"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-khanh-hoa",
+        "organization_id": "org-tinh-khanh-hoa",
+        "from": "2026-03-27",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-273"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Chuẩn y 2/4/2026."
+  },
+  {
+    "id": "person-y-thanh-ha-nie-kdam",
+    "name": {
+      "vi": "Y Thanh Hà Niê Kđăm"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-lam-dong",
+        "organization_id": "org-tinh-lam-dong",
+        "from": "2025-10-10",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-274"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-luong-nguyen-minh-triet",
+    "name": {
+      "vi": "Lương Nguyễn Minh Triết"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-dak-lak",
+        "organization_id": "org-tinh-dak-lak",
+        "from": "2025-10-15",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-275"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-vu-hong-van",
+    "name": {
+      "vi": "Vũ Hồng Văn"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-thanh-uy-dong-nai",
+        "organization_id": "org-tp-dong-nai",
+        "from": "2025-01-25",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-276"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-nguyen-van-quyet",
+    "name": {
+      "vi": "Nguyễn Văn Quyết"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-tay-ninh",
+        "organization_id": "org-tinh-tay-ninh",
+        "from": "2025-07-01",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-277"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ Chỉ ghi được 'tháng 7/2025', ngày cụ thể chưa xác minh; nguồn là Wikipedia dẫn lại PLO — độ tin cậy thấp hơn các mục khác, cần đối chiếu lại."
+  },
+  {
+    "id": "person-do-thanh-binh",
+    "name": {
+      "vi": "Đỗ Thanh Bình"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-thanh-uy-can-tho",
+        "organization_id": "org-tp-can-tho",
+        "from": "2026-07-25",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-278"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Nguyên Bộ trưởng Bộ Nội vụ (đến 8/2026)."
+  },
+  {
+    "id": "person-tran-van-lau",
+    "name": {
+      "vi": "Trần Văn Lâu"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-vinh-long",
+        "organization_id": "org-tinh-vinh-long",
+        "from": "2025-10-03",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-279"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-ngo-chi-cuong",
+    "name": {
+      "vi": "Ngô Chí Cường"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-dong-thap",
+        "organization_id": "org-tinh-dong-thap",
+        "from": "2025-10-01",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-280"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-nguyen-ho-hai",
+    "name": {
+      "vi": "Nguyễn Hồ Hải"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-ca-mau",
+        "organization_id": "org-tinh-ca-mau",
+        "from": "2025-01-18",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-281"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tiếp tục giữ chức sau sáp nhập 7/2025."
+  },
+  {
+    "id": "person-le-quang-tung",
+    "name": {
+      "vi": "Lê Quang Tùng"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-an-giang",
+        "organization_id": "org-tinh-an-giang",
+        "from": "2026-07-25",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-282"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Nguyên Bí thư Thành ủy Cần Thơ."
+  },
+  {
+    "id": "person-le-duc-thai",
+    "name": {
+      "vi": "Lê Đức Thái"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-tinh-uy-thanh-hoa",
+        "organization_id": "org-tinh-thanh-hoa",
+        "from": "2026-04-13",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-283"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Thượng tướng; thay ông Nguyễn Doãn Anh (lên Phó Chủ tịch Quốc hội)."
   }
 ]

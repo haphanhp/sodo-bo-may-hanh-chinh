@@ -98,10 +98,12 @@ function init(){
     .addEventListener("click", () => document.getElementById("detail-panel").classList.add("is-hidden"));
   on("route:change", renderView);
   on("entity:select", renderDetail);
-  document.getElementById("view-root").addEventListener("click", e => {
+  const pick = e => {
     const el = e.target.closest("[data-entity]");
-    if (el) renderDetail(el.dataset.entity);
-  });
+    if (el && el.dataset.entity) renderDetail(el.dataset.entity);
+  };
+  document.getElementById("view-root").addEventListener("click", pick);
+  document.getElementById("detail-body").addEventListener("click", pick);
   initRouter();
   if (getState().report && !getState().report.ok) console.warn("[data] có lỗi tham chiếu — xem báo cáo ở trên");
 }

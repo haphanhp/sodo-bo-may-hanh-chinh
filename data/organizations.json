@@ -1062,6 +1062,10 @@
       {
         "position_id": "position-chu-tich-ubnd-thanh-pho-ha-noi",
         "person_id": "person-vu-dai-thang"
+      },
+      {
+        "position_id": "position-bi-thu-thanh-uy-ha-noi",
+        "person_id": "person-tran-duc-thang"
       }
     ],
     "functions": [
@@ -1110,6 +1114,10 @@
       {
         "position_id": "position-chu-tich-ubnd-thanh-pho-hue",
         "person_id": "person-le-tri-thanh"
+      },
+      {
+        "position_id": "position-bi-thu-thanh-uy-hue",
+        "person_id": "person-nguyen-dinh-trung"
       }
     ],
     "functions": [
@@ -1160,6 +1168,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-cao-bang",
         "person_id": "person-le-hai-hoa"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-cao-bang",
+        "person_id": "person-phan-thang-an"
       }
     ],
     "functions": [
@@ -1209,6 +1221,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-dien-bien",
         "person_id": "person-le-van-luong"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-dien-bien",
+        "person_id": "person-tran-tien-dung"
       }
     ],
     "functions": [
@@ -1258,6 +1274,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-ha-tinh",
         "person_id": "person-phan-thien-dinh"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-ha-tinh",
+        "person_id": "person-nguyen-duy-lam"
       }
     ],
     "functions": [
@@ -1307,6 +1327,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-lai-chau",
         "person_id": "person-ha-quang-trung"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-lai-chau",
+        "person_id": "person-le-minh-ngan"
       }
     ],
     "functions": [
@@ -1356,6 +1380,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-lang-son",
         "person_id": "person-nguyen-canh-toan"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-lang-son",
+        "person_id": "person-hoang-quoc-khanh"
       }
     ],
     "functions": [
@@ -1405,6 +1433,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-nghe-an",
         "person_id": "person-vo-trong-hai"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-nghe-an",
+        "person_id": "person-nguyen-khac-than"
       }
     ],
     "functions": [
@@ -1454,6 +1486,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-quang-ninh",
         "person_id": "person-bui-van-khang"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-quang-ninh",
+        "person_id": "person-quan-minh-cuong"
       }
     ],
     "functions": [
@@ -1503,6 +1539,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-thanh-hoa",
         "person_id": "person-to-anh-dung"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-thanh-hoa",
+        "person_id": "person-le-duc-thai"
       }
     ],
     "functions": [
@@ -1553,6 +1593,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-son-la",
         "person_id": "person-nguyen-dinh-viet"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-son-la",
+        "person_id": "person-hoang-van-nghiem"
       }
     ],
     "functions": [
@@ -1602,6 +1646,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-tuyen-quang",
         "person_id": "person-phan-huy-ngoc"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-tuyen-quang",
+        "person_id": "person-hau-a-lenh"
       }
     ],
     "functions": [
@@ -1651,6 +1699,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-lao-cai",
         "person_id": "person-nguyen-tuan-anh"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-lao-cai",
+        "person_id": "person-duong-quoc-huy"
       }
     ],
     "functions": [
@@ -1700,6 +1752,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-thai-nguyen",
         "person_id": "person-vuong-quoc-tuan"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-thai-nguyen",
+        "person_id": "person-trinh-xuan-truong"
       }
     ],
     "functions": [
@@ -1750,6 +1806,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-phu-tho",
         "person_id": "person-tran-duy-dong"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-phu-tho",
+        "person_id": "person-pham-dai-duong"
       }
     ],
     "functions": [
@@ -1799,6 +1859,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-bac-ninh",
         "person_id": "person-pham-hoang-son"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-bac-ninh",
+        "person_id": "person-nguyen-hong-thai"
       }
     ],
     "functions": [
@@ -1849,6 +1913,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-hung-yen",
         "person_id": "person-nguyen-manh-quyen"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-hung-yen",
+        "person_id": "person-pham-quang-ngoc"
       }
     ],
     "functions": [
@@ -1899,6 +1967,10 @@
       {
         "position_id": "position-chu-tich-ubnd-thanh-pho-hai-phong",
         "person_id": "person-do-thanh-trung"
+      },
+      {
+        "position_id": "position-bi-thu-thanh-uy-hai-phong",
+        "person_id": "person-le-ngoc-chau"
       }
     ],
     "functions": [
@@ -1949,6 +2021,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-ninh-binh",
         "person_id": "person-nguyen-thanh-binh"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-ninh-binh",
+        "person_id": "person-tran-huy-tuan"
       }
     ],
     "functions": [
@@ -1999,6 +2075,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-quang-tri",
         "person_id": "person-le-hong-vinh"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-quang-tri",
+        "person_id": "person-nguyen-van-phuong"
       }
     ],
     "functions": [
@@ -2048,6 +2128,10 @@
       {
         "position_id": "position-chu-tich-ubnd-thanh-pho-da-nang",
         "person_id": "person-nguyen-manh-hung"
+      },
+      {
+        "position_id": "position-bi-thu-thanh-uy-da-nang",
+        "person_id": "person-le-ngoc-quang"
       }
     ],
     "functions": [
@@ -2098,6 +2182,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-quang-ngai",
         "person_id": "person-nguyen-duc-tam"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-quang-ngai",
+        "person_id": "person-ho-van-nien"
       }
     ],
     "functions": [
@@ -2148,6 +2236,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-gia-lai",
         "person_id": "person-pham-anh-tuan"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-gia-lai",
+        "person_id": "person-thai-dai-ngoc"
       }
     ],
     "functions": [
@@ -2196,6 +2288,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-khanh-hoa",
         "person_id": "person-nguyen-viet-hung"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-khanh-hoa",
+        "person_id": "person-tran-phong"
       }
     ],
     "functions": [
@@ -2245,6 +2341,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-lam-dong",
         "person_id": "person-ho-van-muoi"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-lam-dong",
+        "person_id": "person-y-thanh-ha-nie-kdam"
       }
     ],
     "functions": [
@@ -2292,6 +2392,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-dak-lak",
         "person_id": "person-do-huu-huy"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-dak-lak",
+        "person_id": "person-luong-nguyen-minh-triet"
       }
     ],
     "functions": [
@@ -2360,7 +2464,7 @@
     "effective_from": "2025-07-01",
     "effective_to": null,
     "last_verified": "2026-09-18",
-    "notes": "TP mới = TP.HCM + Bà Rịa-Vũng Tàu + Bình Dương cũ."
+    "notes": "TP mới = TP.HCM + Bà Rịa-Vũng Tàu + Bình Dương cũ. ⚠️ CHƯA CÓ Bí thư Thành ủy trong dữ liệu — đây là đơn vị DUY NHẤT trong 34 tỉnh/thành còn thiếu (file thô 11 không có TP.HCM), cần tra bổ sung."
   },
   {
     "id": "org-tp-dong-nai",
@@ -2389,6 +2493,10 @@
       {
         "position_id": "position-chu-tich-ubnd-thanh-pho-dong-nai",
         "person_id": "person-nguyen-van-ut"
+      },
+      {
+        "position_id": "position-bi-thu-thanh-uy-dong-nai",
+        "person_id": "person-vu-hong-van"
       }
     ],
     "functions": [
@@ -2438,6 +2546,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-tay-ninh",
         "person_id": "person-le-van-han"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-tay-ninh",
+        "person_id": "person-nguyen-van-quyet"
       }
     ],
     "functions": [
@@ -2487,6 +2599,10 @@
       {
         "position_id": "position-chu-tich-ubnd-thanh-pho-can-tho",
         "person_id": "person-truong-canh-tuyen"
+      },
+      {
+        "position_id": "position-bi-thu-thanh-uy-can-tho",
+        "person_id": "person-do-thanh-binh"
       }
     ],
     "functions": [
@@ -2535,6 +2651,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-vinh-long",
         "person_id": "person-tran-tri-quang"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-vinh-long",
+        "person_id": "person-tran-van-lau"
       }
     ],
     "functions": [
@@ -2583,6 +2703,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-dong-thap",
         "person_id": "person-nguyen-thanh-nhan"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-dong-thap",
+        "person_id": "person-ngo-chi-cuong"
       }
     ],
     "functions": [
@@ -2632,6 +2756,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-ca-mau",
         "person_id": "person-lu-quang-ngoi"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-ca-mau",
+        "person_id": "person-nguyen-ho-hai"
       }
     ],
     "functions": [
@@ -2680,6 +2808,10 @@
       {
         "position_id": "position-chu-tich-ubnd-tinh-an-giang",
         "person_id": "person-ho-van-mung"
+      },
+      {
+        "position_id": "position-bi-thu-tinh-uy-an-giang",
+        "person_id": "person-le-quang-tung"
       }
     ],
     "functions": [

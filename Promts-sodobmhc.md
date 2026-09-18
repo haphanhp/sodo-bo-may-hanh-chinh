@@ -769,3 +769,62 @@ NHIỆM VỤ: với MỖI tỉnh/thành, tìm và chép lại ĐẦY ĐỦ danh 
 
 YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (bạn tự gán theo quy ước dự án). Với MỖI tỉnh/thành: liệt kê đủ tên (đánh số hoặc xuống dòng từng đơn vị, ghi rõ xã/phường), + 1 dòng nguồn (link chính xác + ngày truy cập). KHÔNG bịa tên, KHÔNG suy luận. Nếu 1 tỉnh có danh sách QUÁ DÀI để chép hết trong 1 lượt trả lời, CHIA làm nhiều lượt (ghi rõ "tiếp tục tỉnh/thành X") — không bỏ sót. Nếu không tìm được đủ tên, ghi rõ "KHÔNG tìm được danh sách đầy đủ, chỉ có: [những gì tìm được]".
 ```
+
+---
+
+### PHASE 6 — Thủ tục hành chính (Mức 3: tên thủ tục + cơ quan phụ trách + link riêng tới đúng trang dịch vụ công)
+
+**Bối cảnh (đọc trước khi giao prompt nào trong nhóm này)**: theo số liệu chính thức (bài tcnnld.vn, dẫn số liệu phân định thẩm quyền khi tổ chức chính quyền 2 cấp từ 1/7/2025): cả nước có **1.261 thủ tục hành chính cấp tỉnh** (danh sách THỐNG NHẤT áp dụng cho tất cả 34 tỉnh/thành, không phải mỗi tỉnh có tên khác nhau như cấp xã) + thủ tục do các Bộ/cơ quan trung ương trực tiếp giải quyết (số liệu chưa xác định chính xác). Phạm vi Phase 6 (đã thu hẹp): chỉ tra **cấp thượng tầng (Bộ) + cấp tỉnh (Sở)**, KHÔNG tra cấp xã (463 thủ tục cấp xã — ngoài phạm vi).
+
+Chia theo **17 Bộ/cơ quan ngang Bộ đã có sẵn trong file `02-danh-sach-bo-co-quan-ngang-bo.md`** — mỗi Bộ/cơ quan = 1 prompt riêng (tổng 17 prompt, đánh số #25–#41), vì đây là cách chia tự nhiên nhất (thủ tục hành chính luôn gắn với 1 Bộ/lĩnh vực quản lý cụ thể) và giữ mỗi prompt ở mức vừa phải (không dồn nhiều Bộ vào 1 prompt để tránh overload). Xoay vòng 5 acc Free (Brave → Opera X → Edge → Cốc Cốc → Arc → quay lại) + Pro tự nhận 1 phần để rút ngắn còn khoảng 2-3 phiên làm việc song song.
+
+#### KHUNG MẪU CHUNG (dùng cho TẤT CẢ 17 prompt dưới đây — copy khung này + dòng "Bộ/cơ quan được giao" tương ứng khi đưa cho từng acc)
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận). Mục tiêu lần này: liệt kê THỦ TỤC HÀNH CHÍNH — không cần mô tả quy trình từng bước, chỉ cần: tên thủ tục, cơ quan phụ trách, và 1 LINK RIÊNG dẫn đúng tới trang thủ tục đó để người dân tự bấm vào làm tiếp.
+
+Bộ/cơ quan được giao lần này: [ĐIỀN TÊN BỘ Ở ĐÂY — xem danh sách 17 mục bên dưới]
+
+NHIỆM VỤ:
+1. Xác định các LĨNH VỰC thủ tục hành chính chính mà Bộ/cơ quan này quản lý (ví dụ Bộ Tư pháp có lĩnh vực: hộ tịch, quốc tịch, chứng thực, công chứng, luật sư, trợ giúp pháp lý, thi hành án dân sự...). Với MỖI lĩnh vực, liệt kê các thủ tục PHỔ BIẾN NHẤT (thủ tục người dân/doanh nghiệp hay dùng) — KHÔNG cần liệt kê toàn bộ nếu 1 lĩnh vực có quá nhiều thủ tục nhỏ (giới hạn khoảng 5-15 thủ tục phổ biến nhất/lĩnh vực là đủ); nếu còn thủ tục khác chưa liệt kê, ghi rõ 1 dòng "còn nhiều thủ tục khác, xem đầy đủ tại: [link danh mục tổng của lĩnh vực này]".
+2. Với MỖI thủ tục, ghi rõ: (a) tên thủ tục, (b) cấp giải quyết — TRUNG ƯƠNG (do Bộ trực tiếp giải quyết) hay đã PHÂN CẤP CHO TỈNH (ghi rõ tên Sở cấp tỉnh phụ trách, ví dụ "Sở Tư pháp", "Sở Xây dựng"...), (c) 1 LINK RIÊNG dẫn tới trang chi tiết thủ tục đó — ưu tiên: (i) dichvucong.gov.vn (tìm bằng cách search "[tên thủ tục] dichvucong.gov.vn" hoặc vào https://dichvucong.gov.vn/p/home/dvc-tthc-trang-chu.html tự tra), (ii) trang thủ tục hành chính chính thức của Bộ đó, (iii) trang "Trung tâm phục vụ hành chính công" của 1 tỉnh làm ví dụ đại diện (ghi rõ đây là ví dụ, thủ tục áp dụng chung cả nước).
+3. KHÔNG BỊA LINK — nếu tìm mãi không ra link cụ thể cho 1 thủ tục, ghi rõ "chưa tìm được link riêng, chỉ có tên thủ tục" thay vì đoán 1 link không chắc đúng.
+
+YÊU CẦU ĐỊNH DẠNG (bắt buộc): đầu câu trả lời ghi "Model dùng: ... / Acc & trình duyệt: ...". Với mỗi lĩnh vực, dùng khối:
+
+Lĩnh vực: ...
+Cơ quan cấp tỉnh phụ trách (nếu có phân cấp): Sở ...
+1. [Tên thủ tục] — cấp: trung ương/tỉnh — link: ...
+2. [Tên thủ tục] — cấp: trung ương/tỉnh — link: ...
+...
+
+Nếu 1 lượt trả lời không đủ chỗ cho hết các lĩnh vực của Bộ này, chia làm nhiều lượt (ghi rõ "tiếp tục Bộ [tên]") — không bỏ sót lĩnh vực nào, nhưng được phép giới hạn số thủ tục/lĩnh vực như mục 1.
+```
+
+#### Danh sách 17 lượt gán (Prompt #25 → #41)
+
+⚠️ **PHÁT HIỆN QUAN TRỌNG (2026-09-18, ghi bởi phiên Pro/Cowork thứ 2)**: Có ÍT NHẤT 2 phiên Cowork chạy song song trên cùng thư mục này trong ngày 18/9/2026, cả 2 đều tự nhận làm nốt Phase 6 mà không biết về nhau. Kết quả là 1 số prompt có **2 file khác nhau** (dữ liệu không giống nhau 100%, cả 2 đều hợp lệ/không bịa link, nhưng CHƯA được gộp lại). Danh sách dưới đây liệt kê ĐẦY ĐỦ cả 2 nguồn cho mỗi prompt trùng — **việc gộp 2 file thành 1 bản thống nhất nên làm ở 1 phiên sau, đừng làm thêm 1 bản thứ 3.**
+
+1. ~~**Prompt #25** — Bộ Quốc phòng.~~ ✅ XONG — 2 file trùng: `23-thu-tuc-quocphong-conganquoc-ngoaigiao.md` (phiên A — lượt 1+2, Nghĩa vụ quân sự/Chính sách/Mật mã dân sự/Biên phòng, còn cảnh báo 1 link mã lạ ma_thu_tuc=2645) và `35-thu-tuc-quocphong-v2.md` (phiên B — bản "v2" xác minh lại, sửa mã 2645 → 1.001821, thêm Tuyển chọn nhập ngũ + Đào tạo quân sự). **Chưa gộp — nên đối chiếu link 2645 vs 1.001821 khi gộp.**
+2. ~~**Prompt #26** — Bộ Công an.~~ ✅ XONG — `23-thu-tuc-quocphong-conganquoc-ngoaigiao.md` lượt 2 (phiên A, 18/9/2026) đã bổ sung đủ Giao thông/Con dấu/Vũ khí dân sự/Xử lý VPHC.
+3. ~~**Prompt #27** — Bộ Ngoại giao.~~ ✅ XONG — `23-thu-tuc-quocphong-conganquoc-ngoaigiao.md` lượt 2 (phiên A) xác nhận 3 lĩnh vực còn thiếu (bảo hộ công dân, biên giới lãnh thổ, điều ước quốc tế) không có TTHC dạng hồ sơ-kết quả phù hợp phạm vi Phase 6.
+4. ~~**Prompt #28** — Bộ Nội vụ.~~ ✅ XONG — 2 file trùng: `37-thu-tuc-noivu-v2.md` (phiên A — 8/10 lĩnh vực: Cán bộ-công chức-viên chức/Thi đua-khen thưởng/Hội-quỹ/Việc làm-thất nghiệp/Người có công/ATVSLĐ/BHXH chung; Bình đẳng giới-Thanh niên-Văn thư lưu trữ xác nhận không có TTHC phù hợp) và `31-thu-tuc-noivu.md` (phiên B — lượt 1, 3 lĩnh vực: Lao động-việc làm/Thi đua khen thưởng/Tuyển dụng công chức-viên chức). **Chưa gộp.**
+5. ~~**Prompt #29** — Bộ Tư pháp.~~ ✅ XONG — 2 file trùng: `38-thu-tuc-tuphap-v2.md` (phiên A — 8/8 lĩnh vực: Hộ tịch/Lý lịch tư pháp/Chứng thực/Công chứng-Luật sư-TGPL/Quốc tịch/Bồi thường nhà nước-THADS/Thừa phát lại/PBGDPL) và `32-thu-tuc-tuphap.md` (phiên B — lượt 1, 5 lĩnh vực, còn ghi thiếu thi hành án dân sự/đấu giá tài sản/giám định tư pháp/trọng tài thương mại). **Chưa gộp — file phiên A có vẻ đầy đủ hơn.**
+6. ~~**Prompt #30** — Bộ Tài chính.~~ ✅ XONG — 2 file trùng: `39-thu-tuc-taichinh-v2.md` (phiên A — 10/11 lĩnh vực: Thuế/Hải quan/Chứng khoán/Bảo hiểm/Kế toán-kiểm toán/Đầu tư/Đấu thầu/Kho bạc-NSNN/Nợ-kinh tế đối ngoại/Phát triển DNNN-tư nhân; Quản lý giá xác nhận không có TTHC trung ương riêng) và `33-thu-tuc-taichinh.md` (phiên B — lượt 1, 4 lĩnh vực: Hải quan/Thuế cá nhân/Đăng ký doanh nghiệp/Chứng khoán-Kế toán). **Chưa gộp.**
+7. ~~**Prompt #31** — Bộ Công Thương.~~ ✅ XONG — 2 file trùng: `40-thu-tuc-congthuong-v2.md` (phiên A — 5/6 lĩnh vực: Điện lực-Hóa chất/XNK-Tự vệ thương mại/Khuyến mại-TMĐT/Cạnh tranh/ATTP phần Công Thương; Quản lý thị trường xác nhận không có TTHC phù hợp) và `34-thu-tuc-congthuong.md` (phiên B — lượt 1, 5 lĩnh vực: XNK/Kinh doanh có điều kiện/Điện lực-hóa chất-VLNCN/TMĐT/Bảo vệ người tiêu dùng). **Chưa gộp.**
+8. ~~**Prompt #32** — Bộ Nông nghiệp và Môi trường.~~ ✅ XONG (đủ, không trùng) — `24-thu-tuc-nnmt-xaydung.md` (phiên A, lượt 1+2: Đất đai/Môi trường/Tài nguyên nước/Chăn nuôi-Thú y/Trồng trọt-BVTV/Thủy sản/Lâm nghiệp-Kiểm lâm/Địa chất-Khoáng sản/Đo đạc bản đồ/Khí tượng thủy văn/Biến đổi khí hậu/Biển-hải đảo/Thủy lợi-PCTT/Kinh tế hợp tác-PTNT/Quản lý chất lượng NLTS).
+9. ~~**Prompt #33** — Bộ Xây dựng.~~ ✅ XONG — 2 file trùng cho lượt 2 (phần kế thừa GTVT): `24-thu-tuc-nnmt-xaydung.md` lượt 2 (phiên A, bổ sung Hàng hải-đường thủy/Hàng không/Đường bộ/Đăng kiểm ngay trong file 24) và `36-thu-tuc-xaydung-lot2-gtvt.md` (phiên B — file riêng cho đúng 4 lĩnh vực này). **Chưa gộp — cả 2 đều claim đủ 10/10 lĩnh vực.**
+10. ~~**Prompt #34** — Bộ Văn hóa, Thể thao và Du lịch.~~ ✅ XONG (đủ, không trùng) — `25-thu-tuc-vhttdl.md` (phiên A, lượt 1+2: 7 lĩnh vực gốc + Thư viện/Mỹ thuật-Nhiếp ảnh-Triển lãm/Karaoke-Vũ trường; Gia đình chưa tìm được TTHC riêng).
+11. ~~**Prompt #35** — Bộ Khoa học và Công nghệ.~~ ✅ XONG (phiên B) — `26-thu-tuc-khcn.md`, lượt 1, 6 lĩnh vực, còn thiếu An toàn bức xạ hạt nhân/Chuyển đổi số-CNTT/Năng lượng nguyên tử/An toàn thông tin mạng.
+12. ~~**Prompt #36** — Bộ Giáo dục và Đào tạo.~~ ✅ XONG (phiên B) — `27-thu-tuc-giaoduc.md`, lượt 1, 4 lĩnh vực, còn thiếu thi cử-tuyển sinh chi tiết/chính sách hỗ trợ học sinh/kiểm định chất lượng giáo dục.
+13. ~~**Prompt #37** — Bộ Y tế.~~ ✅ XONG (phiên B) — `28-thu-tuc-yte.md`, lượt 1, 5 lĩnh vực, còn thiếu tiêm chủng-dân số/HIV-AIDS/y học cổ truyền/BHYT/TTBYT chi tiết hơn.
+14. ~~**Prompt #38** — Bộ Dân tộc và Tôn giáo.~~ ✅ XONG (phiên B) — `29-thu-tuc-dantoctongiao.md`, 2 lĩnh vực (Tôn giáo, Dân tộc) — khá đủ vì Bộ này ít TTHC.
+15. ~~**Prompt #39** — Ngân hàng Nhà nước Việt Nam.~~ ✅ XONG (phiên B) — `30-thu-tuc-nhnn.md`, 3 lĩnh vực (thành lập TCTD, ngoại hối-vàng, quỹ tín dụng nhân dân).
+16. ~~**Prompt #40** — Thanh tra Chính phủ.~~ ✅ ĐÃ XONG — Pro tự làm ngay (2026-09-18), xem `22-thu-tuc-thanhtra-vpcp.md`.
+17. ~~**Prompt #41** — Văn phòng Chính phủ.~~ ✅ ĐÃ XONG — Pro tự làm ngay (2026-09-18), xem `22-thu-tuc-thanhtra-vpcp.md`.
+
+**🎉 17/17 prompt đã có dữ liệu (mức Mức 3: tên thủ tục + cơ quan + link riêng).** Còn lại 2 việc trước khi coi Phase 6 xong hẳn: (1) gộp 5 cặp file trùng ở #25, #28, #29, #30, #31, #33 thành 1 bản thống nhất mỗi Bộ (giữ link từ cả 2 bản, loại trùng lặp); (2) rà lại các lĩnh vực nhỏ còn ghi "⚠️ chưa tra"/"xác nhận không có TTHC phù hợp" ở từng file nếu muốn tăng độ đầy đủ.
+
+**Lưu ý phân bổ**: Pro tự nhận Prompt #40, #41 (2 cơ quan có ít thủ tục cho dân nhất, hợp lý để Pro làm nhẹ) + có thể tự nhận thêm 1-2 Bộ nữa trong lúc chờ acc Free rảnh, để rút ngắn tổng thời gian xuống ~2 phiên như đã tính. Mỗi acc Free nhận khoảng 3 prompt (2 phiên: phiên 1 nhận 1-2 prompt đầu, phiên 2 nhận phần còn lại) — đúng nguyên tắc "1-3 prompt/1 thời điểm" ở `Claude-sodobmhc.md`.
+
+**Kết quả trả về**: lưu vào file mới, đánh số tiếp theo file dữ liệu cuối cùng hiện có, đặt tên dạng `NN-thu-tuc-[ten-bo]-hoac-nhom.md`, gắn tag `sodobmhc`, ghi rõ model/acc theo đúng template mục 6 của `Claude-sodobmhc.md`.

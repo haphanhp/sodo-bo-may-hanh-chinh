@@ -36,7 +36,9 @@ function sourcesHTML(e, st){
 function orgHTML(o, st){
   const leaders = (o.leadership ?? []).map(l => {
     const p = st.index.get(l.person_id), pos = st.index.get(l.position_id);
-    return `${esc(pos?.name?.vi ?? "")}: <strong>${esc(p?.name?.vi ?? "chưa xác minh")}</strong>`;
+    const from = p?.positions?.find(x => x.position_id === l.position_id)?.from;
+    return `${esc(pos?.name?.vi ?? "")}: <strong data-entity="${esc(p?.id ?? "")}">${esc(p?.name?.vi ?? "chưa xác minh")}</strong>` +
+      (from ? ` <span class="muted-note">(từ ${esc(from.split("-").reverse().join("/"))})</span>` : "");
   });
   const parent = o.parent_id ? st.index.get(o.parent_id) : null;
   const kids = [...st.index.perType.organizations.values()].filter(x => x.parent_id === o.id);
@@ -63,7 +65,9 @@ function personHTML(p, st){
   return `<h3 class="d-title">${esc(p.name.vi)}</h3>
     <h4>Chức vụ</h4>
     ${row("Chức danh", esc(st.index.get(pos.position_id)?.name?.vi))}
-    ${row("Cơ quan", esc(st.index.get(pos.organization_id)?.name?.vi))}
+    ${row("Cơ quan", `<strong data-entity="${esc(pos.organization_id ?? "")}">${esc(st.index.get(pos.organization_id)?.name?.vi)}</strong>`)}
+    ${row("Giữ chức từ", pos.from ? esc(pos.from.split("-").reverse().join("/")) : "")}
+    ${(() => { const po = st.index.get(pos.position_id); return po?.notes ? `<p class="muted-note" style="margin-top:8px">${esc(po.notes)}</p>` : ""; })()}
     ${p.notes ? `<h4>Ghi chú</h4><p class="muted-note">${esc(p.notes)}</p>` : ""}
     <h4>Nguồn</h4>${sourcesHTML(p, st)}`;
 }

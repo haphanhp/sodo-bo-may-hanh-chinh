@@ -55,3 +55,5 @@
 .sr-label{font-size:.9rem;font-weight:600}
 .sr-sub{font-size:.76rem;color:var(--c-text-muted)}
 .sr-empty{padding:16px;font-size:.88rem;color:var(--c-text-muted)}
+.panel-body strong[data-entity]{cursor:pointer;border-bottom:1px dotted var(--c-accent)}
+.panel-body strong[data-entity]:hover{color:var(--c-accent)}

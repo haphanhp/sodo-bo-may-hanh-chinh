@@ -1121,5 +1121,665 @@
       "source-250"
     ],
     "notes": ""
+  },
+  {
+    "id": "position-bi-thu-thanh-uy-ha-noi",
+    "name": {
+      "vi": "Bí thư Thành ủy Hà Nội"
+    },
+    "organization_type": "municipality",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Thành phố Hà Nội (Thành ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-251"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-thanh-uy-hue",
+    "name": {
+      "vi": "Bí thư Thành ủy Huế"
+    },
+    "organization_type": "municipality",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Thành phố Huế (Thành ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-252"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-cao-bang",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Cao Bằng"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Cao Bằng (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-253"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-dien-bien",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Điện Biên"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Điện Biên (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-254"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-ha-tinh",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Hà Tĩnh"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Hà Tĩnh (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-255"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-lai-chau",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Lai Châu"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Lai Châu (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-256"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-lang-son",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Lạng Sơn"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Lạng Sơn (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-257"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-nghe-an",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Nghệ An"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Nghệ An (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-258"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-quang-ninh",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Quảng Ninh"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Quảng Ninh (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-259"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-son-la",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Sơn La"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Sơn La (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-260"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-tuyen-quang",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Tuyên Quang"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Tuyên Quang (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-261"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-lao-cai",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Lào Cai"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Lào Cai (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-262"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-thai-nguyen",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Thái Nguyên"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Thái Nguyên (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-263"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-phu-tho",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Phú Thọ"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Phú Thọ (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-264"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-bac-ninh",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Bắc Ninh"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Bắc Ninh (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-265"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-hung-yen",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Hưng Yên"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Hưng Yên (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-266"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-thanh-uy-hai-phong",
+    "name": {
+      "vi": "Bí thư Thành ủy Hải Phòng"
+    },
+    "organization_type": "municipality",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Thành phố Hải Phòng (Thành ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-267"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-ninh-binh",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Ninh Bình"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Ninh Bình (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-268"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-quang-tri",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Quảng Trị"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Quảng Trị (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-269"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-thanh-uy-da-nang",
+    "name": {
+      "vi": "Bí thư Thành ủy Đà Nẵng"
+    },
+    "organization_type": "municipality",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Thành phố Đà Nẵng (Thành ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-270"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-quang-ngai",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Quảng Ngãi"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Quảng Ngãi (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-271"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-gia-lai",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Gia Lai"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Gia Lai (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-272"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-khanh-hoa",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Khánh Hòa"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Khánh Hòa (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-273"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-lam-dong",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Lâm Đồng"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Lâm Đồng (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-274"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-dak-lak",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Đắk Lắk"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Đắk Lắk (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-275"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-thanh-uy-dong-nai",
+    "name": {
+      "vi": "Bí thư Thành ủy Đồng Nai"
+    },
+    "organization_type": "municipality",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Thành phố Đồng Nai (Thành ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-276"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-tay-ninh",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Tây Ninh"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Tây Ninh (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-277"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-thanh-uy-can-tho",
+    "name": {
+      "vi": "Bí thư Thành ủy Cần Thơ"
+    },
+    "organization_type": "municipality",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Thành phố Cần Thơ (Thành ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-278"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-vinh-long",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Vĩnh Long"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Vĩnh Long (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-279"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-dong-thap",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Đồng Tháp"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Đồng Tháp (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-280"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-ca-mau",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Cà Mau"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Cà Mau (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-281"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-an-giang",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy An Giang"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh An Giang (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-282"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
+  },
+  {
+    "id": "position-bi-thu-tinh-uy-thanh-hoa",
+    "name": {
+      "vi": "Bí thư Tỉnh ủy Thanh Hóa"
+    },
+    "organization_type": "province",
+    "level": "party_leadership",
+    "functions": [
+      "Đứng đầu Ban Chấp hành Đảng bộ Tỉnh Thanh Hóa (Tỉnh ủy)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Điều lệ Đảng Cộng sản Việt Nam"
+    ],
+    "source_ids": [
+      "source-283"
+    ],
+    "notes": "Chức vụ thuộc hệ thống Đảng (Tỉnh ủy/Thành ủy), KHÔNG thuộc UBND. Ở phiên bản dữ liệu này, chức vụ được gắn tạm vào entity tỉnh/thành để tra cứu thuận tiện; khi bổ sung hệ thống cơ quan Đảng sẽ tách ra thành organization riêng (Tỉnh ủy/Thành ủy)."
   }
 ]
