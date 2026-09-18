@@ -41,14 +41,16 @@ export const VIEWS = {
         </ul>
         <h2>3. Trạng thái hiện tại</h2>
         <p>Đang ở <strong>Phase 1 — ứng dụng rỗng</strong>: mới có khung giao diện, điều hướng và các trạng thái trống. Chưa nạp dữ liệu hành chính thật; dữ liệu thô đã tra cứu nằm trong các file <code>01–16-*.md</code> của dự án và chỉ được ráp vào <code>data/*.json</code> ở Phase 10.</p>
-        <h2>4. Nguyên tắc dữ liệu</h2>
+        <h2>4. Phạm vi</h2>
+        <p>Đào sâu <strong>cấp thượng tầng</strong> (Quốc hội, Chủ tịch nước, Chính phủ, TAND tối cao, VKSND tối cao, 14 Bộ và 3 cơ quan ngang Bộ) và <strong>34 tỉnh/thành phố trực thuộc trung ương</strong>. Cấp xã/phường/đặc khu chỉ dừng ở mức liệt kê (tổng số và cơ cấu theo từng tỉnh). Cấp huyện đã kết thúc hoạt động từ 01/7/2025, chỉ giữ lại cho mục đích lịch sử.</p>
+        <h2>5. Nguyên tắc dữ liệu</h2>
         <ul>
           <li>Không bịa thông tin: thiếu thì để trống, không đoán.</li>
           <li>Mỗi đối tượng phải có ít nhất một nguồn trích dẫn.</li>
           <li>Ưu tiên nguồn chính thức <code>.gov.vn</code> khi các nguồn xung đột; nếu chưa chốt được thì đánh dấu "chưa xác minh", không tự chọn một bên.</li>
           <li>Giữ lịch sử khi cơ quan sáp nhập/đổi tên (<code>effective_from</code> / <code>effective_to</code>) thay vì xóa dữ liệu cũ.</li>
         </ul>
-        <h2>5. Nguồn thông tin lấy từ đâu</h2>
+        <h2>6. Nguồn thông tin lấy từ đâu</h2>
         <p>Danh mục nguồn đầy đủ (kèm link gốc và ngày truy cập) sẽ hiển thị ở mục <strong>Nguồn</strong> khi Phase 8 hoàn thành, lấy từ <code>data/sources.json</code>. Toàn bộ quy tắc và nhật ký build nằm trong <code>AGENTS.md</code>, <code>Claude-sodobmhc.md</code>, <code>Roadmap-sodobmhc.md</code>, <code>Build-logs-sodobmhc.md</code> của dự án.</p>
       </div></div>`
   }

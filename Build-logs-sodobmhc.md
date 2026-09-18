@@ -233,6 +233,18 @@ updated: 2026-09-18
 
 ---
 
+#### 2026-09-18 — Thu hẹp phạm vi dự án: dừng đào sâu cấp xã
+
+- **Việc làm**: User chốt phạm vi mới — chỉ đào sâu cấp thượng tầng + 34 tỉnh/thành trực thuộc TW; cấp xã/phường/đặc khu dừng ở mức liệt kê. Cập nhật đồng loạt: `Claude-sodobmhc.md` (thêm khối "Phạm vi đã thu hẹp" ở mục 1, thêm luật nền số 19, sửa mục 12), `Roadmap-sodobmhc.md` (trạng thái tổng quan, mục 04/05, Phase 10, ghi chú), `Promts-sodobmhc.md` (khối cảnh báo phạm vi mới, hủy Prompt #20–#24 cả trong bảng theo dõi lẫn tiêu đề), và mục "Phạm vi" trong tab Hướng dẫn của app.
+- **Vấn đề gặp**: Prompt #20–#24 đã soạn xong nhưng chưa giao — xóa đi thì mất công soạn, giữ nguyên thì AI/người vào sau dễ tưởng còn việc phải làm.
+- **Cách xử lý**: Không xóa, chỉ đánh dấu ❌ HỦY kèm ngày và lý do ở cả bảng theo dõi lẫn tiêu đề prompt, ghi rõ "giữ lại chỉ để tham khảo nếu mở lại phạm vi". Đồng thời nâng mục 05 trong Roadmap thành "HOÀN TẤT trong phạm vi mới" thay vì để treo "còn thiếu".
+- **Bài học**:
+  - Khi phạm vi đổi, phải sửa ở CẢ 4 chỗ: file luật (Claude-sodobmhc), file tiến độ (Roadmap), file prompt (Promts) và giao diện app — sửa thiếu một chỗ là AI phiên sau đọc nhầm và làm lại việc đã bị hủy.
+  - Việc "còn thiếu" bị hủy nên đổi trạng thái thành "hoàn tất trong phạm vi mới", không để nguyên chữ "còn thiếu" — nếu không, mỗi AI vào sau đều sẽ đề xuất làm tiếp.
+  - Prompt đã soạn mà bị hủy thì đánh dấu tại chỗ, đừng xóa: vừa giữ lịch sử quyết định, vừa dùng lại được nếu phạm vi mở lại.
+
+---
+
 #### 2026-09-18 — Phase 1: dựng ứng dụng rỗng (shell + CSS + điều hướng + empty states)
 
 - **Việc làm**: Tạo `index.html` (khung 3 vùng), 5 file CSS theo kiến trúc đã chốt, `js/core/` (config, event-bus, state, router hash), `js/ui/` (tabs, detail-panel, toast), `js/views/views.js` (render + empty state cho 9 tab) và `app.js` điều phối. Viết nội dung thật cho tab Hướng dẫn (cách dùng + nguyên tắc dữ liệu + nguồn lấy từ đâu). Thêm toggle giao diện sáng/tối lưu `localStorage`.
@@ -285,6 +297,16 @@ updated: 2026-09-18
   - Kết nối thiết bị (device bridge) có thể tạm mất giữa phiên làm việc — nếu 1 lệnh ghi file thất bại vì mất kết nối, chờ kết nối lại rồi thử lại, không cần dựng lại toàn bộ nội dung.
 
 ---
+
+#### 2026-09-18 — Lưu dữ liệu bổ sung tên đầy đủ xã/phường (17 tỉnh) sau khi đã hủy Prompt #20-24
+
+- **Việc làm**: Sau khi user quyết định thu hẹp phạm vi (cấp xã/phường dừng ở mức liệt kê, hủy Prompt #20-24), user vẫn dán vào hội thoại một phần dữ liệu TÊN đầy đủ mà user tự tra qua acc Pro (Claude Sonnet 5) trực tiếp, không qua acc Free: Lai Châu (1/7 nhóm 1), đủ 7/7 tỉnh nhóm 2, 4/7 tỉnh nhóm 4 (Huế, Gia Lai, Khánh Hòa, Lâm Đồng), 2/6 tỉnh nhóm 5 (Cần Thơ, Vĩnh Long). User yêu cầu Pro tự tra tiếp 3 tỉnh còn lại của nhóm 5 (Đồng Tháp, Cà Mau, An Giang) bằng WebSearch/WebFetch trực tiếp trang xaydungchinhsach.chinhphu.vn — đã làm, khớp đúng tổng số công bố. Lưu toàn bộ vào 3 file mới: `17-ten-day-du-nhom1-va-nhom2.md`, `18-ten-day-du-nhom4-4tinh.md`, `19-ten-day-du-nhom5-5tinh.md`. Cập nhật `Roadmap-sodobmhc.md` ghi rõ đây là dữ liệu bổ sung ngoài pipeline 5-acc, không phải kết quả của Prompt #20-24 (vẫn giữ trạng thái ❌ HỦY).
+- **Vấn đề gặp**: Dữ liệu user dán vào không theo đúng 1 nhóm — lẫn giữa phần còn thiếu của nhóm cũ (Lai Châu/nhóm 1) và phần mới của nhóm 4, nhóm 5 trong cùng 1-2 lượt tin nhắn; dễ ghi nhầm số thứ tự file hoặc gắn sai nhóm nếu không đối chiếu lại `Promts-sodobmhc.md` trước khi lưu.
+- **Cách xử lý**: Trước khi tạo file, luôn `grep`/đọc lại đúng mục Prompt tương ứng trong `Promts-sodobmhc.md` để xác nhận tỉnh nào thuộc nhóm nào, tỉnh nào đã có ở file cũ (tránh trùng), rồi mới đặt số file tiếp theo và soạn nội dung.
+- **Bài học**:
+  - Khi 1 prompt đã bị hủy chính thức (❌) nhưng user vẫn tự tra và muốn lưu kết quả, nên lưu như "dữ liệu bổ sung ngoài pipeline" và ghi rõ nguồn gốc (Pro tự tra / user tự tra) — không tick lại prompt đã hủy thành ✅, tránh gây hiểu nhầm là đã giao lại cho acc Free.
+  - Khi user nói "tự làm luôn đi" cho phần dữ liệu còn thiếu trong 1 lượt đã có sẵn, nên dùng WebSearch tìm đúng trang xaydungchinhsach.chinhphu.vn theo mẫu số Nghị quyết đã biết trước (tra theo pattern "Nghị quyết [số]/NQ-UBTVQH15" + tên tỉnh) rồi WebFetch để lấy danh sách tên đầy đủ — nhanh và bám sát đúng nguồn ưu tiên đã quy định, hơn là để Pro tự nhớ/suy luận tên.
+  - Luôn đối chiếu tổng số (xã + phường + đặc khu) do trang nguồn tự công bố với tổng đã biết trước (từ file tổng quan 12-16) để tự phát hiện thiếu/dư tên trước khi lưu.
 
 #### Template cho mục mới (copy xuống dưới mục "Cách dùng file này" khi thêm bài học mới)
 

@@ -18,6 +18,12 @@ updated: 2026-09-18
 
 ---
 
+#### ⚠️ Phạm vi mới (user chốt 2026-09-18)
+
+Chỉ đào sâu **cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương**. Cấp xã/phường/đặc khu **dừng ở mức liệt kê** (Prompt #15–#19 đã đủ). **Prompt #20–#24 HỦY, không giao cho acc nào** — giữ lại trong file chỉ để tham khảo nếu sau này mở lại phạm vi. Prompt mới (#25 trở đi) chỉ soạn khi phát hiện thiếu dữ liệu ở cấp thượng tầng hoặc cấp tỉnh.
+
+---
+
 #### Bảng theo dõi
 
 | # | Nội dung | Giao cho (browser) | Trạng thái |
@@ -41,11 +47,11 @@ updated: 2026-09-18
 | 17 | Danh sách cấp xã/phường/đặc khu nhóm 3/5 (7 tỉnh: Bắc Ninh, Hưng Yên, Hải Phòng, Ninh Bình, Quảng Trị, Đà Nẵng, Quảng Ngãi) | Microsoft Edge | ✅ Đã ráp 7/7 — xem `14-cap-xa-nhom3-7tinh.md` |
 | 18 | Danh sách cấp xã/phường/đặc khu nhóm 4/5 (7 tỉnh: Huế, Gia Lai, Khánh Hòa, Lâm Đồng, Đắk Lắk, Thành phố Đồng Nai, Tây Ninh) | Cốc Cốc | ✅ Đã ráp 7/7 — xem `15-cap-xa-nhom4-7tinh.md`. Có timeline chi tiết cấp xã Đồng Nai (1/7/2025→14/4/2026→30/4/2026); tên đặc khu Lâm Đồng = Phú Quý |
 | 19 | Danh sách cấp xã/phường/đặc khu nhóm 5/5 (6 tỉnh: TP Hồ Chí Minh, Cần Thơ, Vĩnh Long, Đồng Tháp, Cà Mau, An Giang) + tìm tên 13 đặc khu cả nước | Arc | ✅ Đã ráp 6/6 + 13/13 đặc khu — xem `16-cap-xa-nhom5-va-danhsach-13-dackhu.md`. **Mốc: HOÀN TẤT tổng quan cấp xã cho toàn bộ 34/34 tỉnh/thành** |
-| 20 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 1/5 (7 tỉnh: Hà Nội, Cao Bằng, Điện Biên, Hà Tĩnh, Lai Châu, Lạng Sơn, Nghệ An) | Brave | 🔵 Đã soạn, chờ giao |
-| 21 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 2/5 (7 tỉnh: Quảng Ninh, Thanh Hóa, Sơn La, Tuyên Quang, Lào Cai, Thái Nguyên, Phú Thọ) | Opera GX | 🔵 Đã soạn, chờ giao |
-| 22 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 3/5 (7 tỉnh: Bắc Ninh, Hưng Yên, Hải Phòng, Ninh Bình, Quảng Trị, Đà Nẵng, Quảng Ngãi) | Microsoft Edge | 🔵 Đã soạn, chờ giao |
-| 23 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 4/5 (7 tỉnh: Huế, Gia Lai, Khánh Hòa, Lâm Đồng, Đắk Lắk, Thành phố Đồng Nai, Tây Ninh) | Cốc Cốc | 🔵 Đã soạn, chờ giao |
-| 24 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 5/5 (6 tỉnh: TP Hồ Chí Minh, Cần Thơ, Vĩnh Long, Đồng Tháp, Cà Mau, An Giang) | Arc | 🔵 Đã soạn, chờ giao |
+| ~~20~~ | ❌ HỦY (2026-09-18, thu hẹp phạm vi) — Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 1/5 (7 tỉnh: Hà Nội, Cao Bằng, Điện Biên, Hà Tĩnh, Lai Châu, Lạng Sơn, Nghệ An) | Brave | ❌ HỦY — không giao |
+| ~~21~~ | ❌ HỦY (2026-09-18, thu hẹp phạm vi) — Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 2/5 (7 tỉnh: Quảng Ninh, Thanh Hóa, Sơn La, Tuyên Quang, Lào Cai, Thái Nguyên, Phú Thọ) | Opera GX | ❌ HỦY — không giao |
+| ~~22~~ | ❌ HỦY (2026-09-18, thu hẹp phạm vi) — Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 3/5 (7 tỉnh: Bắc Ninh, Hưng Yên, Hải Phòng, Ninh Bình, Quảng Trị, Đà Nẵng, Quảng Ngãi) | Microsoft Edge | ❌ HỦY — không giao |
+| ~~23~~ | ❌ HỦY (2026-09-18, thu hẹp phạm vi) — Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 4/5 (7 tỉnh: Huế, Gia Lai, Khánh Hòa, Lâm Đồng, Đắk Lắk, Thành phố Đồng Nai, Tây Ninh) | Cốc Cốc | ❌ HỦY — không giao |
+| ~~24~~ | ❌ HỦY (2026-09-18, thu hẹp phạm vi) — Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 5/5 (6 tỉnh: TP Hồ Chí Minh, Cần Thơ, Vĩnh Long, Đồng Tháp, Cà Mau, An Giang) | Arc | ❌ HỦY — không giao |
 
 ---
 
@@ -660,7 +666,7 @@ YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệ
 ```
 
 
-#### Prompt #20 — Danh sách TÊN ĐẦY ĐỦ nhóm 1/5 (Hà Nội, Cao Bằng, Điện Biên, Hà Tĩnh, Lai Châu, Lạng Sơn, Nghệ An)
+#### ~~Prompt #20~~ ❌ ĐÃ HỦY (2026-09-18 — thu hẹp phạm vi, không giao) — Danh sách TÊN ĐẦY ĐỦ nhóm 1/5 (Hà Nội, Cao Bằng, Điện Biên, Hà Tĩnh, Lai Châu, Lạng Sơn, Nghệ An)
 
 **Giao cho**: Brave. **Tiếp nối Prompt #15** — lần này cần TÊN ĐẦY ĐỦ, không chỉ tổng số/ví dụ.
 
@@ -681,7 +687,7 @@ NHIỆM VỤ: với MỖI tỉnh, tìm và chép lại ĐẦY ĐỦ danh sách t
 YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (bạn tự gán theo quy ước dự án). Với MỖI tỉnh: liệt kê đủ tên (đánh số hoặc xuống dòng từng đơn vị, ghi rõ xã hay phường), + 1 dòng nguồn (link chính xác + ngày truy cập). KHÔNG bịa tên, KHÔNG suy luận/đoán tên. Nếu 1 tỉnh có danh sách QUÁ DÀI để chép hết trong 1 lượt trả lời, CHIA làm nhiều lượt (trả lời tỉnh đó riêng ở tin nhắn tiếp theo trong CÙNG hội thoại này, ghi rõ "tiếp tục tỉnh X") — không bỏ sót, không tóm tắt cho ngắn. Nếu 1 nguồn không liệt kê đủ, thử nguồn khác trước khi bỏ cuộc; nếu vẫn không tìm được đủ tên cho 1 tỉnh cụ thể, ghi rõ "KHÔNG tìm được danh sách đầy đủ, chỉ có: [những gì tìm được]" — không tự chế thêm tên.
 ```
 
-#### Prompt #21 — Danh sách TÊN ĐẦY ĐỦ nhóm 2/5 (Quảng Ninh, Thanh Hóa, Sơn La, Tuyên Quang, Lào Cai, Thái Nguyên, Phú Thọ)
+#### ~~Prompt #21~~ ❌ ĐÃ HỦY (2026-09-18 — thu hẹp phạm vi, không giao) — Danh sách TÊN ĐẦY ĐỦ nhóm 2/5 (Quảng Ninh, Thanh Hóa, Sơn La, Tuyên Quang, Lào Cai, Thái Nguyên, Phú Thọ)
 
 **Giao cho**: Opera GX. **Tiếp nối Prompt #16.**
 
@@ -702,7 +708,7 @@ NHIỆM VỤ: với MỖI tỉnh, tìm và chép lại ĐẦY ĐỦ danh sách t
 YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (bạn tự gán theo quy ước dự án). Với MỖI tỉnh: liệt kê đủ tên (đánh số hoặc xuống dòng từng đơn vị, ghi rõ xã/phường/đặc khu), + 1 dòng nguồn (link chính xác + ngày truy cập). KHÔNG bịa tên, KHÔNG suy luận. Nếu 1 tỉnh có danh sách QUÁ DÀI để chép hết trong 1 lượt trả lời, CHIA làm nhiều lượt (trả lời tỉnh đó riêng ở tin nhắn tiếp theo, ghi rõ "tiếp tục tỉnh X") — không bỏ sót. Nếu không tìm được đủ tên, ghi rõ "KHÔNG tìm được danh sách đầy đủ, chỉ có: [những gì tìm được]".
 ```
 
-#### Prompt #22 — Danh sách TÊN ĐẦY ĐỦ nhóm 3/5 (Bắc Ninh, Hưng Yên, Hải Phòng, Ninh Bình, Quảng Trị, Đà Nẵng, Quảng Ngãi)
+#### ~~Prompt #22~~ ❌ ĐÃ HỦY (2026-09-18 — thu hẹp phạm vi, không giao) — Danh sách TÊN ĐẦY ĐỦ nhóm 3/5 (Bắc Ninh, Hưng Yên, Hải Phòng, Ninh Bình, Quảng Trị, Đà Nẵng, Quảng Ngãi)
 
 **Giao cho**: Microsoft Edge. **Tiếp nối Prompt #17.**
 
@@ -723,7 +729,7 @@ NHIỆM VỤ: với MỖI tỉnh, tìm và chép lại ĐẦY ĐỦ danh sách t
 YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (bạn tự gán theo quy ước dự án). Với MỖI tỉnh: liệt kê đủ tên (đánh số hoặc xuống dòng từng đơn vị, ghi rõ xã/phường), + 1 dòng nguồn (link chính xác + ngày truy cập). KHÔNG bịa tên, KHÔNG suy luận. Nếu 1 tỉnh có danh sách QUÁ DÀI để chép hết trong 1 lượt trả lời, CHIA làm nhiều lượt (ghi rõ "tiếp tục tỉnh X") — không bỏ sót. Nếu không tìm được đủ tên, ghi rõ "KHÔNG tìm được danh sách đầy đủ, chỉ có: [những gì tìm được]".
 ```
 
-#### Prompt #23 — Danh sách TÊN ĐẦY ĐỦ nhóm 4/5 (Huế, Gia Lai, Khánh Hòa, Lâm Đồng, Đắk Lắk, Thành phố Đồng Nai, Tây Ninh)
+#### ~~Prompt #23~~ ❌ ĐÃ HỦY (2026-09-18 — thu hẹp phạm vi, không giao) — Danh sách TÊN ĐẦY ĐỦ nhóm 4/5 (Huế, Gia Lai, Khánh Hòa, Lâm Đồng, Đắk Lắk, Thành phố Đồng Nai, Tây Ninh)
 
 **Giao cho**: Cốc Cốc. **Tiếp nối Prompt #18.**
 
@@ -744,7 +750,7 @@ NHIỆM VỤ: với MỖI tỉnh/thành, tìm và chép lại ĐẦY ĐỦ danh 
 YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (bạn tự gán theo quy ước dự án). Với MỖI tỉnh: liệt kê đủ tên (đánh số hoặc xuống dòng từng đơn vị, ghi rõ xã/phường), + 1 dòng nguồn (link chính xác + ngày truy cập). KHÔNG bịa tên, KHÔNG suy luận. Nếu 1 tỉnh có danh sách QUÁ DÀI để chép hết trong 1 lượt trả lời, CHIA làm nhiều lượt (ghi rõ "tiếp tục tỉnh X") — không bỏ sót. Nếu không tìm được đủ tên, ghi rõ "KHÔNG tìm được danh sách đầy đủ, chỉ có: [những gì tìm được]".
 ```
 
-#### Prompt #24 — Danh sách TÊN ĐẦY ĐỦ nhóm 5/5 (TP.HCM, Cần Thơ, Vĩnh Long, Đồng Tháp, Cà Mau, An Giang)
+#### ~~Prompt #24~~ ❌ ĐÃ HỦY (2026-09-18 — thu hẹp phạm vi, không giao) — Danh sách TÊN ĐẦY ĐỦ nhóm 5/5 (TP.HCM, Cần Thơ, Vĩnh Long, Đồng Tháp, Cà Mau, An Giang)
 
 **Giao cho**: Arc. **Tiếp nối Prompt #19** (phần tên 13 đặc khu đã xong, không cần lặp lại).
 
