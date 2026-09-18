@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sodobmhc/schemas/source.schema.json",
+  "title": "Source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "type", "url", "accessed_date"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "publisher": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "organization_id": { "type": "string" },
+        "name": { "type": "string" }
+      }
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "official_document",
+        "official_website",
+        "government_portal",
+        "legal_database",
+        "official_dataset",
+        "secondary_source",
+        "news",
+        "other"
+      ]
+    },
+    "url": { "type": "string" },
+    "document_number": { "type": "string" },
+    "published_date": { "type": ["string", "null"], "format": "date" },
+    "effective_date": { "type": ["string", "null"], "format": "date" },
+    "accessed_date": { "type": "string", "format": "date" },
+    "reliability": {
+      "type": "string",
+      "enum": ["official", "secondary", "unverified"]
+    },
+    "notes": { "type": "string" }
+  }
+}

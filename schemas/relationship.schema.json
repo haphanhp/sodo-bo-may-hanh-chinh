@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sodobmhc/schemas/relationship.schema.json",
+  "title": "Relationship",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "from", "to", "type", "source_ids"],
+  "properties": {
+    "id": { "type": "string" },
+    "from": { "type": "string" },
+    "to": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": [
+        "parent",
+        "child",
+        "supervises",
+        "managed_by",
+        "reports_to",
+        "coordinates_with",
+        "inspects",
+        "audits",
+        "appoints",
+        "appointed_by",
+        "issues",
+        "receives",
+        "processes",
+        "implements",
+        "regulated_by",
+        "belongs_to",
+        "holds_position",
+        "merged_into",
+        "split_into",
+        "upgraded_from"
+      ]
+    },
+    "label": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "vi": { "type": "string" }
+      }
+    },
+    "legal_basis": { "type": "array", "items": { "type": "string" } },
+    "effective_from": { "type": ["string", "null"], "format": "date" },
+    "effective_to": { "type": ["string", "null"], "format": "date" },
+    "shared_contact_info": { "type": "boolean", "default": false },
+    "source_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "notes": { "type": "string" }
+  }
+}

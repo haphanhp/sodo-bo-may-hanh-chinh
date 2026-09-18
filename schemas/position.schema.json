@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sodobmhc/schemas/position.schema.json",
+  "title": "Position",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vi"],
+      "properties": {
+        "vi": { "type": "string" }
+      }
+    },
+    "organization_type": { "type": "string" },
+    "level": { "type": "string" },
+    "functions": { "type": "array", "items": { "type": "string" } },
+    "powers": { "type": "array", "items": { "type": "string" } },
+    "responsibilities": { "type": "array", "items": { "type": "string" } },
+    "legal_basis": { "type": "array", "items": { "type": "string" } },
+    "source_ids": { "type": "array", "items": { "type": "string" } }
+  }
+}

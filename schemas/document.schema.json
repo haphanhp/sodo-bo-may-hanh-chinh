@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sodobmhc/schemas/document.schema.json",
+  "title": "Document",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "type", "number", "title", "issuer_id", "source_ids"],
+  "properties": {
+    "id": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": [
+        "constitution",
+        "law",
+        "resolution",
+        "decree",
+        "decision",
+        "circular",
+        "directive",
+        "regulation",
+        "official_letter"
+      ]
+    },
+    "number": { "type": "string" },
+    "title": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vi"],
+      "properties": {
+        "vi": { "type": "string" }
+      }
+    },
+    "issuer_id": { "type": "string" },
+    "issued_date": { "type": ["string", "null"], "format": "date" },
+    "effective_date": { "type": ["string", "null"], "format": "date" },
+    "status": {
+      "type": "string",
+      "enum": ["active", "superseded", "repealed"]
+    },
+    "url": { "type": "string" },
+    "related_entities": { "type": "array", "items": { "type": "string" } },
+    "source_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    }
+  }
+}
