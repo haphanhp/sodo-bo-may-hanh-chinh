@@ -233,6 +233,19 @@ updated: 2026-09-18
 
 ---
 
+#### 2026-09-18 — Backup GitHub bằng Git Credential Manager (không cần PAT) + chốt dữ liệu tên xã đã tra dở
+
+- **Việc làm**: Claude Code push thành công 4 commit lên `origin/main` (`e61a78c` → `7ed7d2c` → `4ae00a7` → `1805378`). Commit thêm 2 file dữ liệu đã tra dở trước khi thu hẹp phạm vi: `17-ten-day-du-nhom1-va-nhom2.md`, `18-ten-day-du-nhom4-4tinh.md`. Ghi nhận tiến độ backup + mục 06 vào Roadmap.
+- **Vấn đề gặp**: (a) Phiên Cowork và phiên Claude Code chạy song song trên cùng repo → Claude Code báo nhầm "có commit lạ do session khác tạo", và có lúc tưởng còn commit chưa push. (b) Phiên Cowork trước để sót `.git/HEAD.lock` + hàng chục file `.git/objects/*/tmp_obj_*` vì chưa được cấp quyền xóa file, làm commit kế tiếp fail với lỗi "cannot lock ref 'HEAD'". (c) Ban đầu tưởng phải xin PAT để push.
+- **Cách xử lý**: Xin quyền xóa file cho thư mục dự án rồi `rm` lock + `find .git/objects -name "tmp_obj_*" -delete`, sau đó commit lại bình thường. Push cuối cùng dùng **Git Credential Manager có sẵn trên máy** — không cần PAT.
+- **Bài học**:
+  - Máy này đã có Git Credential Manager → **không cần xin PAT**, cứ `git push origin main` là manager tự bật cửa sổ đăng nhập. Lần sau bỏ hẳn bước xin PAT trong prompt giao cho Claude Code.
+  - Không chạy Cowork và Claude Code cùng lúc trên cùng repo: mỗi bên thấy commit của bên kia là "lạ", dễ báo sai trạng thái và tranh nhau lock.
+  - Trong môi trường không có quyền xóa file, git vẫn commit được nhưng để lại lock/temp rác làm hỏng commit kế tiếp → xin quyền xóa NGAY từ lần commit đầu tiên của phiên, đừng đợi lỗi.
+  - Dữ liệu đã tra dở khi đổi phạm vi thì vẫn commit và ghi rõ "dừng tại đây", không xóa — vừa khỏi phí công, vừa dùng lại được nếu mở lại phạm vi.
+
+---
+
 #### 2026-09-18 — Thu hẹp phạm vi dự án: dừng đào sâu cấp xã
 
 - **Việc làm**: User chốt phạm vi mới — chỉ đào sâu cấp thượng tầng + 34 tỉnh/thành trực thuộc TW; cấp xã/phường/đặc khu dừng ở mức liệt kê. Cập nhật đồng loạt: `Claude-sodobmhc.md` (thêm khối "Phạm vi đã thu hẹp" ở mục 1, thêm luật nền số 19, sửa mục 12), `Roadmap-sodobmhc.md` (trạng thái tổng quan, mục 04/05, Phase 10, ghi chú), `Promts-sodobmhc.md` (khối cảnh báo phạm vi mới, hủy Prompt #20–#24 cả trong bảng theo dõi lẫn tiêu đề), và mục "Phạm vi" trong tab Hướng dẫn của app.
