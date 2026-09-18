@@ -18,7 +18,7 @@ updated: 2026-09-18
 
 #### Trạng thái tổng quan
 
-- Phase hiện tại: **Phase 0 ĐÃ XONG — sẵn sàng chuyển Phase 1 (ứng dụng rỗng) khi user xác nhận** — song song, dữ liệu thô cấp tỉnh/thành (mục 03) vẫn tiếp tục thu thập độc lập
+- Phase hiện tại: **Phase 1 ĐÃ XONG (ứng dụng rỗng) — sẵn sàng chuyển Phase 2 (data engine)** — song song, dữ liệu thô cấp tỉnh/thành (mục 03) vẫn tiếp tục thu thập độc lập
 - Cập nhật lần cuối: 2026-09-18
 
 ---
@@ -36,10 +36,11 @@ updated: 2026-09-18
 
 #### Phase 1 — Ứng dụng rỗng (chưa có dữ liệu thật)
 
-- [ ] `index.html` (shell, không nhét dữ liệu)
-- [ ] `css/` (main, layout, graph, components, responsive)
-- [ ] Navigation + 8 tab: Bản đồ, Cơ quan, Con người, Thủ tục, Văn bản, Giấy phép, Nguồn, Hướng dẫn
-- [ ] Empty states cho từng view
+- [x] ✅ `index.html` (shell 3 vùng: header + nav + main + detail panel, không chứa dữ liệu hành chính) — Claude Cowork (Opus 5), 2026-09-18
+- [x] ✅ `css/` đủ 5 file: `main.css` (token + reset, có dark mode), `layout.css`, `components.css`, `graph.css` (placeholder Phase 3), `responsive.css`
+- [x] ✅ Navigation + 9 tab: Bản đồ, Cơ quan, Con người, Chức vụ, Thủ tục, Văn bản, Giấy phép, Nguồn, Hướng dẫn (thêm tab Chức vụ so với dự kiến 8 tab, vì Position tách riêng khỏi Person trong schema)
+- [x] ✅ Empty states cho từng view + empty state cho detail panel, mỗi cái ghi rõ sẽ có dữ liệu ở Phase nào
+- [x] ✅ Bonus: router hash (`#/organizations`), event-bus, state skeleton, toggle sáng/tối lưu localStorage, tab Hướng dẫn đã viết nội dung thật. **🎉 Phase 1 HOÀN TẤT.**
 
 #### Phase 2 — Data engine
 

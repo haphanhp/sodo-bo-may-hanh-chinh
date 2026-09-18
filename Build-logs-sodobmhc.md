@@ -233,6 +233,18 @@ updated: 2026-09-18
 
 ---
 
+#### 2026-09-18 — Phase 1: dựng ứng dụng rỗng (shell + CSS + điều hướng + empty states)
+
+- **Việc làm**: Tạo `index.html` (khung 3 vùng), 5 file CSS theo kiến trúc đã chốt, `js/core/` (config, event-bus, state, router hash), `js/ui/` (tabs, detail-panel, toast), `js/views/views.js` (render + empty state cho 9 tab) và `app.js` điều phối. Viết nội dung thật cho tab Hướng dẫn (cách dùng + nguyên tắc dữ liệu + nguồn lấy từ đâu). Thêm toggle giao diện sáng/tối lưu `localStorage`.
+- **Vấn đề gặp**: Roadmap ghi 8 tab nhưng schema tách riêng `position` khỏi `person`; nếu gộp Chức vụ vào tab Con người thì sau này Phase 4 phải sửa lại điều hướng.
+- **Cách xử lý**: Tăng lên 9 tab, thêm tab "Chức vụ" ngay từ Phase 1 và ghi rõ lý do trong Roadmap. Toàn bộ view đều render bằng JS từ `views.js`, `index.html` không chứa một chữ dữ liệu hành chính nào (giữ luật 1 và 6 trong `AGENTS.md`).
+- **Bài học**:
+  - Điều hướng nên bám theo cấu trúc entity trong schema, không bám theo danh sách tab viết vội trong roadmap — lệch một tab là sau này phải sửa cả router, nav và view.
+  - Mỗi empty state nên ghi rõ "sẽ có dữ liệu ở Phase nào": vừa là UI thật, vừa là tài liệu sống cho AI/người vào sau biết phần đó đã làm hay chưa.
+  - Dùng router theo hash (`#/organizations`) ngay từ Phase 1 giúp mở file bằng `file://` vẫn chạy được, không cần web server — quan trọng vì file này để user mở trực tiếp trong Obsidian/trình duyệt.
+
+---
+
 #### 2026-09-18 — Soạn Prompt #2 (đối chiếu chéo) & Prompt #3 (danh sách Bộ), thêm quy tắc xoay vòng acc
 
 - **Việc làm**: Theo yêu cầu user, soạn ngay 2 prompt tiếp theo trong `Promts-sodobmhc.md` để không bị đứng khi vừa ráp xong Prompt #1:
