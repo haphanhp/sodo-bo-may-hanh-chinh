@@ -83,7 +83,21 @@ export const VIEWS = {
         ]));
     }
   },
-  procedures:    { label: "Thủ tục", render: st => banner(st) + head("Thủ tục hành chính", "Quy trình từng bước: nộp hồ sơ → kiểm tra → thẩm định → phê duyệt → nhận kết quả.") + empty({ ico: "📋", title: "Chưa có thủ tục", desc: "Đọc từ data/procedures.json, kèm hồ sơ yêu cầu, lệ phí, thời hạn, cơ quan tiếp nhận và cơ quan chịu trách nhiệm.", phase: "Phase 6" }) },
+  procedures: {
+    label: "Thủ tục",
+    render: st => {
+      const items = list(st, "procedures");
+      if (!items.length) return head("Thủ tục hành chính", "Quy trình từng bước: nộp hồ sơ → kiểm tra → thẩm định → phê duyệt → nhận kết quả.") + banner(st) +
+        empty({ ico: "📋", title: "Chưa nạp thủ tục nào", desc: "Giao diện đã sẵn sàng: mỗi thủ tục sẽ hiện các bước theo thứ tự, cơ quan tiếp nhận, cơ quan chịu trách nhiệm, hồ sơ yêu cầu, lệ phí, kết quả và căn cứ pháp lý. Dữ liệu thật đọc từ data/procedures.json — đang chờ thu thập (xem Prompt #25 trong Promts-sodobmhc.md).", phase: "Phase 6 (dữ liệu)" });
+      return head("Thủ tục hành chính", `${items.length} thủ tục đã nạp`) + banner(st) +
+        table(["Thủ tục", "Cơ quan tiếp nhận", "Số bước", "Đối tượng"], items.map(pr => [
+          `<strong data-entity="${esc(pr.id)}">${nameOf(pr)}</strong>`,
+          nameOf(st.index.get(pr.receiving_organization_id)) || "—",
+          String((pr.steps ?? []).length || "—"),
+          (pr.applicant?.types ?? []).map(t => ({ individual: "Cá nhân", organization: "Tổ chức" }[t] ?? t)).join(", ") || "—"
+        ]));
+    }
+  },
   documents:     { label: "Văn bản", render: st => banner(st) + head("Văn bản pháp luật", "Hiến pháp, luật, nghị quyết, nghị định, quyết định, thông tư, chỉ thị, công văn.") + empty({ ico: "📜", title: "Chưa có văn bản", desc: "Đọc từ data/documents.json, kèm quan hệ pháp lý giữa các văn bản (căn cứ, sửa đổi, thay thế).", phase: "Phase 7" }) },
   licenses:      { label: "Giấy phép", render: st => banner(st) + head("Giấy phép / chứng chỉ / biểu mẫu", "Kết quả đầu ra của thủ tục: giấy phép, chứng chỉ, con dấu, biểu mẫu.") + empty({ ico: "📄", title: "Chưa có giấy phép", desc: "Đọc từ data/licenses.json và data/forms.json, liên kết ngược về thủ tục và cơ quan cấp.", phase: "Phase 6" }) },
   sources: {

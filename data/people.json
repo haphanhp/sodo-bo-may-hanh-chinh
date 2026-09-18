@@ -1774,5 +1774,25 @@
     ],
     "last_verified": "2026-09-18",
     "notes": "Thượng tướng; thay ông Nguyễn Doãn Anh (lên Phó Chủ tịch Quốc hội)."
+  },
+  {
+    "id": "person-tran-luu-quang",
+    "name": {
+      "vi": "Trần Lưu Quang"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bi-thu-thanh-uy-ho-chi-minh",
+        "organization_id": "org-tp-ho-chi-minh",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-900"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ CHƯA XÁC MINH — do người dùng dự án khai báo trực tiếp (2026-09-18), chưa có link nguồn hay số văn bản. Cần đối chiếu bằng nguồn chính thức trước khi coi là đã chốt (luật 2 & 15)."
   }
 ]

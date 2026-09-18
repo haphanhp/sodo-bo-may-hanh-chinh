@@ -2445,6 +2445,10 @@
       {
         "position_id": "position-chu-tich-ubnd-thanh-pho-ho-chi-minh",
         "person_id": "person-nguyen-van-duoc"
+      },
+      {
+        "position_id": "position-bi-thu-thanh-uy-ho-chi-minh",
+        "person_id": "person-tran-luu-quang"
       }
     ],
     "functions": [
@@ -2464,7 +2468,7 @@
     "effective_from": "2025-07-01",
     "effective_to": null,
     "last_verified": "2026-09-18",
-    "notes": "TP mới = TP.HCM + Bà Rịa-Vũng Tàu + Bình Dương cũ. ⚠️ CHƯA CÓ Bí thư Thành ủy trong dữ liệu — đây là đơn vị DUY NHẤT trong 34 tỉnh/thành còn thiếu (file thô 11 không có TP.HCM), cần tra bổ sung."
+    "notes": "TP mới = TP.HCM + Bà Rịa-Vũng Tàu + Bình Dương cũ. Bí thư Thành ủy: Trần Lưu Quang — ⚠️ do user khai báo, CHƯA có nguồn chính thức, cần đối chiếu."
   },
   {
     "id": "org-tp-dong-nai",

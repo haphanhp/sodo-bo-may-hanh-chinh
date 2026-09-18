@@ -20,8 +20,51 @@ export function renderDetail(id){
   const type = st.index?.typeOf(id);
   const e = st.index?.get(id);
   if (!e) return renderDetailEmpty();
-  body.innerHTML = type === "organizations" ? orgHTML(e, st) : type === "people" ? personHTML(e, st) : genericHTML(e);
+  body.innerHTML = type === "organizations" ? orgHTML(e, st)
+    : type === "people" ? personHTML(e, st)
+    : type === "procedures" ? procedureHTML(e, st)
+    : type === "positions" ? positionHTML(e, st)
+    : genericHTML(e);
   body.scrollTop = 0;
+}
+
+export function unverifiedFlag(e, st){
+  const bad = st.index.sourcesOf(e).some(s => s.reliability === "unverified");
+  return bad ? `<div class="notice notice-warn" style="margin-bottom:12px">⚠️ Mục này có dữ liệu <strong>chưa xác minh bằng nguồn chính thức</strong> — xem phần Nguồn bên dưới.</div>` : "";
+}
+
+function positionHTML(p, st){
+  const holders = [...st.index.perType.people.values()].filter(x => (x.positions ?? []).some(y => y.position_id === p.id));
+  return `<h3 class="d-title">${esc(p.name.vi)}</h3>
+    ${unverifiedFlag(p, st)}
+    <h4>Người đang giữ chức</h4>
+    ${holders.length ? `<ul>${holders.map(h => `<li><strong data-entity="${esc(h.id)}">${esc(h.name.vi)}</strong></li>`).join("")}</ul>` : `<p class="muted-note">Chưa có dữ liệu.</p>`}
+    <h4>Chức năng</h4>${li(p.functions)}
+    <h4>Căn cứ pháp lý</h4>${li(p.legal_basis)}
+    ${p.notes ? `<h4>Ghi chú</h4><p class="muted-note">${esc(p.notes)}</p>` : ""}
+    <h4>Nguồn</h4>${sourcesHTML(p, st)}`;
+}
+
+function procedureHTML(pr, st){
+  const org = id => st.index.get(id)?.name?.vi ?? "";
+  const steps = (pr.steps ?? []).sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  return `<h3 class="d-title">${esc(pr.name?.vi ?? pr.id)}</h3>
+    ${unverifiedFlag(pr, st)}
+    <h4>Cơ quan</h4>
+    ${row("Chịu trách nhiệm", pr.responsible_organization_id ? `<strong data-entity="${esc(pr.responsible_organization_id)}">${esc(org(pr.responsible_organization_id))}</strong>` : "")}
+    ${row("Tiếp nhận hồ sơ", pr.receiving_organization_id ? `<strong data-entity="${esc(pr.receiving_organization_id)}">${esc(org(pr.receiving_organization_id))}</strong>` : "")}
+    ${row("Đối tượng", (pr.applicant?.types ?? []).map(t => ({ individual: "Cá nhân", organization: "Tổ chức" }[t] ?? t)).join(", "))}
+    <h4>Quy trình ${steps.length ? `(${steps.length} bước)` : ""}</h4>
+    ${steps.length ? `<ol class="wf">${steps.map(s => `<li class="wf-step">
+        <div class="wf-name">${esc(s.name)}</div>
+        <div class="muted-note">${esc({ applicant: "Người nộp hồ sơ thực hiện", organization: "Cơ quan thực hiện" }[s.actor] ?? s.actor ?? "")}${s.duration ? ` · ${esc(s.duration)}` : ""}</div>
+        ${s.description ? `<div class="wf-desc">${esc(s.description)}</div>` : ""}
+      </li>`).join("")}</ol>` : `<p class="muted-note">Chưa có dữ liệu các bước.</p>`}
+    <h4>Hồ sơ yêu cầu</h4>${li(pr.requirements)}
+    <h4>Lệ phí</h4>${li(pr.fees)}
+    <h4>Kết quả</h4>${li(pr.result)}
+    <h4>Căn cứ pháp lý</h4>${li(pr.legal_basis)}
+    <h4>Nguồn</h4>${sourcesHTML(pr, st)}`;
 }
 
 function sourcesHTML(e, st){
@@ -44,6 +87,7 @@ function orgHTML(o, st){
   const kids = [...st.index.perType.organizations.values()].filter(x => x.parent_id === o.id);
   const c = o.contact ?? {};
   return `<h3 class="d-title">${esc(o.name.vi)}</h3>
+    ${unverifiedFlag(o, st)}
     <div class="d-badges"><span class="badge badge-accent">${esc(o.short_name || o.type)}</span><span class="badge">Kiểm chứng ${esc(o.last_verified)}</span></div>
     <h4>Lãnh đạo</h4>${leaders.length ? `<ul>${leaders.map(x => `<li>${x}</li>`).join("")}</ul>` : `<p class="muted-note">Chưa có dữ liệu.</p>`}
     <h4>Chức năng, nhiệm vụ, quyền hạn</h4>${li(o.functions)}
@@ -63,6 +107,7 @@ function orgHTML(o, st){
 function personHTML(p, st){
   const pos = p.positions?.[0] ?? {};
   return `<h3 class="d-title">${esc(p.name.vi)}</h3>
+    ${unverifiedFlag(p, st)}
     <h4>Chức vụ</h4>
     ${row("Chức danh", esc(st.index.get(pos.position_id)?.name?.vi))}
     ${row("Cơ quan", `<strong data-entity="${esc(pos.organization_id ?? "")}">${esc(st.index.get(pos.organization_id)?.name?.vi)}</strong>`)}

@@ -57,3 +57,10 @@
 .sr-empty{padding:16px;font-size:.88rem;color:var(--c-text-muted)}
 .panel-body strong[data-entity]{cursor:pointer;border-bottom:1px dotted var(--c-accent)}
 .panel-body strong[data-entity]:hover{color:var(--c-accent)}
+.wf{list-style:none;margin:0;padding:0;position:relative}
+.wf-step{position:relative;padding:0 0 14px 26px;border-left:2px solid var(--c-border);margin-left:6px}
+.wf-step:last-child{border-left-color:transparent;padding-bottom:0}
+.wf-step::before{content:"";position:absolute;left:-7px;top:3px;width:12px;height:12px;border-radius:50%;
+  background:var(--c-surface);border:2px solid var(--c-accent)}
+.wf-name{font-weight:650;font-size:.9rem}
+.wf-desc{font-size:.84rem;margin-top:3px}

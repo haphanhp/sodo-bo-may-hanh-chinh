@@ -233,6 +233,18 @@ updated: 2026-09-18
 
 ---
 
+#### 2026-09-18 — Hoàn thiện Bí thư 34/34 + Phase 6 (giao diện thủ tục) + Prompt #25
+
+- **Việc làm**: Nạp Bí thư Thành ủy TP.HCM (Trần Lưu Quang) theo user khai báo — đủ 34/34 tỉnh/thành. Dựng giao diện Phase 6: bảng danh sách thủ tục + bảng chi tiết dạng timeline các bước (ai làm, thời hạn, mô tả), kèm cơ quan tiếp nhận/chịu trách nhiệm bấm được, hồ sơ, lệ phí, kết quả, căn cứ pháp lý. Thêm bảng chi tiết riêng cho chức vụ. Soạn Prompt #25 (xác minh Bí thư TP.HCM + Tây Ninh + 3 thủ tục mẫu).
+- **Vấn đề gặp**: User cung cấp tên Bí thư TP.HCM bằng lời, không kèm link — nếu nạp thẳng như dữ liệu đã xác minh thì vi phạm luật 2 và luật 15 (không bịa, đánh dấu rõ khi chưa chắc); nếu không nạp thì mất thông tin user đang có.
+- **Cách xử lý**: Tạo một nguồn riêng `source-900` kiểu `other`, `reliability: "unverified"`, ghi rõ là khai báo miệng của user chưa có link. Thêm cơ chế trong app: bất kỳ entity nào có nguồn `unverified` đều hiện **banner cảnh báo đỏ** ngay đầu bảng chi tiết. Đưa việc xác minh vào Prompt #25.
+- **Bài học**:
+  - Dữ liệu do chính user cung cấp vẫn phải đi qua đúng quy trình nguồn như dữ liệu tra từ web — cách an toàn là tạo loại nguồn `unverified` riêng thay vì bỏ trống `source_ids` (bỏ trống thì validator chỉ cảnh báo, còn gắn `unverified` thì app hiện cảnh báo cho người xem thấy).
+  - Nên dựng giao diện Phase trước khi có dữ liệu thật: empty state mô tả đúng những trường sẽ hiển thị chính là bản đặc tả để viết prompt thu thập dữ liệu — viết Prompt #25 nhanh hơn hẳn vì đã biết cần đúng những field nào.
+  - Prompt thu thập thủ tục phải cảnh báo sẵn về dữ liệu lỗi thời (còn ghi "UBND cấp huyện" hoặc tên Bộ đã giải thể) — đây là bẫy chắc chắn gặp với thủ tục hành chính sau tái cơ cấu 2025–2026.
+
+---
+
 #### 2026-09-18 — Nạp 33 Bí thư Tỉnh/Thành ủy + chỉnh thuật toán xếp hạng tìm kiếm
 
 - **Việc làm**: Ráp toàn bộ Bí thư Tỉnh/Thành ủy từ file `11` (30 đơn vị) + Hà Nội, Huế từ file `07` → 33 chức vụ và 33 người mới, mỗi người có `from` là ngày nhậm chức. Bảng chi tiết nay hiện "(từ dd/mm/yyyy)" cạnh tên lãnh đạo, và bấm được vào tên người/cơ quan ngay trong bảng để nhảy qua lại. Tổng data: 56 cơ quan / 88 người / 89 chức vụ / 124 nguồn, validate 0 lỗi.

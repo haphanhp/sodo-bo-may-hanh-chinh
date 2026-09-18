@@ -52,6 +52,7 @@ Chỉ đào sâu **cấp thượng tầng + cấp tỉnh/thành phố trực thu
 | 22 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 3/5 (7 tỉnh: Bắc Ninh, Hưng Yên, Hải Phòng, Ninh Bình, Quảng Trị, Đà Nẵng, Quảng Ngãi) | Microsoft Edge | ⏸ GIỮ NGUYÊN, KHÔNG GIAO — phạm vi chỉ dừng ở mức liệt kê (đã xong toàn quốc 34/34 tỉnh, tới An Giang). Nội dung prompt giữ lại để dùng nếu sau này mở lại phạm vi |
 | 23 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 4/5 (7 tỉnh: Huế, Gia Lai, Khánh Hòa, Lâm Đồng, Đắk Lắk, Thành phố Đồng Nai, Tây Ninh) | Cốc Cốc | ⏸ GIỮ NGUYÊN, KHÔNG GIAO — phạm vi chỉ dừng ở mức liệt kê (đã xong toàn quốc 34/34 tỉnh, tới An Giang). Nội dung prompt giữ lại để dùng nếu sau này mở lại phạm vi |
 | 24 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 5/5 (6 tỉnh: TP Hồ Chí Minh, Cần Thơ, Vĩnh Long, Đồng Tháp, Cà Mau, An Giang) | Arc | ⏸ GIỮ NGUYÊN, KHÔNG GIAO — phạm vi chỉ dừng ở mức liệt kê (đã xong toàn quốc 34/34 tỉnh, tới An Giang). Nội dung prompt giữ lại để dùng nếu sau này mở lại phạm vi |
+| 25 | Xác minh Bí thư Thành ủy TP.HCM + đối chiếu Bí thư Tây Ninh + tra 3 thủ tục hành chính mẫu (cấp Bộ / cấp tỉnh) để test Phase 6 | Brave | 🔵 Đã soạn, chờ giao |
 
 ---
 
@@ -828,3 +829,44 @@ Nếu 1 lượt trả lời không đủ chỗ cho hết các lĩnh vực của 
 **Lưu ý phân bổ**: Pro tự nhận Prompt #40, #41 (2 cơ quan có ít thủ tục cho dân nhất, hợp lý để Pro làm nhẹ) + có thể tự nhận thêm 1-2 Bộ nữa trong lúc chờ acc Free rảnh, để rút ngắn tổng thời gian xuống ~2 phiên như đã tính. Mỗi acc Free nhận khoảng 3 prompt (2 phiên: phiên 1 nhận 1-2 prompt đầu, phiên 2 nhận phần còn lại) — đúng nguyên tắc "1-3 prompt/1 thời điểm" ở `Claude-sodobmhc.md`.
 
 **Kết quả trả về**: lưu vào file mới, đánh số tiếp theo file dữ liệu cuối cùng hiện có, đặt tên dạng `NN-thu-tuc-[ten-bo]-hoac-nhom.md`, gắn tag `sodobmhc`, ghi rõ model/acc theo đúng template mục 6 của `Claude-sodobmhc.md`.
+
+---
+
+#### Prompt #25 — Xác minh 2 điểm hở về Bí thư + 3 thủ tục hành chính mẫu (Phase 6)
+
+**Giao cho**: Brave (vòng mới). Gồm 2 phần độc lập, làm cả hai trong 1 lượt.
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận). Hôm nay là 18/9/2026.
+
+PHẦN A — Xác minh nhân sự (2 mục):
+
+A1. Ai đang là Bí thư Thành ủy Thành phố Hồ Chí Minh? Cần: họ tên đầy đủ, ngày được bầu/chỉ định, người tiền nhiệm, và nguồn có link. Ưu tiên nguồn chính thức (hcmcpv.org.vn, tphcm.gov.vn, baochinhphu.vn) hoặc báo lớn dẫn rõ ngày.
+A2. Ai đang là Bí thư Tỉnh ủy Tây Ninh (tỉnh mới = Tây Ninh + Long An cũ)? Cần ngày nhậm chức CỤ THỂ (dữ liệu hiện có chỉ ghi "tháng 7/2025" và nguồn là Wikipedia dẫn lại PLO — cần nguồn tốt hơn).
+
+PHẦN B — 3 thủ tục hành chính mẫu:
+
+Tra đầy đủ 3 thủ tục sau (chọn đúng 3 cái này, không thay thủ tục khác):
+1. Cấp Phiếu lý lịch tư pháp số 1 cho công dân Việt Nam
+2. Đăng ký thành lập doanh nghiệp (công ty TNHH một thành viên)
+3. Cấp đổi Giấy phép lái xe ô tô hạng B
+
+Với MỖI thủ tục, trả lời theo đúng khung sau:
+- Tên thủ tục (đúng tên trong văn bản/cổng dịch vụ công)
+- Cơ quan CHỊU TRÁCH NHIỆM (bộ/ngành quản lý nhà nước về thủ tục này)
+- Cơ quan TIẾP NHẬN hồ sơ (nơi người dân nộp, ví dụ Trung tâm phục vụ hành chính công cấp tỉnh / UBND cấp xã / cổng dịch vụ công quốc gia)
+- Đối tượng thực hiện: cá nhân / tổ chức / cả hai
+- CÁC BƯỚC theo thứ tự (đánh số 1,2,3...), mỗi bước ghi: tên bước, ai làm (người nộp hay cơ quan), mô tả ngắn, thời hạn nếu có
+- Hồ sơ yêu cầu (liệt kê từng giấy tờ)
+- Lệ phí (số tiền cụ thể, ghi rõ trường hợp miễn giảm nếu có)
+- Kết quả nhận được (tên loại giấy tờ được cấp)
+- Căn cứ pháp lý (số hiệu văn bản + ngày, ví dụ "Nghị định 123/2026/NĐ-CP")
+- Nguồn: link cụ thể cho từng cụm thông tin
+
+QUY TẮC BẮT BUỘC:
+1. KHÔNG bịa. Không chắc thì ghi rõ "chưa xác minh", không đoán.
+2. Mọi thông tin phải kèm ít nhất 1 nguồn (link hoặc số văn bản).
+3. Ưu tiên nguồn chính thức: dichvucong.gov.vn, cổng thông tin bộ/ngành (.gov.vn), thuvienphapluat.vn. Cảnh giác: nhiều trang giữ dữ liệu CŨ sau đợt tái cơ cấu bộ máy 2025-2026 (bỏ cấp huyện từ 1/7/2025, sáp nhập tỉnh, đổi tên Bộ) — nếu thấy thủ tục còn ghi "UBND cấp huyện" hoặc tên Bộ đã giải thể (Bộ Kế hoạch và Đầu tư, Bộ Thông tin và Truyền thông, Bộ Giao thông vận tải, Bộ Lao động - Thương binh và Xã hội, Bộ Tài nguyên và Môi trường) thì PHẢI ghi chú rõ là dữ liệu có thể lỗi thời và tìm bản cập nhật.
+4. Ghi rõ ở đầu câu trả lời: bạn là model gì, đang chạy trên trình duyệt/acc nào.
+5. Nếu 2 nguồn mâu thuẫn, KHÔNG tự chọn 1 bên — ghi cả hai và đánh dấu "❗ xung đột".
+```

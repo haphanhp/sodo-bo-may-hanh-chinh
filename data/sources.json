@@ -1982,5 +1982,21 @@
     "accessed_date": "2026-09-18",
     "reliability": "secondary_source",
     "notes": ""
+  },
+  {
+    "id": "source-900",
+    "title": "Người dùng dự án khai báo trực tiếp trong phiên làm việc (chưa có link nguồn)",
+    "publisher": {
+      "organization_id": null,
+      "name": "Khai báo của người dùng"
+    },
+    "type": "other",
+    "url": "",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "unverified",
+    "notes": "⚠️ KHÔNG phải nguồn chính thức. Dùng tạm cho dữ liệu do user cung cấp miệng, phải thay bằng nguồn có link/số văn bản khi tra được."
   }
 ]
