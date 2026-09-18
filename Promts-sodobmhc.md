@@ -37,10 +37,15 @@ updated: 2026-09-18
 | 13 | Xác nhận chính thức việc Việt Nam có bỏ hẳn cấp huyện (mô hình chính quyền 2 cấp tỉnh–xã) hay không, kèm văn bản pháp luật cụ thể; nếu đúng, liệt kê tổng quan cấp xã/phường/đặc khu | Arc | ✅ Đã ráp — xem `10-xac-nhan-cau-truc-2-cap.md`. XÁC NHẬN ĐÚNG, có đầy đủ chuỗi văn bản pháp lý (NQ 203/2025/QH15, Luật 72/2025/QH15...). 3.321 đơn vị cấp xã (2.636 xã + 672 phường + 13 đặc khu) |
 | 14 | Hoàn thiện cấp tỉnh: tra Bí thư Tỉnh/Thành ủy còn thiếu (30+ đơn vị) + đối chiếu chéo tên Chủ tịch UBND của 6 đơn vị chỉ có 1 nguồn (Cần Thơ, TP.HCM, Đồng Tháp, Vĩnh Long, Cà Mau, An Giang) | Cốc Cốc *(⚠️ acc tự khai không phải browser thật, xem file 11)* | ✅ Đã ráp 30/30 Bí thư — xem `11-bi-thu-tinh-thanh-va-doi-chieu.md`. Phát hiện Chủ tịch UBND Đồng Tháp đã đổi (9/9/2026) — đã sửa file 09 |
 | 15 | Danh sách cấp xã/phường/đặc khu nhóm 1/5 (7 tỉnh: Hà Nội, Cao Bằng, Điện Biên, Hà Tĩnh, Lai Châu, Lạng Sơn, Nghệ An) | Brave | ✅ Đã ráp 7/7 — xem `12-cap-xa-nhom1-7tinh.md` |
-| 16 | Danh sách cấp xã/phường/đặc khu nhóm 2/5 (7 tỉnh: Quảng Ninh, Thanh Hóa, Sơn La, Tuyên Quang, Lào Cai, Thái Nguyên, Phú Thọ) | Opera GX | ⚠️ Đã ráp 7/7 — xem `13-cap-xa-nhom2-7tinh.md`. Thái Nguyên còn XUNG ĐỘT 77xã/15phường vs 69xã/23phường — chưa giải quyết |
+| 16 | Danh sách cấp xã/phường/đặc khu nhóm 2/5 (7 tỉnh: Quảng Ninh, Thanh Hóa, Sơn La, Tuyên Quang, Lào Cai, Thái Nguyên, Phú Thọ) | Opera GX | 🟡 Đã ráp 7/7 — xem `13-cap-xa-nhom2-7tinh.md`. Thái Nguyên: Pro tự tra thêm (WebFetch), nghiêng về 77xã/15phường, chưa 100% loại trừ 69xã/23phường |
 | 17 | Danh sách cấp xã/phường/đặc khu nhóm 3/5 (7 tỉnh: Bắc Ninh, Hưng Yên, Hải Phòng, Ninh Bình, Quảng Trị, Đà Nẵng, Quảng Ngãi) | Microsoft Edge | ✅ Đã ráp 7/7 — xem `14-cap-xa-nhom3-7tinh.md` |
 | 18 | Danh sách cấp xã/phường/đặc khu nhóm 4/5 (7 tỉnh: Huế, Gia Lai, Khánh Hòa, Lâm Đồng, Đắk Lắk, Thành phố Đồng Nai, Tây Ninh) | Cốc Cốc | ✅ Đã ráp 7/7 — xem `15-cap-xa-nhom4-7tinh.md`. Có timeline chi tiết cấp xã Đồng Nai (1/7/2025→14/4/2026→30/4/2026); tên đặc khu Lâm Đồng = Phú Quý |
 | 19 | Danh sách cấp xã/phường/đặc khu nhóm 5/5 (6 tỉnh: TP Hồ Chí Minh, Cần Thơ, Vĩnh Long, Đồng Tháp, Cà Mau, An Giang) + tìm tên 13 đặc khu cả nước | Arc | ✅ Đã ráp 6/6 + 13/13 đặc khu — xem `16-cap-xa-nhom5-va-danhsach-13-dackhu.md`. **Mốc: HOÀN TẤT tổng quan cấp xã cho toàn bộ 34/34 tỉnh/thành** |
+| 20 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 1/5 (7 tỉnh: Hà Nội, Cao Bằng, Điện Biên, Hà Tĩnh, Lai Châu, Lạng Sơn, Nghệ An) | Brave | 🔵 Đã soạn, chờ giao |
+| 21 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 2/5 (7 tỉnh: Quảng Ninh, Thanh Hóa, Sơn La, Tuyên Quang, Lào Cai, Thái Nguyên, Phú Thọ) | Opera GX | 🔵 Đã soạn, chờ giao |
+| 22 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 3/5 (7 tỉnh: Bắc Ninh, Hưng Yên, Hải Phòng, Ninh Bình, Quảng Trị, Đà Nẵng, Quảng Ngãi) | Microsoft Edge | 🔵 Đã soạn, chờ giao |
+| 23 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 4/5 (7 tỉnh: Huế, Gia Lai, Khánh Hòa, Lâm Đồng, Đắk Lắk, Thành phố Đồng Nai, Tây Ninh) | Cốc Cốc | 🔵 Đã soạn, chờ giao |
+| 24 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 5/5 (6 tỉnh: TP Hồ Chí Minh, Cần Thơ, Vĩnh Long, Đồng Tháp, Cà Mau, An Giang) | Arc | 🔵 Đã soạn, chờ giao |
 
 ---
 
@@ -654,3 +659,107 @@ NHIỆM VỤ 2 (riêng, ưu tiên cao): Tìm TÊN CỤ THỂ của 13 "đặc kh
 YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (ghi rõ tên browser, theo quy ước dự án — bạn tự gán). Với MỖI tỉnh trong nhóm, ghi: tổng số đơn vị cấp xã (xã + phường + đặc khu, ghi riêng từng loại), và danh sách TÊN các xã/phường/đặc khu đó nếu nguồn cho phép lấy trực tiếp (KHÔNG tự bịa tên, KHÔNG suy luận). Nếu danh sách quá dài để chép hết, cho phép: nêu tổng số + vài ví dụ + LINK trực tiếp tới nguồn có đầy đủ danh sách (ưu tiên Nghị quyết riêng của UBTVQH15 cho tỉnh đó, hoặc Phụ lục II của Quyết định 19/2025/QĐ-TTg, hoặc trang tổng hợp chinhphu.vn) — không cần cố chép hết nếu dễ sai/thiếu. Ghi rõ nguồn (link + ngày truy cập) cho mỗi tỉnh. Không dùng chinhphu.vn/baochinhphu.vn làm nguồn DUY NHẤT nếu có thể — ưu tiên văn bản Nghị quyết gốc.
 ```
 
+
+#### Prompt #20 — Danh sách TÊN ĐẦY ĐỦ nhóm 1/5 (Hà Nội, Cao Bằng, Điện Biên, Hà Tĩnh, Lai Châu, Lạng Sơn, Nghệ An)
+
+**Giao cho**: Brave. **Tiếp nối Prompt #15** — lần này cần TÊN ĐẦY ĐỦ, không chỉ tổng số/ví dụ.
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+Bối cảnh: đã có tổng số đơn vị cấp xã của 7 tỉnh này (không cần tra lại tổng số). Lần này cần DANH SÁCH TÊN ĐẦY ĐỦ từng xã/phường:
+1. Thành phố Hà Nội — 126 đơn vị (75 xã + 51 phường)
+2. Tỉnh Cao Bằng — 56 đơn vị (53 xã + 3 phường)
+3. Tỉnh Điện Biên — 45 đơn vị (42 xã + 3 phường)
+4. Tỉnh Hà Tĩnh — 69 đơn vị (60 xã + 9 phường)
+5. Tỉnh Lai Châu — 38 đơn vị (36 xã + 2 phường)
+6. Tỉnh Lạng Sơn — 65 đơn vị (61 xã + 4 phường)
+7. Tỉnh Nghệ An — 130 đơn vị (119 xã + 11 phường)
+
+NHIỆM VỤ: với MỖI tỉnh, tìm và chép lại ĐẦY ĐỦ danh sách tên các xã/phường (không chỉ vài ví dụ). Nguồn ưu tiên theo thứ tự: (a) bài "Danh sách [N] xã phường mới của tỉnh [tên tỉnh]" trên xaydungchinhsach.chinhphu.vn (thường có liệt kê đủ tên, kèm nói rõ hình thành từ (các) xã/phường/thị trấn cũ nào) — tìm bằng cách search "danh sách xã phường mới tỉnh [tên tỉnh] chinhphu.vn"; (b) toàn văn Nghị quyết UBTVQH15 riêng của tỉnh đó (moj.gov.vn hoặc thuvienphapluat.vn); (c) Phụ lục II của Quyết định 19/2025/QĐ-TTg.
+
+YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (bạn tự gán theo quy ước dự án). Với MỖI tỉnh: liệt kê đủ tên (đánh số hoặc xuống dòng từng đơn vị, ghi rõ xã hay phường), + 1 dòng nguồn (link chính xác + ngày truy cập). KHÔNG bịa tên, KHÔNG suy luận/đoán tên. Nếu 1 tỉnh có danh sách QUÁ DÀI để chép hết trong 1 lượt trả lời, CHIA làm nhiều lượt (trả lời tỉnh đó riêng ở tin nhắn tiếp theo trong CÙNG hội thoại này, ghi rõ "tiếp tục tỉnh X") — không bỏ sót, không tóm tắt cho ngắn. Nếu 1 nguồn không liệt kê đủ, thử nguồn khác trước khi bỏ cuộc; nếu vẫn không tìm được đủ tên cho 1 tỉnh cụ thể, ghi rõ "KHÔNG tìm được danh sách đầy đủ, chỉ có: [những gì tìm được]" — không tự chế thêm tên.
+```
+
+#### Prompt #21 — Danh sách TÊN ĐẦY ĐỦ nhóm 2/5 (Quảng Ninh, Thanh Hóa, Sơn La, Tuyên Quang, Lào Cai, Thái Nguyên, Phú Thọ)
+
+**Giao cho**: Opera GX. **Tiếp nối Prompt #16.**
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+Bối cảnh: đã có tổng số đơn vị cấp xã của 7 tỉnh này (không cần tra lại tổng số). Lần này cần DANH SÁCH TÊN ĐẦY ĐỦ từng xã/phường/đặc khu:
+1. Tỉnh Quảng Ninh — 54 đơn vị (22 xã + 30 phường + 2 đặc khu: Vân Đồn, Cô Tô)
+2. Tỉnh Thanh Hóa — 166 đơn vị (147 xã + 19 phường)
+3. Tỉnh Sơn La — 75 đơn vị (67 xã + 8 phường)
+4. Tỉnh Tuyên Quang — 124 đơn vị (117 xã + 7 phường)
+5. Tỉnh Lào Cai — 99 đơn vị (89 xã + 10 phường)
+6. Tỉnh Thái Nguyên — 92 đơn vị (dự án đang dùng số 77 xã + 15 phường theo Nghị quyết 1683/NQ-UBTVQH15 gốc, ĐÃ tự xác minh qua chinhphu.vn cập nhật 04/08/2025 — dùng số này, không cần tra lại vụ "69 xã/23 phường")
+7. Tỉnh Phú Thọ — 148 đơn vị (133 xã + 15 phường)
+
+NHIỆM VỤ: với MỖI tỉnh, tìm và chép lại ĐẦY ĐỦ danh sách tên các xã/phường/đặc khu (không chỉ vài ví dụ). Nguồn ưu tiên theo thứ tự: (a) bài "Danh sách [N] xã phường mới của tỉnh [tên tỉnh]" trên xaydungchinhsach.chinhphu.vn; (b) toàn văn Nghị quyết UBTVQH15 riêng của tỉnh đó; (c) Phụ lục II của Quyết định 19/2025/QĐ-TTg.
+
+YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (bạn tự gán theo quy ước dự án). Với MỖI tỉnh: liệt kê đủ tên (đánh số hoặc xuống dòng từng đơn vị, ghi rõ xã/phường/đặc khu), + 1 dòng nguồn (link chính xác + ngày truy cập). KHÔNG bịa tên, KHÔNG suy luận. Nếu 1 tỉnh có danh sách QUÁ DÀI để chép hết trong 1 lượt trả lời, CHIA làm nhiều lượt (trả lời tỉnh đó riêng ở tin nhắn tiếp theo, ghi rõ "tiếp tục tỉnh X") — không bỏ sót. Nếu không tìm được đủ tên, ghi rõ "KHÔNG tìm được danh sách đầy đủ, chỉ có: [những gì tìm được]".
+```
+
+#### Prompt #22 — Danh sách TÊN ĐẦY ĐỦ nhóm 3/5 (Bắc Ninh, Hưng Yên, Hải Phòng, Ninh Bình, Quảng Trị, Đà Nẵng, Quảng Ngãi)
+
+**Giao cho**: Microsoft Edge. **Tiếp nối Prompt #17.**
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+Bối cảnh: đã có tổng số đơn vị cấp xã của 7 tỉnh này (không cần tra lại tổng số). Lần này cần DANH SÁCH TÊN ĐẦY ĐỦ từng xã/phường/đặc khu:
+1. Tỉnh Bắc Ninh — 99 đơn vị (66 xã + 33 phường)
+2. Tỉnh Hưng Yên — 104 đơn vị (93 xã + 11 phường)
+3. Thành phố Hải Phòng — 114 đơn vị (67 xã + 45 phường + 2 đặc khu: Bạch Long Vĩ, Cát Hải)
+4. Tỉnh Ninh Bình — 129 đơn vị (97 xã + 32 phường)
+5. Tỉnh Quảng Trị — 78 đơn vị (69 xã + 8 phường + 1 đặc khu: Cồn Cỏ)
+6. Thành phố Đà Nẵng — 94 đơn vị (70 xã + 23 phường + 1 đặc khu: Hoàng Sa)
+7. Tỉnh Quảng Ngãi — 96 đơn vị (86 xã + 9 phường + 1 đặc khu: Lý Sơn)
+
+NHIỆM VỤ: với MỖI tỉnh, tìm và chép lại ĐẦY ĐỦ danh sách tên các xã/phường (đặc khu đã biết tên, không cần tra lại riêng đặc khu). Nguồn ưu tiên theo thứ tự: (a) bài "Danh sách [N] xã phường mới của tỉnh [tên tỉnh]" trên xaydungchinhsach.chinhphu.vn; (b) toàn văn Nghị quyết UBTVQH15 riêng của tỉnh đó; (c) Phụ lục II của Quyết định 19/2025/QĐ-TTg.
+
+YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (bạn tự gán theo quy ước dự án). Với MỖI tỉnh: liệt kê đủ tên (đánh số hoặc xuống dòng từng đơn vị, ghi rõ xã/phường), + 1 dòng nguồn (link chính xác + ngày truy cập). KHÔNG bịa tên, KHÔNG suy luận. Nếu 1 tỉnh có danh sách QUÁ DÀI để chép hết trong 1 lượt trả lời, CHIA làm nhiều lượt (ghi rõ "tiếp tục tỉnh X") — không bỏ sót. Nếu không tìm được đủ tên, ghi rõ "KHÔNG tìm được danh sách đầy đủ, chỉ có: [những gì tìm được]".
+```
+
+#### Prompt #23 — Danh sách TÊN ĐẦY ĐỦ nhóm 4/5 (Huế, Gia Lai, Khánh Hòa, Lâm Đồng, Đắk Lắk, Thành phố Đồng Nai, Tây Ninh)
+
+**Giao cho**: Cốc Cốc. **Tiếp nối Prompt #18.**
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+Bối cảnh: đã có tổng số đơn vị cấp xã của 7 tỉnh này (không cần tra lại tổng số, không cần tra lại lịch sử Đồng Nai lên thành phố — đã xác nhận đủ). Lần này cần DANH SÁCH TÊN ĐẦY ĐỦ từng xã/phường/đặc khu:
+1. Thành phố Huế — 40 đơn vị (19 xã + 21 phường)
+2. Tỉnh Gia Lai — 135 đơn vị (110 xã + 25 phường)
+3. Tỉnh Khánh Hòa — 65 đơn vị (48 xã + 16 phường + 1 đặc khu: Trường Sa)
+4. Tỉnh Lâm Đồng — 124 đơn vị (103 xã + 20 phường + 1 đặc khu: Phú Quý)
+5. Tỉnh Đắk Lắk — 102 đơn vị (88 xã + 14 phường)
+6. Thành phố Đồng Nai — 95 đơn vị (62 xã + 33 phường, tính theo cơ cấu SAU 30/4/2026)
+7. Tỉnh Tây Ninh — 96 đơn vị (82 xã + 14 phường)
+
+NHIỆM VỤ: với MỖI tỉnh/thành, tìm và chép lại ĐẦY ĐỦ danh sách tên các xã/phường (đặc khu đã biết tên). Nguồn ưu tiên theo thứ tự: (a) bài "Danh sách [N] xã phường mới của tỉnh [tên tỉnh]" trên xaydungchinhsach.chinhphu.vn; (b) toàn văn Nghị quyết UBTVQH15 riêng của tỉnh đó; (c) Phụ lục II của Quyết định 19/2025/QĐ-TTg. Với Thành phố Đồng Nai: dùng nguồn phản ánh cơ cấu SAU đợt chuyển 10 xã→10 phường (14/4/2026), không dùng số liệu gốc 2025 (72 xã + 23 phường) vì đã lỗi thời.
+
+YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (bạn tự gán theo quy ước dự án). Với MỖI tỉnh: liệt kê đủ tên (đánh số hoặc xuống dòng từng đơn vị, ghi rõ xã/phường), + 1 dòng nguồn (link chính xác + ngày truy cập). KHÔNG bịa tên, KHÔNG suy luận. Nếu 1 tỉnh có danh sách QUÁ DÀI để chép hết trong 1 lượt trả lời, CHIA làm nhiều lượt (ghi rõ "tiếp tục tỉnh X") — không bỏ sót. Nếu không tìm được đủ tên, ghi rõ "KHÔNG tìm được danh sách đầy đủ, chỉ có: [những gì tìm được]".
+```
+
+#### Prompt #24 — Danh sách TÊN ĐẦY ĐỦ nhóm 5/5 (TP.HCM, Cần Thơ, Vĩnh Long, Đồng Tháp, Cà Mau, An Giang)
+
+**Giao cho**: Arc. **Tiếp nối Prompt #19** (phần tên 13 đặc khu đã xong, không cần lặp lại).
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+Bối cảnh: đã có tổng số đơn vị cấp xã của 6 tỉnh này VÀ đã có đủ tên 13 đặc khu cả nước (không cần tra lại 2 việc đó). Lần này cần DANH SÁCH TÊN ĐẦY ĐỦ từng xã/phường:
+1. Thành phố Hồ Chí Minh — 168 đơn vị (54 xã + 113 phường + 1 đặc khu: Côn Đảo)
+2. Thành phố Cần Thơ — 103 đơn vị (72 xã + 31 phường)
+3. Tỉnh Vĩnh Long — 124 đơn vị (105 xã + 19 phường)
+4. Tỉnh Đồng Tháp — 102 đơn vị (82 xã + 20 phường)
+5. Tỉnh Cà Mau — 64 đơn vị (55 xã + 9 phường)
+6. Tỉnh An Giang — 102 đơn vị (85 xã + 14 phường + 3 đặc khu: Phú Quốc, Kiên Hải, Thổ Châu)
+
+NHIỆM VỤ: với MỖI tỉnh/thành, tìm và chép lại ĐẦY ĐỦ danh sách tên các xã/phường (đặc khu đã biết tên). Nguồn ưu tiên theo thứ tự: (a) bài "Danh sách [N] xã phường mới của tỉnh/thành [tên]" trên xaydungchinhsach.chinhphu.vn; (b) toàn văn Nghị quyết UBTVQH15 riêng của tỉnh/thành đó; (c) Phụ lục II của Quyết định 19/2025/QĐ-TTg. TP Hồ Chí Minh có 168 đơn vị — RẤT DÀI, ưu tiên chia làm nhiều lượt trả lời ngay từ đầu cho tỉnh này, không dồn vào 1 tin nhắn.
+
+YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (bạn tự gán theo quy ước dự án). Với MỖI tỉnh/thành: liệt kê đủ tên (đánh số hoặc xuống dòng từng đơn vị, ghi rõ xã/phường), + 1 dòng nguồn (link chính xác + ngày truy cập). KHÔNG bịa tên, KHÔNG suy luận. Nếu 1 tỉnh có danh sách QUÁ DÀI để chép hết trong 1 lượt trả lời, CHIA làm nhiều lượt (ghi rõ "tiếp tục tỉnh/thành X") — không bỏ sót. Nếu không tìm được đủ tên, ghi rõ "KHÔNG tìm được danh sách đầy đủ, chỉ có: [những gì tìm được]".
+```
