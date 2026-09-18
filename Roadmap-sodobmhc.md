@@ -18,7 +18,7 @@ updated: 2026-09-18
 
 #### Trạng thái tổng quan
 
-- Phase hiện tại: **Phase 2 ĐÃ XONG (data engine + đã nạp dữ liệu thật cấp thượng tầng: 22 cơ quan / 21 người / 22 chức vụ / 22 quan hệ / 41 nguồn, validate 0 lỗi 0 cảnh báo) — tiếp theo là Phase 3 (graph)**
+- Phase hiện tại: **Phase 3 ĐÃ XONG (sơ đồ quan hệ + detail panel) — tiếp theo là Phase 5 (tìm kiếm) hoặc nạp tiếp dữ liệu 34 tỉnh/thành**
 - **⚠️ Phạm vi thu hẹp (user chốt 2026-09-18)**: chỉ đào sâu **cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương**. Cấp xã/phường/đặc khu **dừng ở mức liệt kê** (đã xong), không tra tên đầy đủ từng đơn vị. Phần liệt kê cấp xã đã hoàn tất **cả nước 34/34 tỉnh (tới An Giang)**. Prompt #20–#24 giữ nguyên trong `Promts-sodobmhc.md` nhưng KHÔNG giao. → Thu thập dữ liệu thô xem như **ĐÃ ĐỦ** cho Phase 10. — song song, dữ liệu thô cấp tỉnh/thành (mục 03) vẫn tiếp tục thu thập độc lập
 - Cập nhật lần cuối: 2026-09-18
 
@@ -57,15 +57,17 @@ updated: 2026-09-18
 
 #### Phase 3 — Graph cơ quan (organization graph)
 
-- [ ] Nodes / edges
-- [ ] Zoom / pan
-- [ ] Click / expand / collapse
+- [x] ✅ Nodes / edges — `js/graph/graph-layout.js` (bố cục cây, tự xuống dòng khi >6 node/cấp), `nodes.js` (node SVG, màu theo loại cơ quan), `edges.js` (cạnh bezier)
+- [x] ✅ Zoom / pan — lăn chuột để phóng to/thu nhỏ, kéo để di chuyển, nút ＋ － ⤢ (vừa màn hình) ⇱ (mở hết cấp dưới)
+- [x] ✅ Click / expand / collapse — bấm node để chọn (mở bảng chi tiết bên phải), dấu +/− trên node để mở/thu gọn cấp dưới
+- [x] ✅ Chú giải màu theo loại: lập pháp / hành pháp / tòa án / kiểm sát / Bộ / cơ quan ngang Bộ. Hiện vẽ 5 gốc + 17 đơn vị trực thuộc Chính phủ. **🎉 Phase 3 HOÀN TẤT.**
 
 #### Phase 4 — Detail panel
 
-- [ ] Organization view
-- [ ] Person view
-- [ ] Position view
+- [x] ✅ Organization view — lãnh đạo, chức năng/nhiệm vụ/quyền hạn, liên hệ (trụ sở, SĐT, fax, email, website), cấp trên/đơn vị trực thuộc, ghi chú, danh sách nguồn đánh số
+- [x] ✅ Person view — chức danh, cơ quan, ghi chú mức độ xác minh, nguồn
+- [ ] Position view (hiện dùng bản hiển thị chung, chưa có view riêng)
+- [x] ✅ Mở chi tiết từ cả sơ đồ lẫn bảng (bấm tên cơ quan/người trong tab Cơ quan, Con người)
 
 #### Phase 5 — Search
 

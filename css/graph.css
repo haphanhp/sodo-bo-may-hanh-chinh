@@ -7,3 +7,30 @@
   padding:4px;background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-md);box-shadow:var(--shadow)}
 .graph-node{position:absolute;padding:6px 12px;border-radius:999px;font-size:.8rem;
   background:var(--c-surface-2);border:1px solid var(--c-border);color:var(--c-text-muted)}
+.graph-canvas{display:flex;flex-direction:column}
+.graph-svg{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}
+.graph-svg.is-dragging{cursor:grabbing}
+.graph-edge{fill:none;stroke:var(--c-border);stroke-width:1.6}
+.graph-node-g{cursor:pointer}
+.graph-node-g .node-box{fill:var(--c-surface);stroke:var(--c-border);stroke-width:1.4;filter:drop-shadow(0 1px 2px rgba(16,24,40,.08))}
+.graph-node-g:hover .node-box{stroke:var(--c-accent)}
+.graph-node-g.is-selected .node-box{stroke:var(--c-accent);stroke-width:2.4;fill:var(--c-accent-soft)}
+.graph-node-g .node-label{font-size:12.5px;font-weight:650;fill:var(--c-text)}
+.graph-node-g .node-sub{font-size:10.5px;fill:var(--c-text-muted)}
+.graph-node-g .node-box{stroke-dasharray:none}
+.n-legislature .node-box{border:0;stroke:#8e44ad}
+.n-government .node-box{stroke:#c8102e}
+.n-court .node-box{stroke:#2e86c1}
+.n-procuracy .node-box{stroke:#1f7a4d}
+.n-ministry .node-box{stroke:var(--c-border)}
+.n-agency .node-box{stroke:#d4a017}
+.node-toggle{cursor:pointer}
+.node-toggle .toggle-bg{fill:var(--c-surface-2);stroke:var(--c-border)}
+.node-toggle .toggle-tx{font-size:13px;fill:var(--c-text-muted)}
+.graph-legend{position:absolute;left:12px;top:12px;z-index:2;display:flex;flex-wrap:wrap;gap:10px;padding:6px 10px;
+  background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-md);font-size:.72rem;color:var(--c-text-muted);box-shadow:var(--shadow)}
+.graph-legend i{display:inline-block;width:10px;height:10px;margin-right:5px;border-radius:3px;border:2px solid var(--c-border);vertical-align:-1px}
+.graph-legend .n-legislature{border-color:#8e44ad}.graph-legend .n-government{border-color:#c8102e}
+.graph-legend .n-court{border-color:#2e86c1}.graph-legend .n-procuracy{border-color:#1f7a4d}
+.graph-legend .n-agency{border-color:#d4a017}
+.graph-hint{position:absolute;left:12px;bottom:10px;z-index:2;font-size:.72rem;color:var(--c-text-muted);background:var(--c-surface);padding:4px 10px;border-radius:999px;border:1px solid var(--c-border)}

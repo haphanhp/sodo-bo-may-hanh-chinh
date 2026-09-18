@@ -3,7 +3,7 @@ import { initRouter } from "./core/router.js";
 import { on } from "./core/event-bus.js";
 import { getState, setState } from "./core/state.js";
 import { initNav, setActiveNav } from "./ui/tabs.js";
-import { renderDetailEmpty } from "./ui/detail-panel.js";
+import { renderDetailEmpty, renderDetail } from "./ui/detail-panel.js";
 import { VIEWS } from "./views/views.js";
 import { loadAllData } from "./data/loader.js";
 import { validateData, formatReport } from "./data/validator.js";
@@ -11,7 +11,9 @@ import { buildIndexes } from "./data/indexer.js";
 
 function renderView(view){
   const def = VIEWS[view] ?? VIEWS[APP.defaultView];
-  document.getElementById("view-root").innerHTML = def.render(getState());
+  const st = getState();
+  document.getElementById("view-root").innerHTML = def.render(st);
+  def.mount?.(st);
   document.getElementById("breadcrumbs").innerHTML =
     `<span>Bộ máy hành chính VN</span><span>${def.label}</span>`;
   document.title = `${def.label} — ${APP.name}`;
@@ -54,6 +56,11 @@ async function init(){
   document.getElementById("detail-close")
     .addEventListener("click", () => document.getElementById("detail-panel").classList.add("is-hidden"));
   on("route:change", renderView);
+  on("entity:select", renderDetail);
+  document.getElementById("view-root").addEventListener("click", e => {
+    const el = e.target.closest("[data-entity]");
+    if (el) renderDetail(el.dataset.entity);
+  });
   initRouter();
   if (getState().report && !getState().report.ok) console.warn("[data] có lỗi tham chiếu — xem báo cáo ở trên");
 }

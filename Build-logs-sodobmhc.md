@@ -233,6 +233,18 @@ updated: 2026-09-18
 
 ---
 
+#### 2026-09-18 — Phase 3: sơ đồ quan hệ (graph) + bảng chi tiết
+
+- **Việc làm**: Thêm `js/graph/` (`graph-layout.js`, `nodes.js`, `edges.js`, `graph.js`) vẽ sơ đồ phân cấp bằng SVG thuần: zoom bằng lăn chuột, kéo để di chuyển, nút vừa-màn-hình và mở-hết-cấp-dưới, dấu +/− trên node để mở/thu gọn. Viết lại `js/ui/detail-panel.js` để hiển thị chi tiết cơ quan (lãnh đạo, chức năng, liên hệ, quan hệ, ghi chú, nguồn đánh số) và người. Bấm tên trong bảng cũng mở được chi tiết.
+- **Vấn đề gặp**: 17 Bộ là con của cùng một node (Chính phủ) — xếp trên một hàng ngang thì sơ đồ rộng hơn 3.000px, phải kéo ngang mới thấy hết, rất khó dùng.
+- **Cách xử lý**: Bố cục tự gói mỗi cấp thành nhiều dòng, tối đa 6 node/dòng (`maxPerRow`), đưa khổ sơ đồ về ~1.240×400px — vừa màn hình ở mức zoom 1. Không dùng thư viện graph ngoài (giữ luật 11: không thêm dependency khi chưa thật cần).
+- **Bài học**:
+  - Sơ đồ hành chính Việt Nam rất "bè ngang" (1 cha, hàng chục con) — layout cây kiểu cổ điển không hợp; gói nhiều dòng cho mỗi cấp là cách rẻ nhất để vẫn đọc được. Khi tới cấp tỉnh (34 đơn vị) sẽ cần thêm bước gom nhóm hoặc thu gọn mặc định.
+  - Tách phần tính toạ độ (`graph-layout.js`, thuần dữ liệu) khỏi phần vẽ DOM giúp kiểm thử được bằng Node: đếm node/cạnh, bắt `NaN`/vị trí trùng mà không cần trình duyệt.
+  - Dùng SVG thuần đủ sức cho vài chục node; chỉ nên cân nhắc thư viện graph khi thật sự đụng tới hàng nghìn node.
+
+---
+
 #### 2026-09-18 — Phase 2: data engine + nạp dữ liệu thật cấp thượng tầng
 
 - **Việc làm**: Viết `loader.js`, `validator.js`, `indexer.js`, mở rộng `state.js`, thêm `tools/validate-data.js` chạy được bằng Node. Ráp dữ liệu thật từ các file thô `01`, `03`, `04`, `05` vào `data/*.json`: 22 cơ quan, 21 người, 22 chức vụ, 22 quan hệ, 41 nguồn. 4 view (Cơ quan / Con người / Chức vụ / Nguồn) đã render bảng dữ liệu thật. Thêm `mo-app.bat`.

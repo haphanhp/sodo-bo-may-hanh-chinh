@@ -1,5 +1,6 @@
 // views.js — Phase 1: chỉ render khung + empty state. KHÔNG chứa dữ liệu hành chính thật.
 
+import { graphMarkup, mountGraph } from "../graph/graph.js";
 const esc = v => String(v ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const banner = st => st.loadError
   ? `<div class="notice notice-warn"><strong>Chưa nạp được dữ liệu.</strong> ${esc(st.loadError)}</div>` : "";
@@ -33,11 +34,11 @@ const head = (title, sub) => `<div class="view-head"><h1>${title}</h1><p class="
 export const VIEWS = {
   map: {
     label: "Bản đồ",
-    render: st => banner(st) + head("Bản đồ bộ máy", "Sơ đồ quan hệ giữa các cơ quan: cấp trên – cấp dưới, phối hợp, cấp phép, thanh tra…") + `
-      <div class="graph-canvas">
-        <div class="graph-toolbar"><button class="icon-btn" disabled>＋</button><button class="icon-btn" disabled>－</button><button class="icon-btn" disabled>⟲</button></div>
-        ${empty({ ico: "🗺", title: "Chưa có graph", desc: "Khung đồ thị (nodes + edges, zoom, pan, expand/collapse) sẽ được dựng ở Phase 3, sau khi data engine ở Phase 2 chạy được.", phase: "Phase 3" })}
-      </div>`
+    render: st => banner(st) + head("Bản đồ bộ máy", st.index
+      ? `Sơ đồ phân cấp — ${st.report.counts.organizations} cơ quan đã nạp. Bấm node để xem chi tiết bên phải.`
+      : "Sơ đồ quan hệ giữa các cơ quan.") +
+      (st.index ? graphMarkup() : empty({ ico: "🗺", title: "Chưa có dữ liệu để vẽ", desc: "Cần nạp được data/*.json trước.", phase: "Phase 2" })),
+    mount: st => { if (st.index) mountGraph(); }
   },
   organizations: {
     label: "Cơ quan",
@@ -47,7 +48,7 @@ export const VIEWS = {
       return head("Cơ quan", `${items.length} cơ quan đã nạp từ data/organizations.json`) + banner(st) + dataStats(st) +
         table(["Tên", "Viết tắt", "Trụ sở", "Điện thoại", "Website", "Nguồn"],
           items.map(o => [
-            `<strong>${nameOf(o)}</strong>`, esc(o.short_name) || "—",
+            `<strong data-entity="${esc(o.id)}">${nameOf(o)}</strong>`, esc(o.short_name) || "—",
             esc(o.contact?.address) || "—",
             (o.contact?.phone ?? []).map(esc).join(", ") || "<em>chưa xác minh</em>",
             (o.contact?.website ?? []).map(u => link(u, u.replace(/^https?:\/\//, ""))).join("<br>") || "—",
@@ -63,7 +64,7 @@ export const VIEWS = {
       return head("Con người", `${items.length} người đã nạp`) + banner(st) +
         table(["Họ tên", "Chức vụ", "Cơ quan", "Ghi chú"], items.map(p => {
           const pos = p.positions?.[0] ?? {};
-          return [`<strong>${nameOf(p)}</strong>`, nameOf(st.index.get(pos.position_id)) || "—",
+          return [`<strong data-entity="${esc(p.id)}">${nameOf(p)}</strong>`, nameOf(st.index.get(pos.position_id)) || "—",
             nameOf(st.index.get(pos.organization_id)) || "—",
             `<span class="muted-note">${esc(p.notes)}</span>`];
         }));
@@ -111,7 +112,7 @@ export const VIEWS = {
           <li><strong>Nút ◐</strong> góc phải: đổi giao diện sáng/tối.</li>
         </ul>
         <h2>3. Trạng thái hiện tại</h2>
-        <p>Đang ở <strong>Phase 2 — data engine</strong>: đã có loader/validator/indexer và dữ liệu thật cấp thượng tầng (5 cơ quan trung ương + 14 Bộ + 3 cơ quan ngang Bộ). Đồ thị quan hệ (Phase 3) và tìm kiếm (Phase 5) chưa bật.</p><p class="muted-note">Ghi chú kỹ thuật: trình duyệt chặn đọc file JSON khi mở bằng <code>file://</code> — chạy <code>mo-app.bat</code> trong thư mục dự án (hoặc <code>python -m http.server 8080</code>) rồi mở <code>http://localhost:8080</code>.</p><p style="display:none">Phase 1: mới có khung giao diện, điều hướng và các trạng thái trống. Chưa nạp dữ liệu hành chính thật; dữ liệu thô đã tra cứu nằm trong các file <code>01–16-*.md</code> của dự án và chỉ được ráp vào <code>data/*.json</code> ở Phase 10.</p>
+        <p>Đang ở <strong>Phase 3 — sơ đồ quan hệ</strong>: đã có data engine, dữ liệu thật cấp thượng tầng (5 cơ quan trung ương + 14 Bộ + 3 cơ quan ngang Bộ), sơ đồ phân cấp có zoom/kéo/mở-thu gọn và bảng chi tiết bên phải. Tìm kiếm (Phase 5), thủ tục (Phase 6), văn bản (Phase 7) chưa bật.</p><p class="muted-note">Ghi chú kỹ thuật: trình duyệt chặn đọc file JSON khi mở bằng <code>file://</code> — chạy <code>mo-app.bat</code> trong thư mục dự án (hoặc <code>python -m http.server 8080</code>) rồi mở <code>http://localhost:8080</code>.</p><p style="display:none">Phase 1: mới có khung giao diện, điều hướng và các trạng thái trống. Chưa nạp dữ liệu hành chính thật; dữ liệu thô đã tra cứu nằm trong các file <code>01–16-*.md</code> của dự án và chỉ được ráp vào <code>data/*.json</code> ở Phase 10.</p>
         <h2>4. Phạm vi</h2>
         <p>Đào sâu <strong>cấp thượng tầng</strong> (Quốc hội, Chủ tịch nước, Chính phủ, TAND tối cao, VKSND tối cao, 14 Bộ và 3 cơ quan ngang Bộ) và <strong>34 tỉnh/thành phố trực thuộc trung ương</strong>. Cấp xã/phường/đặc khu chỉ dừng ở mức liệt kê (tổng số và cơ cấu theo từng tỉnh). Cấp huyện đã kết thúc hoạt động từ 01/7/2025, chỉ giữ lại cho mục đích lịch sử.</p>
         <h2>5. Nguyên tắc dữ liệu</h2>
