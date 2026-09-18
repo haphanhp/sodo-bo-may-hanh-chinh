@@ -42,6 +42,7 @@ updated: 2026-09-18
 - [x] ✅ Navigation + 9 tab: Bản đồ, Cơ quan, Con người, Chức vụ, Thủ tục, Văn bản, Giấy phép, Nguồn, Hướng dẫn (thêm tab Chức vụ so với dự kiến 8 tab, vì Position tách riêng khỏi Person trong schema)
 - [x] ✅ Empty states cho từng view + empty state cho detail panel, mỗi cái ghi rõ sẽ có dữ liệu ở Phase nào
 - [x] ✅ Bonus: router hash (`#/organizations`), event-bus, state skeleton, toggle sáng/tối lưu localStorage, tab Hướng dẫn đã viết nội dung thật. **🎉 Phase 1 HOÀN TẤT.**
+- [x] ✅ Backup Phase 1 lên GitHub — commit `7ed7d2c`, nhánh main, đẩy bởi Claude Code (2026-09-18)
 
 #### Phase 2 — Data engine
 
