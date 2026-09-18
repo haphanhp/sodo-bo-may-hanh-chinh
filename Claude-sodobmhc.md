@@ -32,7 +32,7 @@ Làm **từ từ, theo Phase**, không làm tất cả cùng lúc (xem `Roadmap-
 - **Trọng tâm**: cấp thượng tầng (Quốc hội, Chủ tịch nước, Chính phủ, TAND tối cao, VKSND tối cao, 14 Bộ + 3 cơ quan ngang Bộ) và **cấp tỉnh/thành phố trực thuộc trung ương (34 đơn vị)**. Đây là phần cần đào sâu: cơ cấu, chức năng, nhiệm vụ, quyền hạn, trụ sở, liên hệ, lãnh đạo, quan hệ cấp trên–cấp dưới.
 - **Cấp xã/phường/đặc khu**: DỪNG ở mức **liệt kê** (tổng số + cơ cấu xã/phường/đặc khu theo từng tỉnh — đã xong ở các file `12→16-*.md`). **KHÔNG tra tên đầy đủ 3.321 đơn vị, không tra trụ sở/SĐT/lãnh đạo cấp xã.**
 - **Cấp huyện**: đã kết thúc hoạt động 01/7/2025, chỉ giữ giá trị lịch sử — không tra thêm.
-- Hệ quả: Prompt #20–#24 (tên đầy đủ từng xã/phường) **HỦY**, không giao nữa.
+- Hệ quả: Prompt #20–#24 (tên đầy đủ từng xã/phường) **giữ nguyên nội dung và vẫn hiển thị trong bảng theo dõi của `Promts-sodobmhc.md`, nhưng KHÔNG giao cho acc nào**. Phần liệt kê cấp xã đã phủ đủ cả nước (34/34 tỉnh, tới An Giang).
 
 ---
 
@@ -161,7 +161,7 @@ Không cần acc Free tự viết JSON đúng schema — acc Pro sẽ chuyển s
 16. Cảnh giác với dữ liệu lặp lại y hệt trên nhiều trang khác nhau (ví dụ cùng 1 SĐT/địa chỉ gắn nhãn nhiều cơ quan khác nhau trên chinhphu.vn/baochinhphu.vn) — nhiều khả năng đó là footer/bản quyền của trang báo/cổng tin, KHÔNG phải dữ liệu thật của cơ quan đang tra. Phải mở trang gốc kiểm tra ngữ cảnh trước khi dùng. (Rút ra từ Prompt #2 — 2026-09-18, xem `Build-logs-sodobmhc.md`.)
 17. Khi công cụ web search/web_fetch tích hợp của model gặp lỗi (trang cần chạy JS không đọc được, nội dung trả về là bản cache/cũ, hoặc công cụ tìm kiếm gán nhầm URL cho 1 đoạn nội dung) — KHÔNG lặp lại y nguyên cùng công cụ đó lần 3, cũng KHÔNG tự suy diễn/đoán kết quả. Ghi rõ "vẫn xung đột/chưa xác minh được qua công cụ tự động", đề xuất tra thủ công bằng trình duyệt thật, và coi đây là mục KHÔNG chặn tiến độ (non-blocking) nếu không phải field bắt buộc. (Rút ra từ Prompt #4 — 2026-09-18, xem `Build-logs-sodobmhc.md`.)
 18. Khi 2 (hoặc nhiều) lần tra độc lập cho ra kết quả THẬT SỰ khác nhau về 1 field định danh quan trọng (địa chỉ trụ sở, tên người giữ chức vụ...) — không phải do lỗi kỹ thuật rõ ràng (footer/cache/JS) mà là 2 dữ kiện khác nhau, cả 2 đều có nguồn — KHÔNG để 1 AI tự chọn 1 bên. Phải: (a) đánh dấu ❗ xung đột trong file dữ liệu, (b) giao 1 acc/lượt tra RIÊNG để giải quyết, ưu tiên tìm nguồn có SỐ VĂN BẢN + NGÀY CỤ THỂ (Nghị quyết Quốc hội, Quyết định, Thông báo chính thức) hơn là suy luận từ ngày đăng bài hoặc so sánh độ "có vẻ chính chủ". chinhphu.vn/baochinhphu.vn đặc biệt dễ giữ thông tin CŨ (địa chỉ, nhân sự) sau khi 1 cơ quan thay đổi — không tự động coi chinhphu.vn là nguồn "mới nhất" chỉ vì đó là trang chính phủ. (Rút ra từ Prompt #6 — 2026-09-18, giải quyết xung đột trụ sở Bộ Công an và Bộ trưởng Bộ Tư pháp, xem `Build-logs-sodobmhc.md`.)
-19. **Phạm vi**: chỉ đào sâu cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương. Cấp xã/phường/đặc khu chỉ dừng ở mức liệt kê (tổng số + cơ cấu theo tỉnh), KHÔNG tra tên đầy đủ từng đơn vị, KHÔNG tra trụ sở/SĐT/lãnh đạo cấp xã. Cấp huyện chỉ giữ giá trị lịch sử. (User chốt 2026-09-18.)
+19. **Phạm vi**: chỉ đào sâu cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương. Cấp xã/phường/đặc khu chỉ dừng ở mức liệt kê (tổng số + cơ cấu theo tỉnh), KHÔNG tra tên đầy đủ từng đơn vị, KHÔNG tra trụ sở/SĐT/lãnh đạo cấp xã. Phần liệt kê này đã xong cho cả nước (34/34 tỉnh, tới An Giang). Cấp huyện chỉ giữ giá trị lịch sử. (User chốt 2026-09-18.)
 
 ---
 
