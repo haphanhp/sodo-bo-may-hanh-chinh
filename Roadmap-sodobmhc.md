@@ -18,7 +18,7 @@ updated: 2026-09-18
 
 #### Trạng thái tổng quan
 
-- Phase hiện tại: **Phase 0 — Kiến trúc & quy tắc dự án**
+- Phase hiện tại: **Phase 0 ĐÃ XONG — sẵn sàng chuyển Phase 1 (ứng dụng rỗng) khi user xác nhận** — song song, dữ liệu thô cấp tỉnh/thành (mục 03) vẫn tiếp tục thu thập độc lập
 - Cập nhật lần cuối: 2026-09-18
 
 ---
@@ -30,9 +30,9 @@ updated: 2026-09-18
 - [x] ✅ Tạo `Roadmap-sodobmhc.md` (file này)
 - [x] ✅ Tạo `Build-logs-sodobmhc.md`
 - [x] ✅ Tạo `Promts-sodobmhc.md` (prompt #1 cho acc Free)
-- [ ] Chốt JSON schema chi tiết cho: organization, person, position, relationship, procedure, document, license, facility, form, source
-- [ ] Tạo `AGENTS.md` (15 luật nền, bản rút gọn cho code editor)
-- [ ] Backup lần đầu lên GitHub `haphanhp/sodo-bo-may-hanh-chinh`
+- [x] ✅ Chốt JSON schema chi tiết cho 9 loại entity (organization, person, position, relationship, procedure, document, license — dùng chung cho license/certificate/form, facility, source) — xem `schemas/*.schema.json`, tạo bởi Claude Code (2026-09-18). `facility.schema.json` còn PROPOSED, chưa duyệt chi tiết.
+- [x] ✅ Tạo `AGENTS.md` (15 luật rút gọn cho code editor) — xem file ở gốc thư mục dự án, tạo bởi Claude Code (2026-09-18).
+- [x] ✅ Backup lần đầu lên GitHub `haphanhp/sodo-bo-may-hanh-chinh` — commit `ef8f239`, nhánh `main`, tạo bởi Claude Code (2026-09-18). **🎉 Phase 0 HOÀN TẤT.**
 
 #### Phase 1 — Ứng dụng rỗng (chưa có dữ liệu thật)
 
@@ -109,9 +109,10 @@ Việc tra cứu dữ liệu qua 5 acc Free (`Promts-sodobmhc.md`) chạy **song
 - [x] ✅ 02a (nhóm 1/3) — Quốc phòng, Công an, Ngoại giao, Nội vụ, Tư pháp — xem `03-bo-nhom-1-5bo-dau.md`. HOÀN TẤT, mọi xung đột đã chốt (Prompt #6), sẵn sàng ráp JSON.
 - [x] ✅ 02b — nhóm 2/3 Bộ: Tài chính, Công Thương, NN&MT, Xây dựng, VHTTDL — xem `04-bo-nhom-2-5bo-tiep.md` (Prompt #7). 3/5 vững, 2/5 (Xây dựng, VHTTDL) còn thiếu SĐT/email toàn cơ quan — không chặn tiến độ.
 - [x] ✅ 02c — nhóm 3/3 Bộ còn lại (KH&CN, Giáo dục và Đào tạo, Y tế, Dân tộc và Tôn giáo) + 3 cơ quan ngang Bộ (Ngân hàng Nhà nước, Thanh tra Chính phủ, Văn phòng Chính phủ) — xem `05-bo-nhom-3-4bo-3coquanngangbo.md` (nguồn: Prompt #8, Brave theo lời user khai báo, Sonnet 5 medium, 2026-09-18). **🎉 Mốc: HOÀN TẤT thu thập dữ liệu thô cho toàn bộ 14 Bộ + 3 cơ quan ngang Bộ (17/17 đơn vị)** — mục 02 xem như xong, còn vài điểm nhỏ không chặn tiến độ (SĐT Bộ Y tế 2 nguồn khác nhau, 2/5 Bộ nhóm 2 thiếu SĐT/email toàn cơ quan).
-- [ ] 03 — Cấp tỉnh / thành phố trực thuộc trung ương
-- [ ] 04 — Cấp huyện / quận / thị xã
-- [ ] 05 — Cấp xã / phường / thị trấn
+- [x] ✅ 03 (danh sách) — 34 tỉnh/thành phố trực thuộc trung ương sau sáp nhập 12/6/2025 (28 tỉnh + 6 TP) — xem `06-danh-sach-tinh-thanh.md` (nguồn: Prompt #9, 2026-09-18, Nghị quyết 202/2025/QH15). 22/34 trung tâm hành chính còn ⚠️/❌ chưa xác minh đầy đủ — cần Prompt #10+ tra chi tiết theo nhóm.
+- [x] ✅ 03 (chi tiết) — trụ sở/SĐT/lãnh đạo 34/34 tỉnh/thành ĐÃ XONG qua 3 prompt song song: #10 (Brave, xem `07-...md`), #11 (Edge, xem `08-...md`), #12 (Arc, xem `09-...md`). Toàn bộ 12 trung tâm hành chính từng chưa rõ đã xác định. **🎉 Phát hiện quan trọng: Đồng Nai đã lên Thành phố trực thuộc TW (30/4/2026)** — cơ cấu hiện tại là 27 tỉnh + 7 TP (đã sửa `06-danh-sach-tinh-thanh.md`). Còn thiếu: Bí thư Tỉnh/Thành ủy (đa số tỉnh), và 6 tên Chủ tịch UBND chỉ có 1 nguồn chưa đối chiếu chéo — không chặn tiến độ.
+- [x] ✅ 04 — Cấp huyện / quận / thị xã — **ĐÃ XÁC NHẬN CHÍNH THỨC (Prompt #13, file 10): cấp huyện đã KẾT THÚC HOẠT ĐỘNG TOÀN QUỐC từ 01/7/2025**, căn cứ Điều 2 Nghị quyết 203/2025/QH15 (sửa Hiến pháp) + Điều 1 Luật 72/2025/QH15 (chính quyền 2 cấp: tỉnh – xã). Mục này CHUYỂN SANG trạng thái LỊCH SỬ — không cần tra dữ liệu "cấp huyện hiện hành" nữa, chỉ giữ cho mục đích lịch sử (Time Machine, `effective_to: 2025-06-30`) nếu cần.
+- [x] ✅ 05 — Cấp xã / phường / đặc khu (KHÔNG còn "thị trấn") — **cấp hành chính cuối/thấp nhất hiện hành**, thay vai trò cấp huyện cũ. **HOÀN TẤT tổng quan cấp xã (tổng số + cơ cấu xã/phường/đặc khu) cho toàn bộ 34/34 tỉnh/thành**, qua 5 nhóm chạy song song: #15 Brave → `12-cap-xa-nhom1-7tinh.md` (7 tỉnh), #16 Opera GX → `13-cap-xa-nhom2-7tinh.md` (7 tỉnh, ⚠️ Thái Nguyên còn xung đột 77x/15p vs 69x/23p — CHƯA giải quyết), #17 Microsoft Edge → `14-cap-xa-nhom3-7tinh.md` (7 tỉnh), #18 Cốc Cốc → `15-cap-xa-nhom4-7tinh.md` (7 tỉnh, có timeline chi tiết Đồng Nai), #19 Arc → `16-cap-xa-nhom5-va-danhsach-13-dackhu.md` (6 tỉnh + danh sách đầy đủ 13 đặc khu cả nước). Tổng cả nước: **3.321 đơn vị** (2.636 xã + 672 phường + 13 đặc khu, số liệu chốt 10/7/2025, xem file 10). **Còn thiếu**: danh sách TÊN đầy đủ từng xã/phường ở nhiều tỉnh (mới có ví dụ, chưa đủ 3.321 tên) — quyết định sau có làm tiếp hay chuyển phase.
 
 ---
 

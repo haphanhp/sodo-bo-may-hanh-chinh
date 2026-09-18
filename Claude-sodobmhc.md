@@ -58,7 +58,7 @@ Lý do tách: acc Free có hạn mức tin nhắn/token thấp và dễ bị "ov
   - Edge
   - Cốc Cốc
   - Arc
-- Chỉ nhận **1 prompt tại 1 thời điểm** từ `Promts-sodobmhc.md` (do user copy sang).
+- Chỉ nhận **1-3 prompt tại 1 thời điểm** từ `Promts-sodobmhc.md` (do user copy sang).
 - Không cần biết kiến trúc code, schema JSON đầy đủ — chỉ cần template trả lời (xem mục 6).
 - Không tự suy diễn/bịa thông tin hành chính (tên người, số điện thoại, ngày hiệu lực...). Nếu không tìm được nguồn đáng tin, phải ghi rõ "chưa xác minh được" thay vì đoán.
 - Trả lời ngắn gọn, đúng phạm vi được giao, không lan sang các cơ quan/thủ tục khác ngoài prompt.
@@ -165,10 +165,13 @@ Không cần acc Free tự viết JSON đúng schema — acc Pro sẽ chuyển s
 | `Roadmap-sodobmhc.md` | Checklist tiến trình theo Phase | Acc Pro |
 | `Build-logs-sodobmhc.md` | Nhật ký build, bài học, lỗi | Acc Pro |
 | `Promts-sodobmhc.md` | Prompt đánh số giao cho 5 acc Free | Acc Pro |
-| Các file dữ liệu đánh số (data, docs...) | Dữ liệu thật đã kiểm chứng | Acc Pro (sau khi ráp từ acc Free) |
-| doc `context-bmhc` (trong Project) | Kiến trúc kỹ thuật tổng thể | Acc Pro (khi có thay đổi kiến trúc) |
+| Các file dữ liệu đánh số (`01-...md` → `16-...md`, tăng dần khi có dữ liệu mới) | Dữ liệu thô đã kiểm chứng, chờ ráp vào `data/*.json` ở Phase 10 | Acc Pro (sau khi ráp từ acc Free) |
+| doc `context-bmhc` (trong Project claude.ai, KHÔNG phải file trong thư mục này) | Kiến trúc kỹ thuật tổng thể (folder structure, entity model, phase list) | Acc Pro (khi có thay đổi kiến trúc) |
+| `AGENTS.md` (gốc thư mục dự án) | Quy tắc rút gọn cho AI **code editor** (Claude Code/Cline) — khác đối tượng với file này (file này dành cho AI **tra cứu dữ liệu**) | Claude Code, do Pro soạn brief (2026-09-18) |
+| `schemas/*.schema.json` (9 file: organization, person, position, relationship, procedure, document, license, facility, source) | JSON Schema draft-07 chốt cấu trúc dữ liệu cho từng loại entity — tạo bởi Claude Code theo brief của Pro (2026-09-18). `facility.schema.json` còn đánh dấu PROPOSED, chưa được user duyệt chi tiết | Claude Code |
+| `.git` + remote GitHub | Backup lịch sử toàn bộ thư mục này — repo riêng, TÁCH BIỆT khỏi repo Obsidian Vault ở thư mục cha. Remote: `https://github.com/haphanhp/sodo-bo-may-hanh-chinh` (nhánh `main`). Lần backup đầu: commit `ef8f239` (2026-09-18) — gồm 9 schema, `AGENTS.md`, toàn bộ file `.md` housekeeping + dữ liệu thô | Claude Code (push), Pro/user (theo dõi) |
 
-Tất cả file trong thư mục dự án đều gắn tag `sodobmhc` (frontmatter YAML) để lọc trong Obsidian.
+Tất cả file `.md` trong thư mục dự án đều gắn tag `sodobmhc` (frontmatter YAML) để lọc trong Obsidian. `schemas/*.json` và `AGENTS.md` không có frontmatter (không phải file Obsidian note, là file cấu hình/kiến trúc app).
 
 ---
 

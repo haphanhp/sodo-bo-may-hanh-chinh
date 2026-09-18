@@ -30,7 +30,17 @@ updated: 2026-09-18
 | 5 | Tra chi tiết nhóm 1/3 Bộ (Quốc phòng, Công an, Ngoại giao, Nội vụ, Tư pháp) | Arc bị kẹt → Pro tạm trả lời, sau đó Arc tự tra lại độc lập | ✅ Đã ráp + cross-check 2 lượt — xem `03-bo-nhom-1-5bo-dau.md`. 3 Bộ vững; 2 xung đột MỚI (trụ sở Bộ Công an, Bộ trưởng Bộ Tư pháp) → Prompt #6 |
 | 6 | Giải quyết 2 xung đột nhóm 1: trụ sở Bộ Công an + ai là Bộ trưởng Bộ Tư pháp + SĐT chính xác Bộ Tư pháp | (không rõ browser, web search) | ✅ Đã ráp — cả 3 điểm đã CHỐT, xem `03-bo-nhom-1-5bo-dau.md` |
 | 8 | Tra chi tiết nhóm 3/3 Bộ còn lại (KH&CN, Giáo dục và Đào tạo, Y tế, Dân tộc và Tôn giáo) + 3 cơ quan ngang Bộ (Ngân hàng Nhà nước, Thanh tra Chính phủ, Văn phòng Chính phủ) | Brave *(theo lời user khai báo — Pro không tự xác minh được trình duyệt/thiết bị)*, Sonnet 5 medium | ✅ Đã ráp đủ 7/7 đơn vị — xem `05-bo-nhom-3-4bo-3coquanngangbo.md`. **HOÀN TẤT 17/17 Bộ + cơ quan ngang Bộ.** 2 xung đột chinhphu.vn-cũ (KH&CN, GD&ĐT) đã tự giải quyết theo luật 18; SĐT Bộ Y tế còn 2 số khác nhau (non-blocking) |
-| 9 | Liệt kê danh sách đầy đủ tỉnh/thành phố trực thuộc trung ương hiện tại của Việt Nam (sau sáp nhập 2025) — bước dọn đường trước khi tra chi tiết từng tỉnh/thành | Gợi ý Opera GX (Brave vừa làm #1, #8) — có thể đổi acc khác nếu Opera GX không rảnh | 🔵 Đã soạn, chờ user giao cho acc Free |
+| 9 | Liệt kê danh sách đầy đủ tỉnh/thành phố trực thuộc trung ương hiện tại của Việt Nam (sau sáp nhập 2025) — bước dọn đường trước khi tra chi tiết từng tỉnh/thành | Brave *(đã xác nhận bởi user)* | ✅ Đã ráp 34/34 đơn vị — xem `06-danh-sach-tinh-thanh.md`. 22/34 trung tâm hành chính còn ⚠️/❌ chưa xác minh đủ |
+| 10 | Tra chi tiết nhóm 1/3 tỉnh/thành (12 đơn vị: 11 tỉnh/thành không sáp nhập + Tuyên Quang) — trụ sở UBND, SĐT, email, website, Chủ tịch UBND/Bí thư đương nhiệm | Brave | ✅ Đã ráp 12/12 — xem `07-tinh-thanh-nhom1-chi-tiet.md` |
+| 11 | Tra chi tiết nhóm 2/3 tỉnh/thành (11 đơn vị: Lào Cai → Gia Lai) — cùng nội dung + xác minh lại trung tâm hành chính các đơn vị ⚠️/❌ trong nhóm | Microsoft Edge | ✅ Đã ráp 11/11 — xem `08-tinh-thanh-nhom2-chi-tiet.md`. Giải quyết xong trung tâm hành chính Bắc Ninh, Hưng Yên, Gia Lai; phát hiện Hải Phòng có trung tâm MỚI (Thủy Nguyên) |
+| 12 | Tra chi tiết nhóm 3/3 tỉnh/thành (11 đơn vị: Khánh Hòa → An Giang) — cùng nội dung + xác minh lại trung tâm hành chính các đơn vị ⚠️/❌ trong nhóm | Arc *(user đổi từ Cốc Cốc sang Arc)* | ✅ Đã ráp 11/11 — xem `09-tinh-thanh-nhom3-chi-tiet.md`. Giải quyết xong 9/9 trung tâm hành chính còn thiếu; phát hiện Đồng Nai đã lên Thành phố trực thuộc TW (30/4/2026) |
+| 13 | Xác nhận chính thức việc Việt Nam có bỏ hẳn cấp huyện (mô hình chính quyền 2 cấp tỉnh–xã) hay không, kèm văn bản pháp luật cụ thể; nếu đúng, liệt kê tổng quan cấp xã/phường/đặc khu | Arc | ✅ Đã ráp — xem `10-xac-nhan-cau-truc-2-cap.md`. XÁC NHẬN ĐÚNG, có đầy đủ chuỗi văn bản pháp lý (NQ 203/2025/QH15, Luật 72/2025/QH15...). 3.321 đơn vị cấp xã (2.636 xã + 672 phường + 13 đặc khu) |
+| 14 | Hoàn thiện cấp tỉnh: tra Bí thư Tỉnh/Thành ủy còn thiếu (30+ đơn vị) + đối chiếu chéo tên Chủ tịch UBND của 6 đơn vị chỉ có 1 nguồn (Cần Thơ, TP.HCM, Đồng Tháp, Vĩnh Long, Cà Mau, An Giang) | Cốc Cốc *(⚠️ acc tự khai không phải browser thật, xem file 11)* | ✅ Đã ráp 30/30 Bí thư — xem `11-bi-thu-tinh-thanh-va-doi-chieu.md`. Phát hiện Chủ tịch UBND Đồng Tháp đã đổi (9/9/2026) — đã sửa file 09 |
+| 15 | Danh sách cấp xã/phường/đặc khu nhóm 1/5 (7 tỉnh: Hà Nội, Cao Bằng, Điện Biên, Hà Tĩnh, Lai Châu, Lạng Sơn, Nghệ An) | Brave | ✅ Đã ráp 7/7 — xem `12-cap-xa-nhom1-7tinh.md` |
+| 16 | Danh sách cấp xã/phường/đặc khu nhóm 2/5 (7 tỉnh: Quảng Ninh, Thanh Hóa, Sơn La, Tuyên Quang, Lào Cai, Thái Nguyên, Phú Thọ) | Opera GX | ⚠️ Đã ráp 7/7 — xem `13-cap-xa-nhom2-7tinh.md`. Thái Nguyên còn XUNG ĐỘT 77xã/15phường vs 69xã/23phường — chưa giải quyết |
+| 17 | Danh sách cấp xã/phường/đặc khu nhóm 3/5 (7 tỉnh: Bắc Ninh, Hưng Yên, Hải Phòng, Ninh Bình, Quảng Trị, Đà Nẵng, Quảng Ngãi) | Microsoft Edge | ✅ Đã ráp 7/7 — xem `14-cap-xa-nhom3-7tinh.md` |
+| 18 | Danh sách cấp xã/phường/đặc khu nhóm 4/5 (7 tỉnh: Huế, Gia Lai, Khánh Hòa, Lâm Đồng, Đắk Lắk, Thành phố Đồng Nai, Tây Ninh) | Cốc Cốc | ✅ Đã ráp 7/7 — xem `15-cap-xa-nhom4-7tinh.md`. Có timeline chi tiết cấp xã Đồng Nai (1/7/2025→14/4/2026→30/4/2026); tên đặc khu Lâm Đồng = Phú Quý |
+| 19 | Danh sách cấp xã/phường/đặc khu nhóm 5/5 (6 tỉnh: TP Hồ Chí Minh, Cần Thơ, Vĩnh Long, Đồng Tháp, Cà Mau, An Giang) + tìm tên 13 đặc khu cả nước | Arc | ✅ Đã ráp 6/6 + 13/13 đặc khu — xem `16-cap-xa-nhom5-va-danhsach-13-dackhu.md`. **Mốc: HOÀN TẤT tổng quan cấp xã cho toàn bộ 34/34 tỉnh/thành** |
 
 ---
 
@@ -384,6 +394,263 @@ YÊU CẦU ĐỊNH DẠNG CÂU TRẢ LỜI (bắt buộc, không bỏ trống):
 - Đây là bước LIỆT KÊ DANH SÁCH (giống Prompt #3 đã làm cho danh sách Bộ) — CHƯA cần tra chi tiết trụ sở/SĐT/lãnh đạo từng tỉnh/thành, việc đó để dành cho các Prompt sau (theo nhóm, mỗi lần vài tỉnh/thành, giống cách đã làm với các Bộ).
 ```
 
+#### Prompt #10 — Chi tiết nhóm 1/3 tỉnh/thành (11 tỉnh/thành không sáp nhập + Tuyên Quang)
+
+**Giao cho**: Opera GX.
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+NHIỆM VỤ: Tra chi tiết 12 tỉnh/thành phố sau (đã có tên chính thức, chỉ cần tra thêm thông tin liên hệ + lãnh đạo):
+
+1. Thành phố Hà Nội
+2. Thành phố Huế
+3. Tỉnh Cao Bằng
+4. Tỉnh Điện Biên
+5. Tỉnh Hà Tĩnh
+6. Tỉnh Lai Châu
+7. Tỉnh Lạng Sơn
+8. Tỉnh Nghệ An
+9. Tỉnh Quảng Ninh
+10. Tỉnh Thanh Hóa
+11. Tỉnh Sơn La
+12. Tỉnh Tuyên Quang (tỉnh MỚI, hợp thành từ Hà Giang + Tuyên Quang cũ, hiệu lực từ 1/7/2025 — trung tâm hành chính hiện ghi là TP Tuyên Quang theo Nghị quyết 60-NQ/TW, một văn kiện của Đảng — hãy cố tìm thêm nguồn văn bản pháp luật nhà nước [Nghị quyết/Quyết định của UBTVQH hoặc Chính phủ] xác nhận lại nếu có, để tăng độ tin cậy)
+
+YÊU CẦU ĐỊNH DẠNG CÂU TRẢ LỜI (bắt buộc, không bỏ trống):
+- Model dùng: ...
+- Acc & trình duyệt: ... (ghi RÕ tên browser thật bạn đang chạy, ví dụ "Opera GX" — nếu công cụ trả lời không tự nhận diện được, vẫn phải tự ghi tên browser bạn đang mở, không để trống hoặc ghi "không xác định")
+- Với MỖI tỉnh/thành, ghi đủ: trụ sở UBND (địa chỉ), SĐT tổng đài, email công khai (nếu có), website chính thức, Chủ tịch UBND đương nhiệm (và Bí thư Tỉnh/Thành ủy nếu tìm được), nguồn (link + ngày truy cập) cho mỗi mục.
+- KHÔNG bịa link, KHÔNG đoán khi thiếu nguồn — ghi rõ "chưa xác minh được" thay vì đoán.
+- Ưu tiên nguồn chính chủ (.gov.vn của tỉnh/thành đó) hơn báo chí/thứ cấp.
+- ⚠️ Cẩn thận: chinhphu.vn/baochinhphu.vn đã nhiều lần giữ dữ liệu CŨ (đặc biệt vì đây là các tỉnh/thành MỚI sáp nhập 12/6/2025 — trang có thể còn hiển thị thông tin tỉnh cũ trước sáp nhập). Nếu thấy tên tỉnh cũ hoặc lãnh đạo tỉnh cũ, đó là dấu hiệu cache cũ — ưu tiên nguồn có ngày SAU 1/7/2025 (ngày chính quyền mới vận hành).
+
+Đây là 1 trong 3 prompt chạy song song (Prompt #10/11/12) trên 3 nhóm tỉnh/thành khác nhau — chỉ cần trả lời đúng 12 đơn vị ở trên.
+```
+
+#### Prompt #11 — Chi tiết nhóm 2/3 tỉnh/thành (Lào Cai → Gia Lai)
+
+**Giao cho**: Edge.
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+NHIỆM VỤ: Tra chi tiết 11 tỉnh/thành phố MỚI (sau sáp nhập 12/6/2025) sau:
+
+1. Tỉnh Lào Cai (= Lào Cai + Yên Bái cũ)
+2. Tỉnh Thái Nguyên (= Bắc Kạn + Thái Nguyên cũ)
+3. Tỉnh Phú Thọ (= Vĩnh Phúc + Hòa Bình + Phú Thọ cũ)
+4. Tỉnh Bắc Ninh (= Bắc Giang + Bắc Ninh cũ) — CHƯA xác định được tên thành phố trung tâm cụ thể ở lần tra trước, cần tìm rõ
+5. Tỉnh Hưng Yên (= Thái Bình + Hưng Yên cũ) — CHƯA xác định được tên thành phố trung tâm cụ thể
+6. Thành phố Hải Phòng (= Hải Phòng + Hải Dương cũ)
+7. Tỉnh Ninh Bình (= Hà Nam + Nam Định + Ninh Bình cũ, trung tâm: TP Hoa Lư)
+8. Tỉnh Quảng Trị (= Quảng Bình + Quảng Trị cũ, trung tâm: TP Đồng Hới)
+9. Thành phố Đà Nẵng (= Đà Nẵng + Quảng Nam cũ, trung tâm: Quận Hải Châu)
+10. Tỉnh Quảng Ngãi (= Kon Tum + Quảng Ngãi cũ, trung tâm: TP Quảng Ngãi)
+11. Tỉnh Gia Lai (= Bình Định + Gia Lai cũ) — CHƯA xác định được tên thành phố trung tâm cụ thể
+
+Với các đơn vị #4, #5, #11 (Bắc Ninh, Hưng Yên, Gia Lai): ưu tiên cao nhất là tìm ra CHÍNH XÁC tên thành phố/nơi đặt trung tâm hành chính, vì lần tra trước chưa tìm được.
+
+YÊU CẦU ĐỊNH DẠNG CÂU TRẢ LỜI (bắt buộc, không bỏ trống):
+- Model dùng: ...
+- Acc & trình duyệt: ... (ghi RÕ tên browser thật bạn đang chạy, ví dụ "Opera GX" — nếu công cụ trả lời không tự nhận diện được, vẫn phải tự ghi tên browser bạn đang mở, không để trống hoặc ghi "không xác định")
+- Với MỖI tỉnh/thành, ghi đủ: trụ sở UBND (địa chỉ), SĐT tổng đài, email công khai (nếu có), website chính thức, Chủ tịch UBND đương nhiệm (và Bí thư Tỉnh/Thành ủy nếu tìm được), nguồn (link + ngày truy cập) cho mỗi mục.
+- KHÔNG bịa link, KHÔNG đoán khi thiếu nguồn — ghi rõ "chưa xác minh được" thay vì đoán.
+- Ưu tiên nguồn chính chủ (.gov.vn của tỉnh/thành đó) hơn báo chí/thứ cấp.
+- ⚠️ Cẩn thận: chinhphu.vn/baochinhphu.vn đã nhiều lần giữ dữ liệu CŨ (đặc biệt vì đây là các tỉnh/thành MỚI sáp nhập 12/6/2025 — trang có thể còn hiển thị thông tin tỉnh cũ trước sáp nhập). Nếu thấy tên tỉnh cũ hoặc lãnh đạo tỉnh cũ, đó là dấu hiệu cache cũ — ưu tiên nguồn có ngày SAU 1/7/2025 (ngày chính quyền mới vận hành).
+
+Đây là 1 trong 3 prompt chạy song song (Prompt #10/11/12) trên 3 nhóm tỉnh/thành khác nhau — chỉ cần trả lời đúng 11 đơn vị ở trên.
+```
+
+#### Prompt #12 — Chi tiết nhóm 3/3 tỉnh/thành (Khánh Hòa → An Giang)
+
+**Giao cho**: Cốc Cốc.
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+NHIỆM VỤ: Tra chi tiết 11 tỉnh/thành phố MỚI (sau sáp nhập 12/6/2025) sau:
+
+1. Tỉnh Khánh Hòa (= Ninh Thuận + Khánh Hòa cũ) — CHƯA xác định được tên thành phố trung tâm cụ thể
+2. Tỉnh Lâm Đồng (= Đắk Nông + Bình Thuận + Lâm Đồng cũ) — CHƯA xác định được tên thành phố trung tâm cụ thể
+3. Tỉnh Đắk Lắk (= Phú Yên + Đắk Lắk cũ) — CHƯA xác định được tên thành phố trung tâm cụ thể
+4. Thành phố Hồ Chí Minh (= TP.HCM + Bà Rịa-Vũng Tàu + Bình Dương cũ)
+5. Tỉnh Đồng Nai (= Bình Phước + Đồng Nai cũ) — CHƯA xác định được tên thành phố trung tâm cụ thể
+6. Tỉnh Tây Ninh (= Long An + Tây Ninh cũ) — CHƯA xác định được tên thành phố trung tâm cụ thể
+7. Thành phố Cần Thơ (= Cần Thơ + Sóc Trăng + Hậu Giang cũ)
+8. Tỉnh Vĩnh Long (= Bến Tre + Trà Vinh + Vĩnh Long cũ) — CHƯA xác định được tên thành phố trung tâm cụ thể
+9. Tỉnh Đồng Tháp (= Tiền Giang + Đồng Tháp cũ) — CHƯA xác định được tên thành phố trung tâm cụ thể
+10. Tỉnh Cà Mau (= Bạc Liêu + Cà Mau cũ) — CHƯA xác định được tên thành phố trung tâm cụ thể
+11. Tỉnh An Giang (= Kiên Giang + An Giang cũ) — CHƯA xác định được tên thành phố trung tâm cụ thể
+
+Với các đơn vị #1, #2, #3, #5, #6, #8, #9, #10, #11 (9/11 đơn vị): ưu tiên cao nhất là tìm ra CHÍNH XÁC tên thành phố/nơi đặt trung tâm hành chính, vì lần tra trước chưa tìm được — đây là nhóm còn thiếu nhiều nhất.
+
+YÊU CẦU ĐỊNH DẠNG CÂU TRẢ LỜI (bắt buộc, không bỏ trống):
+- Model dùng: ...
+- Acc & trình duyệt: ... (ghi RÕ tên browser thật bạn đang chạy, ví dụ "Opera GX" — nếu công cụ trả lời không tự nhận diện được, vẫn phải tự ghi tên browser bạn đang mở, không để trống hoặc ghi "không xác định")
+- Với MỖI tỉnh/thành, ghi đủ: trụ sở UBND (địa chỉ), SĐT tổng đài, email công khai (nếu có), website chính thức, Chủ tịch UBND đương nhiệm (và Bí thư Tỉnh/Thành ủy nếu tìm được), nguồn (link + ngày truy cập) cho mỗi mục.
+- KHÔNG bịa link, KHÔNG đoán khi thiếu nguồn — ghi rõ "chưa xác minh được" thay vì đoán.
+- Ưu tiên nguồn chính chủ (.gov.vn của tỉnh/thành đó) hơn báo chí/thứ cấp.
+- ⚠️ Cẩn thận: chinhphu.vn/baochinhphu.vn đã nhiều lần giữ dữ liệu CŨ (đặc biệt vì đây là các tỉnh/thành MỚI sáp nhập 12/6/2025 — trang có thể còn hiển thị thông tin tỉnh cũ trước sáp nhập). Nếu thấy tên tỉnh cũ hoặc lãnh đạo tỉnh cũ, đó là dấu hiệu cache cũ — ưu tiên nguồn có ngày SAU 1/7/2025 (ngày chính quyền mới vận hành).
+
+Đây là 1 trong 3 prompt chạy song song (Prompt #10/11/12) trên 3 nhóm tỉnh/thành khác nhau — chỉ cần trả lời đúng 11 đơn vị ở trên.
+```
 
 
-Prompt #8 đã xong — nhóm "14 Bộ + 3 cơ quan ngang Bộ" (Roadmap mục 02) đã HOÀN TẤT thu thập dữ liệu thô (17/17). Prompt #9 dự kiến chuyển sang 1 trong 2 hướng: (a) mảng dữ liệu tiếp theo trong Roadmap (03 — cấp tỉnh/thành phố trực thuộc trung ương), hoặc (b) chốt các việc Phase 0 còn thiếu (hoàn thiện JSON schema, tạo AGENTS.md, backup GitHub lần đầu lên https://github.com/haphanhp/sodo-bo-may-hanh-chinh ). Soạn cụ thể sau khi user xác nhận thứ tự ưu tiên tiếp theo.
+#### Prompt #13 — Xác nhận mô hình chính quyền 2 cấp (có bỏ cấp huyện không?) + tổng quan cấp xã/phường
+
+**Giao cho**: Arc.
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+NHIỆM VỤ 1 — XÁC NHẬN CẤU TRÚC (làm trước, quan trọng nhất):
+Khi tra cứu tỉnh Bắc Ninh trước đó, có thông tin nói rằng Việt Nam đã chuyển sang "mô hình chính quyền 2 CẤP (tỉnh – xã/phường)", BỎ HẲN cấp huyện/quận/thị xã/thành phố thuộc tỉnh. Hãy xác nhận CHÍNH XÁC:
+- Điều này có ĐÚNG không? Áp dụng trên TOÀN QUỐC hay chỉ 1 số nơi?
+- Văn bản pháp luật nào quy định (Luật Tổ chức chính quyền địa phương sửa đổi? Nghị quyết nào của Quốc hội/UBTVQH?) — ghi RÕ số văn bản + ngày ban hành + ngày hiệu lực.
+- Nếu ĐÚNG là đã bỏ cấp huyện: cấp hành chính bên dưới tỉnh/thành phố hiện nay có đúng là xã/phường/đặc khu (không qua huyện nữa) không?
+- Nếu KHÔNG hoàn toàn đúng (ví dụ chỉ đúng về mặt "không còn HĐND/UBND cấp huyện" nhưng vẫn còn đơn vị hành chính huyện trên bản đồ, hoặc có ngoại lệ nào): giải thích rõ sự khác biệt.
+
+KHÔNG suy luận hay đoán — nếu không chắc, ghi rõ "chưa xác minh được" và giải thích đã tìm ở đâu nhưng không thấy.
+
+NHIỆM VỤ 2 — NẾU Nhiệm vụ 1 xác nhận ĐÚNG là mô hình 2 cấp:
+Liệt kê TỔNG QUAN (không cần chi tiết từng đơn vị, chỉ cần bức tranh chung):
+- Hiện cả nước có khoảng bao nhiêu đơn vị cấp xã/phường/đặc khu (tổng số, có thể là số ước tính có nguồn, không cần chính xác tuyệt đối)?
+- Tên gọi các loại đơn vị cấp này hiện nay là gì (xã, phường, đặc khu, thị trấn... loại nào còn tồn tại, loại nào đã bỏ)?
+- Có nguồn nào liệt kê đầy đủ danh sách xã/phường theo từng tỉnh không (ví dụ 1 trang tổng hợp của Bộ Nội vụ/Tổng cục Thống kê)? Nếu có, cho link — đây sẽ là nguồn để dự án tra chi tiết dần theo từng tỉnh ở các Prompt sau.
+
+YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (ghi rõ tên browser thật). Không bịa link, không đoán khi thiếu nguồn. Ưu tiên Luật/Nghị quyết gốc hơn báo chí.
+```
+
+#### Prompt #14 — Hoàn thiện cấp tỉnh: Bí thư Tỉnh/Thành ủy + đối chiếu 6 Chủ tịch UBND
+
+**Giao cho**: Cốc Cốc.
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+NHIỆM VỤ 1 — Tra Bí thư Tỉnh ủy/Thành ủy đương nhiệm cho các tỉnh/thành sau (hiện đang "chưa xác minh" trong dự án):
+Cao Bằng, Điện Biên, Hà Tĩnh, Lai Châu, Lạng Sơn, Nghệ An, Quảng Ninh, Sơn La, Tuyên Quang, Lào Cai, Thái Nguyên, Phú Thọ, Bắc Ninh, Hưng Yên, Hải Phòng, Ninh Bình, Quảng Trị, Đà Nẵng, Quảng Ngãi, Gia Lai, Khánh Hòa, Lâm Đồng, Đắk Lắk, Đồng Nai, Tây Ninh, Cần Thơ, Vĩnh Long, Đồng Tháp, Cà Mau, An Giang.
+(Hà Nội và Huế đã có Bí thư — không cần tra lại. Thanh Hóa đã có Phó Bí thư Thường trực, cần tìm tên Bí thư CHÍNH THỨC nếu có.)
+
+Nếu 1 tỉnh nào không tìm được nguồn rõ ràng, ghi "chưa xác minh được" — không đoán, không bỏ trống mà không ghi chú.
+
+NHIỆM VỤ 2 — Đối chiếu chéo (cross-check) tên Chủ tịch UBND đương nhiệm cho 6 đơn vị sau (dự án hiện chỉ có 1 nguồn duy nhất, cần nguồn thứ 2 độc lập để tăng độ tin cậy):
+- TP Cần Thơ: hiện ghi là Trương Cảnh Tuyên
+- TP Hồ Chí Minh: hiện ghi là Nguyễn Văn Được
+- Đồng Tháp: hiện ghi là Phạm Thành Ngại
+- Vĩnh Long: hiện ghi là Trần Trí Quang
+- Cà Mau: hiện ghi là Lữ Quang Ngời
+- An Giang: hiện ghi là Hồ Văn Mừng
+
+Tìm 1 nguồn báo chí/văn bản ĐỘC LẬP (không phải chinhphu.vn — vì đó là nguồn ban đầu) xác nhận lại từng tên trên còn đúng không, có ngày bầu/phê chuẩn cụ thể không. Nếu phát hiện xung đột (tên khác), ghi rõ CẢ 2 nguồn, KHÔNG tự chọn — để dành báo lại cho dự án xử lý.
+
+YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (ghi rõ tên browser thật). Không bịa link, không đoán khi thiếu nguồn. Ưu tiên nguồn .gov.vn hoặc báo chí có ngày cụ thể.
+```
+
+
+#### Prompt #15 — Danh sách cấp xã nhóm 1/5 (Hà Nội, Cao Bằng, Điện Biên, Hà Tĩnh, Lai Châu, Lạng Sơn, Nghệ An)
+
+**Giao cho**: Brave.
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+Bối cảnh: Việt Nam đã bỏ cấp huyện từ 1/7/2025, hiện chỉ còn 2 cấp: tỉnh/thành phố và xã/phường/đặc khu (Luật 72/2025/QH15). Cả nước có 3.321 đơn vị cấp xã.
+
+NHIỆM VỤ: Với mỗi tỉnh/thành sau, tra tổng số và danh sách đơn vị cấp xã (xã/phường/đặc khu) MỚI sau sắp xếp 2025:
+1. Thành phố Hà Nội
+2. Tỉnh Cao Bằng
+3. Tỉnh Điện Biên
+4. Tỉnh Hà Tĩnh
+5. Tỉnh Lai Châu
+6. Tỉnh Lạng Sơn
+7. Tỉnh Nghệ An
+
+YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (ghi rõ tên browser, theo quy ước dự án — bạn tự gán). Với MỖI tỉnh trong nhóm, ghi: tổng số đơn vị cấp xã (xã + phường + đặc khu, ghi riêng từng loại), và danh sách TÊN các xã/phường/đặc khu đó nếu nguồn cho phép lấy trực tiếp (KHÔNG tự bịa tên, KHÔNG suy luận). Nếu danh sách quá dài để chép hết, cho phép: nêu tổng số + vài ví dụ + LINK trực tiếp tới nguồn có đầy đủ danh sách (ưu tiên Nghị quyết riêng của UBTVQH15 cho tỉnh đó, hoặc Phụ lục II của Quyết định 19/2025/QĐ-TTg, hoặc trang tổng hợp chinhphu.vn) — không cần cố chép hết nếu dễ sai/thiếu. Ghi rõ nguồn (link + ngày truy cập) cho mỗi tỉnh. Không dùng chinhphu.vn/baochinhphu.vn làm nguồn DUY NHẤT nếu có thể — ưu tiên văn bản Nghị quyết gốc.
+```
+
+#### Prompt #16 — Danh sách cấp xã nhóm 2/5 (Quảng Ninh, Thanh Hóa, Sơn La, Tuyên Quang, Lào Cai, Thái Nguyên, Phú Thọ)
+
+**Giao cho**: Opera GX.
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+Bối cảnh: Việt Nam đã bỏ cấp huyện từ 1/7/2025, hiện chỉ còn 2 cấp: tỉnh/thành phố và xã/phường/đặc khu (Luật 72/2025/QH15). Cả nước có 3.321 đơn vị cấp xã.
+
+NHIỆM VỤ: Với mỗi tỉnh/thành sau, tra tổng số và danh sách đơn vị cấp xã (xã/phường/đặc khu) MỚI sau sắp xếp 2025:
+1. Tỉnh Quảng Ninh
+2. Tỉnh Thanh Hóa
+3. Tỉnh Sơn La
+4. Tỉnh Tuyên Quang
+5. Tỉnh Lào Cai
+6. Tỉnh Thái Nguyên
+7. Tỉnh Phú Thọ
+
+YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (ghi rõ tên browser, theo quy ước dự án — bạn tự gán). Với MỖI tỉnh trong nhóm, ghi: tổng số đơn vị cấp xã (xã + phường + đặc khu, ghi riêng từng loại), và danh sách TÊN các xã/phường/đặc khu đó nếu nguồn cho phép lấy trực tiếp (KHÔNG tự bịa tên, KHÔNG suy luận). Nếu danh sách quá dài để chép hết, cho phép: nêu tổng số + vài ví dụ + LINK trực tiếp tới nguồn có đầy đủ danh sách (ưu tiên Nghị quyết riêng của UBTVQH15 cho tỉnh đó, hoặc Phụ lục II của Quyết định 19/2025/QĐ-TTg, hoặc trang tổng hợp chinhphu.vn) — không cần cố chép hết nếu dễ sai/thiếu. Ghi rõ nguồn (link + ngày truy cập) cho mỗi tỉnh. Không dùng chinhphu.vn/baochinhphu.vn làm nguồn DUY NHẤT nếu có thể — ưu tiên văn bản Nghị quyết gốc.
+```
+
+#### Prompt #17 — Danh sách cấp xã nhóm 3/5 (Bắc Ninh, Hưng Yên, Hải Phòng, Ninh Bình, Quảng Trị, Đà Nẵng, Quảng Ngãi)
+
+**Giao cho**: Microsoft Edge.
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+Bối cảnh: Việt Nam đã bỏ cấp huyện từ 1/7/2025, hiện chỉ còn 2 cấp: tỉnh/thành phố và xã/phường/đặc khu (Luật 72/2025/QH15). Cả nước có 3.321 đơn vị cấp xã.
+
+NHIỆM VỤ: Với mỗi tỉnh/thành sau, tra tổng số và danh sách đơn vị cấp xã (xã/phường/đặc khu) MỚI sau sắp xếp 2025:
+1. Tỉnh Bắc Ninh
+2. Tỉnh Hưng Yên
+3. Thành phố Hải Phòng
+4. Tỉnh Ninh Bình
+5. Tỉnh Quảng Trị
+6. Thành phố Đà Nẵng
+7. Tỉnh Quảng Ngãi
+
+YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (ghi rõ tên browser, theo quy ước dự án — bạn tự gán). Với MỖI tỉnh trong nhóm, ghi: tổng số đơn vị cấp xã (xã + phường + đặc khu, ghi riêng từng loại), và danh sách TÊN các xã/phường/đặc khu đó nếu nguồn cho phép lấy trực tiếp (KHÔNG tự bịa tên, KHÔNG suy luận). Nếu danh sách quá dài để chép hết, cho phép: nêu tổng số + vài ví dụ + LINK trực tiếp tới nguồn có đầy đủ danh sách (ưu tiên Nghị quyết riêng của UBTVQH15 cho tỉnh đó, hoặc Phụ lục II của Quyết định 19/2025/QĐ-TTg, hoặc trang tổng hợp chinhphu.vn) — không cần cố chép hết nếu dễ sai/thiếu. Ghi rõ nguồn (link + ngày truy cập) cho mỗi tỉnh. Không dùng chinhphu.vn/baochinhphu.vn làm nguồn DUY NHẤT nếu có thể — ưu tiên văn bản Nghị quyết gốc.
+```
+
+#### Prompt #18 — Danh sách cấp xã nhóm 4/5 (Huế, Gia Lai, Khánh Hòa, Lâm Đồng, Đắk Lắk, TP Đồng Nai, Tây Ninh)
+
+**Giao cho**: Cốc Cốc.
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+Bối cảnh: Việt Nam đã bỏ cấp huyện từ 1/7/2025, hiện chỉ còn 2 cấp: tỉnh/thành phố và xã/phường/đặc khu (Luật 72/2025/QH15). Cả nước có 3.321 đơn vị cấp xã.
+
+NHIỆM VỤ: Với mỗi tỉnh/thành sau, tra tổng số và danh sách đơn vị cấp xã (xã/phường/đặc khu) MỚI sau sắp xếp 2025:
+1. Thành phố Huế
+2. Tỉnh Gia Lai
+3. Tỉnh Khánh Hòa
+4. Tỉnh Lâm Đồng
+5. Tỉnh Đắk Lắk
+6. Thành phố Đồng Nai (lưu ý: đã đổi từ Tỉnh lên Thành phố trực thuộc TW từ 30/4/2026, nhưng cấp xã bên trong có thể vẫn giữ nguyên từ đợt sắp xếp 2025 — tra rõ có thay đổi gì thêm sau 30/4/2026 không)
+7. Tỉnh Tây Ninh
+
+YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (ghi rõ tên browser, theo quy ước dự án — bạn tự gán). Với MỖI tỉnh trong nhóm, ghi: tổng số đơn vị cấp xã (xã + phường + đặc khu, ghi riêng từng loại), và danh sách TÊN các xã/phường/đặc khu đó nếu nguồn cho phép lấy trực tiếp (KHÔNG tự bịa tên, KHÔNG suy luận). Nếu danh sách quá dài để chép hết, cho phép: nêu tổng số + vài ví dụ + LINK trực tiếp tới nguồn có đầy đủ danh sách (ưu tiên Nghị quyết riêng của UBTVQH15 cho tỉnh đó, hoặc Phụ lục II của Quyết định 19/2025/QĐ-TTg, hoặc trang tổng hợp chinhphu.vn) — không cần cố chép hết nếu dễ sai/thiếu. Ghi rõ nguồn (link + ngày truy cập) cho mỗi tỉnh. Không dùng chinhphu.vn/baochinhphu.vn làm nguồn DUY NHẤT nếu có thể — ưu tiên văn bản Nghị quyết gốc.
+```
+
+#### Prompt #19 — Danh sách cấp xã nhóm 5/5 (TP.HCM, Cần Thơ, Vĩnh Long, Đồng Tháp, Cà Mau, An Giang) + tên 13 đặc khu
+
+**Giao cho**: Arc.
+
+```
+Bạn đang hỗ trợ 1 dự án tổng hợp thông tin bộ máy hành chính Việt Nam (mục đích tham khảo/giáo dục cá nhân, phi lợi nhuận).
+
+Bối cảnh: Việt Nam đã bỏ cấp huyện từ 1/7/2025, hiện chỉ còn 2 cấp: tỉnh/thành phố và xã/phường/đặc khu (Luật 72/2025/QH15). Cả nước có 3.321 đơn vị cấp xã, gồm 2.636 xã + 672 phường + 13 đặc khu.
+
+NHIỆM VỤ 1: Với mỗi tỉnh/thành sau, tra tổng số và danh sách đơn vị cấp xã (xã/phường/đặc khu) MỚI sau sắp xếp 2025:
+1. Thành phố Hồ Chí Minh
+2. Thành phố Cần Thơ
+3. Tỉnh Vĩnh Long
+4. Tỉnh Đồng Tháp
+5. Tỉnh Cà Mau
+6. Tỉnh An Giang
+
+NHIỆM VỤ 2 (riêng, ưu tiên cao): Tìm TÊN CỤ THỂ của 13 "đặc khu" trên cả nước (loại đơn vị cấp xã đặc biệt, thường ở đảo/vị trí quan trọng — ví dụ có thể gồm Phú Quốc, Côn Đảo, Cát Hải, Vân Đồn... nhưng CHƯA xác nhận, đừng dùng gợi ý này làm căn cứ, phải tự tra). Với mỗi đặc khu ghi: tên, thuộc tỉnh/thành nào, vị trí địa lý sơ lược.
+
+YÊU CẦU ĐỊNH DẠNG (bắt buộc): Model dùng: ... / Acc & trình duyệt: ... (ghi rõ tên browser, theo quy ước dự án — bạn tự gán). Với MỖI tỉnh trong nhóm, ghi: tổng số đơn vị cấp xã (xã + phường + đặc khu, ghi riêng từng loại), và danh sách TÊN các xã/phường/đặc khu đó nếu nguồn cho phép lấy trực tiếp (KHÔNG tự bịa tên, KHÔNG suy luận). Nếu danh sách quá dài để chép hết, cho phép: nêu tổng số + vài ví dụ + LINK trực tiếp tới nguồn có đầy đủ danh sách (ưu tiên Nghị quyết riêng của UBTVQH15 cho tỉnh đó, hoặc Phụ lục II của Quyết định 19/2025/QĐ-TTg, hoặc trang tổng hợp chinhphu.vn) — không cần cố chép hết nếu dễ sai/thiếu. Ghi rõ nguồn (link + ngày truy cập) cho mỗi tỉnh. Không dùng chinhphu.vn/baochinhphu.vn làm nguồn DUY NHẤT nếu có thể — ưu tiên văn bản Nghị quyết gốc.
+```
+
