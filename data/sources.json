@@ -1,0 +1,658 @@
+[
+  {
+    "id": "source-001",
+    "title": "Cổng thông tin điện tử Quốc hội",
+    "publisher": {
+      "organization_id": null,
+      "name": "Quốc hội"
+    },
+    "type": "official_website",
+    "url": "https://quochoi.vn/",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-002",
+    "title": "Văn phòng Chủ tịch nước thay đổi trụ sở làm việc",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Lào Cai"
+    },
+    "type": "news",
+    "url": "https://baolaocai.vn/van-phong-chu-tich-nuoc-thay-doi-tru-so-lam-viec-post896415.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-003",
+    "title": "Cổng thông tin điện tử Chính phủ",
+    "publisher": {
+      "organization_id": null,
+      "name": "Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-bo-nganh?gmist=3660",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-004",
+    "title": "TAND tối cao chuyển địa điểm tiếp công dân",
+    "publisher": {
+      "organization_id": null,
+      "name": "Tạp chí Tòa án nhân dân"
+    },
+    "type": "secondary_source",
+    "url": "https://tapchitoaan.vn/index.php/tu-137-toa-an-nhan-dan-toi-cao-chuyen-dia-diem-tiep-cong-dan15942.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-005",
+    "title": "Địa chỉ trụ sở VKSND tối cao sau sáp nhập",
+    "publisher": {
+      "organization_id": null,
+      "name": "thuvienphapluat.vn"
+    },
+    "type": "legal_database",
+    "url": "https://thuvienphapluat.vn/hoi-dap-phap-luat/dia-chi-tru-so-vien-kiem-sat-nhan-dan-toi-cao-sau-sap-nhap-o-dau-138070487.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-006",
+    "title": "Vụ Thông tin — quochoi.vn (SĐT các đơn vị trực thuộc)",
+    "publisher": {
+      "organization_id": null,
+      "name": "Văn phòng Quốc hội"
+    },
+    "type": "official_website",
+    "url": "https://quochoi.vn/vanphongquochoi/cocautochuc/khoiphucvuchung/Pages/vu-thong-tin.aspx",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "Chỉ là SĐT bộ phận, không đại diện toàn cơ quan"
+  },
+  {
+    "id": "source-007",
+    "title": "Liên hệ — Văn phòng Chủ tịch nước",
+    "publisher": {
+      "organization_id": null,
+      "name": "Văn phòng Chủ tịch nước"
+    },
+    "type": "official_website",
+    "url": "https://vpctn.gov.vn/lien-he",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-008",
+    "title": "Điều 86–87 Hiến pháp 2013 (Chủ tịch nước)",
+    "publisher": {
+      "organization_id": null,
+      "name": "thuvienphapluat.vn"
+    },
+    "type": "legal_database",
+    "url": "https://thuvienphapluat.vn/phap-luat/chu-tich-nuoc-la-nguoi-dung-dau-co-quan-nao-chu-tich-nuoc-co-quyen-sua-doi-hien-phap-khong-275400-52867.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": "Trích Hiến pháp 2013"
+  },
+  {
+    "id": "source-009",
+    "title": "TAND tối cao chuyển địa điểm tiếp công dân từ 13/7",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Nhân Dân"
+    },
+    "type": "news",
+    "url": "https://nhandan.vn/toa-an-nhan-dan-toi-cao-chuyen-dia-diem-tiep-cong-dan-tu-ngay-137-post974797.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-010",
+    "title": "Footer liên hệ — vksndtc.gov.vn",
+    "publisher": {
+      "organization_id": null,
+      "name": "VKSND tối cao"
+    },
+    "type": "official_website",
+    "url": "https://vksndtc.gov.vn/tintuc-HD",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-011",
+    "title": "Văn phòng Chủ tịch nước thay đổi trụ sở làm việc mới",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Tuổi Trẻ"
+    },
+    "type": "news",
+    "url": "https://tuoitre.vn/van-phong-chu-tich-nuoc-thay-doi-tru-so-lam-viec-moi-20260320083914154.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-012",
+    "title": "Chuyển trụ sở làm việc của Văn phòng Chủ tịch nước (dẫn Thông báo 270/TB-VPCTN)",
+    "publisher": {
+      "organization_id": null,
+      "name": "CafeF"
+    },
+    "type": "news",
+    "url": "https://cafef.vn/chuyen-tru-so-lam-viec-cua-van-phong-chu-tich-nuoc-18826032014205498.chn",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-101",
+    "title": "Liên hệ — Cổng dịch vụ công Bộ Quốc phòng",
+    "publisher": {
+      "organization_id": null,
+      "name": "Bộ Quốc phòng"
+    },
+    "type": "official_website",
+    "url": "https://dichvucong.mod.gov.vn/web/bo-quoc-phong/lien-he",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-102",
+    "title": "Tóm tắt tiểu sử Phó Thủ tướng, Bộ trưởng Bộ Quốc phòng Phan Văn Giang",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/tom-tat-tieu-su-dong-chi-phan-van-giang-pho-thu-tuong-chinh-phu-nhiem-ky-2026-2031-11926040813342549.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-103",
+    "title": "Liên hệ — Cổng TTĐT Bộ Công an",
+    "publisher": {
+      "organization_id": null,
+      "name": "Bộ Công an"
+    },
+    "type": "official_website",
+    "url": "https://www.mps.gov.vn/lien-he",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-104",
+    "title": "Đại tướng Lương Tam Quang làm Bộ trưởng Công an nhiệm kỳ 2026-2031",
+    "publisher": {
+      "organization_id": null,
+      "name": "VnExpress"
+    },
+    "type": "news",
+    "url": "https://vnexpress.net/dai-tuong-luong-tam-quang-lam-bo-truong-cong-an-nhiem-ky-2026-2031-5059732.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-105",
+    "title": "Tổng Bí thư Tô Lâm dự khánh thành trụ sở Bộ Công an tại Hà Nội (16/8/2025)",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Tuổi Trẻ"
+    },
+    "type": "news",
+    "url": "https://tuoitre.vn/tong-bi-thu-to-lam-du-khanh-thanh-tru-so-bo-cong-an-tai-ha-noi-20250816113957594.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-106",
+    "title": "Liên hệ — Cổng thông tin Bộ Ngoại giao",
+    "publisher": {
+      "organization_id": null,
+      "name": "Bộ Ngoại giao"
+    },
+    "type": "official_website",
+    "url": "https://mofa.gov.vn/lien-he",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-107",
+    "title": "Quốc hội phê chuẩn bổ nhiệm Bộ trưởng Ngoại giao, Nội vụ, NN&MT",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Điện tử Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://baochinhphu.vn/quoc-hoi-phe-chuan-bo-nhiem-3-bo-truong-ngoai-giao-noi-vu-nong-nghiep-va-moi-truong-102251025003355438.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-108",
+    "title": "Thông tin bộ ngành: Bộ Nội vụ",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-bo-nganh?gmist=3648",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu cũ — xem luật 18"
+  },
+  {
+    "id": "source-109",
+    "title": "Quốc hội phê chuẩn ông Nguyễn Tiến Hải làm Bộ trưởng Bộ Nội vụ",
+    "publisher": {
+      "organization_id": null,
+      "name": "VietnamFinance"
+    },
+    "type": "news",
+    "url": "https://vietnamfinance.vn/quoc-hoi-phe-chuan-ong-nguyen-tien-hai-lam-bo-truong-bo-noi-vu-d148542.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-110",
+    "title": "Danh bạ điện thoại Cơ quan Bộ Tư pháp + tiểu sử Bộ trưởng Hoàng Thanh Tùng",
+    "publisher": {
+      "organization_id": null,
+      "name": "Bộ Tư pháp"
+    },
+    "type": "official_website",
+    "url": "https://moj.gov.vn/portal/danh-ba/danh-ba-dien-thoai/co-quan-bo-tu-phap-b880.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "Nghị quyết 17/2026/QH16, hiệu lực 08/4/2026"
+  },
+  {
+    "id": "source-111",
+    "title": "Tiểu sử Bộ trưởng Bộ Tư pháp Hoàng Thanh Tùng (dẫn Nghị quyết 17/2026/QH16)",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Đại biểu Nhân dân"
+    },
+    "type": "news",
+    "url": "https://daibieunhandan.vn/tieu-su-bo-truong-bo-tu-phap-hoang-thanh-tung-10413189.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-112",
+    "title": "Cổng dịch vụ công Bộ Tài chính (liên hệ)",
+    "publisher": {
+      "organization_id": null,
+      "name": "Bộ Tài chính"
+    },
+    "type": "official_website",
+    "url": "https://dichvucong.mof.gov.vn/en/web/guest/trang-chu",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-113",
+    "title": "Liên hệ — Bộ Công Thương",
+    "publisher": {
+      "organization_id": null,
+      "name": "Bộ Công Thương"
+    },
+    "type": "official_website",
+    "url": "https://moit.gov.vn/lien-he",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-114",
+    "title": "Đồng chí Lê Mạnh Hùng giữ chức Bộ trưởng Bộ Công Thương",
+    "publisher": {
+      "organization_id": null,
+      "name": "VTV"
+    },
+    "type": "news",
+    "url": "https://vtv.vn/dong-chi-le-manh-hung-giu-chuc-bo-truong-bo-cong-thuong-100260408104328315.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-115",
+    "title": "Liên hệ — Bộ Nông nghiệp và Môi trường",
+    "publisher": {
+      "organization_id": null,
+      "name": "Bộ Nông nghiệp và Môi trường"
+    },
+    "type": "official_website",
+    "url": "https://mae.gov.vn/lien-he.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-116",
+    "title": "Đồng chí Trịnh Việt Hùng giữ chức Bộ trưởng Bộ Nông nghiệp và Môi trường",
+    "publisher": {
+      "organization_id": null,
+      "name": "VTV"
+    },
+    "type": "news",
+    "url": "https://vtv.vn/dong-chi-trinh-viet-hung-giu-chuc-bo-truong-bo-nong-nghiep-va-moi-truong-100260408105330704.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-117",
+    "title": "Bộ Xây dựng còn 22 đơn vị trực thuộc từ ngày 15/9",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Nhân Dân"
+    },
+    "type": "news",
+    "url": "https://nhandan.vn/bo-xay-dung-con-22-don-vi-truc-thuoc-tu-ngay-159-post988401.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-118",
+    "title": "Trụ sở của Bộ — Bộ Văn hóa, Thể thao và Du lịch",
+    "publisher": {
+      "organization_id": null,
+      "name": "Bộ VHTTDL"
+    },
+    "type": "official_website",
+    "url": "https://bvhttdl.gov.vn/tru-so-cua-bo-2.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-119",
+    "title": "Tân Bộ trưởng Bộ VHTTDL chính thức nhận nhiệm vụ",
+    "publisher": {
+      "organization_id": null,
+      "name": "VietnamPlus"
+    },
+    "type": "news",
+    "url": "https://www.vietnamplus.vn/tan-bo-truong-bo-van-hoa-the-thao-va-du-lich-chinh-thuc-nhan-nhiem-vu-post1103986.vnp",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-120",
+    "title": "Thông tin bộ ngành: Bộ Khoa học và Công nghệ",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-bo-nganh?gmist=3654",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-121",
+    "title": "Tiểu sử Bộ trưởng Vũ Hải Quân",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Đại biểu Nhân dân"
+    },
+    "type": "news",
+    "url": "https://daibieunhandan.vn/print/10413327.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-122",
+    "title": "Thông tin bộ ngành: Bộ Giáo dục và Đào tạo",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-bo-nganh?gmist=3655",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-123",
+    "title": "Tiểu sử Bộ trưởng Hoàng Minh Sơn",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Đại biểu Nhân dân"
+    },
+    "type": "news",
+    "url": "https://daibieunhandan.vn/print/10413329.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-124",
+    "title": "Thông tin bộ ngành: Bộ Y tế",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-bo-nganh?gmist=3656",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "2 số điện thoại khác nhau giữa các bản chụp — chưa phân xử"
+  },
+  {
+    "id": "source-125",
+    "title": "Thông tin bộ ngành: Bộ Dân tộc và Tôn giáo",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-bo-nganh?gmist=3657",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-126",
+    "title": "Thông tin bộ ngành: Ngân hàng Nhà nước Việt Nam",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-bo-nganh?gmist=3658",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-127",
+    "title": "Ông Phạm Đức Ấn giữ chức Thống đốc Ngân hàng Nhà nước",
+    "publisher": {
+      "organization_id": null,
+      "name": "Tạp chí Ngân hàng"
+    },
+    "type": "official_website",
+    "url": "https://tapchinganhang.gov.vn/ong-pham-duc-an-giu-chuc-thong-doc-ngan-hang-nha-nuoc-viet-nam-17193.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "Cơ quan báo chí trực thuộc NHNN"
+  },
+  {
+    "id": "source-128",
+    "title": "Thông tin bộ ngành: Thanh tra Chính phủ",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-bo-nganh?gmist=3659",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-129",
+    "title": "Thông tin bộ ngành: Văn phòng Chính phủ",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-bo-nganh?gmist=3660",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  }
+]

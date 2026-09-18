@@ -1,4 +1,24 @@
 // views.js — Phase 1: chỉ render khung + empty state. KHÔNG chứa dữ liệu hành chính thật.
+
+const esc = v => String(v ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const banner = st => st.loadError
+  ? `<div class="notice notice-warn"><strong>Chưa nạp được dữ liệu.</strong> ${esc(st.loadError)}</div>` : "";
+const dataStats = st => {
+  if (!st.report) return "";
+  const c = st.report.counts, r = st.report;
+  const chip = (k, n) => n ? `<span class="badge">${k}: ${n}</span>` : "";
+  return `<div class="empty-meta" style="justify-content:flex-start;margin:0 0 16px">
+    ${chip("Cơ quan", c.organizations)}${chip("Người", c.people)}${chip("Chức vụ", c.positions)}${chip("Quan hệ", c.relationships)}${chip("Nguồn", c.sources)}
+    <span class="badge ${r.errors.length ? "badge-accent" : ""}">Lỗi: ${r.errors.length}</span>
+    <span class="badge">Cảnh báo: ${r.warnings.length}</span></div>`;
+};
+const table = (cols, rows) => `<div class="card table-wrap"><table class="data-table">
+  <thead><tr>${cols.map(c => `<th>${c}</th>`).join("")}</tr></thead>
+  <tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+const list = (st, key) => [...(st.index?.perType?.[key]?.values() ?? [])];
+const nameOf = e => esc(e?.name?.vi ?? e?.title ?? e?.id ?? "");
+const link = (url, text) => url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text ?? url)}</a>` : "—";
+
 const empty = ({ ico, title, desc, phase, extra = "" }) => `
   <div class="empty-state">
     <div class="empty-ico">${ico}</div>
@@ -13,19 +33,70 @@ const head = (title, sub) => `<div class="view-head"><h1>${title}</h1><p class="
 export const VIEWS = {
   map: {
     label: "Bản đồ",
-    render: () => head("Bản đồ bộ máy", "Sơ đồ quan hệ giữa các cơ quan: cấp trên – cấp dưới, phối hợp, cấp phép, thanh tra…") + `
+    render: st => banner(st) + head("Bản đồ bộ máy", "Sơ đồ quan hệ giữa các cơ quan: cấp trên – cấp dưới, phối hợp, cấp phép, thanh tra…") + `
       <div class="graph-canvas">
         <div class="graph-toolbar"><button class="icon-btn" disabled>＋</button><button class="icon-btn" disabled>－</button><button class="icon-btn" disabled>⟲</button></div>
         ${empty({ ico: "🗺", title: "Chưa có graph", desc: "Khung đồ thị (nodes + edges, zoom, pan, expand/collapse) sẽ được dựng ở Phase 3, sau khi data engine ở Phase 2 chạy được.", phase: "Phase 3" })}
       </div>`
   },
-  organizations: { label: "Cơ quan", render: () => head("Cơ quan", "Quốc hội, Chủ tịch nước, Chính phủ, các Bộ, tỉnh/thành, xã/phường/đặc khu.") + empty({ ico: "🏢", title: "Chưa có danh sách cơ quan", desc: "Dữ liệu sẽ đọc từ data/organizations.json. Dữ liệu thô đã tra cứu đang nằm ở các file 01–16-*.md, chỉ ráp vào JSON ở Phase 10.", phase: "Phase 2 → 10" }) },
-  people:        { label: "Con người", render: () => head("Con người", "Người đang giữ chức vụ — tách riêng khỏi chức vụ để thay người không phá cấu trúc.") + empty({ ico: "👤", title: "Chưa có danh sách người", desc: "Đọc từ data/people.json, mỗi người gắn với position_id + organization_id kèm mốc thời gian from/to.", phase: "Phase 4" }) },
-  positions:     { label: "Chức vụ", render: () => head("Chức vụ", "Chức danh (Bộ trưởng, Chủ tịch UBND tỉnh…) cùng chức năng, quyền hạn, căn cứ pháp lý.") + empty({ ico: "⚖", title: "Chưa có danh sách chức vụ", desc: "Đọc từ data/positions.json. Position ≠ Person: chức vụ tồn tại độc lập với người đang giữ.", phase: "Phase 4" }) },
-  procedures:    { label: "Thủ tục", render: () => head("Thủ tục hành chính", "Quy trình từng bước: nộp hồ sơ → kiểm tra → thẩm định → phê duyệt → nhận kết quả.") + empty({ ico: "📋", title: "Chưa có thủ tục", desc: "Đọc từ data/procedures.json, kèm hồ sơ yêu cầu, lệ phí, thời hạn, cơ quan tiếp nhận và cơ quan chịu trách nhiệm.", phase: "Phase 6" }) },
-  documents:     { label: "Văn bản", render: () => head("Văn bản pháp luật", "Hiến pháp, luật, nghị quyết, nghị định, quyết định, thông tư, chỉ thị, công văn.") + empty({ ico: "📜", title: "Chưa có văn bản", desc: "Đọc từ data/documents.json, kèm quan hệ pháp lý giữa các văn bản (căn cứ, sửa đổi, thay thế).", phase: "Phase 7" }) },
-  licenses:      { label: "Giấy phép", render: () => head("Giấy phép / chứng chỉ / biểu mẫu", "Kết quả đầu ra của thủ tục: giấy phép, chứng chỉ, con dấu, biểu mẫu.") + empty({ ico: "📄", title: "Chưa có giấy phép", desc: "Đọc từ data/licenses.json và data/forms.json, liên kết ngược về thủ tục và cơ quan cấp.", phase: "Phase 6" }) },
-  sources:       { label: "Nguồn", render: () => head("Nguồn thông tin", "Mỗi dữ kiện phải có ít nhất một nguồn — ưu tiên nguồn chính thức .gov.vn.") + empty({ ico: "🔗", title: "Chưa có danh mục nguồn", desc: "Đọc từ data/sources.json: tên nguồn, cơ quan ban hành, số hiệu văn bản, ngày ban hành, ngày truy cập, mức độ tin cậy và link gốc (không bịa link).", phase: "Phase 8" }) },
+  organizations: {
+    label: "Cơ quan",
+    render: st => {
+      const items = list(st, "organizations");
+      if (!items.length) return head("Cơ quan", "Quốc hội, Chủ tịch nước, Chính phủ, các Bộ, tỉnh/thành.") + banner(st) + empty({ ico: "🏢", title: "Chưa có danh sách cơ quan", desc: "Dữ liệu đọc từ data/organizations.json.", phase: "Phase 2 → 10" });
+      return head("Cơ quan", `${items.length} cơ quan đã nạp từ data/organizations.json`) + banner(st) + dataStats(st) +
+        table(["Tên", "Viết tắt", "Trụ sở", "Điện thoại", "Website", "Nguồn"],
+          items.map(o => [
+            `<strong>${nameOf(o)}</strong>`, esc(o.short_name) || "—",
+            esc(o.contact?.address) || "—",
+            (o.contact?.phone ?? []).map(esc).join(", ") || "<em>chưa xác minh</em>",
+            (o.contact?.website ?? []).map(u => link(u, u.replace(/^https?:\/\//, ""))).join("<br>") || "—",
+            `${(o.source_ids ?? []).length} nguồn`
+          ]));
+    }
+  },
+  people: {
+    label: "Con người",
+    render: st => {
+      const items = list(st, "people");
+      if (!items.length) return head("Con người", "Người đang giữ chức vụ.") + banner(st) + empty({ ico: "👤", title: "Chưa có danh sách người", desc: "Đọc từ data/people.json.", phase: "Phase 4" });
+      return head("Con người", `${items.length} người đã nạp`) + banner(st) +
+        table(["Họ tên", "Chức vụ", "Cơ quan", "Ghi chú"], items.map(p => {
+          const pos = p.positions?.[0] ?? {};
+          return [`<strong>${nameOf(p)}</strong>`, nameOf(st.index.get(pos.position_id)) || "—",
+            nameOf(st.index.get(pos.organization_id)) || "—",
+            `<span class="muted-note">${esc(p.notes)}</span>`];
+        }));
+    }
+  },
+  positions: {
+    label: "Chức vụ",
+    render: st => {
+      const items = list(st, "positions");
+      if (!items.length) return head("Chức vụ", "Chức danh cùng chức năng, quyền hạn, căn cứ pháp lý.") + banner(st) + empty({ ico: "⚖", title: "Chưa có danh sách chức vụ", desc: "Đọc từ data/positions.json.", phase: "Phase 4" });
+      return head("Chức vụ", `${items.length} chức vụ đã nạp`) + banner(st) +
+        table(["Chức danh", "Cấp", "Chức năng chính", "Căn cứ pháp lý"], items.map(p => [
+          `<strong>${nameOf(p)}</strong>`, esc(p.level) || "—",
+          (p.functions ?? []).map(esc).join("<br>") || "—",
+          (p.legal_basis ?? []).map(esc).join("<br>") || "—"
+        ]));
+    }
+  },
+  procedures:    { label: "Thủ tục", render: st => banner(st) + head("Thủ tục hành chính", "Quy trình từng bước: nộp hồ sơ → kiểm tra → thẩm định → phê duyệt → nhận kết quả.") + empty({ ico: "📋", title: "Chưa có thủ tục", desc: "Đọc từ data/procedures.json, kèm hồ sơ yêu cầu, lệ phí, thời hạn, cơ quan tiếp nhận và cơ quan chịu trách nhiệm.", phase: "Phase 6" }) },
+  documents:     { label: "Văn bản", render: st => banner(st) + head("Văn bản pháp luật", "Hiến pháp, luật, nghị quyết, nghị định, quyết định, thông tư, chỉ thị, công văn.") + empty({ ico: "📜", title: "Chưa có văn bản", desc: "Đọc từ data/documents.json, kèm quan hệ pháp lý giữa các văn bản (căn cứ, sửa đổi, thay thế).", phase: "Phase 7" }) },
+  licenses:      { label: "Giấy phép", render: st => banner(st) + head("Giấy phép / chứng chỉ / biểu mẫu", "Kết quả đầu ra của thủ tục: giấy phép, chứng chỉ, con dấu, biểu mẫu.") + empty({ ico: "📄", title: "Chưa có giấy phép", desc: "Đọc từ data/licenses.json và data/forms.json, liên kết ngược về thủ tục và cơ quan cấp.", phase: "Phase 6" }) },
+  sources: {
+    label: "Nguồn",
+    render: st => {
+      const items = list(st, "sources");
+      if (!items.length) return head("Nguồn thông tin", "Mỗi dữ kiện phải có ít nhất một nguồn.") + banner(st) + empty({ ico: "🔗", title: "Chưa có danh mục nguồn", desc: "Đọc từ data/sources.json.", phase: "Phase 8" });
+      return head("Nguồn thông tin", `${items.length} nguồn đã nạp — ưu tiên nguồn chính thức .gov.vn`) + banner(st) +
+        table(["#", "Tên nguồn", "Cơ quan / đơn vị", "Loại", "Độ tin cậy", "Ngày truy cập"], items.map((x, i) => [
+          `[${i + 1}]`, link(x.url, x.title), esc(x.publisher?.name) || "—",
+          esc(x.type), esc(x.reliability), esc(x.accessed_date)
+        ]));
+    }
+  },
   help: {
     label: "Hướng dẫn",
     render: () => head("Hướng dẫn sử dụng", "Cách dùng ứng dụng và nguyên tắc dữ liệu của dự án.") + `
@@ -40,7 +111,7 @@ export const VIEWS = {
           <li><strong>Nút ◐</strong> góc phải: đổi giao diện sáng/tối.</li>
         </ul>
         <h2>3. Trạng thái hiện tại</h2>
-        <p>Đang ở <strong>Phase 1 — ứng dụng rỗng</strong>: mới có khung giao diện, điều hướng và các trạng thái trống. Chưa nạp dữ liệu hành chính thật; dữ liệu thô đã tra cứu nằm trong các file <code>01–16-*.md</code> của dự án và chỉ được ráp vào <code>data/*.json</code> ở Phase 10.</p>
+        <p>Đang ở <strong>Phase 2 — data engine</strong>: đã có loader/validator/indexer và dữ liệu thật cấp thượng tầng (5 cơ quan trung ương + 14 Bộ + 3 cơ quan ngang Bộ). Đồ thị quan hệ (Phase 3) và tìm kiếm (Phase 5) chưa bật.</p><p class="muted-note">Ghi chú kỹ thuật: trình duyệt chặn đọc file JSON khi mở bằng <code>file://</code> — chạy <code>mo-app.bat</code> trong thư mục dự án (hoặc <code>python -m http.server 8080</code>) rồi mở <code>http://localhost:8080</code>.</p><p style="display:none">Phase 1: mới có khung giao diện, điều hướng và các trạng thái trống. Chưa nạp dữ liệu hành chính thật; dữ liệu thô đã tra cứu nằm trong các file <code>01–16-*.md</code> của dự án và chỉ được ráp vào <code>data/*.json</code> ở Phase 10.</p>
         <h2>4. Phạm vi</h2>
         <p>Đào sâu <strong>cấp thượng tầng</strong> (Quốc hội, Chủ tịch nước, Chính phủ, TAND tối cao, VKSND tối cao, 14 Bộ và 3 cơ quan ngang Bộ) và <strong>34 tỉnh/thành phố trực thuộc trung ương</strong>. Cấp xã/phường/đặc khu chỉ dừng ở mức liệt kê (tổng số và cơ cấu theo từng tỉnh). Cấp huyện đã kết thúc hoạt động từ 01/7/2025, chỉ giữ lại cho mục đích lịch sử.</p>
         <h2>5. Nguyên tắc dữ liệu</h2>

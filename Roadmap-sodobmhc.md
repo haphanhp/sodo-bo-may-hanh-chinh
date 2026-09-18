@@ -18,7 +18,7 @@ updated: 2026-09-18
 
 #### Trạng thái tổng quan
 
-- Phase hiện tại: **Phase 1 ĐÃ XONG (ứng dụng rỗng) — sẵn sàng chuyển Phase 2 (data engine)**
+- Phase hiện tại: **Phase 2 ĐÃ XONG (data engine + đã nạp dữ liệu thật cấp thượng tầng: 22 cơ quan / 21 người / 22 chức vụ / 22 quan hệ / 41 nguồn, validate 0 lỗi 0 cảnh báo) — tiếp theo là Phase 3 (graph)**
 - **⚠️ Phạm vi thu hẹp (user chốt 2026-09-18)**: chỉ đào sâu **cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương**. Cấp xã/phường/đặc khu **dừng ở mức liệt kê** (đã xong), không tra tên đầy đủ từng đơn vị. Phần liệt kê cấp xã đã hoàn tất **cả nước 34/34 tỉnh (tới An Giang)**. Prompt #20–#24 giữ nguyên trong `Promts-sodobmhc.md` nhưng KHÔNG giao. → Thu thập dữ liệu thô xem như **ĐÃ ĐỦ** cho Phase 10. — song song, dữ liệu thô cấp tỉnh/thành (mục 03) vẫn tiếp tục thu thập độc lập
 - Cập nhật lần cuối: 2026-09-18
 
@@ -46,11 +46,14 @@ updated: 2026-09-18
 
 #### Phase 2 — Data engine
 
-- [ ] `loader.js` (đọc các file `data/*.json`)
-- [ ] `validator.js` (bắt lỗi: ID trùng, relationship trỏ tới entity không tồn tại...)
-- [ ] `indexer.js` (Map theo ID để tra cứu nhanh)
-- [ ] `state.js`
-- [ ] Test bằng 5–10 entity giả
+- [x] ✅ `js/data/loader.js` — đọc song song 10 file `data/*.json`, lỗi thì trả mảng rỗng + cảnh báo, không làm sập app
+- [x] ✅ `js/data/validator.js` — bắt ID trùng, mọi tham chiếu chết (parent_id, source_ids, leadership, positions, relationship from/to), URL nguồn sai định dạng; cảnh báo entity không nguồn / thiếu `last_verified` / quá 365 ngày chưa kiểm chứng
+- [x] ✅ `js/data/indexer.js` — Map theo id, chỉ mục quan hệ vào/ra, `childrenOf`, `sourcesOf`, `roots`
+- [x] ✅ `js/core/state.js` — thêm data/index/report/loadError
+- [x] ✅ `tools/validate-data.js` — chạy `node tools/validate-data.js` ở thư mục dự án, in báo cáo và exit code 1 nếu có lỗi (luật 9 trong `AGENTS.md`)
+- [x] ✅ **Test bằng DỮ LIỆU THẬT thay vì entity giả** (user chọn): nạp xong cấp thượng tầng — **22 cơ quan** (Quốc hội, VP Chủ tịch nước, Chính phủ, TAND tối cao, VKSND tối cao + 14 Bộ + 3 cơ quan ngang Bộ), 21 người, 22 chức vụ, 22 quan hệ, 41 nguồn. `node tools/validate-data.js` → **0 lỗi, 0 cảnh báo**
+- [x] ✅ 4 view đã hiển thị dữ liệu thật dạng bảng: Cơ quan, Con người, Chức vụ, Nguồn (có cột nguồn + đánh số)
+- [x] ✅ `mo-app.bat` — mở app bằng web server tĩnh (trình duyệt chặn `fetch` file JSON khi mở trực tiếp bằng `file://`); app có banner báo lỗi rõ ràng nếu mở sai cách. **🎉 Phase 2 HOÀN TẤT.**
 
 #### Phase 3 — Graph cơ quan (organization graph)
 
@@ -94,8 +97,8 @@ updated: 2026-09-18
 
 #### Phase 10 — Nhập dữ liệu thật
 
-- [ ] Cấp trung ương: Quốc hội, Chủ tịch nước, Chính phủ, TAND tối cao, VKSND tối cao
-- [ ] Các Bộ / cơ quan ngang Bộ
+- [x] ✅ Cấp trung ương: Quốc hội, Chủ tịch nước (tách `position-chu-tich-nuoc` + `org-vpctn-vn`), Chính phủ, TAND tối cao, VKSND tối cao — đã vào `data/*.json` ở Phase 2
+- [x] ✅ Các Bộ / cơ quan ngang Bộ — đủ 17/17, đã vào `data/*.json` ở Phase 2
 - [ ] Cấp tỉnh / thành phố trực thuộc trung ương
 - [x] ~~Cấp huyện / quận / thị xã~~ — KHÔNG áp dụng (đã kết thúc hoạt động 01/7/2025, chỉ giữ giá trị lịch sử)
 - [ ] Cấp xã / phường / đặc khu — **chỉ nạp ở mức liệt kê**: tổng số + cơ cấu (số xã / phường / đặc khu) theo từng tỉnh, KHÔNG nạp tên từng đơn vị

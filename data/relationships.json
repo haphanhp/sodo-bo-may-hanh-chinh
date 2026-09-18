@@ -1,0 +1,354 @@
+[
+  {
+    "id": "rel-001",
+    "from": "org-chinhphu-vn",
+    "to": "org-quochoi-vn",
+    "type": "reports_to",
+    "label": {
+      "vi": "chịu trách nhiệm và báo cáo công tác trước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-003"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": "Điều 94 Hiến pháp 2013"
+  },
+  {
+    "id": "rel-002",
+    "from": "org-tandtc-vn",
+    "to": "org-quochoi-vn",
+    "type": "reports_to",
+    "label": {
+      "vi": "chịu trách nhiệm và báo cáo công tác trước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-004"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-003",
+    "from": "org-vksndtc-vn",
+    "to": "org-quochoi-vn",
+    "type": "reports_to",
+    "label": {
+      "vi": "chịu trách nhiệm và báo cáo công tác trước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-005"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-004",
+    "from": "org-vpctn-vn",
+    "to": "org-quochoi-vn",
+    "type": "reports_to",
+    "label": {
+      "vi": "Chủ tịch nước do Quốc hội bầu, chịu trách nhiệm trước Quốc hội"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-008"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": "Quan hệ thực chất gắn với position-chu-tich-nuoc"
+  },
+  {
+    "id": "rel-005",
+    "from": "org-quochoi-vn",
+    "to": "org-vpctn-vn",
+    "type": "appoints",
+    "label": {
+      "vi": "bầu Chủ tịch nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-008"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-006",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-quoc-phong",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-102"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-007",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-cong-an",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-104"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-008",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-ngoai-giao",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-107"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-009",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-noi-vu",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-109"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-010",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-tu-phap",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-111"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-011",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-tai-chinh",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-112"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-012",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-cong-thuong",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-114"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-013",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-nong-nghiep-moi-truong",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-116"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-014",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-xay-dung",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-117"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-015",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-vhttdl",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-119"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-016",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-khcn",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-121"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-017",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-gddt",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-123"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-018",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-y-te",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-124"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-019",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-dan-toc-ton-giao",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-125"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-020",
+    "from": "org-chinhphu-vn",
+    "to": "org-nhnn",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-127"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-021",
+    "from": "org-chinhphu-vn",
+    "to": "org-thanh-tra-cp",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-128"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-022",
+    "from": "org-chinhphu-vn",
+    "to": "org-vpcp",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-129"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  }
+]

@@ -1,0 +1,1037 @@
+[
+  {
+    "id": "org-quochoi-vn",
+    "type": "legislature",
+    "name": {
+      "vi": "Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam",
+      "en": ""
+    },
+    "short_name": "Quốc hội",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": null,
+    "contact": {
+      "address": "Nhà Quốc hội, số 1 đường Độc Lập, phường Điện Biên (Ba Đình), Hà Nội",
+      "phone": [],
+      "email": [],
+      "website": [
+        "https://quochoi.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-quoc-hoi",
+        "person_id": "person-tran-thanh-man"
+      }
+    ],
+    "functions": [
+      "Cơ quan đại biểu cao nhất của Nhân dân, cơ quan quyền lực nhà nước cao nhất",
+      "Thực hiện quyền lập hiến, lập pháp",
+      "Quyết định các vấn đề quan trọng của đất nước",
+      "Giám sát tối cao hoạt động của Nhà nước"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-001",
+      "source-006"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "SĐT/email cấp toàn cơ quan CHƯA XÁC MINH — chỉ tìm được số của từng vụ/đơn vị (Vụ Thông tin 080.46528, Thư viện Quốc hội 080.41947...), không dùng làm liên hệ đại diện. ⚠️ Không dùng số 080.43162 / địa chỉ 16 Lê Hồng Phong (footer Báo Điện tử Chính phủ)."
+  },
+  {
+    "id": "org-vpctn-vn",
+    "type": "agency",
+    "name": {
+      "vi": "Văn phòng Chủ tịch nước",
+      "en": ""
+    },
+    "short_name": "VPCTN",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": null,
+    "contact": {
+      "address": "Số 12 Ngô Quyền, phường Hoàn Kiếm, Hà Nội (khuôn viên Bắc Bộ Phủ; mặt còn lại là số 2 Lê Thạch)",
+      "phone": [
+        "080.43176"
+      ],
+      "email": [
+        "vanphongctnvn@gmail.com"
+      ],
+      "website": [
+        "https://vpctn.gov.vn",
+        "https://president.gov.vn"
+      ],
+      "fax": "0437335256"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-nuoc",
+        "person_id": "person-luong-cuong"
+      }
+    ],
+    "functions": [
+      "Cơ quan giúp việc của Chủ tịch nước"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-002",
+      "source-007",
+      "source-011",
+      "source-012"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Trụ sở hiện tại có hiệu lực từ 23/3/2026 theo Thông báo 270/TB-VPCTN; trước đó (đến 22/3/2026) tại 1A/1B Hoàng Hoa Thám, phường Ba Đình. Địa chỉ '2 Hùng Vương' từng xuất hiện là dữ liệu cũ/nhầm — không dùng. Email dùng domain @gmail.com nhưng được niêm yết chính chủ."
+  },
+  {
+    "id": "org-chinhphu-vn",
+    "type": "government",
+    "name": {
+      "vi": "Chính phủ nước Cộng hòa xã hội chủ nghĩa Việt Nam",
+      "en": ""
+    },
+    "short_name": "Chính phủ",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": null,
+    "contact": {
+      "address": "Số 01 Hoàng Hoa Thám, Ba Đình, Hà Nội",
+      "phone": [
+        "080.43100",
+        "080.43569"
+      ],
+      "email": [
+        "vpcp@chinhphu.vn"
+      ],
+      "website": [
+        "https://chinhphu.vn"
+      ],
+      "fax": "080.44130"
+    },
+    "leadership": [],
+    "functions": [
+      "Cơ quan hành chính nhà nước cao nhất, thực hiện quyền hành pháp",
+      "Thống nhất quản lý kinh tế, văn hóa, xã hội, quốc phòng, an ninh, đối ngoại",
+      "Tổ chức thi hành Hiến pháp, luật, nghị quyết của Quốc hội"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-003"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Chịu trách nhiệm trước Quốc hội. Thiết chế hợp hiến (Điều 94–96 Hiến pháp 2013) — KHÁC với 'Văn phòng Chính phủ' (org-vpcp-vn, cơ quan ngang Bộ), dù dùng chung địa chỉ/SĐT/email. Fax: 080.44130."
+  },
+  {
+    "id": "org-tandtc-vn",
+    "type": "court",
+    "name": {
+      "vi": "Tòa án nhân dân tối cao",
+      "en": ""
+    },
+    "short_name": "TANDTC",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": null,
+    "contact": {
+      "address": "Số 01 Phạm Văn Bạch, phường Cầu Giấy, Hà Nội",
+      "phone": [],
+      "email": [],
+      "website": [
+        "https://toaan.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-chanh-an-tandtc",
+        "person_id": "person-nguyen-van-quang"
+      }
+    ],
+    "functions": [
+      "Cơ quan xét xử cao nhất, thực hiện quyền tư pháp",
+      "Giám đốc thẩm, tái thẩm bản án/quyết định đã có hiệu lực của tòa án cấp dưới",
+      "Hướng dẫn áp dụng thống nhất pháp luật trong xét xử"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-004",
+      "source-009"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Trụ sở chuyển đến từ 13/7/2026; trước đó tại 262 Đội Cấn, Ngọc Hà, Hà Nội. SĐT/email CHƯA XÁC MINH — toaan.gov.vn render bằng JavaScript, công cụ tra cứu tự động không đọc được."
+  },
+  {
+    "id": "org-vksndtc-vn",
+    "type": "procuracy",
+    "name": {
+      "vi": "Viện kiểm sát nhân dân tối cao",
+      "en": ""
+    },
+    "short_name": "VKSNDTC",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": null,
+    "contact": {
+      "address": "Số 9 Phạm Văn Bạch, phường Cầu Giấy, Hà Nội",
+      "phone": [
+        "024.38255058"
+      ],
+      "email": [],
+      "website": [
+        "https://vksndtc.gov.vn"
+      ],
+      "fax": "024.38255400"
+    },
+    "leadership": [
+      {
+        "position_id": "position-vien-truong-vksndtc",
+        "person_id": "person-nguyen-huy-tien"
+      }
+    ],
+    "functions": [
+      "Thực hành quyền công tố",
+      "Kiểm sát hoạt động tư pháp",
+      "Bảo đảm pháp luật được chấp hành nghiêm chỉnh, thống nhất trong điều tra, truy tố, xét xử, thi hành án"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-005",
+      "source-010"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Không chuyển trụ sở — chỉ đổi tên phường (Yên Hòa, quận Cầu Giấy → phường Cầu Giấy) theo sáp nhập 2025. Email CHƯA XÁC MINH (2 lần tra tự động đều không xác nhận trực quan được trangtinvkstc@vks.gov.vn). Fax: 024.38255400."
+  },
+  {
+    "id": "org-bo-quoc-phong",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Quốc phòng",
+      "en": ""
+    },
+    "short_name": "BQP",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 1 (một số nguồn ghi 1B) Nguyễn Tri Phương, Ba Đình, Hà Nội",
+      "phone": [
+        "069.553215"
+      ],
+      "email": [
+        "info@mod.gov.vn"
+      ],
+      "website": [
+        "https://mod.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-quoc-phong",
+        "person_id": "person-phan-van-giang"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về quốc phòng",
+      "Xây dựng nền quốc phòng toàn dân",
+      "Chỉ huy Quân đội nhân dân Việt Nam và dân quân tự vệ",
+      "Bảo vệ độc lập, chủ quyền, toàn vẹn lãnh thổ"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-101",
+      "source-102"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Số nhà lệch nhẹ giữa 2 nguồn (1 vs 1B) — không phải xung đột nghiêm trọng. Alias website: bqp.vn, dichvucong.mod.gov.vn."
+  },
+  {
+    "id": "org-bo-cong-an",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Công an",
+      "en": ""
+    },
+    "short_name": "BCA",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 96 Nguyễn Du, phường Cửa Nam, Hà Nội",
+      "phone": [
+        "069.233647"
+      ],
+      "email": [
+        "bandoc@mps.gov.vn"
+      ],
+      "website": [
+        "https://mps.gov.vn",
+        "https://bocongan.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-cong-an",
+        "person_id": "person-luong-tam-quang"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về an ninh quốc gia, trật tự an toàn xã hội",
+      "Đấu tranh phòng chống tội phạm",
+      "Quản lý xuất nhập cảnh, cư trú, phòng cháy chữa cháy"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-103",
+      "source-104",
+      "source-105"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Trụ sở mới khánh thành 16/8/2025, thay trụ sở cũ 44 Yết Kiêu (chinhphu.vn chưa cập nhật). SĐT nguồn phụ ghi 069.2341165 — ưu tiên số chính chủ mps.gov.vn."
+  },
+  {
+    "id": "org-bo-ngoai-giao",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Ngoại giao",
+      "en": ""
+    },
+    "short_name": "BNG",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 01 Tôn Thất Đàm, Ba Đình, Hà Nội",
+      "phone": [
+        "024.37992000"
+      ],
+      "email": [],
+      "website": [
+        "https://mofa.gov.vn"
+      ],
+      "fax": "024.37992682"
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-ngoai-giao",
+        "person_id": "person-le-hoai-trung"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về đối ngoại, ngoại giao",
+      "Biên giới lãnh thổ, điều ước quốc tế",
+      "Công tác lãnh sự và bảo hộ công dân",
+      "Quản lý cơ quan đại diện Việt Nam ở nước ngoài"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-106",
+      "source-107"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "KHÔNG có email chung toàn cơ quan — chỉ có email bộ phận: bantinbaochi@mofa.gov.vn, banbientap@mofa.gov.vn, ttll.mfa@mofa.gov.vn."
+  },
+  {
+    "id": "org-bo-noi-vu",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Nội vụ",
+      "en": ""
+    },
+    "short_name": "BNV",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 8 Tôn Thất Thuyết, phường Cầu Giấy, Hà Nội",
+      "phone": [
+        "024.62821016"
+      ],
+      "email": [],
+      "website": [
+        "https://moha.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-noi-vu",
+        "person_id": "person-nguyen-tien-hai"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về tổ chức hành chính, công vụ - công chức, chính quyền địa phương, thi đua khen thưởng",
+      "Từ 01/3/2025 nhận thêm lao động, việc làm, tiền lương, BHXH, người có công, bình đẳng giới (từ Bộ LĐ-TB&XH cũ, đã giải thể)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-108",
+      "source-109"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tên phường lệch giữa 2 nguồn (Nam Từ Liêm vs Cầu Giấy) — nghi do đổi tên đơn vị hành chính 2025, chưa chốt 100%. Email websitemaster@moha.gov.vn là email quản trị website, KHÔNG phải liên hệ chung — không dùng."
+  },
+  {
+    "id": "org-bo-tu-phap",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Tư pháp",
+      "en": ""
+    },
+    "short_name": "BTP",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 60 Trần Phú, Ba Đình, Hà Nội",
+      "phone": [
+        "024.62739321"
+      ],
+      "email": [],
+      "website": [
+        "https://moj.gov.vn"
+      ],
+      "fax": "024.62739359"
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-tu-phap",
+        "person_id": "person-hoang-thanh-tung"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về xây dựng và thi hành pháp luật",
+      "Phổ biến, giáo dục pháp luật",
+      "Thi hành án dân sự",
+      "Hộ tịch, quốc tịch, luật sư, công chứng, đăng ký giao dịch bảo đảm, bồi thường nhà nước"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-110",
+      "source-111"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "024.62739321 là tổng đài toàn cơ quan (Fax 024.62739359); 024.62739718 + banbientap@moj.gov.vn là của Ban Biên tập Cổng TTĐT, không phải liên hệ chung."
+  },
+  {
+    "id": "org-bo-tai-chinh",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Tài chính",
+      "en": ""
+    },
+    "short_name": "BTC",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 28 Trần Hưng Đạo, quận Hoàn Kiếm, Hà Nội",
+      "phone": [
+        "024.22202828",
+        "024.22202888"
+      ],
+      "email": [
+        "support@mof.gov.vn"
+      ],
+      "website": [
+        "https://mof.gov.vn"
+      ],
+      "fax": "024.22208091"
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-tai-chinh",
+        "person_id": "person-ngo-van-tuan"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về ngân sách, thuế - hải quan - kho bạc, nợ công, tài sản công",
+      "Chứng khoán, bảo hiểm, giá, kế toán - kiểm toán, thống kê",
+      "Từ 01/3/2025 nhận thêm chiến lược - kế hoạch phát triển KT-XH, đầu tư công, xúc tiến đầu tư (từ Bộ Kế hoạch và Đầu tư cũ, đã giải thể)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-112"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ Không dùng số 080.43162 / 16 Lê Hồng Phong (footer Báo Điện tử Chính phủ)."
+  },
+  {
+    "id": "org-bo-cong-thuong",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Công Thương",
+      "en": ""
+    },
+    "short_name": "BCT",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 23 Ngô Quyền, phường Cửa Nam, Hà Nội",
+      "phone": [
+        "024.22202222"
+      ],
+      "email": [
+        "VPB@moit.gov.vn"
+      ],
+      "website": [
+        "https://moit.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-cong-thuong",
+        "person_id": "person-le-manh-hung"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về công nghiệp và thương mại",
+      "Năng lượng (điện, dầu khí, than, năng lượng tái tạo), hóa chất, an toàn công nghiệp",
+      "Xuất nhập khẩu, thương mại trong nước và thương mại điện tử",
+      "Quản lý cạnh tranh, phòng vệ thương mại, hội nhập kinh tế quốc tế"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-113",
+      "source-114"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "SĐT/email trên là của Văn phòng Bộ. 0243.936.6400 / BaoCT@moit.gov.vn là của Báo Công Thương (đơn vị sự nghiệp trực thuộc) — không nhầm."
+  },
+  {
+    "id": "org-bo-nong-nghiep-moi-truong",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Nông nghiệp và Môi trường",
+      "en": ""
+    },
+    "short_name": "BNNMT",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 10 Tôn Thất Thuyết, phường Cầu Giấy, Hà Nội",
+      "phone": [
+        "024.37956868"
+      ],
+      "email": [
+        "portal@mae.gov.vn"
+      ],
+      "website": [
+        "https://mae.gov.vn"
+      ],
+      "fax": "024.38359221"
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-nong-nghiep-va-moi-truong",
+        "person_id": "person-trinh-viet-hung"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về nông nghiệp, lâm nghiệp, diêm nghiệp, thủy sản, thủy lợi, phòng chống thiên tai, phát triển nông thôn",
+      "Đất đai, tài nguyên nước, khoáng sản - địa chất, môi trường, khí tượng thủy văn, biến đổi khí hậu, đo đạc - bản đồ, viễn thám, biển và hải đảo",
+      "Nhiệm vụ giảm nghèo (tiếp nhận từ Bộ LĐ-TB&XH cũ)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-115",
+      "source-116"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Hợp nhất Bộ NN&PTNT + Bộ TN&MT (01/3/2025). Điểm tiếp công dân 79 Nguyễn Chí Thanh, phường Giảng Võ KHÔNG phải trụ sở chính."
+  },
+  {
+    "id": "org-bo-xay-dung",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Xây dựng",
+      "en": ""
+    },
+    "short_name": "BXD",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 80B Trần Hưng Đạo, phường Cửa Nam, Hà Nội",
+      "phone": [],
+      "email": [],
+      "website": [
+        "https://moc.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-xay-dung",
+        "person_id": "person-tran-hong-minh"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về xây dựng, vật liệu xây dựng, nhà ở và công sở, kiến trúc, quy hoạch xây dựng đô thị/nông thôn, hạ tầng kỹ thuật đô thị",
+      "Giao thông vận tải: đường bộ, đường sắt, đường thủy, hàng hải, hàng không (hợp nhất từ Bộ GTVT cũ, 01/3/2025)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-117"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "SĐT/email toàn cơ quan CHƯA XÁC MINH — chỉ có số Cổng TTĐT (024.38224464 / 024.39760271) và tinbai@moc.gov.vn, không chắc là kênh chung. Trụ sở duy nhất từ 2/2026 sau khi bàn giao 37 Lê Đại Hành cho Bộ Công an."
+  },
+  {
+    "id": "org-bo-vhttdl",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Văn hóa, Thể thao và Du lịch",
+      "en": ""
+    },
+    "short_name": "BVHTTDL",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 51 Ngô Quyền, phường Cửa Nam, Hà Nội",
+      "phone": [],
+      "email": [
+        "bovanhoathethaodulich@chinhphu.vn"
+      ],
+      "website": [
+        "https://bvhttdl.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-van-hoa-the-thao-va-du-lich",
+        "person_id": "person-lam-thi-phuong-thanh"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về văn hóa, gia đình, thể dục - thể thao, du lịch",
+      "Báo chí, phát thanh - truyền hình, xuất bản - in - phát hành, thông tin điện tử, thông tin cơ sở, thông tin đối ngoại (tiếp nhận từ Bộ TT&TT cũ, giải thể 01/3/2025)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-118",
+      "source-119"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "SĐT tổng đài toàn cơ quan CHƯA XÁC MINH — số 0243.9745845 là của Ban Biên tập Cổng TTĐT, đặt ở địa chỉ khác. Website song song: mocst.gov.vn."
+  },
+  {
+    "id": "org-bo-khcn",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Khoa học và Công nghệ",
+      "en": ""
+    },
+    "short_name": "BKHCN",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 18 Nguyễn Du, phường Cửa Nam, Hà Nội",
+      "phone": [
+        "024.39437097"
+      ],
+      "email": [
+        "stc@mst.gov.vn"
+      ],
+      "website": [
+        "https://mst.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-khoa-hoc-va-cong-nghe",
+        "person_id": "person-vu-hai-quan"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về nghiên cứu khoa học, công nghệ, đổi mới sáng tạo, công nghệ chiến lược",
+      "Sở hữu trí tuệ; tiêu chuẩn đo lường chất lượng",
+      "Năng lượng nguyên tử, an toàn bức xạ hạt nhân",
+      "Bưu chính, viễn thông, tần số vô tuyến điện; công nghiệp công nghệ số, chuyển đổi số quốc gia"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-120",
+      "source-121"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Hợp nhất phần lớn Bộ TT&TT cũ từ 01/3/2025. Website cũ most.gov.vn đã lỗi thời. chinhphu.vn có bản cache cũ ghi 113 Trần Duy Hưng — không dùng."
+  },
+  {
+    "id": "org-bo-gddt",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Giáo dục và Đào tạo",
+      "en": ""
+    },
+    "short_name": "BGDĐT",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 35 Đại Cồ Việt, phường Bạch Mai, Hà Nội",
+      "phone": [
+        "024.38695144"
+      ],
+      "email": [
+        "bogddt@moet.gov.vn"
+      ],
+      "website": [
+        "https://moet.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-giao-duc-va-dao-tao",
+        "person_id": "person-hoang-minh-son"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về giáo dục mầm non, phổ thông, đại học, giáo dục thường xuyên",
+      "Chương trình, sách giáo khoa",
+      "Thi cử, cấp phát văn bằng chứng chỉ",
+      "Phát triển đội ngũ nhà giáo"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-122",
+      "source-123"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "org-bo-y-te",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Y tế",
+      "en": ""
+    },
+    "short_name": "BYT",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 138A Giảng Võ, phường Giảng Võ, Hà Nội",
+      "phone": [],
+      "email": [],
+      "website": [
+        "https://moh.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-y-te",
+        "person_id": "person-dao-hong-lan"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về y tế dự phòng, khám chữa bệnh",
+      "Dược, mỹ phẩm, an toàn thực phẩm",
+      "Bảo hiểm y tế, dân số"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-124"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "SĐT CHƯA XÁC MINH — 2 số khác nhau từ cùng nguồn chinhphu.vn ở 2 thời điểm (0246.273.2.140 và 0246.273.2.273), chưa phân xử, không tự chọn. Email banbientap@moh.gov.vn có thể chỉ là Ban Biên tập."
+  },
+  {
+    "id": "org-bo-dan-toc-ton-giao",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Dân tộc và Tôn giáo",
+      "en": ""
+    },
+    "short_name": "BDTTG",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 349 phố Đội Cấn, phường Ngọc Hà, Hà Nội",
+      "phone": [
+        "024.37332092"
+      ],
+      "email": [
+        "bdttg@moera.gov.vn"
+      ],
+      "website": [
+        "https://bdttg.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-bo-dan-toc-va-ton-giao",
+        "person_id": "person-nguyen-dinh-khang"
+      }
+    ],
+    "functions": [
+      "Quản lý nhà nước về công tác dân tộc (chính sách dân tộc thiểu số, miền núi)",
+      "Quản lý nhà nước về tín ngưỡng, tôn giáo trong cả nước"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-125"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Thành lập 01/3/2025 trên cơ sở nâng cấp Ủy ban Dân tộc + nhận chức năng quản lý tôn giáo từ Bộ Nội vụ (Nghị định 41/2025/NĐ-CP). Domain email (moera.gov.vn) khác domain website (bdttg.gov.vn) — không phải lỗi tra cứu."
+  },
+  {
+    "id": "org-nhnn",
+    "type": "ministry_level_agency",
+    "name": {
+      "vi": "Ngân hàng Nhà nước Việt Nam",
+      "en": ""
+    },
+    "short_name": "NHNN",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 49 Lý Thái Tổ, Hoàn Kiếm, Hà Nội",
+      "phone": [
+        "024.32669435"
+      ],
+      "email": [
+        "thuongtrucweb@sbv.gov.vn"
+      ],
+      "website": [
+        "https://sbv.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-thong-doc-ngan-hang-nha-nuoc-viet-nam",
+        "person_id": "person-pham-duc-an"
+      }
+    ],
+    "functions": [
+      "Cơ quan ngang Bộ, Ngân hàng Trung ương của Việt Nam",
+      "Quản lý nhà nước về tiền tệ, hoạt động ngân hàng, ngoại hối",
+      "Phát hành tiền; điều hành chính sách tiền tệ quốc gia"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-126",
+      "source-127"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "org-thanh-tra-cp",
+    "type": "ministry_level_agency",
+    "name": {
+      "vi": "Thanh tra Chính phủ",
+      "en": ""
+    },
+    "short_name": "TTCP",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 20 đường Hoàng Quán Chi, phường Cầu Giấy, Hà Nội",
+      "phone": [
+        "024.38333976"
+      ],
+      "email": [
+        "ttcp@thanhtra.gov.vn"
+      ],
+      "website": [
+        "https://thanhtra.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-tong-thanh-tra-chinh-phu",
+        "person_id": "person-nguyen-quoc-doan"
+      }
+    ],
+    "functions": [
+      "Cơ quan ngang Bộ giúp Chính phủ quản lý nhà nước về công tác thanh tra",
+      "Tiếp công dân, giải quyết khiếu nại, tố cáo",
+      "Phòng, chống tham nhũng, tiêu cực trong cả nước"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-128"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "org-vpcp",
+    "type": "ministry_level_agency",
+    "name": {
+      "vi": "Văn phòng Chính phủ",
+      "en": ""
+    },
+    "short_name": "VPCP",
+    "status": "active",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 01 Hoàng Hoa Thám, Ba Đình, Hà Nội",
+      "phone": [
+        "080.43100",
+        "080.43569"
+      ],
+      "email": [
+        "vpcp@chinhphu.vn"
+      ],
+      "website": [
+        "https://vpcp.chinhphu.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-bo-truong-chu-nhiem-van-phong-chinh-phu",
+        "person_id": "person-dang-xuan-phong"
+      }
+    ],
+    "functions": [
+      "Cơ quan ngang Bộ, bộ máy giúp việc của Chính phủ và Thủ tướng Chính phủ",
+      "Tham mưu tổng hợp, điều phối hoạt động của Chính phủ",
+      "Theo dõi, đôn đốc thực hiện chương trình công tác",
+      "Bảo đảm thông tin phục vụ chỉ đạo, điều hành"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-129"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ KHÁC entity với 'Chính phủ Việt Nam' (org-chinhphu-vn): VPCP là cơ quan ngang Bộ giúp việc, dùng chung trụ sở/SĐT/email — trùng thông tin liên hệ là hợp lý, không gộp 2 node."
+  }
+]

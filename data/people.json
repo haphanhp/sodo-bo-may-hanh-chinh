@@ -1,0 +1,422 @@
+[
+  {
+    "id": "person-luong-cuong",
+    "name": {
+      "vi": "Lương Cường"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-nuoc",
+        "organization_id": "org-vpctn-vn",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-002"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ CHƯA ĐỐI CHIẾU CHÉO — ghi theo tin tức tại thời điểm tra cứu (2026-09-18), chưa xác minh bằng văn bản chính thức."
+  },
+  {
+    "id": "person-tran-thanh-man",
+    "name": {
+      "vi": "Trần Thanh Mẫn"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-quoc-hoi",
+        "organization_id": "org-quochoi-vn",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-001"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ CHƯA ĐỐI CHIẾU CHÉO — ghi theo tin tức tại thời điểm tra cứu (2026-09-18), chưa xác minh bằng văn bản chính thức."
+  },
+  {
+    "id": "person-nguyen-van-quang",
+    "name": {
+      "vi": "Nguyễn Văn Quảng"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chanh-an-tandtc",
+        "organization_id": "org-tandtc-vn",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-004"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ CHƯA ĐỐI CHIẾU CHÉO — ghi theo tin tức tại thời điểm tra cứu (2026-09-18), chưa xác minh bằng văn bản chính thức."
+  },
+  {
+    "id": "person-nguyen-huy-tien",
+    "name": {
+      "vi": "Nguyễn Huy Tiến"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-vien-truong-vksndtc",
+        "organization_id": "org-vksndtc-vn",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-005"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ CHƯA ĐỐI CHIẾU CHÉO — ghi theo tin tức tại thời điểm tra cứu (2026-09-18), chưa xác minh bằng văn bản chính thức. Dẫn theo Chỉ thị 01/CT-VKSTC."
+  },
+  {
+    "id": "person-phan-van-giang",
+    "name": {
+      "vi": "Phan Văn Giang"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-quoc-phong",
+        "organization_id": "org-bo-quoc-phong",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-102"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Đại tướng, kiêm Phó Thủ tướng Chính phủ; nhiệm kỳ 2026–2031."
+  },
+  {
+    "id": "person-luong-tam-quang",
+    "name": {
+      "vi": "Lương Tam Quang"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-cong-an",
+        "organization_id": "org-bo-cong-an",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-104"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Đại tướng; nhiệm kỳ 2026–2031."
+  },
+  {
+    "id": "person-le-hoai-trung",
+    "name": {
+      "vi": "Lê Hoài Trung"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-ngoai-giao",
+        "organization_id": "org-bo-ngoai-giao",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-107"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Phê chuẩn ~24–25/10/2025, tiếp tục giữ chức sang khóa XVI."
+  },
+  {
+    "id": "person-nguyen-tien-hai",
+    "name": {
+      "vi": "Nguyễn Tiến Hải"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-noi-vu",
+        "organization_id": "org-bo-noi-vu",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-109"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Quốc hội phê chuẩn 03/8/2026, thay ông Đỗ Thanh Bình."
+  },
+  {
+    "id": "person-hoang-thanh-tung",
+    "name": {
+      "vi": "Hoàng Thanh Tùng"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-tu-phap",
+        "organization_id": "org-bo-tu-phap",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-111"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Từ 08/4/2026 theo Nghị quyết 17/2026/QH16, thay ông Nguyễn Hải Ninh."
+  },
+  {
+    "id": "person-ngo-van-tuan",
+    "name": {
+      "vi": "Ngô Văn Tuấn"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-tai-chinh",
+        "organization_id": "org-bo-tai-chinh",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-112"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Phê chuẩn 08/4/2026, nhiệm kỳ 2026–2031; tiền nhiệm Nguyễn Văn Thắng."
+  },
+  {
+    "id": "person-le-manh-hung",
+    "name": {
+      "vi": "Lê Mạnh Hùng"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-cong-thuong",
+        "organization_id": "org-bo-cong-thuong",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-114"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Quyền Bộ trưởng từ 12/2025, phê chuẩn chính thức 08/4/2026; tiền nhiệm Nguyễn Hồng Diên."
+  },
+  {
+    "id": "person-trinh-viet-hung",
+    "name": {
+      "vi": "Trịnh Việt Hùng"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-nong-nghiep-va-moi-truong",
+        "organization_id": "org-bo-nong-nghiep-moi-truong",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-116"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Phê chuẩn 7–8/4/2026. Lịch sử: Đỗ Đức Duy (bị đình chỉ chức vụ 7/2025) → Trần Đức Thắng (quyền) → Trịnh Việt Hùng."
+  },
+  {
+    "id": "person-tran-hong-minh",
+    "name": {
+      "vi": "Trần Hồng Minh"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-xay-dung",
+        "organization_id": "org-bo-xay-dung",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-117"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Giữ chức xuyên suốt qua đợt kiện toàn 4/2026."
+  },
+  {
+    "id": "person-lam-thi-phuong-thanh",
+    "name": {
+      "vi": "Lâm Thị Phương Thanh"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-van-hoa-the-thao-va-du-lich",
+        "organization_id": "org-bo-vhttdl",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-119"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Phê chuẩn 08/4/2026, nhận bàn giao 09/4/2026; tiền nhiệm Nguyễn Văn Hùng."
+  },
+  {
+    "id": "person-vu-hai-quan",
+    "name": {
+      "vi": "Vũ Hải Quân"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-khoa-hoc-va-cong-nghe",
+        "organization_id": "org-bo-khcn",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-121"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Từ 08/4/2026, Nghị quyết 17/2026/QH16; thay ông Nguyễn Mạnh Hùng."
+  },
+  {
+    "id": "person-hoang-minh-son",
+    "name": {
+      "vi": "Hoàng Minh Sơn"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-giao-duc-va-dao-tao",
+        "organization_id": "org-bo-gddt",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-123"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Từ 08/4/2026, Nghị quyết 17/2026/QH16; thay ông Nguyễn Kim Sơn."
+  },
+  {
+    "id": "person-dao-hong-lan",
+    "name": {
+      "vi": "Đào Hồng Lan"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-y-te",
+        "organization_id": "org-bo-y-te",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-124"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tiếp tục giữ chức qua khóa XVI từ 08/4/2026."
+  },
+  {
+    "id": "person-nguyen-dinh-khang",
+    "name": {
+      "vi": "Nguyễn Đình Khang"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-bo-dan-toc-va-ton-giao",
+        "organization_id": "org-bo-dan-toc-ton-giao",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-125"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-pham-duc-an",
+    "name": {
+      "vi": "Phạm Đức Ấn"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-thong-doc-ngan-hang-nha-nuoc-viet-nam",
+        "organization_id": "org-nhnn",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-127"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Từ 08/4/2026, Nghị quyết 17/2026/QH16; thay bà Nguyễn Thị Hồng."
+  },
+  {
+    "id": "person-nguyen-quoc-doan",
+    "name": {
+      "vi": "Nguyễn Quốc Đoàn"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-tong-thanh-tra-chinh-phu",
+        "organization_id": "org-thanh-tra-cp",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-128"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  },
+  {
+    "id": "person-dang-xuan-phong",
+    "name": {
+      "vi": "Đặng Xuân Phong"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-bo-truong-chu-nhiem-van-phong-chinh-phu",
+        "organization_id": "org-vpcp",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-129"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": ""
+  }
+]

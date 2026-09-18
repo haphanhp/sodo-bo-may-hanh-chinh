@@ -233,6 +233,19 @@ updated: 2026-09-18
 
 ---
 
+#### 2026-09-18 — Phase 2: data engine + nạp dữ liệu thật cấp thượng tầng
+
+- **Việc làm**: Viết `loader.js`, `validator.js`, `indexer.js`, mở rộng `state.js`, thêm `tools/validate-data.js` chạy được bằng Node. Ráp dữ liệu thật từ các file thô `01`, `03`, `04`, `05` vào `data/*.json`: 22 cơ quan, 21 người, 22 chức vụ, 22 quan hệ, 41 nguồn. 4 view (Cơ quan / Con người / Chức vụ / Nguồn) đã render bảng dữ liệu thật. Thêm `mo-app.bat`.
+- **Vấn đề gặp**: (a) `fetch('data/*.json')` bị trình duyệt chặn khi mở `index.html` bằng `file://` → app trống trơn mà không rõ lý do. (b) Không có browser để kiểm thử trực tiếp từ phía Cowork. (c) Quên `mkdir js/data` nên loạt heredoc đầu tiên ghi file thất bại im lặng.
+- **Cách xử lý**: (a) Loader bắt lỗi và set `loadError`; mọi view hiển thị banner cảnh báo kèm hướng dẫn chạy `mo-app.bat` / `python -m http.server`. (b) Viết script Node import thẳng `views.js` + `indexer.js` với dữ liệu thật, kiểm tra từng view có render đủ, không lọt chuỗi `undefined`/`[object Object]` — thay cho việc mở trình duyệt. (c) `mkdir -p` trước khi ghi, và `node --check` từng file sau khi ghi.
+- **Bài học**:
+  - App tĩnh đọc JSON **không chạy được bằng `file://`** — phải kèm sẵn cách mở đúng (file .bat) ngay khi giao, nếu không user mở ra thấy trống và tưởng hỏng.
+  - Không có trình duyệt vẫn kiểm thử được view: tách hàm render thành module thuần chuỗi (không đụng DOM) để import bằng Node — thiết kế này nên giữ cho các Phase sau.
+  - Luôn `mkdir -p` thư mục đích trước heredoc: heredoc ghi hụt không làm dừng script, dễ tưởng đã ghi xong.
+  - Ráp dữ liệu thật ngay ở Phase 2 (thay vì entity giả) giúp bắt sớm các quyết định schema thật: Chủ tịch nước tách position/organization, Chính phủ ≠ Văn phòng Chính phủ, SĐT bộ phận không được dùng làm liên hệ toàn cơ quan.
+
+---
+
 #### 2026-09-18 — Backup GitHub bằng Git Credential Manager (không cần PAT) + chốt dữ liệu tên xã đã tra dở
 
 - **Việc làm**: Claude Code push thành công 4 commit lên `origin/main` (`e61a78c` → `7ed7d2c` → `4ae00a7` → `1805378`). Commit thêm 2 file dữ liệu đã tra dở trước khi thu hẹp phạm vi: `17-ten-day-du-nhom1-va-nhom2.md`, `18-ten-day-du-nhom4-4tinh.md`. Ghi nhận tiến độ backup + mục 06 vào Roadmap.
