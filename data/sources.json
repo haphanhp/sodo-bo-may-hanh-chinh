@@ -1998,5 +1998,149 @@
     "accessed_date": "2026-09-18",
     "reliability": "unverified",
     "notes": "⚠️ KHÔNG phải nguồn chính thức. Dùng tạm cho dữ liệu do user cung cấp miệng, phải thay bằng nguồn có link/số văn bản khi tra được."
+  },
+  {
+    "id": "source-301",
+    "title": "Ông Trần Lưu Quang tiếp tục được chỉ định làm Bí thư Thành ủy TPHCM (14/10/2025)",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Điện tử Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://baochinhphu.vn/ong-tran-luu-quang-tiep-tuc-duoc-chi-dinh-lam-bi-thu-thanh-uy-tphcm-102251014105449459.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-302",
+    "title": "Ông Nguyễn Văn Quyết tiếp tục làm Bí thư Tỉnh ủy Tây Ninh (công bố 10/10/2025)",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Tuổi Trẻ"
+    },
+    "type": "news",
+    "url": "https://tuoitre.vn/ong-nguyen-van-quyet-tiep-tuc-lam-bi-thu-tinh-uy-tay-ninh-20251009185006163.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-303",
+    "title": "Đồng chí Nguyễn Văn Quyết giữ chức Bí thư Tỉnh ủy Tây Ninh nhiệm kỳ 2025-2030",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT tỉnh Tây Ninh"
+    },
+    "type": "official_website",
+    "url": "https://tayninh.gov.vn/dai-hoi-dang-bo-cac-cap/dong-chi-nguyen-van-quyet-giu-chuc-bi-thu-tinh-uy-tay-ninh-nhiem-ky-2025-2030-1024382",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-310",
+    "title": "Cơ quan nào có thẩm quyền cấp Phiếu lý lịch tư pháp từ ngày 1/7/2026 (Luật 107/2025/QH15)",
+    "publisher": {
+      "organization_id": null,
+      "name": "thuvienphapluat.vn"
+    },
+    "type": "legal_database",
+    "url": "https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/chinh-sach-moi/101372/co-quan-nao-co-tham-quyen-cap-phieu-ly-lich-tu-phap-tu-ngay-1-7-2026",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": "Trích điểm c khoản 1 Điều 1 Luật 107/2025/QH15"
+  },
+  {
+    "id": "source-311",
+    "title": "Thủ tục xin cấp lý lịch tư pháp năm 2026: hồ sơ, lệ phí, nơi nộp",
+    "publisher": {
+      "organization_id": null,
+      "name": "thuvienphapluat.vn"
+    },
+    "type": "legal_database",
+    "url": "https://thuvienphapluat.vn/lao-dong-tien-luong/thu-tuc-xin-cap-ly-lich-tu-phap-nam-2026-ho-so-le-phi-noi-nop-ho-so-moi-nhat-60139.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-312",
+    "title": "Những điểm mới nổi bật của Luật Lý lịch tư pháp số 107/2025/QH15",
+    "publisher": {
+      "organization_id": null,
+      "name": "Công an tỉnh Đắk Lắk"
+    },
+    "type": "official_website",
+    "url": "https://congan.daklak.gov.vn/pho-bien-phap-luat/nhung-diem-moi-noi-bat-cua-luat-ly-lich-tu-phap-so-107-2025-qh15-12529.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-320",
+    "title": "Thủ tục thành lập công ty TNHH một thành viên năm 2026",
+    "publisher": {
+      "organization_id": null,
+      "name": "thuvienphapluat.vn"
+    },
+    "type": "legal_database",
+    "url": "https://thuvienphapluat.vn/phap-luat-doanh-nghiep/bai-viet/thu-tuc-thanh-lap-cong-ty-tnhh-mot-thanh-vien-nam-2026-18985.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": "Dẫn Luật Doanh nghiệp 2020, Nghị định 168/2025/NĐ-CP, Thông tư 68/2025/TT-BTC"
+  },
+  {
+    "id": "source-330",
+    "title": "Những lưu ý khi đổi giấy phép lái xe mới tại Công an xã từ 01/3/2025 (Thông tư 12/2025/TT-BCA)",
+    "publisher": {
+      "organization_id": null,
+      "name": "thuvienphapluat.vn"
+    },
+    "type": "legal_database",
+    "url": "https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/chinh-sach-moi/80432/nhung-luu-y-khi-doi-giay-phep-lai-xe-moi-tai-cong-an-xa-tu-01-03-2025",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-331",
+    "title": "Lệ phí cấp đổi giấy phép lái xe máy, ô tô từ năm 2026 (Thông tư 154/2025/TT-BTC)",
+    "publisher": {
+      "organization_id": null,
+      "name": "LuatVietnam"
+    },
+    "type": "legal_database",
+    "url": "https://luatvietnam.vn/le-phi/le-phi-cap-doi-giay-phep-lai-xe-may-o-to-tu-nam-2026-nhu-the-nao-675-106379-article.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
   }
 ]

@@ -1645,15 +1645,16 @@
       {
         "position_id": "position-bi-thu-tinh-uy-tay-ninh",
         "organization_id": "org-tinh-tay-ninh",
-        "from": "2025-07-01",
+        "from": "2025-06-30",
         "to": null
       }
     ],
     "source_ids": [
-      "source-277"
+      "source-302",
+      "source-303"
     ],
     "last_verified": "2026-09-18",
-    "notes": "⚠️ Chỉ ghi được 'tháng 7/2025', ngày cụ thể chưa xác minh; nguồn là Wikipedia dẫn lại PLO — độ tin cậy thấp hơn các mục khác, cần đối chiếu lại."
+    "notes": "Bộ Chính trị chỉ định từ 30/6/2025 (nhiệm kỳ 2020–2025, thời điểm hợp nhất Tây Ninh + Long An), tiếp tục được chỉ định cho nhiệm kỳ 2025–2030, công bố 10/10/2025. ✅ Đã thay nguồn Wikipedia bằng Cổng TTĐT tỉnh Tây Ninh + Tuổi Trẻ (2026-09-18)."
   },
   {
     "id": "person-do-thanh-binh",
@@ -1785,14 +1786,14 @@
       {
         "position_id": "position-bi-thu-thanh-uy-ho-chi-minh",
         "organization_id": "org-tp-ho-chi-minh",
-        "from": null,
+        "from": "2025-10-14",
         "to": null
       }
     ],
     "source_ids": [
-      "source-900"
+      "source-301"
     ],
     "last_verified": "2026-09-18",
-    "notes": "⚠️ CHƯA XÁC MINH — do người dùng dự án khai báo trực tiếp (2026-09-18), chưa có link nguồn hay số văn bản. Cần đối chiếu bằng nguồn chính thức trước khi coi là đã chốt (luật 2 & 15)."
+    "notes": "✅ ĐÃ XÁC MINH (2026-09-18, Pro tự tra): Bộ Chính trị chỉ định ngày 14/10/2025 cho nhiệm kỳ 2025–2030; trước đó đã là Bí thư Thành ủy TP.HCM nhiệm kỳ 2020–2025 (tiểu sử công bố 25/8/2025). Không phải người mới thay ai."
   }
 ]

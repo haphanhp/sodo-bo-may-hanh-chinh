@@ -233,6 +233,18 @@ updated: 2026-09-18
 
 ---
 
+#### 2026-09-18 — Pro tự thực hiện Prompt #25: 3 thủ tục hành chính + xác minh xong 2 mục Bí thư
+
+- **Việc làm**: Các acc Free quá tải nên acc Pro tự tra bằng WebSearch/WebFetch. Kết quả: (1) xác minh Bí thư Thành ủy TP.HCM = Trần Lưu Quang, chỉ định 14/10/2025 nhiệm kỳ 2025–2030 (khớp lời user, đã gỡ cờ `unverified`); (2) Bí thư Tỉnh ủy Tây Ninh = Nguyễn Văn Quyết, chỉ định 30/6/2025, tiếp tục nhiệm kỳ mới công bố 10/10/2025 (thay nguồn Wikipedia bằng Cổng TTĐT tỉnh + Tuổi Trẻ); (3) ráp 3 thủ tục thật vào `data/procedures.json`. Lưu dữ liệu thô vào `19-thu-tuc-hanh-chinh-va-xac-minh-bi-thu.md`.
+- **Vấn đề gặp**: CẢ BA thủ tục đều vừa đổi cơ quan có thẩm quyền trong 2025–2026, nên phần lớn bài hướng dẫn trên mạng (kể cả bài đề năm 2026) vẫn ghi cơ quan CŨ. Ngoài ra `dichvucong.gov.vn` chặn truy cập tự động (robots.txt), không fetch được trang thủ tục gốc.
+- **Cách xử lý**: Với mỗi thủ tục, tra riêng một nguồn về THẨM QUYỀN hiện hành trước, rồi mới lấy chi tiết hồ sơ/lệ phí — không tin phần "nơi nộp" trong các bài tổng hợp. Thời hạn 05 ngày làm việc của lý lịch tư pháp chỉ có nguồn báo chí nên ghi rõ "chưa đối chiếu điều luật" ngay trong `notes` thay vì để như dữ liệu đã chốt. Gỡ luôn `source-900` (nguồn "user khai báo") vì không còn entity nào dùng.
+- **Bài học**:
+  - Ba thay đổi thẩm quyền lớn cần nhớ khi tra bất kỳ thủ tục nào: lý lịch tư pháp Bộ Tư pháp → Bộ Công an (01/7/2026), giấy phép lái xe Bộ GTVT → Bộ Công an (01/3/2025), đăng ký doanh nghiệp Bộ KH&ĐT → Bộ Tài chính (01/3/2025). Mặc định nghi ngờ trường "nơi nộp hồ sơ" trong mọi bài hướng dẫn.
+  - `dichvucong.gov.vn` không fetch tự động được — muốn lấy bản gốc thủ tục phải mở bằng trình duyệt thật, hoặc dùng thuvienphapluat/LuatVietnam làm nguồn trung gian và ghi rõ là nguồn thứ cấp.
+  - Khi một dữ kiện user cung cấp được xác minh xong, nhớ dọn luôn nguồn tạm `unverified` — nếu để lại, app vẫn hiện cảnh báo đỏ sai và dữ liệu trông kém tin cậy hơn thực tế.
+
+---
+
 #### 2026-09-18 — Hoàn thiện Bí thư 34/34 + Phase 6 (giao diện thủ tục) + Prompt #25
 
 - **Việc làm**: Nạp Bí thư Thành ủy TP.HCM (Trần Lưu Quang) theo user khai báo — đủ 34/34 tỉnh/thành. Dựng giao diện Phase 6: bảng danh sách thủ tục + bảng chi tiết dạng timeline các bước (ai làm, thời hạn, mô tả), kèm cơ quan tiếp nhận/chịu trách nhiệm bấm được, hồ sơ, lệ phí, kết quả, căn cứ pháp lý. Thêm bảng chi tiết riêng cho chức vụ. Soạn Prompt #25 (xác minh Bí thư TP.HCM + Tây Ninh + 3 thủ tục mẫu).

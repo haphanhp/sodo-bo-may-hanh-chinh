@@ -18,7 +18,7 @@ updated: 2026-09-18
 
 #### Trạng thái tổng quan
 
-- Phase hiện tại: **Phase 6 — giao diện ĐÃ XONG, đang chờ dữ liệu thủ tục thật (Prompt #25). App hiện có: 56 cơ quan / 89 người / 90 chức vụ / 125 nguồn, sơ đồ phân trang, bảng chi tiết cho cơ quan/người/chức vụ/thủ tục, tìm kiếm toàn cục**
+- Phase hiện tại: **Phase 6 ĐÃ XONG (giao diện + 3 thủ tục thật). App hiện có: 56 cơ quan / 89 người / 90 chức vụ / 3 thủ tục / 133 nguồn. Tiếp theo: Phase 7 (văn bản pháp luật) — đã có sẵn ~8 văn bản cần tạo entity từ `legal_basis` của 3 thủ tục**
 - **⚠️ Phạm vi thu hẹp (user chốt 2026-09-18)**: chỉ đào sâu **cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương**. Cấp xã/phường/đặc khu **KHÔNG cần trụ sở/SĐT/lãnh đạo riêng từng xã** (việc đào sâu chi tiết đó dừng ở đây). Riêng phần **danh sách TÊN đầy đủ** cấp xã: user yêu cầu làm cho xong luôn ngay trong ngày — Pro tự tra 100% qua WebSearch/WebFetch (file 17-21), **đã hoàn tất cả nước 34/34 tỉnh/thành**. Prompt #20–#24 giữ nguyên trong `Promts-sodobmhc.md` nhưng KHÔNG giao acc Free (Pro đã tự làm xong). → Thu thập dữ liệu thô cấp xã xem như **ĐÃ ĐỦ HOÀN TOÀN** cho Phase 10. — song song, dữ liệu thô cấp tỉnh/thành (mục 03) vẫn tiếp tục thu thập độc lập
 - Cập nhật lần cuối: 2026-09-18
 
@@ -110,7 +110,7 @@ updated: 2026-09-18
 
 - [x] ✅ Cấp trung ương: Quốc hội, Chủ tịch nước (tách `position-chu-tich-nuoc` + `org-vpctn-vn`), Chính phủ, TAND tối cao, VKSND tối cao — đã vào `data/*.json` ở Phase 2
 - [x] ✅ Các Bộ / cơ quan ngang Bộ — đủ 17/17, đã vào `data/*.json` ở Phase 2
-- [x] ✅ Cấp tỉnh / thành phố trực thuộc trung ương — đủ **34/34** (27 tỉnh + 7 TP), có trụ sở, SĐT, fax, email, website, Chủ tịch UBND, ghi chú sáp nhập/trung tâm hành chính và nguồn. **Đã nạp thêm 33 Bí thư Tỉnh/Thành ủy** (từ `11-bi-thu-tinh-thanh-va-doi-chieu.md` + file 07), kèm ngày nhậm chức. Đã đủ **34/34** Bí thư (TP.HCM = Trần Lưu Quang, ⚠️ do user khai báo trực tiếp, CHƯA có nguồn chính thức — đã đánh dấu `reliability: unverified` trong data và hiện cảnh báo đỏ trong app). Tây Ninh chỉ có nguồn Wikipedia dẫn PLO → cả 2 điểm này nằm trong **Prompt #25**
+- [x] ✅ Cấp tỉnh / thành phố trực thuộc trung ương — đủ **34/34** (27 tỉnh + 7 TP), có trụ sở, SĐT, fax, email, website, Chủ tịch UBND, ghi chú sáp nhập/trung tâm hành chính và nguồn. **Đã nạp thêm 33 Bí thư Tỉnh/Thành ủy** (từ `11-bi-thu-tinh-thanh-va-doi-chieu.md` + file 07), kèm ngày nhậm chức. Đã đủ **34/34** Bí thư và cả 2 điểm hở đều ✅ ĐÃ XÁC MINH (Prompt #25, Pro tự tra): TP.HCM = Trần Lưu Quang (chỉ định 14/10/2025, nguồn Báo Điện tử Chính phủ); Tây Ninh = Nguyễn Văn Quyết (chỉ định 30/6/2025, tiếp tục nhiệm kỳ 2025–2030 công bố 10/10/2025, nguồn Cổng TTĐT tỉnh + Tuổi Trẻ)
 - [x] ~~Cấp huyện / quận / thị xã~~ — KHÔNG áp dụng (đã kết thúc hoạt động 01/7/2025, chỉ giữ giá trị lịch sử)
 - [ ] Cấp xã / phường / đặc khu — **chỉ nạp ở mức liệt kê**: tổng số + cơ cấu (số xã / phường / đặc khu) theo từng tỉnh, KHÔNG nạp tên từng đơn vị
 - [ ] Đối chiếu chéo nguồn, backup GitHub định kỳ

@@ -52,7 +52,7 @@ Chỉ đào sâu **cấp thượng tầng + cấp tỉnh/thành phố trực thu
 | 22 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 3/5 (7 tỉnh: Bắc Ninh, Hưng Yên, Hải Phòng, Ninh Bình, Quảng Trị, Đà Nẵng, Quảng Ngãi) | Microsoft Edge | ⏸ GIỮ NGUYÊN, KHÔNG GIAO — phạm vi chỉ dừng ở mức liệt kê (đã xong toàn quốc 34/34 tỉnh, tới An Giang). Nội dung prompt giữ lại để dùng nếu sau này mở lại phạm vi |
 | 23 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 4/5 (7 tỉnh: Huế, Gia Lai, Khánh Hòa, Lâm Đồng, Đắk Lắk, Thành phố Đồng Nai, Tây Ninh) | Cốc Cốc | ⏸ GIỮ NGUYÊN, KHÔNG GIAO — phạm vi chỉ dừng ở mức liệt kê (đã xong toàn quốc 34/34 tỉnh, tới An Giang). Nội dung prompt giữ lại để dùng nếu sau này mở lại phạm vi |
 | 24 | Danh sách TÊN ĐẦY ĐỦ từng xã/phường nhóm 5/5 (6 tỉnh: TP Hồ Chí Minh, Cần Thơ, Vĩnh Long, Đồng Tháp, Cà Mau, An Giang) | Arc | ⏸ GIỮ NGUYÊN, KHÔNG GIAO — phạm vi chỉ dừng ở mức liệt kê (đã xong toàn quốc 34/34 tỉnh, tới An Giang). Nội dung prompt giữ lại để dùng nếu sau này mở lại phạm vi |
-| 25 | Xác minh Bí thư Thành ủy TP.HCM + đối chiếu Bí thư Tây Ninh + tra 3 thủ tục hành chính mẫu (cấp Bộ / cấp tỉnh) để test Phase 6 | Brave | 🔵 Đã soạn, chờ giao |
+| 25 | Xác minh Bí thư Thành ủy TP.HCM + đối chiếu Bí thư Tây Ninh + tra 3 thủ tục hành chính mẫu | ~~Brave~~ → **acc Pro tự làm** (acc Free quá tải) | ✅ Đã ráp — xem `19-thu-tuc-hanh-chinh-va-xac-minh-bi-thu.md` và `data/procedures.json` |
 
 ---
 

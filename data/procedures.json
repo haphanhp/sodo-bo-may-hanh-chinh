@@ -1,1 +1,265 @@
-[]
+[
+  {
+    "id": "procedure-cap-phieu-lltp-so-1",
+    "name": {
+      "vi": "Cấp Phiếu lý lịch tư pháp số 1 cho công dân Việt Nam"
+    },
+    "status": "active",
+    "applicant": {
+      "types": [
+        "individual"
+      ]
+    },
+    "responsible_organization_id": "org-bo-cong-an",
+    "receiving_organization_id": "org-bo-cong-an",
+    "steps": [
+      {
+        "id": "step-01",
+        "order": 1,
+        "name": "Chuẩn bị và kê khai thông tin",
+        "actor": "applicant",
+        "description": "Kê khai tờ khai yêu cầu cấp Phiếu lý lịch tư pháp; chọn hình thức nộp: trực tuyến (VNeID / cổng dịch vụ công), trực tiếp hoặc qua bưu chính.",
+        "required_documents": [],
+        "duration": null
+      },
+      {
+        "id": "step-02",
+        "order": 2,
+        "name": "Nộp hồ sơ",
+        "actor": "applicant",
+        "description": "Nộp tại Công an cấp tỉnh nơi thường trú/tạm trú. Trường hợp không xác định được nơi thường trú/tạm trú hoặc là người nước ngoài từng cư trú tại Việt Nam thì nộp tại Cục Hồ sơ nghiệp vụ Bộ Công an.",
+        "required_documents": [],
+        "duration": null
+      },
+      {
+        "id": "step-03",
+        "order": 3,
+        "name": "Nộp lệ phí",
+        "actor": "applicant",
+        "description": "200.000 đồng/lần; 100.000 đồng với học sinh từ 16 tuổi, sinh viên, người có công, thân nhân liệt sĩ; miễn phí với trẻ em, người cao tuổi, người khuyết tật, hộ nghèo/cận nghèo và cư dân xã đặc biệt khó khăn. Từ phiếu thứ 3 trở đi trong 1 lần nộp: +5.000 đồng/phiếu.",
+        "required_documents": [],
+        "duration": null
+      },
+      {
+        "id": "step-04",
+        "order": 4,
+        "name": "Cơ quan Công an tra cứu, xác minh",
+        "actor": "organization",
+        "description": "Tra cứu thông tin lý lịch tư pháp trong cơ sở dữ liệu; phối hợp xác minh khi cần.",
+        "required_documents": [],
+        "duration": "05 ngày làm việc (theo báo chí dẫn Luật sửa đổi — ⚠️ chưa đối chiếu trực tiếp điều luật)",
+        "organization_id": "org-bo-cong-an"
+      },
+      {
+        "id": "step-05",
+        "order": 5,
+        "name": "Trả kết quả",
+        "actor": "organization",
+        "description": "Nhận Phiếu lý lịch tư pháp số 1 bản giấy hoặc bản điện tử (2 bản có giá trị pháp lý như nhau kể từ 01/7/2026).",
+        "required_documents": [],
+        "duration": null,
+        "organization_id": "org-bo-cong-an"
+      }
+    ],
+    "requirements": [
+      "Thẻ căn cước / căn cước công dân hoặc hộ chiếu còn giá trị",
+      "Tờ khai yêu cầu cấp Phiếu lý lịch tư pháp theo mẫu",
+      "Giấy tờ chứng minh thuộc diện miễn/giảm lệ phí (nếu có)"
+    ],
+    "fees": [
+      "200.000 đồng/lần (mức thông thường)",
+      "100.000 đồng/lần (học sinh từ 16 tuổi, sinh viên, người có công, thân nhân liệt sĩ)",
+      "Miễn phí: trẻ em, người cao tuổi, người khuyết tật, hộ nghèo/cận nghèo, cư dân xã đặc biệt khó khăn",
+      "Phiếu thứ 3 trở đi trong cùng lần nộp: +5.000 đồng/phiếu"
+    ],
+    "result": [
+      "Phiếu lý lịch tư pháp số 1 (bản giấy hoặc bản điện tử)"
+    ],
+    "forms": [],
+    "legal_basis": [
+      "Luật Lý lịch tư pháp 2009",
+      "Luật số 107/2025/QH15 sửa đổi, bổ sung một số điều của Luật Lý lịch tư pháp (hiệu lực 01/7/2026)",
+      "Thông tư 101/2026/TT-BCA (biểu mẫu, áp dụng từ 01/7/2026)"
+    ],
+    "source_ids": [
+      "source-310",
+      "source-311",
+      "source-312"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ THAY ĐỔI LỚN: từ 01/7/2026, thẩm quyền cấp Phiếu lý lịch tư pháp chuyển từ Sở Tư pháp (Bộ Tư pháp) sang CƠ QUAN CÔNG AN (Cục Hồ sơ nghiệp vụ Bộ Công an và Công an cấp tỉnh) theo Luật 107/2025/QH15. Mọi hướng dẫn cũ ghi 'nộp tại Sở Tư pháp' đều đã lỗi thời. Thời hạn 05 ngày làm việc lấy từ báo chí, CHƯA đối chiếu trực tiếp điều luật — cần xác minh lại."
+  },
+  {
+    "id": "procedure-dang-ky-thanh-lap-cong-ty-tnhh-mtv",
+    "name": {
+      "vi": "Đăng ký thành lập doanh nghiệp — công ty TNHH một thành viên"
+    },
+    "status": "active",
+    "applicant": {
+      "types": [
+        "individual",
+        "organization"
+      ]
+    },
+    "responsible_organization_id": "org-bo-tai-chinh",
+    "receiving_organization_id": null,
+    "steps": [
+      {
+        "id": "step-01",
+        "order": 1,
+        "name": "Chuẩn bị hồ sơ",
+        "actor": "applicant",
+        "description": "Soạn giấy đề nghị đăng ký doanh nghiệp, điều lệ công ty, giấy tờ pháp lý của chủ sở hữu và người đại diện theo pháp luật.",
+        "required_documents": [],
+        "duration": null
+      },
+      {
+        "id": "step-02",
+        "order": 2,
+        "name": "Nộp hồ sơ",
+        "actor": "applicant",
+        "description": "Nộp tại Cơ quan đăng ký kinh doanh cấp tỉnh nơi đặt trụ sở chính, qua bưu chính, hoặc trực tuyến trên Cổng thông tin quốc gia về đăng ký doanh nghiệp.",
+        "required_documents": [],
+        "duration": null
+      },
+      {
+        "id": "step-03",
+        "order": 3,
+        "name": "Cơ quan đăng ký kinh doanh thẩm định hồ sơ",
+        "actor": "organization",
+        "description": "Kiểm tra tính hợp lệ của hồ sơ; nếu chưa hợp lệ thì ra thông báo yêu cầu sửa đổi, bổ sung.",
+        "required_documents": [],
+        "duration": "03 ngày làm việc kể từ ngày nhận hồ sơ hợp lệ"
+      },
+      {
+        "id": "step-04",
+        "order": 4,
+        "name": "Cấp Giấy chứng nhận đăng ký doanh nghiệp",
+        "actor": "organization",
+        "description": "Cấp giấy chứng nhận, doanh nghiệp có mã số doanh nghiệp đồng thời là mã số thuế.",
+        "required_documents": [],
+        "duration": null
+      },
+      {
+        "id": "step-05",
+        "order": 5,
+        "name": "Công bố nội dung đăng ký doanh nghiệp",
+        "actor": "applicant",
+        "description": "Nộp phí công bố 100.000 đồng và công bố trên Cổng thông tin quốc gia về đăng ký doanh nghiệp.",
+        "required_documents": [],
+        "duration": null
+      }
+    ],
+    "requirements": [
+      "Giấy đề nghị đăng ký doanh nghiệp (theo mẫu)",
+      "Điều lệ công ty",
+      "Bản sao giấy tờ pháp lý của chủ sở hữu và của người đại diện theo pháp luật",
+      "Danh sách chủ sở hữu hưởng lợi của doanh nghiệp (nếu có)",
+      "Văn bản ủy quyền (nếu nộp thay)"
+    ],
+    "fees": [
+      "Lệ phí đăng ký doanh nghiệp: 25.000 đồng (mức áp dụng từ 01/7/2025 đến hết năm 2026; từ 2027 là 50.000 đồng)",
+      "MIỄN lệ phí nếu đăng ký qua mạng điện tử",
+      "Phí công bố nội dung đăng ký doanh nghiệp: 100.000 đồng"
+    ],
+    "result": [
+      "Giấy chứng nhận đăng ký doanh nghiệp"
+    ],
+    "forms": [],
+    "legal_basis": [
+      "Luật Doanh nghiệp 2020",
+      "Nghị định 168/2025/NĐ-CP về đăng ký doanh nghiệp",
+      "Thông tư 68/2025/TT-BTC về phí, lệ phí đăng ký doanh nghiệp"
+    ],
+    "source_ids": [
+      "source-320"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ Cơ quan tiếp nhận là 'Cơ quan đăng ký kinh doanh cấp tỉnh' — sau khi Bộ Kế hoạch và Đầu tư giải thể (01/3/2025), chức năng quản lý nhà nước về đăng ký kinh doanh thuộc Bộ Tài chính; ở địa phương do cơ quan đăng ký kinh doanh thuộc UBND cấp tỉnh thực hiện. Chưa gán `receiving_organization_id` cụ thể vì phụ thuộc tỉnh/thành nơi đặt trụ sở."
+  },
+  {
+    "id": "procedure-cap-doi-gplx-hang-b",
+    "name": {
+      "vi": "Cấp đổi Giấy phép lái xe ô tô hạng B"
+    },
+    "status": "active",
+    "applicant": {
+      "types": [
+        "individual"
+      ]
+    },
+    "responsible_organization_id": "org-bo-cong-an",
+    "receiving_organization_id": "org-bo-cong-an",
+    "steps": [
+      {
+        "id": "step-01",
+        "order": 1,
+        "name": "Chuẩn bị hồ sơ",
+        "actor": "applicant",
+        "description": "Đơn đề nghị đổi giấy phép lái xe theo mẫu (Phụ lục XII Thông tư 12/2025/TT-BCA), giấy khám sức khỏe còn hiệu lực, giấy phép lái xe cũ.",
+        "required_documents": [],
+        "duration": null
+      },
+      {
+        "id": "step-02",
+        "order": 2,
+        "name": "Nộp hồ sơ",
+        "actor": "applicant",
+        "description": "Nộp tại Công an cấp xã nơi bố trí điểm tiếp nhận, tại Phòng Cảnh sát giao thông, hoặc trực tuyến trên cổng dịch vụ công.",
+        "required_documents": [],
+        "duration": null
+      },
+      {
+        "id": "step-03",
+        "order": 3,
+        "name": "Chụp ảnh và nộp lệ phí",
+        "actor": "applicant",
+        "description": "Chụp ảnh trực tiếp tại nơi tiếp nhận (với hồ sơ nộp trực tiếp) và nộp lệ phí 115.000 đồng/lần.",
+        "required_documents": [],
+        "duration": null
+      },
+      {
+        "id": "step-04",
+        "order": 4,
+        "name": "Cơ quan Công an kiểm tra, xử lý",
+        "actor": "organization",
+        "description": "Đối chiếu dữ liệu giấy phép lái xe, kiểm tra điều kiện sức khỏe và vi phạm (nếu có).",
+        "required_documents": [],
+        "duration": "05 ngày làm việc"
+      },
+      {
+        "id": "step-05",
+        "order": 5,
+        "name": "Nhận giấy phép lái xe mới",
+        "actor": "organization",
+        "description": "Nhận trực tiếp tại cơ quan tiếp nhận hoặc qua bưu chính; giấy phép lái xe có thể tích hợp trên VNeID.",
+        "required_documents": [],
+        "duration": null
+      }
+    ],
+    "requirements": [
+      "Đơn đề nghị đổi giấy phép lái xe (Phụ lục XII, Thông tư 12/2025/TT-BCA)",
+      "Giấy khám sức khỏe của người lái xe còn hiệu lực (bắt buộc với hạng B ô tô)",
+      "Giấy phép lái xe cũ",
+      "Hộ chiếu còn thời hạn (đối với người nước ngoài)"
+    ],
+    "fees": [
+      "115.000 đồng/lần (Thông tư 154/2025/TT-BTC, áp dụng từ 2026; trước đó là 135.000 đồng)"
+    ],
+    "result": [
+      "Giấy phép lái xe ô tô hạng B (bản mới, có thể tích hợp trên VNeID)"
+    ],
+    "forms": [],
+    "legal_basis": [
+      "Luật Trật tự, an toàn giao thông đường bộ 2024",
+      "Thông tư 12/2025/TT-BCA ngày 28/02/2025 của Bộ Công an",
+      "Thông tư 154/2025/TT-BTC về lệ phí cấp, đổi giấy phép lái xe"
+    ],
+    "source_ids": [
+      "source-330",
+      "source-331"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ THAY ĐỔI LỚN: từ 01/3/2025, thẩm quyền quản lý và cấp đổi giấy phép lái xe chuyển từ ngành Giao thông vận tải (Sở GTVT) sang BỘ CÔNG AN — nộp tại Công an cấp xã hoặc Phòng Cảnh sát giao thông. Mọi hướng dẫn cũ ghi 'nộp tại Sở Giao thông vận tải' đều đã lỗi thời. Hạng B thay cho các hạng B1/B2 cũ theo Luật Trật tự, an toàn giao thông đường bộ 2024."
+  }
+]
