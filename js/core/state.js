@@ -1,7 +1,7 @@
 import { emit } from "./event-bus.js";
 const state = {
   currentView: "map",
-  data: null, index: null, report: null, loadError: null,
+  data: null, index: null, report: null, loadError: null, searchDocs: null,
   selectedEntity: null, selectedEntityType: null,
   searchQuery: "",
   filters: { entityType: null, organizationLevel: null, status: "active" },

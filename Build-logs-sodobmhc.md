@@ -233,6 +233,19 @@ updated: 2026-09-18
 
 ---
 
+#### 2026-09-18 — Nạp 34 tỉnh/thành, phân trang sơ đồ, Phase 5 (tìm kiếm toàn cục)
+
+- **Việc làm**: Ráp dữ liệu 34 tỉnh/thành từ file thô `07`, `08`, `09` vào `data/*.json` (tổng lên 56 cơ quan / 55 người / 56 chức vụ / 56 quan hệ / 91 nguồn, validate 0 lỗi). Thêm phân trang cho sơ đồ: mỗi cấp chỉ hiện 6 ô, dưới ô cha có thanh `‹ 1–6 / 51 ›` ghi rõ tổng số và khoảng đang xem, kèm nhãn nhóm (Bộ / Cơ quan ngang Bộ / TP trực thuộc TW / Tỉnh). Viết `js/search/search.js` + ô tìm kiếm ở header (Ctrl+K), kết quả gom nhóm theo loại entity, bấm vào mở thẳng bảng chi tiết.
+- **Vấn đề gặp**: (a) Sau khi nạp tỉnh, Chính phủ có 51 đơn vị trực thuộc — mở ra là sơ đồ dài lê thê, cuộn mất phương hướng. (b) Người Việt gõ tìm kiếm thường không bỏ dấu và hay dùng tên viết tắt. (c) Trùng tên người thật: Chủ tịch UBND TP Đà Nẵng và nguyên Bộ trưởng Bộ KH&CN đều tên Nguyễn Mạnh Hùng.
+- **Cách xử lý**: (a) Phân trang 6 ô/cấp + sắp xếp con theo loại để mỗi trang là một nhóm đồng nhất, dễ đọc. (b) Chuẩn hoá NFD bỏ dấu + `đ→d` cả khi lập chỉ mục lẫn khi truy vấn; đưa cả viết tắt, địa chỉ, SĐT, email, chức năng vào trường tìm kiếm. (c) Sinh id người tự thêm hậu tố địa phương khi trùng, và ghi rõ trong `notes` là 2 người khác nhau.
+- **Bài học**:
+  - Với bộ máy "1 cha – vài chục con", phân trang + nhãn nhóm hiệu quả hơn nhiều so với cố nhồi hết node lên màn hình; thanh phân trang phải ghi cả tổng số thì người xem mới biết mình đang ở đâu.
+  - Tìm kiếm tiếng Việt bắt buộc phải bỏ dấu ở CẢ hai phía (dữ liệu và truy vấn) — nếu chỉ chuẩn hoá một phía thì gõ "bo tai chinh" sẽ ra 0 kết quả.
+  - Trùng tên người là chuyện bình thường trong dữ liệu nhân sự nhà nước — id sinh tự động từ tên phải có cơ chế chống trùng ngay từ đầu, không thì dữ liệu sau này sẽ gộp nhầm 2 người làm một.
+  - Nên ráp dữ liệu theo từng batch rồi chạy `node tools/validate-data.js` ngay sau mỗi batch: bắt lỗi tham chiếu khi mới có vài chục entity dễ hơn nhiều so với khi đã hàng nghìn.
+
+---
+
 #### 2026-09-18 — Phase 3: sơ đồ quan hệ (graph) + bảng chi tiết
 
 - **Việc làm**: Thêm `js/graph/` (`graph-layout.js`, `nodes.js`, `edges.js`, `graph.js`) vẽ sơ đồ phân cấp bằng SVG thuần: zoom bằng lăn chuột, kéo để di chuyển, nút vừa-màn-hình và mở-hết-cấp-dưới, dấu +/− trên node để mở/thu gọn. Viết lại `js/ui/detail-panel.js` để hiển thị chi tiết cơ quan (lãnh đạo, chức năng, liên hệ, quan hệ, ghi chú, nguồn đánh số) và người. Bấm tên trong bảng cũng mở được chi tiết.
@@ -345,6 +358,17 @@ updated: 2026-09-18
   - Khi 1 prompt đã bị hủy chính thức (❌) nhưng user vẫn tự tra và muốn lưu kết quả, nên lưu như "dữ liệu bổ sung ngoài pipeline" và ghi rõ nguồn gốc (Pro tự tra / user tự tra) — không tick lại prompt đã hủy thành ✅, tránh gây hiểu nhầm là đã giao lại cho acc Free.
   - Khi user nói "tự làm luôn đi" cho phần dữ liệu còn thiếu trong 1 lượt đã có sẵn, nên dùng WebSearch tìm đúng trang xaydungchinhsach.chinhphu.vn theo mẫu số Nghị quyết đã biết trước (tra theo pattern "Nghị quyết [số]/NQ-UBTVQH15" + tên tỉnh) rồi WebFetch để lấy danh sách tên đầy đủ — nhanh và bám sát đúng nguồn ưu tiên đã quy định, hơn là để Pro tự nhớ/suy luận tên.
   - Luôn đối chiếu tổng số (xã + phường + đặc khu) do trang nguồn tự công bố với tổng đã biết trước (từ file tổng quan 12-16) để tự phát hiện thiếu/dư tên trước khi lưu.
+
+#### 2026-09-18 — Hoàn tất 34/34 tỉnh/thành danh sách TÊN đầy đủ cấp xã/phường (file 20, 21)
+
+- **Việc làm**: User yêu cầu "tra cho hết luôn" toàn bộ 10 tỉnh/thành còn thiếu (Hà Nội, Cao Bằng, Điện Biên, Hà Tĩnh, Lạng Sơn, Nghệ An, Đắk Lắk, Đồng Nai, Tây Ninh, TP.HCM), không dừng ở mức đã có nữa. Pro tự tra 100% qua WebSearch (tìm đúng trang xaydungchinhsach.chinhphu.vn theo số Nghị quyết đã biết) + WebFetch (lấy danh sách tên đầy đủ), lưu vào `20-ten-day-du-nhom1-con-thieu-va-nhom4-con-thieu.md` (9 tỉnh) và `21-ten-day-du-tphcm-hoan-tat-34-34.md` (TP.HCM). Kết quả: **cả 34/34 tỉnh/thành trên toàn quốc đã có đầy đủ danh sách TÊN cấp xã/phường/đặc khu**, khép lại mục 05 trong Roadmap. Cập nhật `Roadmap-sodobmhc.md` (dòng "Phạm vi thu hẹp" ở đầu file + mục 05 chi tiết) để phản ánh đúng: prompt #20-24 vẫn hủy (không giao acc Free) nhưng nội dung đã được Pro tự làm xong.
+- **Vấn đề gặp**:
+  - Riêng thành phố Đồng Nai: 1 nguồn (thuvienphapluat.vn) fetch lần đầu trả về số liệu tự mâu thuẫn ("danh sách gốc nêu 26 phường; tính toán lại từ bảng cho 33 phường") và xã bị cắt ở 62/69 dòng — dấu hiệu trang gốc có bảng lồng phức tạp khiến model tóm tắt bị lẫn.
+  - Tổng số phường/xã Đồng Nai sau đợt 10 xã→phường (30/4/2026) dễ nhầm với số liệu gốc 2025 (72 xã + 23 phường) nếu không ghi rõ mốc thời gian.
+- **Cách xử lý**: Khi 1 nguồn trả về số liệu tự mâu thuẫn, tìm thêm nguồn phụ chuyên biệt hơn (ở đây: 2 trang riêng `dongnaihomes.com/phuong` và `dongnaihomes.com/xa`, mỗi trang chỉ liệt kê 1 loại đơn vị) để đối chiếu — tổng 33 phường + 62 xã = 95 khớp đúng, dùng bộ này làm chính, giữ nguồn thuvienphapluat.vn làm nguồn phụ đối chiếu tổng số.
+- **Bài học**:
+  - Khi fetch 1 trang có nhiều bảng lồng (ví dụ trang tổng hợp nhắc tới nhiều tỉnh/giai đoạn cũ-mới), nên fetch thêm 1-2 nguồn phụ tách riêng theo loại đơn vị (chỉ phường / chỉ xã) để tự đối chiếu tổng số trước khi tin dữ liệu — không chỉ dựa vào 1 lần fetch duy nhất, đặc biệt với các tỉnh có mốc thời gian thay đổi cơ cấu (Đồng Nai: gốc 2025 vs. sau 30/4/2026).
+  - Với 34/34 tỉnh đã đủ tên, nên định kỳ đối chiếu tổng "3.321 đơn vị cả nước" (file 10) với tổng cộng dồn từ file 12-21 để phát hiện sai lệch nếu có, trước khi ráp chính thức vào `data/*.json` ở Phase 10.
 
 #### Template cho mục mới (copy xuống dưới mục "Cách dùng file này" khi thêm bài học mới)
 

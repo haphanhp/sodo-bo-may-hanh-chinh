@@ -1033,5 +1033,1672 @@
     "effective_to": null,
     "last_verified": "2026-09-18",
     "notes": "⚠️ KHÁC entity với 'Chính phủ Việt Nam' (org-chinhphu-vn): VPCP là cơ quan ngang Bộ giúp việc, dùng chung trụ sở/SĐT/email — trùng thông tin liên hệ là hợp lý, không gộp 2 node."
+  },
+  {
+    "id": "org-tp-ha-noi",
+    "type": "municipality",
+    "name": {
+      "vi": "Thành phố Hà Nội",
+      "en": ""
+    },
+    "short_name": "Hà Nội",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 79 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+      "phone": [
+        "024.38253536"
+      ],
+      "email": [
+        "vanthu@hanoi.gov.vn"
+      ],
+      "website": [
+        "https://hanoi.gov.vn"
+      ],
+      "fax": "024.38243126"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-ha-noi",
+        "person_id": "person-vu-dai-thang"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-201",
+      "source-202"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Thành ủy: Trần Đức Thắng (chưa nạp thành entity riêng). Chủ tịch UBND bầu 28/11, nhiệm kỳ 2026–2031."
+  },
+  {
+    "id": "org-tp-hue",
+    "type": "municipality",
+    "name": {
+      "vi": "Thành phố Huế",
+      "en": ""
+    },
+    "short_name": "Huế",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 16 Lê Lợi, phường Thuận Hóa, TP Huế",
+      "phone": [
+        "0234.3822584"
+      ],
+      "email": [],
+      "website": [
+        "https://hue.gov.vn"
+      ],
+      "fax": "0234.3822803"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-hue",
+        "person_id": "person-le-tri-thanh"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-203",
+      "source-204"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Bầu 26/7/2026, thay ông Nguyễn Khắc Toàn — chinhphu.vn còn ghi tên cũ. Bí thư Thành ủy: Nguyễn Đình Trung. Email chưa xác minh."
+  },
+  {
+    "id": "org-tinh-cao-bang",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Cao Bằng",
+      "en": ""
+    },
+    "short_name": "Cao Bằng",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Khu đô thị mới, phường Đề Thám, TP Cao Bằng",
+      "phone": [
+        "0206.3852139"
+      ],
+      "email": [
+        "portal@caobang.gov.vn"
+      ],
+      "website": [
+        "https://caobang.gov.vn"
+      ],
+      "fax": "0206.3852866"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-cao-bang",
+        "person_id": "person-le-hai-hoa"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-205"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "org-tinh-dien-bien",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Điện Biên",
+      "en": ""
+    },
+    "short_name": "Điện Biên",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 851 đường Võ Nguyên Giáp, phường Điện Biên Phủ",
+      "phone": [
+        "0215.3827726"
+      ],
+      "email": [
+        "vpubnd@dienbien.gov.vn"
+      ],
+      "website": [
+        "https://dienbien.gov.vn"
+      ],
+      "fax": "0215.3825076"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-dien-bien",
+        "person_id": "person-le-van-luong"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-206"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "org-tinh-ha-tinh",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Hà Tĩnh",
+      "en": ""
+    },
+    "short_name": "Hà Tĩnh",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 19 đường Nguyễn Tất Thành, phường Thành Sen",
+      "phone": [
+        "02393.857717"
+      ],
+      "email": [
+        "ubhatinh@hatinh.gov.vn"
+      ],
+      "website": [
+        "https://hatinh.gov.vn"
+      ],
+      "fax": "02393.856141"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-ha-tinh",
+        "person_id": "person-phan-thien-dinh"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-207"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Điều động từ Chủ tịch UBND TP Huế sang, 18/11/2025. Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "org-tinh-lai-chau",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Lai Châu",
+      "en": ""
+    },
+    "short_name": "Lai Châu",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Nhà B, Trung tâm Hành chính, Đại lộ Lê Lợi, phường Tân Phong",
+      "phone": [
+        "0213.3876337"
+      ],
+      "email": [
+        "laichau@chinhphu.vn"
+      ],
+      "website": [
+        "https://laichau.gov.vn"
+      ],
+      "fax": "0213.3876356"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-lai-chau",
+        "person_id": "person-ha-quang-trung"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-208"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "org-tinh-lang-son",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Lạng Sơn",
+      "en": ""
+    },
+    "short_name": "Lạng Sơn",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 2 đường Hùng Vương, phường Lương Văn Tri",
+      "phone": [
+        "0205.3814302"
+      ],
+      "email": [
+        "ubndls@langson.gov.vn"
+      ],
+      "website": [
+        "https://langson.gov.vn"
+      ],
+      "fax": "0205.3812336"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-lang-son",
+        "person_id": "person-nguyen-canh-toan"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-209"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "org-tinh-nghe-an",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Nghệ An",
+      "en": ""
+    },
+    "short_name": "Nghệ An",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 3 đường Trường Thi, phường Trường Vinh",
+      "phone": [
+        "0238.3844522"
+      ],
+      "email": [
+        "banbientap@nghean.gov.vn"
+      ],
+      "website": [
+        "https://nghean.gov.vn"
+      ],
+      "fax": "0238.3843049"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-nghe-an",
+        "person_id": "person-vo-trong-hai"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-210"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "org-tinh-quang-ninh",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Quảng Ninh",
+      "en": ""
+    },
+    "short_name": "Quảng Ninh",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Phường Hồng Hà, TP Hạ Long",
+      "phone": [
+        "0203.3835852"
+      ],
+      "email": [
+        "vpubnd@quangninh.gov.vn"
+      ],
+      "website": [
+        "https://quangninh.gov.vn"
+      ],
+      "fax": "0203.3835353"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-quang-ninh",
+        "person_id": "person-bui-van-khang"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-211"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ Một bản cache chinhphu.vn (city=3685) ghi nhầm 'Thành phố Quảng Ninh' — SAI, đây vẫn là TỈNH (không sáp nhập)."
+  },
+  {
+    "id": "org-tinh-thanh-hoa",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Thanh Hóa",
+      "en": ""
+    },
+    "short_name": "Thanh Hóa",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 35 Đại lộ Lê Lợi, phường Hạc Thành",
+      "phone": [
+        "0237.3852246"
+      ],
+      "email": [
+        "vanphongub@thanhhoa.gov.vn"
+      ],
+      "website": [
+        "https://thanhhoa.gov.vn"
+      ],
+      "fax": "0237.3851255"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-thanh-hoa",
+        "person_id": "person-to-anh-dung"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-212",
+      "source-213"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Thiếu tướng, bầu 27/7/2026 thay ông Nguyễn Hoài Anh. Phó Bí thư Thường trực kiêm CT HĐND: Nguyễn Hồng Phong; Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "org-tinh-son-la",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Sơn La",
+      "en": ""
+    },
+    "short_name": "Sơn La",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Khu quảng trường Tây Bắc, phường Chiềng Cơi",
+      "phone": [
+        "0212.3852010"
+      ],
+      "email": [
+        "ubnd@sonla.gov.vn"
+      ],
+      "website": [
+        "https://sonla.gov.vn"
+      ],
+      "fax": "0212.3852028"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-son-la",
+        "person_id": "person-nguyen-dinh-viet"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-214"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "org-tinh-tuyen-quang",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Tuyên Quang",
+      "en": ""
+    },
+    "short_name": "Tuyên Quang",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 160 đường Trần Hưng Đạo, phường Minh Xuân",
+      "phone": [
+        "0207.3822484"
+      ],
+      "email": [
+        "tuyenquang@chinhphu.vn"
+      ],
+      "website": [
+        "https://tuyenquang.gov.vn"
+      ],
+      "fax": "0207.3822897"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-tuyen-quang",
+        "person_id": "person-phan-huy-ngoc"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-215"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Hà Giang + Tuyên Quang cũ. Trung tâm hành chính tại địa bàn TP Tuyên Quang cũ — xác minh GIÁN TIẾP qua địa chỉ trụ sở, chưa có văn bản pháp luật minh thị."
+  },
+  {
+    "id": "org-tinh-lao-cai",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Lào Cai",
+      "en": ""
+    },
+    "short_name": "Lào Cai",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 1227 đường Yên Ninh, phường Yên Bái",
+      "phone": [
+        "0216.3852808"
+      ],
+      "email": [
+        "contact-ubnd@laocai.gov.vn"
+      ],
+      "website": [
+        "https://laocai.gov.vn"
+      ],
+      "fax": "0216.3840006"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-lao-cai",
+        "person_id": "person-nguyen-tuan-anh"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-216"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Lào Cai + Yên Bái cũ; trung tâm hành chính tại phường Yên Bái (TP Yên Bái cũ)."
+  },
+  {
+    "id": "org-tinh-thai-nguyen",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Thái Nguyên",
+      "en": ""
+    },
+    "short_name": "Thái Nguyên",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 18 đường Nha Trang, phường Phan Đình Phùng",
+      "phone": [
+        "0208.3858543"
+      ],
+      "email": [
+        "vpubndt@thainguyen.gov.vn"
+      ],
+      "website": [
+        "https://thainguyen.gov.vn"
+      ],
+      "fax": "0208.3855385"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-thai-nguyen",
+        "person_id": "person-vuong-quoc-tuan"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-217",
+      "source-218"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Bắc Kạn + Thái Nguyên cũ. Chủ tịch từ 17/11/2025, hoán đổi vị trí với ông Phạm Hoàng Sơn (sang Bắc Ninh)."
+  },
+  {
+    "id": "org-tinh-phu-tho",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Phú Thọ",
+      "en": ""
+    },
+    "short_name": "Phú Thọ",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Đường Trần Phú, phường Việt Trì",
+      "phone": [
+        "0210.3846647"
+      ],
+      "email": [
+        "vpub@phutho.gov.vn"
+      ],
+      "website": [
+        "https://phutho.gov.vn"
+      ],
+      "fax": "0210.3846816"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-phu-tho",
+        "person_id": "person-tran-duy-dong"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-219"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Vĩnh Phúc + Hòa Bình + Phú Thọ cũ. Chủ tịch tái cử 27/3/2026."
+  },
+  {
+    "id": "org-tinh-bac-ninh",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Bắc Ninh",
+      "en": ""
+    },
+    "short_name": "Bắc Ninh",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 82 Hùng Vương, phường Bắc Giang",
+      "phone": [
+        "0222.3898777"
+      ],
+      "email": [
+        "tinbacninh@bacninh.gov.vn"
+      ],
+      "website": [
+        "https://bacninh.gov.vn"
+      ],
+      "fax": "0222.3822492"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-bac-ninh",
+        "person_id": "person-pham-hoang-son"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-220",
+      "source-221"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Bắc Giang + Bắc Ninh cũ; trung tâm hành chính tại phường Bắc Giang. Tỉnh ủy/HĐND đặt tại số 1 Lê Thánh Tông, phường Tân Tiến. Chủ tịch từ 17/11/2025."
+  },
+  {
+    "id": "org-tinh-hung-yen",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Hưng Yên",
+      "en": ""
+    },
+    "short_name": "Hưng Yên",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 10 đường Chùa Chuông, phường Phố Hiến",
+      "phone": [
+        "0221.3863823"
+      ],
+      "email": [
+        "hungyen@chinhphu.vn"
+      ],
+      "website": [
+        "https://hungyen.gov.vn"
+      ],
+      "fax": "0221.3863932"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-hung-yen",
+        "person_id": "person-nguyen-manh-quyen"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-222",
+      "source-223"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Thái Bình + Hưng Yên cũ; trung tâm tại phường Phố Hiến. Ghế Chủ tịch đổi nhiều lần: Nguyễn Khắc Thận → Phạm Quang Ngọc (11/2025) → Nguyễn Mạnh Quyền (4/2026)."
+  },
+  {
+    "id": "org-tp-hai-phong",
+    "type": "municipality",
+    "name": {
+      "vi": "Thành phố Hải Phòng",
+      "en": ""
+    },
+    "short_name": "Hải Phòng",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Tòa nhà B, Trung tâm Chính trị – Hành chính TP, phường Thủy Nguyên",
+      "phone": [
+        "0225.08031253"
+      ],
+      "email": [
+        "ubnd@haiphong.gov.vn"
+      ],
+      "website": [
+        "https://haiphong.gov.vn"
+      ],
+      "fax": "0225.3842368"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-hai-phong",
+        "person_id": "person-do-thanh-trung"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-224",
+      "source-225"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "TP mới = Hải Phòng + Hải Dương cũ. Trung tâm hành chính – chính trị MỚI tại Khu đô thị Bắc Sông Cấm, phường Thủy Nguyên (không phải trụ sở cũ ở Hồng Bàng). Chủ tịch bầu 20/4/2026, phê chuẩn 23/4/2026."
+  },
+  {
+    "id": "org-tinh-ninh-binh",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Ninh Bình",
+      "en": ""
+    },
+    "short_name": "Ninh Bình",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 3 đường Lê Hồng Phong, phường Hoa Lư",
+      "phone": [
+        "0229.3871059"
+      ],
+      "email": [
+        "vpubnd@ninhbinh.gov.vn"
+      ],
+      "website": [
+        "https://ninhbinh.gov.vn"
+      ],
+      "fax": "0229.3871890"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-ninh-binh",
+        "person_id": "person-nguyen-thanh-binh"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-226",
+      "source-227"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Bầu 4/3/2026; trước đó lần lượt Phạm Quang Ngọc rồi Trần Huy Tuấn (được thăng làm Bí thư Tỉnh ủy)."
+  },
+  {
+    "id": "org-tinh-quang-tri",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Quảng Trị",
+      "en": ""
+    },
+    "short_name": "Quảng Trị",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 06 Hùng Vương, phường Đồng Hới",
+      "phone": [
+        "0233.3852501"
+      ],
+      "email": [
+        "vpubndt@quangtri.gov.vn"
+      ],
+      "website": [
+        "https://quangtri.gov.vn"
+      ],
+      "fax": "0233.3852827"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-quang-tri",
+        "person_id": "person-le-hong-vinh"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-228"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Bầu 17/11/2025, tái cử nhiệm kỳ 2026–2031. Trung tâm hành chính tại phường Đồng Hới."
+  },
+  {
+    "id": "org-tp-da-nang",
+    "type": "municipality",
+    "name": {
+      "vi": "Thành phố Đà Nẵng",
+      "en": ""
+    },
+    "short_name": "Đà Nẵng",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 24 Trần Phú, phường Hải Châu",
+      "phone": [
+        "0236.3821293"
+      ],
+      "email": [
+        "vpub@danang.gov.vn"
+      ],
+      "website": [
+        "https://danang.gov.vn"
+      ],
+      "fax": "0236.3825321"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-da-nang",
+        "person_id": "person-nguyen-manh-hung"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-229",
+      "source-230"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Bầu 14/4/2026, thay ông Phạm Đức Ấn (chuyển làm Thống đốc Ngân hàng Nhà nước). ⚠️ Trùng tên với nguyên Bộ trưởng Bộ KH&CN Nguyễn Mạnh Hùng — là 2 người khác nhau."
+  },
+  {
+    "id": "org-tinh-quang-ngai",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Quảng Ngãi",
+      "en": ""
+    },
+    "short_name": "Quảng Ngãi",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 52 Hùng Vương, phường Cẩm Thành",
+      "phone": [
+        "0255.3822855"
+      ],
+      "email": [
+        "ubnd@quangngai.gov.vn"
+      ],
+      "website": [
+        "https://quangngai.gov.vn"
+      ],
+      "fax": "0255.3822217"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-quang-ngai",
+        "person_id": "person-nguyen-duc-tam"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-231",
+      "source-232"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Bầu 28/7/2026 — rất mới, thay ông Nguyễn Hoàng Giang chuyển công tác Trung ương."
+  },
+  {
+    "id": "org-tinh-gia-lai",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Gia Lai",
+      "en": ""
+    },
+    "short_name": "Gia Lai",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 01 Trần Phú, phường Quy Nhơn",
+      "phone": [
+        "0256.3822294"
+      ],
+      "email": [
+        "UBND@gialai.gov.vn"
+      ],
+      "website": [
+        "https://gialai.gov.vn"
+      ],
+      "fax": "0256.3822057"
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-gia-lai",
+        "person_id": "person-pham-anh-tuan"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-233"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Bình Định + Gia Lai cũ; trung tâm hành chính tại phường Quy Nhơn (TP Quy Nhơn cũ)."
+  },
+  {
+    "id": "org-tinh-khanh-hoa",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Khánh Hòa",
+      "en": ""
+    },
+    "short_name": "Khánh Hòa",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 46 đường Trần Phú, phường Nha Trang",
+      "phone": [
+        "0258.3822661"
+      ],
+      "email": [
+        "vp.ubnd@khanhhoa.gov.vn"
+      ],
+      "website": [
+        "https://khanhhoa.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-khanh-hoa",
+        "person_id": "person-nguyen-viet-hung"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-234",
+      "source-235"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Khánh Hòa + Ninh Thuận cũ; trung tâm giữ tại Nha Trang. Chủ tịch bầu 30/3/2026."
+  },
+  {
+    "id": "org-tinh-lam-dong",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Lâm Đồng",
+      "en": ""
+    },
+    "short_name": "Lâm Đồng",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 4 Trần Hưng Đạo, phường Xuân Hương, TP Đà Lạt",
+      "phone": [
+        "0263.3822307"
+      ],
+      "email": [
+        "vpubnd@lamdong.gov.vn"
+      ],
+      "website": [
+        "https://lamdong.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-lam-dong",
+        "person_id": "person-ho-van-muoi"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-236",
+      "source-237"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Lâm Đồng + Đắk Nông + Bình Thuận cũ; trung tâm giữ tại Đà Lạt. Chủ tịch tái cử 30/3/2026."
+  },
+  {
+    "id": "org-tinh-dak-lak",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Đắk Lắk",
+      "en": ""
+    },
+    "short_name": "Đắk Lắk",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 09 Lê Duẩn, phường Buôn Ma Thuột",
+      "phone": [
+        "0262.08050557"
+      ],
+      "email": [],
+      "website": [
+        "https://daklak.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-dak-lak",
+        "person_id": "person-do-huu-huy"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-238",
+      "source-239"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Đắk Lắk + Phú Yên cũ; trung tâm giữ tại Buôn Ma Thuột. Email chưa công bố. Chủ tịch bầu 30/3/2026."
+  },
+  {
+    "id": "org-tp-ho-chi-minh",
+    "type": "municipality",
+    "name": {
+      "vi": "Thành phố Hồ Chí Minh",
+      "en": ""
+    },
+    "short_name": "Hồ Chí Minh",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 86 Lê Thánh Tôn, phường Sài Gòn",
+      "phone": [
+        "028.38296052"
+      ],
+      "email": [
+        "vpubndtp@tphcm.gov.vn"
+      ],
+      "website": [
+        "https://hochiminhcity.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-ho-chi-minh",
+        "person_id": "person-nguyen-van-duoc"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-240"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "TP mới = TP.HCM + Bà Rịa-Vũng Tàu + Bình Dương cũ."
+  },
+  {
+    "id": "org-tp-dong-nai",
+    "type": "municipality",
+    "name": {
+      "vi": "Thành phố Đồng Nai",
+      "en": ""
+    },
+    "short_name": "Đồng Nai",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 02 Nguyễn Văn Trị, phường Trần Biên",
+      "phone": [
+        "0251.3822501"
+      ],
+      "email": [
+        "ubnd-vpubnd@dongnai.gov.vn"
+      ],
+      "website": [
+        "https://dongnai.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-dong-nai",
+        "person_id": "person-nguyen-van-ut"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-241",
+      "source-242"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ Từ 30/4/2026 nâng từ TỈNH lên THÀNH PHỐ trực thuộc Trung ương (thành phố thứ 7) — vẫn là 1 entity, chỉ đổi loại, không dùng quan hệ merged_into/upgraded_from. TP mới = Đồng Nai + Bình Phước cũ; trung tâm tại phường Trần Biên (TP Biên Hòa cũ)."
+  },
+  {
+    "id": "org-tinh-tay-ninh",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Tây Ninh",
+      "en": ""
+    },
+    "short_name": "Tây Ninh",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 61 Nguyễn Huệ, phường Long An",
+      "phone": [
+        "02723.838454"
+      ],
+      "email": [
+        "vpubnd@tayninh.gov.vn"
+      ],
+      "website": [
+        "https://tayninh.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-tay-ninh",
+        "person_id": "person-le-van-han"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-243",
+      "source-244"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Tây Ninh + Long An cũ; trung tâm tại phường Long An (TP Tân An cũ). Chủ tịch tái cử 30/3/2026."
+  },
+  {
+    "id": "org-tp-can-tho",
+    "type": "municipality",
+    "name": {
+      "vi": "Thành phố Cần Thơ",
+      "en": ""
+    },
+    "short_name": "Cần Thơ",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 2 đường Hòa Bình, phường Ninh Kiều",
+      "phone": [
+        "080.71162"
+      ],
+      "email": [
+        "vpubndtp@cantho.gov.vn"
+      ],
+      "website": [
+        "https://cantho.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-can-tho",
+        "person_id": "person-truong-canh-tuyen"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-245"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "TP mới = Cần Thơ + Sóc Trăng + Hậu Giang cũ. Tên Chủ tịch mới chỉ có 1 nguồn chinhphu.vn — đã đối chiếu chéo ở Prompt #14, khớp."
+  },
+  {
+    "id": "org-tinh-vinh-long",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Vĩnh Long",
+      "en": ""
+    },
+    "short_name": "Vĩnh Long",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 88 Võ Văn Kiệt, phường Long Châu",
+      "phone": [
+        "0270.3825531"
+      ],
+      "email": [
+        "vpubnd@vinhlong.gov.vn"
+      ],
+      "website": [
+        "https://vinhlong.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-vinh-long",
+        "person_id": "person-tran-tri-quang"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-246"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Vĩnh Long + Bến Tre + Trà Vinh cũ; trung tâm giữ tại TP Vĩnh Long cũ."
+  },
+  {
+    "id": "org-tinh-dong-thap",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Đồng Tháp",
+      "en": ""
+    },
+    "short_name": "Đồng Tháp",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 23 đường 30/4, phường Mỹ Tho",
+      "phone": [
+        "0273.3873153"
+      ],
+      "email": [
+        "vp-ubnd@dongthap.gov.vn"
+      ],
+      "website": [
+        "https://dongthap.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-dong-thap",
+        "person_id": "person-nguyen-thanh-nhan"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-247",
+      "source-248"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Đồng Tháp + Tiền Giang cũ; trung tâm tại phường Mỹ Tho. Chủ tịch từ 9/9/2026, thay ông Phạm Thành Ngại (điều động làm Phó Tổng Thanh tra Chính phủ) — chinhphu.vn còn ghi tên cũ."
+  },
+  {
+    "id": "org-tinh-ca-mau",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh Cà Mau",
+      "en": ""
+    },
+    "short_name": "Cà Mau",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 02 đường Hùng Vương, phường Tân Thành",
+      "phone": [
+        "0290.3831352"
+      ],
+      "email": [
+        "ubndt@camau.gov.vn"
+      ],
+      "website": [
+        "https://camau.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-ca-mau",
+        "person_id": "person-lu-quang-ngoi"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-249"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Cà Mau + Bạc Liêu cũ; trung tâm giữ tại TP Cà Mau cũ. Đã đối chiếu chéo ở Prompt #14, khớp."
+  },
+  {
+    "id": "org-tinh-an-giang",
+    "type": "province",
+    "name": {
+      "vi": "Tỉnh An Giang",
+      "en": ""
+    },
+    "short_name": "An Giang",
+    "status": "active",
+    "jurisdiction": "provincial",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "Số 06 đường Nguyễn Công Trứ, phường Rạch Giá",
+      "phone": [
+        "0296.3854070"
+      ],
+      "email": [
+        "vpubnd@angiang.gov.vn"
+      ],
+      "website": [
+        "https://angiang.gov.vn"
+      ]
+    },
+    "leadership": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-an-giang",
+        "person_id": "person-ho-van-mung"
+      }
+    ],
+    "functions": [
+      "Ủy ban nhân dân cấp tỉnh — cơ quan hành chính nhà nước ở địa phương",
+      "Tổ chức thi hành Hiến pháp, pháp luật và nghị quyết của HĐND cùng cấp trên địa bàn",
+      "Quản lý nhà nước các lĩnh vực kinh tế - xã hội, quốc phòng - an ninh tại địa phương",
+      "Chỉ đạo, kiểm tra hoạt động của chính quyền cấp xã/phường/đặc khu trực thuộc"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [],
+    "source_ids": [
+      "source-250"
+    ],
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = An Giang + Kiên Giang cũ; trung tâm tại phường Rạch Giá (TP Rạch Giá cũ). Đã đối chiếu chéo ở Prompt #14, khớp."
   }
 ]

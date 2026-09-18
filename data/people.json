@@ -418,5 +418,701 @@
     ],
     "last_verified": "2026-09-18",
     "notes": ""
+  },
+  {
+    "id": "person-vu-dai-thang",
+    "name": {
+      "vi": "Vũ Đại Thắng"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-ha-noi",
+        "organization_id": "org-tp-ha-noi",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-201",
+      "source-202"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Thành ủy: Trần Đức Thắng (chưa nạp thành entity riêng). Chủ tịch UBND bầu 28/11, nhiệm kỳ 2026–2031."
+  },
+  {
+    "id": "person-le-tri-thanh",
+    "name": {
+      "vi": "Lê Trí Thanh"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-hue",
+        "organization_id": "org-tp-hue",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-203",
+      "source-204"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Bầu 26/7/2026, thay ông Nguyễn Khắc Toàn — chinhphu.vn còn ghi tên cũ. Bí thư Thành ủy: Nguyễn Đình Trung. Email chưa xác minh."
+  },
+  {
+    "id": "person-le-hai-hoa",
+    "name": {
+      "vi": "Lê Hải Hòa"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-cao-bang",
+        "organization_id": "org-tinh-cao-bang",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-205"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "person-le-van-luong",
+    "name": {
+      "vi": "Lê Văn Lương"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-dien-bien",
+        "organization_id": "org-tinh-dien-bien",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-206"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "person-phan-thien-dinh",
+    "name": {
+      "vi": "Phan Thiên Định"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-ha-tinh",
+        "organization_id": "org-tinh-ha-tinh",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-207"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Điều động từ Chủ tịch UBND TP Huế sang, 18/11/2025. Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "person-ha-quang-trung",
+    "name": {
+      "vi": "Hà Quang Trung"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-lai-chau",
+        "organization_id": "org-tinh-lai-chau",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-208"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "person-nguyen-canh-toan",
+    "name": {
+      "vi": "Nguyễn Cảnh Toàn"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-lang-son",
+        "organization_id": "org-tinh-lang-son",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-209"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "person-vo-trong-hai",
+    "name": {
+      "vi": "Võ Trọng Hải"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-nghe-an",
+        "organization_id": "org-tinh-nghe-an",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-210"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "person-bui-van-khang",
+    "name": {
+      "vi": "Bùi Văn Khắng"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-quang-ninh",
+        "organization_id": "org-tinh-quang-ninh",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-211"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ Một bản cache chinhphu.vn (city=3685) ghi nhầm 'Thành phố Quảng Ninh' — SAI, đây vẫn là TỈNH (không sáp nhập)."
+  },
+  {
+    "id": "person-to-anh-dung",
+    "name": {
+      "vi": "Tô Anh Dũng"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-thanh-hoa",
+        "organization_id": "org-tinh-thanh-hoa",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-212",
+      "source-213"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Thiếu tướng, bầu 27/7/2026 thay ông Nguyễn Hoài Anh. Phó Bí thư Thường trực kiêm CT HĐND: Nguyễn Hồng Phong; Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "person-nguyen-dinh-viet",
+    "name": {
+      "vi": "Nguyễn Đình Việt"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-son-la",
+        "organization_id": "org-tinh-son-la",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-214"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Bí thư Tỉnh ủy chưa xác minh."
+  },
+  {
+    "id": "person-phan-huy-ngoc",
+    "name": {
+      "vi": "Phan Huy Ngọc"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-tuyen-quang",
+        "organization_id": "org-tinh-tuyen-quang",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-215"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Hà Giang + Tuyên Quang cũ. Trung tâm hành chính tại địa bàn TP Tuyên Quang cũ — xác minh GIÁN TIẾP qua địa chỉ trụ sở, chưa có văn bản pháp luật minh thị."
+  },
+  {
+    "id": "person-nguyen-tuan-anh",
+    "name": {
+      "vi": "Nguyễn Tuấn Anh"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-lao-cai",
+        "organization_id": "org-tinh-lao-cai",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-216"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Lào Cai + Yên Bái cũ; trung tâm hành chính tại phường Yên Bái (TP Yên Bái cũ)."
+  },
+  {
+    "id": "person-vuong-quoc-tuan",
+    "name": {
+      "vi": "Vương Quốc Tuấn"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-thai-nguyen",
+        "organization_id": "org-tinh-thai-nguyen",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-217",
+      "source-218"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Bắc Kạn + Thái Nguyên cũ. Chủ tịch từ 17/11/2025, hoán đổi vị trí với ông Phạm Hoàng Sơn (sang Bắc Ninh)."
+  },
+  {
+    "id": "person-tran-duy-dong",
+    "name": {
+      "vi": "Trần Duy Đông"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-phu-tho",
+        "organization_id": "org-tinh-phu-tho",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-219"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Vĩnh Phúc + Hòa Bình + Phú Thọ cũ. Chủ tịch tái cử 27/3/2026."
+  },
+  {
+    "id": "person-pham-hoang-son",
+    "name": {
+      "vi": "Phạm Hoàng Sơn"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-bac-ninh",
+        "organization_id": "org-tinh-bac-ninh",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-220",
+      "source-221"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Bắc Giang + Bắc Ninh cũ; trung tâm hành chính tại phường Bắc Giang. Tỉnh ủy/HĐND đặt tại số 1 Lê Thánh Tông, phường Tân Tiến. Chủ tịch từ 17/11/2025."
+  },
+  {
+    "id": "person-nguyen-manh-quyen",
+    "name": {
+      "vi": "Nguyễn Mạnh Quyền"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-hung-yen",
+        "organization_id": "org-tinh-hung-yen",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-222",
+      "source-223"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Thái Bình + Hưng Yên cũ; trung tâm tại phường Phố Hiến. Ghế Chủ tịch đổi nhiều lần: Nguyễn Khắc Thận → Phạm Quang Ngọc (11/2025) → Nguyễn Mạnh Quyền (4/2026)."
+  },
+  {
+    "id": "person-do-thanh-trung",
+    "name": {
+      "vi": "Đỗ Thành Trung"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-hai-phong",
+        "organization_id": "org-tp-hai-phong",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-224",
+      "source-225"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "TP mới = Hải Phòng + Hải Dương cũ. Trung tâm hành chính – chính trị MỚI tại Khu đô thị Bắc Sông Cấm, phường Thủy Nguyên (không phải trụ sở cũ ở Hồng Bàng). Chủ tịch bầu 20/4/2026, phê chuẩn 23/4/2026."
+  },
+  {
+    "id": "person-nguyen-thanh-binh",
+    "name": {
+      "vi": "Nguyễn Thanh Bình"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-ninh-binh",
+        "organization_id": "org-tinh-ninh-binh",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-226",
+      "source-227"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Bầu 4/3/2026; trước đó lần lượt Phạm Quang Ngọc rồi Trần Huy Tuấn (được thăng làm Bí thư Tỉnh ủy)."
+  },
+  {
+    "id": "person-le-hong-vinh",
+    "name": {
+      "vi": "Lê Hồng Vinh"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-quang-tri",
+        "organization_id": "org-tinh-quang-tri",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-228"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Bầu 17/11/2025, tái cử nhiệm kỳ 2026–2031. Trung tâm hành chính tại phường Đồng Hới."
+  },
+  {
+    "id": "person-nguyen-manh-hung",
+    "name": {
+      "vi": "Nguyễn Mạnh Hùng"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-da-nang",
+        "organization_id": "org-tp-da-nang",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-229",
+      "source-230"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Bầu 14/4/2026, thay ông Phạm Đức Ấn (chuyển làm Thống đốc Ngân hàng Nhà nước). ⚠️ Trùng tên với nguyên Bộ trưởng Bộ KH&CN Nguyễn Mạnh Hùng — là 2 người khác nhau."
+  },
+  {
+    "id": "person-nguyen-duc-tam",
+    "name": {
+      "vi": "Nguyễn Đức Tâm"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-quang-ngai",
+        "organization_id": "org-tinh-quang-ngai",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-231",
+      "source-232"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Bầu 28/7/2026 — rất mới, thay ông Nguyễn Hoàng Giang chuyển công tác Trung ương."
+  },
+  {
+    "id": "person-pham-anh-tuan",
+    "name": {
+      "vi": "Phạm Anh Tuấn"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-gia-lai",
+        "organization_id": "org-tinh-gia-lai",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-233"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Bình Định + Gia Lai cũ; trung tâm hành chính tại phường Quy Nhơn (TP Quy Nhơn cũ)."
+  },
+  {
+    "id": "person-nguyen-viet-hung",
+    "name": {
+      "vi": "Nguyễn Việt Hùng"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-khanh-hoa",
+        "organization_id": "org-tinh-khanh-hoa",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-234",
+      "source-235"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Khánh Hòa + Ninh Thuận cũ; trung tâm giữ tại Nha Trang. Chủ tịch bầu 30/3/2026."
+  },
+  {
+    "id": "person-ho-van-muoi",
+    "name": {
+      "vi": "Hồ Văn Mười"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-lam-dong",
+        "organization_id": "org-tinh-lam-dong",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-236",
+      "source-237"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Lâm Đồng + Đắk Nông + Bình Thuận cũ; trung tâm giữ tại Đà Lạt. Chủ tịch tái cử 30/3/2026."
+  },
+  {
+    "id": "person-do-huu-huy",
+    "name": {
+      "vi": "Đỗ Hữu Huy"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-dak-lak",
+        "organization_id": "org-tinh-dak-lak",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-238",
+      "source-239"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Đắk Lắk + Phú Yên cũ; trung tâm giữ tại Buôn Ma Thuột. Email chưa công bố. Chủ tịch bầu 30/3/2026."
+  },
+  {
+    "id": "person-nguyen-van-duoc",
+    "name": {
+      "vi": "Nguyễn Văn Được"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-ho-chi-minh",
+        "organization_id": "org-tp-ho-chi-minh",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-240"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "TP mới = TP.HCM + Bà Rịa-Vũng Tàu + Bình Dương cũ."
+  },
+  {
+    "id": "person-nguyen-van-ut",
+    "name": {
+      "vi": "Nguyễn Văn Út"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-dong-nai",
+        "organization_id": "org-tp-dong-nai",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-241",
+      "source-242"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "⚠️ Từ 30/4/2026 nâng từ TỈNH lên THÀNH PHỐ trực thuộc Trung ương (thành phố thứ 7) — vẫn là 1 entity, chỉ đổi loại, không dùng quan hệ merged_into/upgraded_from. TP mới = Đồng Nai + Bình Phước cũ; trung tâm tại phường Trần Biên (TP Biên Hòa cũ)."
+  },
+  {
+    "id": "person-le-van-han",
+    "name": {
+      "vi": "Lê Văn Hẳn"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-tay-ninh",
+        "organization_id": "org-tinh-tay-ninh",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-243",
+      "source-244"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Tây Ninh + Long An cũ; trung tâm tại phường Long An (TP Tân An cũ). Chủ tịch tái cử 30/3/2026."
+  },
+  {
+    "id": "person-truong-canh-tuyen",
+    "name": {
+      "vi": "Trương Cảnh Tuyên"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-thanh-pho-can-tho",
+        "organization_id": "org-tp-can-tho",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-245"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "TP mới = Cần Thơ + Sóc Trăng + Hậu Giang cũ. Tên Chủ tịch mới chỉ có 1 nguồn chinhphu.vn — đã đối chiếu chéo ở Prompt #14, khớp."
+  },
+  {
+    "id": "person-tran-tri-quang",
+    "name": {
+      "vi": "Trần Trí Quang"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-vinh-long",
+        "organization_id": "org-tinh-vinh-long",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-246"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Vĩnh Long + Bến Tre + Trà Vinh cũ; trung tâm giữ tại TP Vĩnh Long cũ."
+  },
+  {
+    "id": "person-nguyen-thanh-nhan",
+    "name": {
+      "vi": "Nguyễn Thanh Nhàn"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-dong-thap",
+        "organization_id": "org-tinh-dong-thap",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-247",
+      "source-248"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Đồng Tháp + Tiền Giang cũ; trung tâm tại phường Mỹ Tho. Chủ tịch từ 9/9/2026, thay ông Phạm Thành Ngại (điều động làm Phó Tổng Thanh tra Chính phủ) — chinhphu.vn còn ghi tên cũ."
+  },
+  {
+    "id": "person-lu-quang-ngoi",
+    "name": {
+      "vi": "Lữ Quang Ngời"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-ca-mau",
+        "organization_id": "org-tinh-ca-mau",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-249"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = Cà Mau + Bạc Liêu cũ; trung tâm giữ tại TP Cà Mau cũ. Đã đối chiếu chéo ở Prompt #14, khớp."
+  },
+  {
+    "id": "person-ho-van-mung",
+    "name": {
+      "vi": "Hồ Văn Mừng"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-ubnd-tinh-an-giang",
+        "organization_id": "org-tinh-an-giang",
+        "from": null,
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-250"
+    ],
+    "last_verified": "2026-09-18",
+    "notes": "Tỉnh mới = An Giang + Kiên Giang cũ; trung tâm tại phường Rạch Giá (TP Rạch Giá cũ). Đã đối chiếu chéo ở Prompt #14, khớp."
   }
 ]

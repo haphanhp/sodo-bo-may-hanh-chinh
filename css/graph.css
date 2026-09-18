@@ -34,3 +34,15 @@
 .graph-legend .n-court{border-color:#2e86c1}.graph-legend .n-procuracy{border-color:#1f7a4d}
 .graph-legend .n-agency{border-color:#d4a017}
 .graph-hint{position:absolute;left:12px;bottom:10px;z-index:2;font-size:.72rem;color:var(--c-text-muted);background:var(--c-surface);padding:4px 10px;border-radius:999px;border:1px solid var(--c-border)}
+.graph-pager .pager-bg{fill:var(--c-surface);stroke:var(--c-border)}
+.graph-pager .pager-label{font-size:11px;fill:var(--c-text-muted);font-weight:600}
+.graph-pager .pager-btn{cursor:pointer}
+.graph-pager .pager-btn text{font-size:15px;fill:var(--c-accent);font-weight:700}
+.graph-pager .pager-hit{fill:transparent}
+.graph-pager .pager-btn:hover .pager-hit{fill:var(--c-accent-soft)}
+.graph-pager .pager-btn.is-disabled{cursor:default;opacity:.3}
+.graph-pager .pager-btn.is-disabled:hover .pager-hit{fill:transparent}
+.n-municipality .node-box{stroke:#e67e22}
+.n-province .node-box{stroke:#16a085}
+.graph-legend .n-municipality{border-color:#e67e22}
+.graph-legend .n-province{border-color:#16a085}

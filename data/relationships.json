@@ -350,5 +350,549 @@
     "effective_from": null,
     "effective_to": null,
     "notes": ""
+  },
+  {
+    "id": "rel-023",
+    "from": "org-chinhphu-vn",
+    "to": "org-tp-ha-noi",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-201"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-024",
+    "from": "org-chinhphu-vn",
+    "to": "org-tp-hue",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-203"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-025",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-cao-bang",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-205"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-026",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-dien-bien",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-206"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-027",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-ha-tinh",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-207"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-028",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-lai-chau",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-208"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-029",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-lang-son",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-209"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-030",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-nghe-an",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-210"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-031",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-quang-ninh",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-211"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-032",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-thanh-hoa",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-212"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-033",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-son-la",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-214"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-034",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-tuyen-quang",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-215"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-035",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-lao-cai",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-216"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-036",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-thai-nguyen",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-217"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-037",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-phu-tho",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-219"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-038",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-bac-ninh",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-220"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-039",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-hung-yen",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-222"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-040",
+    "from": "org-chinhphu-vn",
+    "to": "org-tp-hai-phong",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-224"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-041",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-ninh-binh",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-226"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-042",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-quang-tri",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-228"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-043",
+    "from": "org-chinhphu-vn",
+    "to": "org-tp-da-nang",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-229"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-044",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-quang-ngai",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-231"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-045",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-gia-lai",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-233"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-046",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-khanh-hoa",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-234"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-047",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-lam-dong",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-236"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-048",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-dak-lak",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-238"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-049",
+    "from": "org-chinhphu-vn",
+    "to": "org-tp-ho-chi-minh",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-240"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-050",
+    "from": "org-chinhphu-vn",
+    "to": "org-tp-dong-nai",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-241"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-051",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-tay-ninh",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-243"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-052",
+    "from": "org-chinhphu-vn",
+    "to": "org-tp-can-tho",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-245"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-053",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-vinh-long",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-246"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-054",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-dong-thap",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-247"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-055",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-ca-mau",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-249"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-056",
+    "from": "org-chinhphu-vn",
+    "to": "org-tinh-an-giang",
+    "type": "supervises",
+    "label": {
+      "vi": "lãnh đạo, chỉ đạo thống nhất hành chính nhà nước"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-250"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
   }
 ]

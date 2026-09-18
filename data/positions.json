@@ -441,5 +441,685 @@
       "source-129"
     ],
     "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-thanh-pho-ha-noi",
+    "name": {
+      "vi": "Chủ tịch UBND thành phố Hà Nội"
+    },
+    "organization_type": "municipality",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Thành phố Hà Nội"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-202"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-thanh-pho-hue",
+    "name": {
+      "vi": "Chủ tịch UBND thành phố Huế"
+    },
+    "organization_type": "municipality",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Thành phố Huế"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-204"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-cao-bang",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Cao Bằng"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Cao Bằng"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-205"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-dien-bien",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Điện Biên"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Điện Biên"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-206"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-ha-tinh",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Hà Tĩnh"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Hà Tĩnh"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-207"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-lai-chau",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Lai Châu"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Lai Châu"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-208"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-lang-son",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Lạng Sơn"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Lạng Sơn"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-209"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-nghe-an",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Nghệ An"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Nghệ An"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-210"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-quang-ninh",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Quảng Ninh"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Quảng Ninh"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-211"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-thanh-hoa",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Thanh Hóa"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Thanh Hóa"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-213"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-son-la",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Sơn La"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Sơn La"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-214"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-tuyen-quang",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Tuyên Quang"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Tuyên Quang"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-215"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-lao-cai",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Lào Cai"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Lào Cai"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-216"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-thai-nguyen",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Thái Nguyên"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Thái Nguyên"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-218"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-phu-tho",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Phú Thọ"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Phú Thọ"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-219"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-bac-ninh",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Bắc Ninh"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Bắc Ninh"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-221"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-hung-yen",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Hưng Yên"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Hưng Yên"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-223"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-thanh-pho-hai-phong",
+    "name": {
+      "vi": "Chủ tịch UBND thành phố Hải Phòng"
+    },
+    "organization_type": "municipality",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Thành phố Hải Phòng"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-225"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-ninh-binh",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Ninh Bình"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Ninh Bình"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-227"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-quang-tri",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Quảng Trị"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Quảng Trị"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-228"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-thanh-pho-da-nang",
+    "name": {
+      "vi": "Chủ tịch UBND thành phố Đà Nẵng"
+    },
+    "organization_type": "municipality",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Thành phố Đà Nẵng"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-230"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-quang-ngai",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Quảng Ngãi"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Quảng Ngãi"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-232"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-gia-lai",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Gia Lai"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Gia Lai"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-233"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-khanh-hoa",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Khánh Hòa"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Khánh Hòa"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-235"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-lam-dong",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Lâm Đồng"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Lâm Đồng"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-237"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-dak-lak",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Đắk Lắk"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Đắk Lắk"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-239"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-thanh-pho-ho-chi-minh",
+    "name": {
+      "vi": "Chủ tịch UBND thành phố Hồ Chí Minh"
+    },
+    "organization_type": "municipality",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Thành phố Hồ Chí Minh"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-240"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-thanh-pho-dong-nai",
+    "name": {
+      "vi": "Chủ tịch UBND thành phố Đồng Nai"
+    },
+    "organization_type": "municipality",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Thành phố Đồng Nai"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-242"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-tay-ninh",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Tây Ninh"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Tây Ninh"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-244"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-thanh-pho-can-tho",
+    "name": {
+      "vi": "Chủ tịch UBND thành phố Cần Thơ"
+    },
+    "organization_type": "municipality",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Thành phố Cần Thơ"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-245"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-vinh-long",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Vĩnh Long"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Vĩnh Long"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-246"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-dong-thap",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Đồng Tháp"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Đồng Tháp"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-248"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-ca-mau",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh Cà Mau"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh Cà Mau"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-249"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "position-chu-tich-ubnd-tinh-an-giang",
+    "name": {
+      "vi": "Chủ tịch UBND tỉnh An Giang"
+    },
+    "organization_type": "province",
+    "level": "leadership",
+    "functions": [
+      "Đứng đầu Ủy ban nhân dân Tỉnh An Giang"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "legal_basis": [
+      "Luật Tổ chức chính quyền địa phương"
+    ],
+    "source_ids": [
+      "source-250"
+    ],
+    "notes": ""
   }
 ]

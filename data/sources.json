@@ -654,5 +654,805 @@
     "accessed_date": "2026-09-18",
     "reliability": "official",
     "notes": ""
+  },
+  {
+    "id": "source-201",
+    "title": "Thông tin tỉnh thành: Thành phố Hà Nội",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1157",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-202",
+    "title": "Chủ tịch UBND TP Hà Nội",
+    "publisher": {
+      "organization_id": null,
+      "name": "VOV"
+    },
+    "type": "news",
+    "url": "https://vov.vn/tu-khoa/chu-tich-ubnd-tp-ha-noi",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-203",
+    "title": "Thông tin tỉnh thành: Thành phố Huế",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=3609",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-204",
+    "title": "Ông Lê Trí Thanh được bầu làm Chủ tịch UBND TP Huế",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Văn hóa"
+    },
+    "type": "news",
+    "url": "https://baovanhoa.vn/doi-song/ong-le-tri-thanh-duoc-bau-lam-chu-tich-ubnd-tp-hue-248669.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-205",
+    "title": "Thông tin tỉnh thành: Tỉnh Cao Bằng",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1340",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-206",
+    "title": "Thông tin tỉnh thành: Tỉnh Điện Biên",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1354",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-207",
+    "title": "Thông tin tỉnh thành: Tỉnh Hà Tĩnh",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1350",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-208",
+    "title": "Thông tin tỉnh thành: Tỉnh Lai Châu",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1362",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-209",
+    "title": "Thông tin tỉnh thành: Tỉnh Lạng Sơn",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1366",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-210",
+    "title": "Thông tin tỉnh thành: Tỉnh Nghệ An",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://vanban.chinhphu.vn/thong-tin-tinh-thanh?city=1368",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-211",
+    "title": "Thông tin tỉnh thành: Tỉnh Quảng Ninh",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://vanban.chinhphu.vn/thong-tin-tinh-thanh?city=1376",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-212",
+    "title": "Thông tin tỉnh thành: Tỉnh Thanh Hóa",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1380",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-213",
+    "title": "Thiếu tướng Tô Anh Dũng được bầu giữ chức Chủ tịch UBND tỉnh Thanh Hóa",
+    "publisher": {
+      "organization_id": null,
+      "name": "VOV"
+    },
+    "type": "news",
+    "url": "https://vov.vn/chinh-tri/thieu-tuong-to-anh-dung-duoc-bau-giu-chuc-chu-tich-ubnd-tinh-thanh-hoa-post1318814.vov",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-214",
+    "title": "Thông tin tỉnh thành: Tỉnh Sơn La",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1379",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-215",
+    "title": "Thông tin tỉnh thành: Tỉnh Tuyên Quang",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1386",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-216",
+    "title": "Thông tin tỉnh thành: Tỉnh Lào Cai",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1364",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-217",
+    "title": "Thông tin tỉnh thành: Tỉnh Thái Nguyên",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1382",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-218",
+    "title": "Ông Vương Quốc Tuấn làm Chủ tịch UBND tỉnh Thái Nguyên",
+    "publisher": {
+      "organization_id": null,
+      "name": "VietnamNet"
+    },
+    "type": "news",
+    "url": "https://vietnamnet.vn/ong-vuong-quoc-tuan-lam-chu-tich-ubnd-tinh-thai-nguyen-2463579.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-219",
+    "title": "Thông tin tỉnh thành: Tỉnh Phú Thọ",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1371",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-220",
+    "title": "Thông tin tỉnh thành: Tỉnh Bắc Ninh",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1164",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-221",
+    "title": "Vì sao tỉnh mới tên Bắc Ninh nhưng trung tâm hành chính đặt tại Bắc Giang?",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Tuổi Trẻ"
+    },
+    "type": "news",
+    "url": "https://tuoitre.vn/vi-sao-tinh-moi-ten-bac-ninh-nhung-trung-tam-hanh-chinh-dat-tai-bac-giang-20250421101432419.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-222",
+    "title": "Thông tin tỉnh thành: Tỉnh Hưng Yên",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1351",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-223",
+    "title": "Phê chuẩn kết quả bầu Chủ tịch UBND tỉnh Hưng Yên",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Điện tử Chính phủ"
+    },
+    "type": "news",
+    "url": "https://baochinhphu.vn/phe-chuan-ket-qua-bau-chuc-vu-chu-tich-pho-chu-tich-ubnd-tinh-hung-yen-102260414190119088.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-224",
+    "title": "Thông tin tỉnh thành: Thành phố Hải Phòng",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1344",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-225",
+    "title": "Phê chuẩn ông Đỗ Thành Trung giữ chức Chủ tịch UBND TP Hải Phòng",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Điện tử Chính phủ"
+    },
+    "type": "news",
+    "url": "https://baochinhphu.vn/phe-chuan-ong-do-thanh-trung-giu-chuc-chu-tich-ubnd-tp-hai-phong-102260423164752546.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-226",
+    "title": "Thông tin tỉnh thành: Tỉnh Ninh Bình",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1369",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-227",
+    "title": "Ông Nguyễn Thanh Bình làm Chủ tịch tỉnh Ninh Bình",
+    "publisher": {
+      "organization_id": null,
+      "name": "VietnamFinance"
+    },
+    "type": "news",
+    "url": "https://vietnamfinance.vn/ong-nguyen-thanh-binh-lam-chu-tich-tinh-ninh-binh-d140993.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-228",
+    "title": "Thông tin tỉnh thành: Tỉnh Quảng Trị",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1377",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-229",
+    "title": "Thông tin tỉnh thành: Thành phố Đà Nẵng",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1345",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-230",
+    "title": "Đồng chí Nguyễn Mạnh Hùng được bầu làm Chủ tịch UBND TP Đà Nẵng nhiệm kỳ 2026-2031",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Sài Gòn Giải Phóng"
+    },
+    "type": "news",
+    "url": "https://www.sggp.org.vn/dong-chi-nguyen-manh-hung-duoc-bau-lam-chu-tich-ubnd-tp-da-nang-nhiem-ky-2026-2031-post847945.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-231",
+    "title": "Thông tin tỉnh thành: Tỉnh Quảng Ngãi",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1375",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-232",
+    "title": "Ông Nguyễn Đức Tâm làm Chủ tịch UBND tỉnh Quảng Ngãi",
+    "publisher": {
+      "organization_id": null,
+      "name": "VietnamFinance"
+    },
+    "type": "news",
+    "url": "https://vietnamfinance.vn/ong-nguyen-duc-tam-lam-chu-tich-ubnd-tinh-quang-ngai-d148192.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-233",
+    "title": "Thông tin tỉnh thành: Tỉnh Gia Lai",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://chinhphu.vn/thong-tin-tinh-thanh?city=1346",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-234",
+    "title": "Thông tin tỉnh thành: Tỉnh Khánh Hòa",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://vanban.chinhphu.vn/thong-tin-tinh-thanh?city=1359",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-235",
+    "title": "Chủ tịch UBND tỉnh Khánh Hòa",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Nông nghiệp & Môi trường"
+    },
+    "type": "news",
+    "url": "https://nongnghiepmoitruong.vn/chu-tich-ubnd-tinh-khanh-hoa-tag89171/",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-236",
+    "title": "Thông tin tỉnh thành: Tỉnh Lâm Đồng",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://vanban.chinhphu.vn/thong-tin-tinh-thanh?city=1365",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-237",
+    "title": "Ông Lưu Văn Trung tiếp tục làm Chủ tịch HĐND tỉnh Lâm Đồng (xác nhận Hồ Văn Mười tái cử)",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Tuổi Trẻ"
+    },
+    "type": "news",
+    "url": "https://tuoitre.vn/ong-luu-van-trung-tiep-tuc-lam-chu-tich-hdnd-tinh-lam-dong-20260330105411881.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-238",
+    "title": "Thông tin tỉnh thành: Tỉnh Đắk Lắk",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://vanban.chinhphu.vn/thong-tin-tinh-thanh?city=1355",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-239",
+    "title": "Ông Đỗ Hữu Huy giữ chức Chủ tịch UBND tỉnh Đắk Lắk",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Đại biểu Nhân dân"
+    },
+    "type": "news",
+    "url": "https://daibieunhandan.vn/ong-do-huu-huy-giu-chuc-chu-tich-ubnd-tinh-dak-lak-10411729.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-240",
+    "title": "Thông tin tỉnh thành: Thành phố Hồ Chí Minh",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://vanban.chinhphu.vn/thong-tin-tinh-thanh?city=1158",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-241",
+    "title": "Thông tin tỉnh thành: Thành phố Đồng Nai",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://vanban.chinhphu.vn/thong-tin-tinh-thanh?city=3684",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-242",
+    "title": "Chính thức: Đồng Nai trở thành thành phố thứ 7 trực thuộc Trung ương từ 30/4/2026",
+    "publisher": {
+      "organization_id": null,
+      "name": "LuatVietnam"
+    },
+    "type": "news",
+    "url": "https://luatvietnam.vn/tin-van-ban-moi/chinh-thuc-dong-nai-tro-thanh-thanh-pho-thu-7-truc-thuoc-trung-uong-tu-30-4-2026-186-108630-article.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-243",
+    "title": "Thông tin tỉnh thành: Tỉnh Tây Ninh",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://vanban.chinhphu.vn/thong-tin-tinh-thanh?city=1387",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-244",
+    "title": "Ông Lê Văn Hẳn tiếp tục làm Chủ tịch UBND tỉnh Tây Ninh",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Văn hóa"
+    },
+    "type": "news",
+    "url": "https://baovanhoa.vn/chinh-tri/ong-le-van-han-tiep-tuc-lam-chu-tich-ubnd-tinh-tay-ninh-215587.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-245",
+    "title": "Thông tin tỉnh thành: Thành phố Cần Thơ",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://vanban.chinhphu.vn/thong-tin-tinh-thanh?city=1342",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-246",
+    "title": "Thông tin tỉnh thành: Tỉnh Vĩnh Long",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://vanban.chinhphu.vn/thong-tin-tinh-thanh?city=1388",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-247",
+    "title": "Thông tin tỉnh thành: Tỉnh Đồng Tháp",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://vanban.chinhphu.vn/thong-tin-tinh-thanh?city=1358",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-248",
+    "title": "Đồng chí Nguyễn Thanh Nhàn được bầu giữ chức Chủ tịch UBND tỉnh Đồng Tháp",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Đồng Tháp"
+    },
+    "type": "news",
+    "url": "https://baodongthap.vn/dong-chi-nguyen-thanh-nhan-duoc-bau-giu-chuc-chu-tich-ubnd-tinh-dong-thap-a245129.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-249",
+    "title": "Thông tin tỉnh thành: Tỉnh Cà Mau",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://vanban.chinhphu.vn/thong-tin-tinh-thanh?city=1341",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
+  },
+  {
+    "id": "source-250",
+    "title": "Thông tin tỉnh thành: Tỉnh An Giang",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://vanban.chinhphu.vn/thong-tin-tinh-thanh?city=1159",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-18",
+    "reliability": "official",
+    "notes": "chinhphu.vn có thể giữ dữ liệu nhân sự cũ — xem luật 18"
   }
 ]

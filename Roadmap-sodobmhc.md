@@ -18,8 +18,8 @@ updated: 2026-09-18
 
 #### Trạng thái tổng quan
 
-- Phase hiện tại: **Phase 3 ĐÃ XONG (sơ đồ quan hệ + detail panel) — tiếp theo là Phase 5 (tìm kiếm) hoặc nạp tiếp dữ liệu 34 tỉnh/thành**
-- **⚠️ Phạm vi thu hẹp (user chốt 2026-09-18)**: chỉ đào sâu **cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương**. Cấp xã/phường/đặc khu **dừng ở mức liệt kê** (đã xong), không tra tên đầy đủ từng đơn vị. Phần liệt kê cấp xã đã hoàn tất **cả nước 34/34 tỉnh (tới An Giang)**. Prompt #20–#24 giữ nguyên trong `Promts-sodobmhc.md` nhưng KHÔNG giao. → Thu thập dữ liệu thô xem như **ĐÃ ĐỦ** cho Phase 10. — song song, dữ liệu thô cấp tỉnh/thành (mục 03) vẫn tiếp tục thu thập độc lập
+- Phase hiện tại: **Phase 5 ĐÃ XONG — app hiện có: data engine, 56 cơ quan (thượng tầng + 34 tỉnh/thành), sơ đồ có phân trang 6 ô, bảng chi tiết, tìm kiếm toàn cục. Tiếp theo: Phase 6 (thủ tục) hoặc Phase 9 (dữ liệu lịch sử)**
+- **⚠️ Phạm vi thu hẹp (user chốt 2026-09-18)**: chỉ đào sâu **cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương**. Cấp xã/phường/đặc khu **KHÔNG cần trụ sở/SĐT/lãnh đạo riêng từng xã** (việc đào sâu chi tiết đó dừng ở đây). Riêng phần **danh sách TÊN đầy đủ** cấp xã: user yêu cầu làm cho xong luôn ngay trong ngày — Pro tự tra 100% qua WebSearch/WebFetch (file 17-21), **đã hoàn tất cả nước 34/34 tỉnh/thành**. Prompt #20–#24 giữ nguyên trong `Promts-sodobmhc.md` nhưng KHÔNG giao acc Free (Pro đã tự làm xong). → Thu thập dữ liệu thô cấp xã xem như **ĐÃ ĐỦ HOÀN TOÀN** cho Phase 10. — song song, dữ liệu thô cấp tỉnh/thành (mục 03) vẫn tiếp tục thu thập độc lập
 - Cập nhật lần cuối: 2026-09-18
 
 ---
@@ -57,7 +57,7 @@ updated: 2026-09-18
 
 #### Phase 3 — Graph cơ quan (organization graph)
 
-- [x] ✅ Nodes / edges — `js/graph/graph-layout.js` (bố cục cây, tự xuống dòng khi >6 node/cấp), `nodes.js` (node SVG, màu theo loại cơ quan), `edges.js` (cạnh bezier)
+- [x] ✅ Nodes / edges — `js/graph/graph-layout.js` (bố cục cây, **phân trang 6 ô/cấp** kèm thanh `‹ 1–6 / 51 ›` hiển thị rõ tổng số và vị trí đang xem, nhóm cùng loại đi liền nhau: Bộ → cơ quan ngang Bộ → TP trực thuộc TW → tỉnh), `nodes.js` (node SVG, màu theo loại cơ quan), `edges.js` (cạnh bezier)
 - [x] ✅ Zoom / pan — lăn chuột để phóng to/thu nhỏ, kéo để di chuyển, nút ＋ － ⤢ (vừa màn hình) ⇱ (mở hết cấp dưới)
 - [x] ✅ Click / expand / collapse — bấm node để chọn (mở bảng chi tiết bên phải), dấu +/− trên node để mở/thu gọn cấp dưới
 - [x] ✅ Chú giải màu theo loại: lập pháp / hành pháp / tòa án / kiểm sát / Bộ / cơ quan ngang Bộ. Hiện vẽ 5 gốc + 17 đơn vị trực thuộc Chính phủ. **🎉 Phase 3 HOÀN TẤT.**
@@ -71,9 +71,10 @@ updated: 2026-09-18
 
 #### Phase 5 — Search
 
-- [ ] Global search
-- [ ] Filters
-- [ ] Kết quả theo nhóm entity (Cơ quan / Chức vụ / Thủ tục / Văn bản...)
+- [x] ✅ Global search — `js/search/search.js`, chỉ mục 258 mục; bỏ dấu tiếng Việt (gõ "bo tai chinh" ra "Bộ Tài chính"), tìm cả tên viết tắt, địa chỉ, SĐT, email, chức năng; xếp hạng theo mức khớp
+- [x] ✅ Kết quả theo nhóm entity (Cơ quan / Con người / Chức vụ / Nguồn), bấm vào mở thẳng bảng chi tiết
+- [x] ✅ Phím tắt `Ctrl + K`, `Esc` để đóng, bấm ra ngoài để đóng
+- [ ] Filters nâng cao (theo cấp/loại cơ quan) — để sau, chưa cần thiết. **🎉 Phase 5 HOÀN TẤT (phần chính).**
 
 #### Phase 6 — Thủ tục hành chính (Procedures)
 
@@ -101,7 +102,7 @@ updated: 2026-09-18
 
 - [x] ✅ Cấp trung ương: Quốc hội, Chủ tịch nước (tách `position-chu-tich-nuoc` + `org-vpctn-vn`), Chính phủ, TAND tối cao, VKSND tối cao — đã vào `data/*.json` ở Phase 2
 - [x] ✅ Các Bộ / cơ quan ngang Bộ — đủ 17/17, đã vào `data/*.json` ở Phase 2
-- [ ] Cấp tỉnh / thành phố trực thuộc trung ương
+- [x] ✅ Cấp tỉnh / thành phố trực thuộc trung ương — đủ **34/34** (27 tỉnh + 7 TP), có trụ sở, SĐT, fax, email, website, Chủ tịch UBND, ghi chú sáp nhập/trung tâm hành chính và nguồn. Còn thiếu: Bí thư Tỉnh/Thành ủy (dữ liệu thô đã có ở `11-bi-thu-tinh-thanh-va-doi-chieu.md`, chưa ráp vào JSON)
 - [x] ~~Cấp huyện / quận / thị xã~~ — KHÔNG áp dụng (đã kết thúc hoạt động 01/7/2025, chỉ giữ giá trị lịch sử)
 - [ ] Cấp xã / phường / đặc khu — **chỉ nạp ở mức liệt kê**: tổng số + cơ cấu (số xã / phường / đặc khu) theo từng tỉnh, KHÔNG nạp tên từng đơn vị
 - [ ] Đối chiếu chéo nguồn, backup GitHub định kỳ
@@ -121,7 +122,7 @@ Việc tra cứu dữ liệu qua 5 acc Free (`Promts-sodobmhc.md`) chạy **song
 - [x] ✅ 03 (chi tiết) — trụ sở/SĐT/lãnh đạo 34/34 tỉnh/thành ĐÃ XONG qua 3 prompt song song: #10 (Brave, xem `07-...md`), #11 (Edge, xem `08-...md`), #12 (Arc, xem `09-...md`). Toàn bộ 12 trung tâm hành chính từng chưa rõ đã xác định. **🎉 Phát hiện quan trọng: Đồng Nai đã lên Thành phố trực thuộc TW (30/4/2026)** — cơ cấu hiện tại là 27 tỉnh + 7 TP (đã sửa `06-danh-sach-tinh-thanh.md`). Còn thiếu: Bí thư Tỉnh/Thành ủy (đa số tỉnh), và 6 tên Chủ tịch UBND chỉ có 1 nguồn chưa đối chiếu chéo — không chặn tiến độ.
 - [x] ✅ 04 — Cấp huyện / quận / thị xã — **ĐÃ XÁC NHẬN CHÍNH THỨC (Prompt #13, file 10): cấp huyện đã KẾT THÚC HOẠT ĐỘNG TOÀN QUỐC từ 01/7/2025**, căn cứ Điều 2 Nghị quyết 203/2025/QH15 (sửa Hiến pháp) + Điều 1 Luật 72/2025/QH15 (chính quyền 2 cấp: tỉnh – xã). Mục này CHUYỂN SANG trạng thái LỊCH SỬ — không cần tra dữ liệu "cấp huyện hiện hành" nữa, chỉ giữ cho mục đích lịch sử (Time Machine, `effective_to: 2025-06-30`) nếu cần.
 - [x] ✅ 05 — Cấp xã / phường / đặc khu (KHÔNG còn "thị trấn") — **cấp hành chính cuối/thấp nhất hiện hành**, thay vai trò cấp huyện cũ. **HOÀN TẤT tổng quan cấp xã (tổng số + cơ cấu xã/phường/đặc khu) cho toàn bộ 34/34 tỉnh/thành**, qua 5 nhóm chạy song song: #15 Brave → `12-cap-xa-nhom1-7tinh.md` (7 tỉnh), #16 Opera GX → `13-cap-xa-nhom2-7tinh.md` (7 tỉnh, 🟡 Thái Nguyên: Pro đã tự tra thêm, nghiêng rõ về 77x/15p (chinhphu.vn 04/08/2025 vẫn giữ số này), chưa 100% loại trừ đề xuất 69x/23p của HĐND tỉnh), #17 Microsoft Edge → `14-cap-xa-nhom3-7tinh.md` (7 tỉnh), #18 Cốc Cốc → `15-cap-xa-nhom4-7tinh.md` (7 tỉnh, có timeline chi tiết Đồng Nai), #19 Arc → `16-cap-xa-nhom5-va-danhsach-13-dackhu.md` (6 tỉnh + danh sách đầy đủ 13 đặc khu cả nước). Tổng cả nước: **3.321 đơn vị** (2.636 xã + 672 phường + 13 đặc khu, số liệu chốt 10/7/2025, xem file 10). **🛑 CHỐT DỪNG (2026-09-18)**: user thu hẹp phạm vi — cấp xã chỉ cần liệt kê tới đây là đủ. Liệt kê cấp xã đã phủ **đủ 34/34 tỉnh/thành, tới An Giang** — mục 05 **HOÀN TẤT**. Danh sách TÊN đầy đủ 3.321 đơn vị KHÔNG làm nữa; Prompt #20–#24 vẫn giữ nguyên nội dung trong `Promts-sodobmhc.md` (không giao), dùng lại được nếu mở lại phạm vi.
-  **Bổ sung 2026-09-18 (sau khi đã hủy Prompt #20-24)**: user vẫn tự tra một phần danh sách TÊN đầy đủ qua acc Pro trực tiếp (không qua acc Free, không tính vào pipeline 5-acc), và 3 tỉnh cuối (Đồng Tháp, Cà Mau, An Giang) do Pro tự tra qua WebFetch trực tiếp chinhphu.vn theo yêu cầu user — lưu vào `17-ten-day-du-nhom1-va-nhom2.md`, `18-ten-day-du-nhom4-4tinh.md`, `19-ten-day-du-nhom5-5tinh.md` (tổng 17/34 tỉnh/thành đã có tên đầy đủ, phần còn lại KHÔNG tra thêm nữa theo đúng quyết định thu hẹp phạm vi).
+  **Bổ sung 2026-09-18**: user tự tra 1 phần qua acc Pro trực tiếp, lưu vào `17-...md`/`18-...md`/`19-...md` (17/34 tỉnh/thành). Sau đó user yêu cầu **tra cho hết luôn toàn bộ phần còn thiếu** (không dừng ở mức liệt kê nữa với riêng phần TÊN đầy đủ này) — Pro tự tra tiếp 100% qua WebSearch+WebFetch (nguồn chinhphu.vn), lưu vào `20-ten-day-du-nhom1-con-thieu-va-nhom4-con-thieu.md` (Hà Nội, Cao Bằng, Điện Biên, Hà Tĩnh, Lạng Sơn, Nghệ An, Đắk Lắk, Đồng Nai, Tây Ninh) và `21-ten-day-du-tphcm-hoan-tat-34-34.md` (TP.HCM). **🎉 KẾT QUẢ: 34/34 tỉnh/thành đã có ĐẦY ĐỦ danh sách TÊN cấp xã/phường/đặc khu — mục 05 HOÀN TẤT TOÀN DIỆN, không chỉ ở phạm vi rút gọn.** Prompt #20-24 (giao 5 acc Free) vẫn giữ trạng thái ❌ đã hủy trong `Promts-sodobmhc.md` vì việc này Pro đã tự làm xong, không cần giao acc Free nữa.
 - [x] ✅ 06 — Tên đầy đủ xã/phường (phần đã tra được trước khi thu hẹp phạm vi) — `17-ten-day-du-nhom1-va-nhom2.md` (Lai Châu + đủ 7/7 tỉnh nhóm 2), `18-ten-day-du-nhom4-4tinh.md` (Huế, Gia Lai, Khánh Hòa, Lâm Đồng). **DỪNG TẠI ĐÂY** theo phạm vi mới — không tra tiếp các tỉnh còn lại. Dữ liệu đã có vẫn giữ, dùng được nếu sau này mở lại phạm vi.
 
 ---
