@@ -98,6 +98,7 @@ function init(){
     .addEventListener("click", () => document.getElementById("detail-panel").classList.add("is-hidden"));
   on("route:change", renderView);
   on("entity:select", renderDetail);
+  on("asof:change", () => renderView(getState().currentView));
   const pick = e => {
     const el = e.target.closest("[data-entity]");
     if (el && el.dataset.entity) renderDetail(el.dataset.entity);

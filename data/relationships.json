@@ -1102,5 +1102,279 @@
     "effective_from": null,
     "effective_to": null,
     "notes": ""
+  },
+  {
+    "id": "rel-070",
+    "from": "org-bo-ke-hoach-dau-tu",
+    "to": "org-bo-tai-chinh",
+    "type": "merged_into",
+    "label": {
+      "vi": "hợp nhất / chuyển chức năng vào"
+    },
+    "legal_basis": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": "2025-03-01",
+    "effective_to": null,
+    "notes": "Hợp nhất vào Bộ Tài chính."
+  },
+  {
+    "id": "rel-071",
+    "from": "org-bo-giao-thong-van-tai",
+    "to": "org-bo-xay-dung",
+    "type": "merged_into",
+    "label": {
+      "vi": "hợp nhất / chuyển chức năng vào"
+    },
+    "legal_basis": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": "2025-03-01",
+    "effective_to": null,
+    "notes": "Hợp nhất vào Bộ Xây dựng."
+  },
+  {
+    "id": "rel-072",
+    "from": "org-bo-thong-tin-truyen-thong",
+    "to": "org-bo-khcn",
+    "type": "merged_into",
+    "label": {
+      "vi": "hợp nhất / chuyển chức năng vào"
+    },
+    "legal_basis": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": "2025-03-01",
+    "effective_to": null,
+    "notes": "Chức năng chia về Bộ Khoa học và Công nghệ (bưu chính, viễn thông, công nghiệp công nghệ số, chuyển đổi số) và Bộ Văn hóa, Thể thao và Du lịch (báo chí, xuất bản, thông tin đối ngoại)."
+  },
+  {
+    "id": "rel-073",
+    "from": "org-bo-thong-tin-truyen-thong",
+    "to": "org-bo-vhttdl",
+    "type": "merged_into",
+    "label": {
+      "vi": "hợp nhất / chuyển chức năng vào"
+    },
+    "legal_basis": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": "2025-03-01",
+    "effective_to": null,
+    "notes": "Chức năng chia về Bộ Khoa học và Công nghệ (bưu chính, viễn thông, công nghiệp công nghệ số, chuyển đổi số) và Bộ Văn hóa, Thể thao và Du lịch (báo chí, xuất bản, thông tin đối ngoại)."
+  },
+  {
+    "id": "rel-074",
+    "from": "org-bo-tai-nguyen-moi-truong",
+    "to": "org-bo-nong-nghiep-moi-truong",
+    "type": "merged_into",
+    "label": {
+      "vi": "hợp nhất / chuyển chức năng vào"
+    },
+    "legal_basis": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": "2025-03-01",
+    "effective_to": null,
+    "notes": "Hợp nhất với Bộ Nông nghiệp và Phát triển nông thôn thành Bộ Nông nghiệp và Môi trường."
+  },
+  {
+    "id": "rel-075",
+    "from": "org-bo-nong-nghiep-ptnt",
+    "to": "org-bo-nong-nghiep-moi-truong",
+    "type": "merged_into",
+    "label": {
+      "vi": "hợp nhất / chuyển chức năng vào"
+    },
+    "legal_basis": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": "2025-03-01",
+    "effective_to": null,
+    "notes": "Hợp nhất với Bộ Tài nguyên và Môi trường thành Bộ Nông nghiệp và Môi trường."
+  },
+  {
+    "id": "rel-076",
+    "from": "org-bo-ldtbxh",
+    "to": "org-bo-noi-vu",
+    "type": "merged_into",
+    "label": {
+      "vi": "hợp nhất / chuyển chức năng vào"
+    },
+    "legal_basis": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": "2025-03-01",
+    "effective_to": null,
+    "notes": "Giải thể; mảng lao động, việc làm, tiền lương, BHXH, người có công, bình đẳng giới chuyển về Bộ Nội vụ; mảng giảm nghèo chuyển về Bộ Nông nghiệp và Môi trường."
+  },
+  {
+    "id": "rel-077",
+    "from": "org-bo-ldtbxh",
+    "to": "org-bo-nong-nghiep-moi-truong",
+    "type": "merged_into",
+    "label": {
+      "vi": "hợp nhất / chuyển chức năng vào"
+    },
+    "legal_basis": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": "2025-03-01",
+    "effective_to": null,
+    "notes": "Giải thể; mảng lao động, việc làm, tiền lương, BHXH, người có công, bình đẳng giới chuyển về Bộ Nội vụ; mảng giảm nghèo chuyển về Bộ Nông nghiệp và Môi trường."
+  },
+  {
+    "id": "rel-078",
+    "from": "org-uy-ban-dan-toc",
+    "to": "org-bo-dan-toc-ton-giao",
+    "type": "merged_into",
+    "label": {
+      "vi": "hợp nhất / chuyển chức năng vào"
+    },
+    "legal_basis": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": "2025-03-01",
+    "effective_to": null,
+    "notes": "Nâng cấp thành Bộ Dân tộc và Tôn giáo (Nghị định 41/2025/NĐ-CP)."
+  },
+  {
+    "id": "rel-079",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-ke-hoach-dau-tu",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo (đến 28/02/2025)"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "notes": ""
+  },
+  {
+    "id": "rel-080",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-giao-thong-van-tai",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo (đến 28/02/2025)"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "notes": ""
+  },
+  {
+    "id": "rel-081",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-thong-tin-truyen-thong",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo (đến 28/02/2025)"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "notes": ""
+  },
+  {
+    "id": "rel-082",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-tai-nguyen-moi-truong",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo (đến 28/02/2025)"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "notes": ""
+  },
+  {
+    "id": "rel-083",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-nong-nghiep-ptnt",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo (đến 28/02/2025)"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "notes": ""
+  },
+  {
+    "id": "rel-084",
+    "from": "org-chinhphu-vn",
+    "to": "org-bo-ldtbxh",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo (đến 28/02/2025)"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "notes": ""
+  },
+  {
+    "id": "rel-085",
+    "from": "org-chinhphu-vn",
+    "to": "org-uy-ban-dan-toc",
+    "type": "supervises",
+    "label": {
+      "vi": "quản lý / chỉ đạo (đến 28/02/2025)"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "notes": ""
   }
 ]

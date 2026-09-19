@@ -1,6 +1,7 @@
 // views.js — Phase 1: chỉ render khung + empty state. KHÔNG chứa dữ liệu hành chính thật.
 
-import { graphMarkup, mountGraph } from "../graph/graph.js";
+import { graphMarkup, mountGraph, timeBarMarkup } from "../graph/graph.js";
+import { activeAt, isPast, dmy, TODAY } from "../core/time.js";
 const esc = v => String(v ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const banner = st => st.loadError
   ? `<div class="notice notice-warn"><strong>Chưa nạp được dữ liệu.</strong> ${esc(st.loadError)}</div>` : "";
@@ -37,18 +38,22 @@ export const VIEWS = {
     render: st => banner(st) + head("Bản đồ bộ máy", st.index
       ? `Sơ đồ phân cấp — ${st.report.counts.organizations} cơ quan đã nạp. Bấm node để xem chi tiết bên phải.`
       : "Sơ đồ quan hệ giữa các cơ quan.") +
-      (st.index ? graphMarkup() : empty({ ico: "🗺", title: "Chưa có dữ liệu để vẽ", desc: "Cần nạp được data/*.json trước.", phase: "Phase 2" })),
+      (st.index ? timeBarMarkup(st.asOf ?? TODAY) + graphMarkup() : empty({ ico: "🗺", title: "Chưa có dữ liệu để vẽ", desc: "Cần nạp được data/*.json trước.", phase: "Phase 2" })),
     mount: st => { if (st.index) mountGraph(); }
   },
   organizations: {
     label: "Cơ quan",
     render: st => {
-      const items = list(st, "organizations");
+      const asOf = st.asOf ?? TODAY;
+      const all = list(st, "organizations");
+      const items = all.filter(o => activeAt(o, asOf));
       if (!items.length) return head("Cơ quan", "Quốc hội, Chủ tịch nước, Chính phủ, các Bộ, tỉnh/thành.") + banner(st) + empty({ ico: "🏢", title: "Chưa có danh sách cơ quan", desc: "Dữ liệu đọc từ data/organizations.json.", phase: "Phase 2 → 10" });
-      return head("Cơ quan", `${items.length} cơ quan đã nạp từ data/organizations.json`) + banner(st) + dataStats(st) +
+      const hidden = all.length - items.length;
+      return head("Cơ quan", `${items.length} cơ quan tại thời điểm ${dmy(asOf)}${hidden ? ` · ${hidden} cơ quan không tồn tại ở mốc này (đã giải thể hoặc chưa thành lập)` : ""}`) +
+        banner(st) + (isPast(asOf) ? `<div class="notice notice-warn">📅 Đang xem cơ cấu tại <strong>${dmy(asOf)}</strong>. Đổi mốc thời gian ở tab <strong>Bản đồ</strong>.</div>` : "") + dataStats(st) +
         table(["Tên", "Viết tắt", "Trụ sở", "Điện thoại", "Website", "Nguồn"],
           items.map(o => [
-            `<strong data-entity="${esc(o.id)}">${nameOf(o)}</strong>`, esc(o.short_name) || "—",
+            `<strong data-entity="${esc(o.id)}">${nameOf(o)}</strong>` + (o.status === "dissolved" ? ` <span class="badge rel-bad">đã kết thúc ${dmy(o.effective_to)}</span>` : ""), esc(o.short_name) || "—",
             esc(o.contact?.address) || "—",
             (o.contact?.phone ?? []).map(esc).join(", ") || "<em>chưa xác minh</em>",
             (o.contact?.website ?? []).map(u => link(u, u.replace(/^https?:\/\//, ""))).join("<br>") || "—",
@@ -124,12 +129,33 @@ export const VIEWS = {
     label: "Nguồn",
     render: st => {
       const items = list(st, "sources");
-      if (!items.length) return head("Nguồn thông tin", "Mỗi dữ kiện phải có ít nhất một nguồn.") + banner(st) + empty({ ico: "🔗", title: "Chưa có danh mục nguồn", desc: "Đọc từ data/sources.json.", phase: "Phase 8" });
-      return head("Nguồn thông tin", `${items.length} nguồn đã nạp — ưu tiên nguồn chính thức .gov.vn`) + banner(st) +
-        table(["#", "Tên nguồn", "Cơ quan / đơn vị", "Loại", "Độ tin cậy", "Ngày truy cập"], items.map((x, i) => [
-          `[${i + 1}]`, link(x.url, x.title), esc(x.publisher?.name) || "—",
-          esc(x.type), esc(x.reliability), esc(x.accessed_date)
-        ]));
+      if (!items.length) return head("Nguồn thông tin", "Mỗi dữ kiện phải có ít nhất một nguồn.") + banner(st) +
+        empty({ ico: "🔗", title: "Chưa có danh mục nguồn", desc: "Đọc từ data/sources.json.", phase: "Phase 8" });
+      const REL = { official: ["Chính thức", "rel-ok"], secondary_source: ["Thứ cấp", "rel-mid"],
+        unverified: ["Chưa xác minh", "rel-bad"] };
+      const TYPE = { official_document: "Văn bản chính thức", official_website: "Trang chính chủ",
+        government_portal: "Cổng thông tin nhà nước", legal_database: "CSDL pháp luật",
+        official_dataset: "Dữ liệu mở", secondary_source: "Nguồn thứ cấp", news: "Báo chí", other: "Khác" };
+      const count = k => items.filter(x => x.reliability === k).length;
+      const unused = items.filter(x => !(st.index.citedBy.get(x.id) ?? []).length).length;
+      const stats = `<div class="empty-meta" style="justify-content:flex-start;margin:0 0 16px">
+        <span class="badge rel-ok">Chính thức: ${count("official")}</span>
+        <span class="badge rel-mid">Thứ cấp: ${count("secondary_source")}</span>
+        ${count("unverified") ? `<span class="badge rel-bad">Chưa xác minh: ${count("unverified")}</span>` : ""}
+        <span class="badge">Không có mục nào trích dẫn: ${unused}</span></div>`;
+      const sorted = [...items].sort((a, b) =>
+        (st.index.citedBy.get(b.id) ?? []).length - (st.index.citedBy.get(a.id) ?? []).length);
+      return head("Nguồn thông tin", `${items.length} nguồn — ưu tiên nguồn chính thức .gov.vn, không bịa link`) + banner(st) + stats +
+        table(["#", "Tên nguồn", "Cơ quan / đơn vị", "Loại", "Độ tin cậy", "Được trích dẫn", "Ngày truy cập"],
+          sorted.map((x, i) => {
+            const cited = st.index.citedBy.get(x.id) ?? [];
+            const [lab, cls] = REL[x.reliability] ?? [x.reliability, ""];
+            return [`[${i + 1}]`, link(x.url, x.title) + (x.notes ? `<div class="muted-note">${esc(x.notes)}</div>` : ""),
+              esc(x.publisher?.name) || "—", esc(TYPE[x.type] ?? x.type),
+              `<span class="badge ${cls}">${esc(lab)}</span>`,
+              cited.length ? `${cited.length} mục` : `<span class="muted-note">chưa dùng</span>`,
+              esc(x.accessed_date)];
+          }));
     }
   },
   help: {
@@ -143,10 +169,11 @@ export const VIEWS = {
           <li><strong>Sơ đồ</strong>: một cấp hiển thị tối đa 6 ô; nếu nhiều hơn, dưới ô cha có thanh <code>‹ 1–6 / 51 ›</code> để lật sang 6 đơn vị tiếp theo. Nút ⇱ mở hết cấp dưới, ⤢ đưa sơ đồ vừa màn hình.</li><li><strong>Thanh bên trái</strong>: chuyển giữa các mục. Địa chỉ trên trình duyệt đổi theo (ví dụ <code>#/organizations</code>) nên có thể lưu/chia sẻ đúng mục đang xem.</li>
           <li><strong>Ô tìm kiếm</strong> trên đầu trang (phím tắt <code>Ctrl + K</code>): tìm đồng thời trong cơ quan, người, chức vụ và nguồn. Gõ không dấu vẫn ra kết quả ("bo tai chinh"), tìm được cả tên viết tắt (BTC, VKSNDTC), địa chỉ, số điện thoại và email.</li>
           <li><strong>Bảng chi tiết bên phải</strong>: hiện thông tin của đối tượng đang chọn, kèm danh sách nguồn và ngày kiểm chứng cuối.</li>
+          <li><strong>Time Machine</strong> (thanh 📅 ở tab Bản đồ): chọn một ngày bất kỳ hoặc bấm các mốc có sẵn để xem bộ máy <em>tại thời điểm đó</em> — ví dụ chọn 28/02/2025 sẽ thấy lại Bộ Kế hoạch và Đầu tư, Bộ Giao thông vận tải, Bộ Thông tin và Truyền thông… trước đợt sáp nhập. Danh sách ở tab Cơ quan cũng đổi theo.</li>
           <li><strong>Nút ◐</strong> góc phải: đổi giao diện sáng/tối.</li>
         </ul>
         <h2>3. Trạng thái hiện tại</h2>
-        <p>Đang ở <strong>Phase 7</strong>: đã có data engine, sơ đồ quan hệ, bảng chi tiết, tìm kiếm toàn cục, thủ tục hành chính và văn bản pháp luật (kèm quan hệ sửa đổi / hướng dẫn thi hành giữa các văn bản). Dữ liệu thật gồm 5 cơ quan trung ương, 14 Bộ, 3 cơ quan ngang Bộ, 34 tỉnh/thành phố trực thuộc Trung ương (kèm Chủ tịch UBND và Bí thư Tỉnh/Thành ủy) 3 thủ tục hành chính mẫu và 15 văn bản pháp luật. Dữ liệu lịch sử / Time machine (Phase 9) chưa bật.</p><p class="muted-note">Ghi chú kỹ thuật: trình duyệt chặn đọc file JSON khi mở bằng <code>file://</code> — chạy <code>mo-app.bat</code> trong thư mục dự án (hoặc <code>python -m http.server 8080</code>) rồi mở <code>http://localhost:8080</code>.</p><p style="display:none">Phase 1: mới có khung giao diện, điều hướng và các trạng thái trống. Chưa nạp dữ liệu hành chính thật; dữ liệu thô đã tra cứu nằm trong các file <code>01–16-*.md</code> của dự án và chỉ được ráp vào <code>data/*.json</code> ở Phase 10.</p>
+        <p>Đang ở <strong>Phase 9</strong>: đã có data engine, sơ đồ quan hệ, bảng chi tiết, tìm kiếm toàn cục, thủ tục hành chính, văn bản pháp luật và <strong>Time Machine</strong> — xem bộ máy tại một thời điểm bất kỳ trong quá khứ. Dữ liệu thật gồm 5 cơ quan trung ương, 14 Bộ, 3 cơ quan ngang Bộ, 34 tỉnh/thành phố trực thuộc Trung ương (kèm Chủ tịch UBND và Bí thư Tỉnh/Thành ủy) 3 thủ tục hành chính mẫu, 16 văn bản pháp luật và 7 cơ quan đã kết thúc hoạt động (giữ cho mục đích lịch sử).</p><p class="muted-note">Ghi chú kỹ thuật: trình duyệt chặn đọc file JSON khi mở bằng <code>file://</code> — chạy <code>mo-app.bat</code> trong thư mục dự án (hoặc <code>python -m http.server 8080</code>) rồi mở <code>http://localhost:8080</code>.</p><p style="display:none">Phase 1: mới có khung giao diện, điều hướng và các trạng thái trống. Chưa nạp dữ liệu hành chính thật; dữ liệu thô đã tra cứu nằm trong các file <code>01–16-*.md</code> của dự án và chỉ được ráp vào <code>data/*.json</code> ở Phase 10.</p>
         <h2>4. Phạm vi</h2>
         <p>Đào sâu <strong>cấp thượng tầng</strong> (Quốc hội, Chủ tịch nước, Chính phủ, TAND tối cao, VKSND tối cao, 14 Bộ và 3 cơ quan ngang Bộ) và <strong>34 tỉnh/thành phố trực thuộc trung ương</strong>. Cấp xã/phường/đặc khu chỉ dừng ở mức liệt kê (tổng số và cơ cấu theo từng tỉnh). Cấp huyện đã kết thúc hoạt động từ 01/7/2025, chỉ giữ lại cho mục đích lịch sử.</p>
         <h2>5. Các mốc thay đổi bộ máy 2025–2026 cần nhớ</h2>

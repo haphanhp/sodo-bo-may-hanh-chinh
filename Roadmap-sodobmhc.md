@@ -18,7 +18,7 @@ updated: 2026-09-18
 
 #### Trạng thái tổng quan
 
-- Phase hiện tại: **Phase 7 ĐÃ XONG. App hiện có: 56 cơ quan / 89 người / 90 chức vụ / 3 thủ tục / 15 văn bản / 69 quan hệ / 138 nguồn, validate 0 lỗi 0 cảnh báo. Tiếp theo: Phase 8 (panel nguồn) hoặc Phase 9 (time machine)**
+- Phase hiện tại: **Phase 0→9 ĐÃ XONG. App hiện có: 63 cơ quan (56 đang hoạt động + 7 đã kết thúc) / 89 người / 90 chức vụ / 3 thủ tục / 16 văn bản / 85 quan hệ / 139 nguồn, validate 0 lỗi 0 cảnh báo. Còn lại: Phase 10 — mở rộng dữ liệu thật (thủ tục, giấy phép, cơ quan Đảng, đơn vị trực thuộc Bộ)**
 - **⚠️ Phạm vi thu hẹp (user chốt 2026-09-18)**: chỉ đào sâu **cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương**. Cấp xã/phường/đặc khu **KHÔNG cần trụ sở/SĐT/lãnh đạo riêng từng xã** (việc đào sâu chi tiết đó dừng ở đây). Riêng phần **danh sách TÊN đầy đủ** cấp xã: user yêu cầu làm cho xong luôn ngay trong ngày — Pro tự tra 100% qua WebSearch/WebFetch (file 17-21), **đã hoàn tất cả nước 34/34 tỉnh/thành**. Prompt #20–#24 giữ nguyên trong `Promts-sodobmhc.md` nhưng KHÔNG giao acc Free (Pro đã tự làm xong). → Thu thập dữ liệu thô cấp xã xem như **ĐÃ ĐỦ HOÀN TOÀN** cho Phase 10. — song song, dữ liệu thô cấp tỉnh/thành (mục 03) vẫn tiếp tục thu thập độc lập
 - Cập nhật lần cuối: 2026-09-18
 
@@ -102,14 +102,18 @@ updated: 2026-09-18
 
 #### Phase 8 — Nguồn thông tin (Sources)
 
-- [ ] Panel nguồn trích dẫn (đánh số [1], [2]... dạng foot note)
-- [ ] Ngày kiểm chứng lần cuối (`last_verified`)
-- [ ] Link chính thức, không bịa link
+- [x] ✅ Panel nguồn trích dẫn đánh số [1], [2]… trong mọi bảng chi tiết, kèm **nhãn độ tin cậy có màu** (Chính thức / Thứ cấp / Chưa xác minh)
+- [x] ✅ Ngày kiểm chứng lần cuối (`last_verified`) hiện ở cuối phần Nguồn của từng mục
+- [x] ✅ Tab Nguồn: thống kê theo độ tin cậy, cột **"được trích dẫn bởi bao nhiêu mục"** (chỉ mục ngược `citedBy` trong indexer), đánh dấu nguồn chưa ai dùng
+- [x] ✅ Cảnh báo đỏ tự động cho mục có nguồn `unverified`; link gốc, không bịa link. **🎉 Phase 8 HOÀN TẤT.**
 
 #### Phase 9 — Dữ liệu lịch sử (Time machine)
 
-- [ ] `effective_from` / `effective_to` cho từng entity
-- [ ] Timeline UI (xem cơ cấu tại 1 thời điểm trong quá khứ)
+- [x] ✅ `effective_from` / `effective_to` cho cơ quan và quan hệ; `js/core/time.js` với hàm `activeAt()`
+- [x] ✅ Nạp **7 cơ quan đã kết thúc hoạt động 28/02/2025**: Bộ Kế hoạch và Đầu tư, Bộ Giao thông vận tải, Bộ Thông tin và Truyền thông, Bộ Tài nguyên và Môi trường, Bộ Nông nghiệp và PTNT, Bộ Lao động – Thương binh và Xã hội, Ủy ban Dân tộc — kèm quan hệ `merged_into` chỉ rõ chức năng chuyển về đâu (giữ đúng luật 14)
+- [x] ✅ Thêm Nghị quyết 176/2025/QH15 (cơ cấu 14 Bộ + 3 cơ quan ngang Bộ, các Bộ cũ hoạt động đến hết 28/02/2025)
+- [x] ✅ Timeline UI: thanh 📅 ở tab Bản đồ — chọn ngày bất kỳ hoặc bấm mốc có sẵn (Trước sáp nhập Bộ / Sau sáp nhập Bộ / Chính quyền 2 cấp / Đồng Nai lên TP / Hôm nay); sơ đồ và bảng Cơ quan đổi theo, có cảnh báo khi đang xem quá khứ
+- [x] ✅ Kiểm thử: 28/02/2025 → 17 đơn vị trực thuộc Chính phủ (có các Bộ cũ); 01/3/2025 → 17 (cơ cấu mới); 01/7/2025 → 51 (thêm 34 tỉnh/thành). **🎉 Phase 9 HOÀN TẤT.**
 
 #### Phase 10 — Nhập dữ liệu thật
 

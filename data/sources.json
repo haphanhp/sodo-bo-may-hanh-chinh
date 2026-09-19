@@ -2206,5 +2206,21 @@
     "accessed_date": "2026-09-19",
     "reliability": "official",
     "notes": ""
+  },
+  {
+    "id": "source-410",
+    "title": "Toàn văn Nghị quyết 176/2025/QH15 về cơ cấu tổ chức của Chính phủ nhiệm kỳ Quốc hội khóa XV",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-176-2025-qh15-ve-co-cau-to-chuc-cua-chinh-phu-nhiem-ky-quoc-hoi-khoa-xv-119250219181918532.htm",
+    "document_number": "176/2025/QH15",
+    "published_date": "2025-02-19",
+    "effective_date": "2025-02-18",
+    "accessed_date": "2026-09-19",
+    "reliability": "official",
+    "notes": "Các Bộ theo Nghị quyết 08/2021/QH15 hoạt động đến hết 28/02/2025; cơ cấu mới vận hành từ 01/3/2025."
   }
 ]

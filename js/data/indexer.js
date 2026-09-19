@@ -19,8 +19,16 @@ export function buildIndexes(data){
     if (rel?.to)   push(incoming, rel.to, rel);
   }
   const childrenOf = id => (outgoing.get(id) ?? []).filter(r => ["supervises","contains","parent_of"].includes(r.type));
+  // Đếm ngược: mỗi nguồn đang được bao nhiêu mục trích dẫn
+  const citedBy = new Map();
+  for (const [name, m] of Object.entries(perType))
+    if (name !== "sources")
+      for (const e of m.values())
+        for (const sid of e.source_ids ?? [])
+          (citedBy.get(sid) ?? citedBy.set(sid, []).get(sid)).push({ type: name, id: e.id });
+
   return {
-    byId, perType, outgoing, incoming, childrenOf,
+    byId, perType, outgoing, incoming, childrenOf, citedBy,
     get: id => byId.get(id)?.entity ?? null,
     typeOf: id => byId.get(id)?.type ?? null,
     org: id => perType.organizations.get(id) ?? null,

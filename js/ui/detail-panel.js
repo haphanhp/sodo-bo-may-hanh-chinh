@@ -51,6 +51,7 @@ const DOC_TYPE = { constitution: "Hiến pháp", law: "Luật", resolution: "Ngh
 const REL_LABEL = { amends: "sửa đổi, bổ sung", guides: "hướng dẫn thi hành", based_on: "ban hành trên cơ sở",
   issues: "ban hành", replaces: "thay thế" };
 const dmy = s => s ? String(s).split("-").reverse().join("/") : "";
+const dmy2 = dmy;
 
 function documentHTML(doc, st){
   const out = (st.index.outgoing.get(doc.id) ?? []).filter(r => r.to !== doc.id);
@@ -102,10 +103,14 @@ function procedureHTML(pr, st){
 function sourcesHTML(e, st){
   const list = st.index.sourcesOf(e);
   if (!list.length) return `<p class="muted-note">⚠ Chưa gắn nguồn.</p>`;
-  return `<ol class="src-list">${list.map(s => `<li>
+  const REL = { official: ["Chính thức", "rel-ok"], secondary_source: ["Thứ cấp", "rel-mid"], unverified: ["Chưa xác minh", "rel-bad"] };
+  return `<ol class="src-list">${list.map(s => {
+      const [lab, cls] = REL[s.reliability] ?? [s.reliability, ""];
+      return `<li>
       ${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>` : esc(s.title)}
-      <div class="muted-note">${esc(s.publisher?.name)} · ${esc(s.reliability)} · truy cập ${esc(s.accessed_date)}</div>
-    </li>`).join("")}</ol>`;
+      <div class="muted-note"><span class="badge ${cls}" style="margin-right:6px">${esc(lab)}</span>${esc(s.publisher?.name)} · truy cập ${esc(s.accessed_date)}</div>
+    </li>`; }).join("")}</ol>
+    ${e.last_verified ? `<p class="muted-note" style="margin-top:10px">Kiểm chứng lần cuối: <strong>${esc(String(e.last_verified).split("-").reverse().join("/"))}</strong></p>` : ""}`;
 }
 
 function orgHTML(o, st){
@@ -129,8 +134,11 @@ function orgHTML(o, st){
     ${row("Fax", esc(c.fax))}
     ${row("Email", (c.email ?? []).map(esc).join(", "))}
     ${row("Website", (c.website ?? []).map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//, ""))}</a>`).join("<br>"))}
+    ${(o.effective_from || o.effective_to) ? `<h4>Thời gian hiệu lực</h4>
+      ${row("Từ", o.effective_from ? esc(dmy2(o.effective_from)) : "—")}
+      ${row("Đến", o.effective_to ? esc(dmy2(o.effective_to)) + " (đã kết thúc hoạt động)" : "nay")}` : ""}
     <h4>Quan hệ</h4>
-    ${row("Cấp trên", parent ? esc(parent.name.vi) : "không có (cơ quan cao nhất)")}
+    ${row("Cấp trên", parent ? `<strong data-entity="${esc(parent.id)}">${esc(parent.name.vi)}</strong>` : "không có (cơ quan cao nhất)")}
     ${row("Trực thuộc", kids.length ? `${kids.length} đơn vị` : "chưa nạp dữ liệu")}
     ${o.notes ? `<h4>Ghi chú</h4><p class="muted-note">${esc(o.notes)}</p>` : ""}
     <h4>Nguồn</h4>${sourcesHTML(o, st)}`;

@@ -1,12 +1,14 @@
 // graph-layout.js — tính toạ độ node theo cây phân cấp (thuần dữ liệu, không đụng DOM).
+import { activeAt } from "../core/time.js";
+
 export const NODE_W = 172, NODE_H = 46, GAP_X = 18, GAP_Y = 104, PAGE_SIZE = 6;
 
 const ORDER = { government: 0, legislature: 0, court: 0, procuracy: 0, agency: 1, ministry: 2, ministry_level_agency: 3, municipality: 4, province: 5 };
 const sortKids = list => [...list].sort((a, b) =>
   (ORDER[a.type] ?? 9) - (ORDER[b.type] ?? 9) || a.name.vi.localeCompare(b.name.vi, "vi"));
 
-export function buildTree(index, { expanded, pages = new Map() }){
-  const all = [...index.perType.organizations.values()];
+export function buildTree(index, { expanded, pages = new Map(), asOf = null }){
+  const all = [...index.perType.organizations.values()].filter(o => !asOf || activeAt(o, asOf));
   const childrenOf = id => sortKids(all.filter(o => o.parent_id === id));
   const walk = (org, depth) => {
     const node = { id: org.id, org, depth, children: [], pager: null };
@@ -25,7 +27,8 @@ export function buildTree(index, { expanded, pages = new Map() }){
     }
     return node;
   };
-  return sortKids(index.roots().filter(o => o.status !== "dissolved")).map(r => walk(r, 0));
+  const roots = all.filter(o => !o.parent_id);
+  return sortKids(roots).map(r => walk(r, 0));
 }
 function groupLabel(slice){
   const t = new Set(slice.map(o => o.type));

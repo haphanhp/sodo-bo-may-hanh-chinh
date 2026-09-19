@@ -233,6 +233,19 @@ updated: 2026-09-18
 
 ---
 
+#### 2026-09-19 — Phase 8 (panel nguồn) + Phase 9 (Time Machine)
+
+- **Việc làm**: Phase 8 — thêm chỉ mục ngược `citedBy` trong indexer để biết mỗi nguồn đang được bao nhiêu mục trích dẫn; tab Nguồn có thống kê theo độ tin cậy và đánh dấu nguồn chưa ai dùng; mọi bảng chi tiết hiện nhãn độ tin cậy có màu + ngày kiểm chứng cuối. Phase 9 — viết `js/core/time.js` (`activeAt`), nạp 7 cơ quan đã kết thúc hoạt động 28/02/2025 kèm quan hệ `merged_into`, thêm Nghị quyết 176/2025/QH15, dựng thanh Time Machine ở tab Bản đồ (chọn ngày hoặc bấm mốc), sơ đồ và bảng Cơ quan lọc theo thời điểm.
+- **Vấn đề gặp**: (a) Trước đây `buildTree` loại node bằng `status !== "dissolved"` — cách này không cho xem quá khứ được, vì cơ quan đã giải thể bị ẩn vĩnh viễn. (b) Các Bộ hiện hành đều không có `effective_from`, nên khi lùi về 28/02/2025 thì Bộ Tài chính "mới" vẫn hiện cùng Bộ Kế hoạch và Đầu tư "cũ" — sai cơ cấu.
+- **Cách xử lý**: (a) Bỏ lọc theo `status`, chuyển sang lọc theo khoảng `effective_from`/`effective_to` — trạng thái chỉ còn dùng để hiển thị nhãn. (b) Gán `effective_from: 2025-03-01` cho đúng 7 Bộ hình thành/đổi cơ cấu từ mốc đó (Tài chính, Xây dựng, KH&CN, VHTTDL, NN&MT, Nội vụ, Dân tộc và Tôn giáo), các Bộ không đổi (Quốc phòng, Công an, Ngoại giao…) giữ `null` nghĩa là "luôn tồn tại trong phạm vi dữ liệu".
+- **Bài học**:
+  - Muốn có Time Machine thì **không được dùng cờ trạng thái để ẩn dữ liệu** — phải lọc bằng khoảng thời gian. Cờ `status` chỉ nên dùng để hiển thị, không dùng để quyết định hiện/ẩn.
+  - Khi một cơ quan mới hình thành từ sáp nhập, phải gán `effective_from` cho **cả bên mới**, không chỉ `effective_to` cho bên cũ — thiếu một nửa là cơ cấu quá khứ sai ngay.
+  - Chỉ mục ngược (nguồn → các mục trích dẫn nó) rẻ mà hữu ích: phát hiện ngay nguồn "mồ côi" không ai dùng, dấu hiệu dữ liệu bị xoá sót hoặc nguồn thừa.
+  - Các mốc thời gian có sẵn (chip bấm nhanh) quan trọng hơn ô chọn ngày: người dùng không nhớ 28/02/2025 là mốc gì, nhưng bấm "Trước sáp nhập Bộ" thì hiểu ngay.
+
+---
+
 #### 2026-09-19 — Phase 7: văn bản pháp luật + ghi 5 mốc thay đổi bộ máy vào tài liệu
 
 - **Việc làm**: (1) Đưa bài học về các mốc chuyển thẩm quyền 2025–2026 vào **tab Hướng dẫn của app** (mục "Các mốc thay đổi bộ máy 2025–2026 cần nhớ") và thành **luật nền số 20** trong `Claude-sodobmhc.md` — không chỉ nằm trong build-log. (2) Phase 7: nạp 15 văn bản pháp luật vào `data/documents.json`, thêm 13 quan hệ pháp lý (`amends`, `guides`, `based_on`, `issues`), nối thủ tục ↔ văn bản qua `legal_basis_ids`, viết bảng danh sách + bảng chi tiết văn bản, mở rộng validator kiểm tra tham chiếu văn bản/thủ tục.

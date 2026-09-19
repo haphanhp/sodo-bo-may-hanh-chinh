@@ -4,10 +4,21 @@ import { nodeSVG, pagerSVG } from "./nodes.js";
 import { edgeSVG } from "./edges.js";
 import { emit } from "../core/event-bus.js";
 import { getState, setState } from "../core/state.js";
+import { TODAY, MILESTONES, isPast, dmy } from "../core/time.js";
 
 let view = { k: 1, x: 0, y: 0 };
 let expanded = new Set();
 let pages = new Map();
+
+export function timeBarMarkup(asOf){
+  return `<div class="timebar${isPast(asOf) ? " is-past" : ""}">
+    <span class="tb-label">📅 Xem bộ máy tại thời điểm</span>
+    <input type="date" id="asof-input" value="${asOf}" max="2030-12-31">
+    ${MILESTONES.map(m => `<button class="tb-chip${m.date === asOf ? " is-on" : ""}" data-asof="${m.date}" title="${m.hint}">${m.label}</button>`).join("")}
+    <button class="tb-chip${asOf === TODAY ? " is-on" : ""}" data-asof="${TODAY}">Hôm nay</button>
+    ${isPast(asOf) ? `<span class="tb-warn">Đang xem quá khứ (${dmy(asOf)}) — dữ liệu hiển thị là cơ cấu tại thời điểm đó</span>` : ""}
+  </div>`;
+}
 
 export function graphMarkup(){
   return `<div class="graph-canvas" id="graph-canvas">
@@ -43,6 +54,17 @@ export function mountGraph(){
   draw();
   fit();
 
+  const tb = document.querySelector(".timebar");
+  if (tb){
+    tb.addEventListener("click", e => {
+      const c = e.target.closest("[data-asof]");
+      if (c){ setState({ asOf: c.dataset.asof }); emit("asof:change", c.dataset.asof); }
+    });
+    tb.querySelector("#asof-input").addEventListener("change", e => {
+      if (e.target.value){ setState({ asOf: e.target.value }); emit("asof:change", e.target.value); }
+    });
+  }
+
   canvas.addEventListener("click", e => {
     const g = e.target.closest("[data-g]");
     if (g){
@@ -75,7 +97,7 @@ export function mountGraph(){
 
   function draw(){
     const { index, selectedEntity } = getState();
-    const { nodes, edges, pagers } = layout(buildTree(index, { expanded, pages }));
+    const { nodes, edges, pagers } = layout(buildTree(index, { expanded, pages, asOf: getState().asOf }));
     document.getElementById("graph-stage").innerHTML =
       edges.map(edgeSVG).join("") + nodes.map(n => nodeSVG(n, selectedEntity)).join("") + pagers.map(pagerSVG).join("");
     setState({ graph: { ...getState().graph, expandedNodes: [...expanded] } });
@@ -84,7 +106,7 @@ export function mountGraph(){
   function zoom(f){ view.k = Math.min(2.4, Math.max(0.25, view.k * f)); apply(); }
   function fit(){
     const { index } = getState();
-    const { bounds } = layout(buildTree(index, { expanded, pages }));
+    const { bounds } = layout(buildTree(index, { expanded, pages, asOf: getState().asOf }));
     const r = svg.getBoundingClientRect();
     const w = bounds.maxX - bounds.minX, h = bounds.maxY - bounds.minY;
     view.k = Math.min(1.1, Math.min((r.width - 40) / w, (r.height - 40) / h));

@@ -417,12 +417,15 @@
     "responsibilities": [],
     "units": [],
     "procedures": [],
-    "documents": [],
+    "documents": [
+      "doc-nq-176-2025-qh15"
+    ],
     "source_ids": [
       "source-108",
-      "source-109"
+      "source-109",
+      "source-410"
     ],
-    "effective_from": null,
+    "effective_from": "2025-03-01",
     "effective_to": null,
     "last_verified": "2026-09-18",
     "notes": "Tên phường lệch giữa 2 nguồn (Nam Từ Liêm vs Cầu Giấy) — nghi do đổi tên đơn vị hành chính 2025, chưa chốt 100%. Email websitemaster@moha.gov.vn là email quản trị website, KHÔNG phải liên hệ chung — không dùng."
@@ -517,11 +520,14 @@
     "responsibilities": [],
     "units": [],
     "procedures": [],
-    "documents": [],
-    "source_ids": [
-      "source-112"
+    "documents": [
+      "doc-nq-176-2025-qh15"
     ],
-    "effective_from": null,
+    "source_ids": [
+      "source-112",
+      "source-410"
+    ],
+    "effective_from": "2025-03-01",
     "effective_to": null,
     "last_verified": "2026-09-18",
     "notes": "⚠️ Không dùng số 080.43162 / 16 Lê Hồng Phong (footer Báo Điện tử Chính phủ)."
@@ -614,12 +620,15 @@
     "responsibilities": [],
     "units": [],
     "procedures": [],
-    "documents": [],
+    "documents": [
+      "doc-nq-176-2025-qh15"
+    ],
     "source_ids": [
       "source-115",
-      "source-116"
+      "source-116",
+      "source-410"
     ],
-    "effective_from": null,
+    "effective_from": "2025-03-01",
     "effective_to": null,
     "last_verified": "2026-09-18",
     "notes": "Hợp nhất Bộ NN&PTNT + Bộ TN&MT (01/3/2025). Điểm tiếp công dân 79 Nguyễn Chí Thanh, phường Giảng Võ KHÔNG phải trụ sở chính."
@@ -657,11 +666,14 @@
     "responsibilities": [],
     "units": [],
     "procedures": [],
-    "documents": [],
-    "source_ids": [
-      "source-117"
+    "documents": [
+      "doc-nq-176-2025-qh15"
     ],
-    "effective_from": null,
+    "source_ids": [
+      "source-117",
+      "source-410"
+    ],
+    "effective_from": "2025-03-01",
     "effective_to": null,
     "last_verified": "2026-09-18",
     "notes": "SĐT/email toàn cơ quan CHƯA XÁC MINH — chỉ có số Cổng TTĐT (024.38224464 / 024.39760271) và tinbai@moc.gov.vn, không chắc là kênh chung. Trụ sở duy nhất từ 2/2026 sau khi bàn giao 37 Lê Đại Hành cho Bộ Công an."
@@ -701,12 +713,15 @@
     "responsibilities": [],
     "units": [],
     "procedures": [],
-    "documents": [],
+    "documents": [
+      "doc-nq-176-2025-qh15"
+    ],
     "source_ids": [
       "source-118",
-      "source-119"
+      "source-119",
+      "source-410"
     ],
-    "effective_from": null,
+    "effective_from": "2025-03-01",
     "effective_to": null,
     "last_verified": "2026-09-18",
     "notes": "SĐT tổng đài toàn cơ quan CHƯA XÁC MINH — số 0243.9745845 là của Ban Biên tập Cổng TTĐT, đặt ở địa chỉ khác. Website song song: mocst.gov.vn."
@@ -750,12 +765,15 @@
     "responsibilities": [],
     "units": [],
     "procedures": [],
-    "documents": [],
+    "documents": [
+      "doc-nq-176-2025-qh15"
+    ],
     "source_ids": [
       "source-120",
-      "source-121"
+      "source-121",
+      "source-410"
     ],
-    "effective_from": null,
+    "effective_from": "2025-03-01",
     "effective_to": null,
     "last_verified": "2026-09-18",
     "notes": "Hợp nhất phần lớn Bộ TT&TT cũ từ 01/3/2025. Website cũ most.gov.vn đã lỗi thời. chinhphu.vn có bản cache cũ ghi 113 Trần Duy Hưng — không dùng."
@@ -890,12 +908,14 @@
     "units": [],
     "procedures": [],
     "documents": [
-      "doc-nd-41-2025-ndcp"
+      "doc-nd-41-2025-ndcp",
+      "doc-nq-176-2025-qh15"
     ],
     "source_ids": [
-      "source-125"
+      "source-125",
+      "source-410"
     ],
-    "effective_from": null,
+    "effective_from": "2025-03-01",
     "effective_to": null,
     "last_verified": "2026-09-18",
     "notes": "Thành lập 01/3/2025 trên cơ sở nâng cấp Ủy ban Dân tộc + nhận chức năng quản lý tôn giáo từ Bộ Nội vụ (Nghị định 41/2025/NĐ-CP). Domain email (moera.gov.vn) khác domain website (bdttg.gov.vn) — không phải lỗi tra cứu."
@@ -2846,5 +2866,257 @@
     "effective_to": null,
     "last_verified": "2026-09-18",
     "notes": "Tỉnh mới = An Giang + Kiên Giang cũ; trung tâm tại phường Rạch Giá (TP Rạch Giá cũ). Đã đối chiếu chéo ở Prompt #14, khớp."
+  },
+  {
+    "id": "org-bo-ke-hoach-dau-tu",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Kế hoạch và Đầu tư",
+      "en": ""
+    },
+    "short_name": "BKHĐT",
+    "status": "dissolved",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "",
+      "phone": [],
+      "email": [],
+      "website": []
+    },
+    "leadership": [],
+    "functions": [
+      "(Cơ quan đã kết thúc hoạt động — giữ lại cho mục đích lịch sử / Time Machine)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "last_verified": "2026-09-19",
+    "notes": "Kết thúc hoạt động sau ngày 28/02/2025 theo Nghị quyết 176/2025/QH15. Hợp nhất vào Bộ Tài chính."
+  },
+  {
+    "id": "org-bo-giao-thong-van-tai",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Giao thông vận tải",
+      "en": ""
+    },
+    "short_name": "BGTVT",
+    "status": "dissolved",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "",
+      "phone": [],
+      "email": [],
+      "website": []
+    },
+    "leadership": [],
+    "functions": [
+      "(Cơ quan đã kết thúc hoạt động — giữ lại cho mục đích lịch sử / Time Machine)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "last_verified": "2026-09-19",
+    "notes": "Kết thúc hoạt động sau ngày 28/02/2025 theo Nghị quyết 176/2025/QH15. Hợp nhất vào Bộ Xây dựng."
+  },
+  {
+    "id": "org-bo-thong-tin-truyen-thong",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Thông tin và Truyền thông",
+      "en": ""
+    },
+    "short_name": "BTTTT",
+    "status": "dissolved",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "",
+      "phone": [],
+      "email": [],
+      "website": []
+    },
+    "leadership": [],
+    "functions": [
+      "(Cơ quan đã kết thúc hoạt động — giữ lại cho mục đích lịch sử / Time Machine)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "last_verified": "2026-09-19",
+    "notes": "Kết thúc hoạt động sau ngày 28/02/2025 theo Nghị quyết 176/2025/QH15. Chức năng chia về Bộ Khoa học và Công nghệ (bưu chính, viễn thông, công nghiệp công nghệ số, chuyển đổi số) và Bộ Văn hóa, Thể thao và Du lịch (báo chí, xuất bản, thông tin đối ngoại)."
+  },
+  {
+    "id": "org-bo-tai-nguyen-moi-truong",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Tài nguyên và Môi trường",
+      "en": ""
+    },
+    "short_name": "BTNMT",
+    "status": "dissolved",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "",
+      "phone": [],
+      "email": [],
+      "website": []
+    },
+    "leadership": [],
+    "functions": [
+      "(Cơ quan đã kết thúc hoạt động — giữ lại cho mục đích lịch sử / Time Machine)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "last_verified": "2026-09-19",
+    "notes": "Kết thúc hoạt động sau ngày 28/02/2025 theo Nghị quyết 176/2025/QH15. Hợp nhất với Bộ Nông nghiệp và Phát triển nông thôn thành Bộ Nông nghiệp và Môi trường."
+  },
+  {
+    "id": "org-bo-nong-nghiep-ptnt",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Nông nghiệp và Phát triển nông thôn",
+      "en": ""
+    },
+    "short_name": "BNNPTNT",
+    "status": "dissolved",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "",
+      "phone": [],
+      "email": [],
+      "website": []
+    },
+    "leadership": [],
+    "functions": [
+      "(Cơ quan đã kết thúc hoạt động — giữ lại cho mục đích lịch sử / Time Machine)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "last_verified": "2026-09-19",
+    "notes": "Kết thúc hoạt động sau ngày 28/02/2025 theo Nghị quyết 176/2025/QH15. Hợp nhất với Bộ Tài nguyên và Môi trường thành Bộ Nông nghiệp và Môi trường."
+  },
+  {
+    "id": "org-bo-ldtbxh",
+    "type": "ministry",
+    "name": {
+      "vi": "Bộ Lao động – Thương binh và Xã hội",
+      "en": ""
+    },
+    "short_name": "BLĐTBXH",
+    "status": "dissolved",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "",
+      "phone": [],
+      "email": [],
+      "website": []
+    },
+    "leadership": [],
+    "functions": [
+      "(Cơ quan đã kết thúc hoạt động — giữ lại cho mục đích lịch sử / Time Machine)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "last_verified": "2026-09-19",
+    "notes": "Kết thúc hoạt động sau ngày 28/02/2025 theo Nghị quyết 176/2025/QH15. Giải thể; mảng lao động, việc làm, tiền lương, BHXH, người có công, bình đẳng giới chuyển về Bộ Nội vụ; mảng giảm nghèo chuyển về Bộ Nông nghiệp và Môi trường."
+  },
+  {
+    "id": "org-uy-ban-dan-toc",
+    "type": "ministry",
+    "name": {
+      "vi": "Ủy ban Dân tộc",
+      "en": ""
+    },
+    "short_name": "UBDT",
+    "status": "dissolved",
+    "jurisdiction": "national",
+    "parent_id": "org-chinhphu-vn",
+    "contact": {
+      "address": "",
+      "phone": [],
+      "email": [],
+      "website": []
+    },
+    "leadership": [],
+    "functions": [
+      "(Cơ quan đã kết thúc hoạt động — giữ lại cho mục đích lịch sử / Time Machine)"
+    ],
+    "powers": [],
+    "responsibilities": [],
+    "units": [],
+    "procedures": [],
+    "documents": [
+      "doc-nq-176-2025-qh15"
+    ],
+    "source_ids": [
+      "source-410"
+    ],
+    "effective_from": null,
+    "effective_to": "2025-02-28",
+    "last_verified": "2026-09-19",
+    "notes": "Kết thúc hoạt động sau ngày 28/02/2025 theo Nghị quyết 176/2025/QH15. Nâng cấp thành Bộ Dân tộc và Tôn giáo (Nghị định 41/2025/NĐ-CP)."
   }
 ]
