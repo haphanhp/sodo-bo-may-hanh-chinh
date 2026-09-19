@@ -50,6 +50,8 @@ Git log cho thấy toàn bộ phần được cấu trúc hoá lại (từ schem
 
 **Bài học lỗi được ghi lại trung thực, kể cả lỗi làm mất công sức.** Build-logs ghi rõ ít nhất 2 lần "đụng số file" do nhiều phiên Cowork chạy song song trên cùng thư mục không có cơ chế khóa file — có lần dẫn tới việc 7 Bộ bị làm trùng độc lập 2 lần, phải đối chiếu và giữ lại cả 2 bản để không mất dữ liệu thật của bên nào.[^10] Việc không xoá vội bản "có vẻ sai" mà giữ lại cả hai để đối chiếu là một quyết định thận trọng đúng đắn, dù tốn thời gian hơn.
 
+**Số thứ tự file là một tài nguyên tranh chấp — và đây là lần đụng độ thứ ba được ghi nhận, ngay trong lúc viết bài đánh giá này.** Ngày 2026-09-19, phát hiện `19-thu-tuc-hanh-chinh-va-xac-minh-bi-thu.md` (do một phiên tra cứu thủ tục hành chính tạo) trùng số thứ tự với `19-ten-day-du-nhom5-5tinh.md` (do một phiên Claude Code khác tạo trước đó, khi đang gấp rút hoàn tất danh sách tên xã/phường cả nước). Cách xử lý: đổi file bị trùng sau thành `41-...` — lấy số lớn hơn số lớn nhất đang tồn tại tại thời điểm phát hiện, không lấp vào một số nhỏ hơn đang trống (ví dụ 26–29, 36 hiện vẫn còn trống do các lần đổi số trước) — và ghi rõ lý do đổi tên ngay trong frontmatter của file mới (`ghi-chu-doi-ten`) để ai đọc sau cũng biết vì sao có việc đổi số. Kiểm tra lại toàn bộ danh sách file đánh số sau khi đổi: không còn số nào trùng.[^17] Bài học rút ra, đúng với cả 3 lần đụng độ đã xảy ra: khi nhiều phiên AI làm việc song song trên cùng thư mục, việc "lấy số thứ tự tiếp theo" tưởng vô hại lại là một hành động ghi (write) vào một tài nguyên dùng chung — phiên nào tạo file mới bắt buộc phải liệt kê lại thư mục ngay trước khi đặt số, và luôn lấy số lớn hơn số lớn nhất đang có, tuyệt đối không lấp vào chỗ trống của số đã bị đổi trước đó (chỗ trống đó có thể đang được một phiên khác dùng lại).
+
 **Nhạy với thời sự pháp lý.** Luật số 20 liệt kê rất cụ thể 5 mốc thay đổi bộ máy 2025–2026 (sáp nhập Bộ 01/3/2025, chuyển giấy phép lái xe sang Bộ Công an, kết thúc cấp huyện 01/7/2025, Đồng Nai lên thành phố trực thuộc TW 30/4/2026, chuyển thẩm quyền cấp phiếu lý lịch tư pháp 01/7/2026) — và nhắc rõ phần lớn tài liệu trên mạng CHƯA cập nhật các thay đổi này, nên phải tự kiểm tra thẩm quyền trước khi tin bài hướng dẫn thủ tục.[^11] Đây chính xác là loại kiến thức mà người dùng phổ thông (kể cả người viết bài đánh giá này) dễ bị thông tin cũ đánh lừa nhất.
 
 **Tách biệt rõ vai trò từng file quản lý.** Roadmap chỉ ghi tiến độ, Build-logs chỉ ghi bài học/lỗi, Promts chỉ ghi phân công — không trộn lẫn, nên một AI mới vào dự án dở dang có thể đọc đúng thứ cần đọc mà không phải lọc qua một file nhật ký khổng lồ để tìm "hiện đang ở đâu".[^12]
@@ -76,7 +78,51 @@ Git log cho thấy toàn bộ phần được cấu trúc hoá lại (từ schem
 
 ---
 
-### 5. Dự án này giúp ích được gì cho ai
+### 5. Lộ trình hoàn thiện: đầu việc cụ thể + ước lượng nguồn lực
+
+*Bổ sung 2026-09-19, theo yêu cầu người đọc bài đánh giá này.* Với mỗi khoảng trống nêu ở mục 4, dưới đây là đầu việc cụ thể để đóng lại, cùng ước lượng nguồn lực theo đúng đơn vị đo mà dự án đang dùng: **số prompt** cần soạn thêm cho 5 acc Free (nếu có), **số phiên làm việc** (Cowork/Claude Code) để ráp/kiểm chứng, và **mức token mỗi phiên** — ước lượng THÔ dựa theo nhịp độ đã quan sát được của chính dự án này (ví dụ: 5 prompt tra cứu tổng quan cấp xã + ráp xong trong 1 phiên; 17 prompt thủ tục Mức 3 tốn khoảng 2–3 phiên), **không phải số đo token thực tế** — không có công cụ nào trong dự án tự động đo token đã dùng cho từng phiên trước đây, nên các con số dưới đây chỉ nên dùng để ước lượng NGÂN SÁCH THỜI GIAN/CÔNG SỨC, không phải cam kết chính xác.[^18]
+
+**Việc 1 — Giấy phép / chứng chỉ (`licenses.json`, đang rỗng).** Phần lớn có thể SUY RA từ dữ liệu thủ tục thô đã có (file `22-...md` đến `41-...md`, 17 lĩnh vực Bộ ngành) — mỗi thủ tục thường "ra" đúng 1 loại giấy phép/chứng chỉ, nên bước đầu là RÁP chứ không phải tra cứu mới. Phần còn thiếu: giấy phép/chứng chỉ do cấp TỈNH cấp trực tiếp (giấy phép xây dựng, giấy chứng nhận quyền sử dụng đất...) chưa có trong dữ liệu thô hiện tại. Ước lượng: **0 prompt mới** cho phần suy ra từ dữ liệu Bộ ngành đã có + **~5 prompt mới** (theo đúng khuôn nhóm 6–7 tỉnh như Prompt #15–19) nếu muốn phủ phần cấp tỉnh; **2–3 phiên** (1 phiên trích xuất + ráp từ dữ liệu có sẵn, 1–2 phiên xử lý phần cấp tỉnh mới); mức token mỗi phiên **trung bình** (phải đọc lại toàn bộ 17 file thô dài để trích đúng trường).
+
+**Việc 2 — Biểu mẫu (`forms.json`, đang rỗng).** KHÔNG suy ra được từ dữ liệu Mức 3 hiện có (dữ liệu hiện tại chỉ có tên thủ tục + link chung tới dichvucong.gov.vn, CHƯA có số hiệu mẫu đơn cụ thể như "Mẫu số 01/ĐKKD"). Đây là lớp dữ liệu SÂU hơn thủ tục, cần tra mới theo từng lĩnh vực. Ước lượng: **~10–17 prompt mới** (tùy làm đủ 17 Bộ ngành hay chỉ ưu tiên các lĩnh vực người dân dùng nhiều nhất: hộ tịch, doanh nghiệp, đất đai, giao thông, tư pháp — nếu chỉ làm nhóm ưu tiên thì khoảng 5–7 prompt); **3–4 phiên**; mức token mỗi phiên **cao** (mỗi thủ tục cần tra + ráp riêng một trường mẫu đơn, khối lượng đọc/viết nhiều hơn Việc 1).
+
+**Việc 3 — Trụ sở / cơ sở vật chất tiếp nhận hồ sơ (`facilities.json`, đang rỗng).** Khác với trụ sở UBND/Bộ đã có sẵn trong `organizations.json` — đây là các điểm tiếp nhận hồ sơ riêng (Trung tâm Phục vụ hành chính công cấp tỉnh, Bộ phận một cửa), thường có địa chỉ/SĐT khác trụ sở hành chính chính. Ước lượng: **~5 prompt mới** (theo khuôn nhóm 6–7 tỉnh quen thuộc); **1–2 phiên**; mức token mỗi phiên **trung bình**.
+
+**Việc 4 — Ráp phần thủ tục còn lại vào `procedures.json` (hiện mới 3/rất-nhiều) + gộp 6 cặp file trùng còn treo ở Phase 6.** Dữ liệu thô ĐÃ CÓ ĐỦ (17 lĩnh vực, file `22-...` đến `41-...`) — đây thuần túy là công đoạn RÁP + GỘP, không cần tra cứu mới. Ước lượng: **0 prompt mới**; **2 phiên** (1 gộp 6 cặp file trùng theo đúng ghi chú đã có trong Roadmap Phase 6, 1 ráp toàn bộ vào schema `procedures.json` + chạy lại `validate-data.js`); mức token mỗi phiên **trung bình–cao** (đọc nhiều file dài để đối chiếu 2 bản trùng trước khi gộp, giữ đúng luật 18 nếu 2 bản có xung đột).
+
+**Việc 5 — Cơ chế khoá/điều phối khi nhiều phiên chạy song song.** Đây là việc KỸ THUẬT thuần túy (ví dụ: quy ước 1 file `.working-on` ghi tên phiên + timestamp trước khi bắt đầu sửa, hoặc script kiểm tra số file trùng trước khi commit), không cần dữ liệu hành chính thật. Ước lượng: **0 prompt**; **1 phiên** (Claude Code); mức token **thấp**.
+
+**Việc 6 — Tự động hoá backup GitHub.** Việc kỹ thuật (git hook hoặc 1 scheduled task định kỳ chạy `git add/commit/push`), không cần dữ liệu hành chính. Ước lượng: **0 prompt**; **1 phiên** (Claude Code, cần xử lý PAT đúng luật số 21 — không nhúng vào URL remote); mức token **thấp**.
+
+**Việc 7 — Tách cơ quan Đảng (Đảng uỷ tỉnh/thành) thành entity riêng.** Tên 34 Bí thư Tỉnh/Thành uỷ ĐÃ CÓ sẵn (file `11-...md`) — việc còn lại là thiết kế quan hệ (entity "Đảng uỷ tỉnh X" + relationship với UBND/HĐND cùng tỉnh) và ráp lại, không nhất thiết cần tra cứu mới trừ khi muốn thêm Phó Bí thư/Ban Thường vụ. Ước lượng: **0 prompt** (dùng lại dữ liệu có sẵn) hoặc **~3 prompt** nếu muốn mở rộng thêm Ban Thường vụ; **1–2 phiên**; mức token **thấp–trung bình**.
+
+**Việc 8 — Kiểm thử UI độc lập với dữ liệu + xác nhận cảnh báo "chưa xác minh" hiện đúng trên giao diện cuối.** Việc kỹ thuật, không cần dữ liệu mới. Lưu ý: theo Roadmap, Phase 8 đã ghi "cảnh báo đỏ tự động cho mục có nguồn `unverified`" — rất có thể khoảng trống nêu ở mục 4 phần này ĐÃ được giải quyết một phần, chỉ cần XÁC NHẬN lại bằng cách mở app kiểm tra trực tiếp, không phải làm lại từ đầu.[^19] Ước lượng: **0 prompt**; **≤1 phiên** (gộp chung với Việc 5/6 trong cùng 1 phiên kỹ thuật nếu muốn tiết kiệm); mức token **thấp**.
+
+**Việc 9 — Mở rộng so sánh hệ thống Mỹ và Trung Quốc** (đúng mục đích gốc ghi trong mô tả dự án — "hiểu hệ thống chính trị VN và hệ thống Mỹ và hệ thống TQ" — nhưng chưa được Roadmap nào của dự án hiện tại đề cập tới). Đây là đầu việc LỚN NHẤT, về bản chất là làm lại quy trình đã làm cho Việt Nam thêm 2 lần nữa, với độ phức tạp thêm (hệ thống liên bang Mỹ có 50 bang; hệ thống Trung Quốc có Đảng Cộng sản TQ nắm thực quyền cần mô hình hoá riêng, song song với bộ máy nhà nước hình thức). Có 2 mức làm:
+  - *Mức tối thiểu — chỉ cấp thượng tầng* (Mỹ: Quốc hội + Tổng thống/Nội các + Tối cao Pháp viện; Trung Quốc: Đại hội Đại biểu Nhân dân toàn quốc + Quốc vụ viện/các Bộ + hệ thống toà án-kiểm sát + Đảng CSTQ): ước lượng **~15–20 prompt mỗi nước** (khoảng 30–40 prompt tổng), **~6–8 phiên**, mức token mỗi phiên **trung bình–cao**.
+  - *Mức đầy đủ — thêm cấp bang (Mỹ) / cấp tỉnh (TQ)*, tương xứng độ sâu đã làm cho VN: quy mô gần gấp đôi–gấp ba tổng số prompt đã dùng cho toàn bộ phần Việt Nam tính đến nay (~40+ prompt), ước lượng **~80–120 prompt**, **~15–20 phiên**.
+  Sai số của ước lượng này LỚN hơn các việc 1–8 rất nhiều, vì chưa có bất kỳ khung phân loại/schema nào cho 2 hệ thống này (khác hệ thống chính trị, khác cấu trúc — không chắc dùng chung được `organization.schema.json` hiện tại mà không sửa).
+
+Bảng tóm tắt (để dễ ước lượng tổng ngân sách nếu muốn làm hết cùng lúc):
+
+| # | Đầu việc | Prompt mới | Phiên làm việc | Token/phiên |
+|---|---|---|---|---|
+| 1 | Giấy phép/chứng chỉ (`licenses.json`) | 0 + ~5 (cấp tỉnh) | 2–3 | Trung bình |
+| 2 | Biểu mẫu (`forms.json`) | ~10–17 (hoặc 5–7 nếu ưu tiên) | 3–4 | Cao |
+| 3 | Trụ sở tiếp nhận hồ sơ (`facilities.json`) | ~5 | 1–2 | Trung bình |
+| 4 | Ráp thủ tục + gộp file trùng | 0 | 2 | Trung bình–Cao |
+| 5 | Cơ chế khoá/điều phối đa phiên | 0 | 1 | Thấp |
+| 6 | Tự động hoá backup GitHub | 0 | 1 | Thấp |
+| 7 | Tách entity Đảng uỷ tỉnh | 0–3 | 1–2 | Thấp–Trung bình |
+| 8 | Kiểm thử UI + xác nhận cảnh báo | 0 | ≤1 | Thấp |
+| 9a | So sánh Mỹ/TQ — mức thượng tầng | ~30–40 | 6–8 | Trung bình–Cao |
+| 9b | So sánh Mỹ/TQ — mức đầy đủ (thêm bang/tỉnh) | ~80–120 | 15–20 | Trung bình–Cao |
+
+Nếu bỏ Việc 9 (so sánh quốc tế — phạm vi mở rộng, không phải khoản nợ của phạm vi hiện tại) thì phần "hoàn thiện Việt Nam" (Việc 1–8) tổng cộng khoảng **~20–32 prompt mới** và **~12–17 phiên làm việc** — tương đương hoặc nhỉnh hơn một chút so với toàn bộ khối lượng công việc dự án đã làm để đi từ Phase 0 tới Phase 9 hiện tại.
+
+---
+
+### 6. Dự án này giúp ích được gì cho ai
 
 **Người học/người mới đi làm thủ tục hành chính**: hiểu được cơ quan nào cấp cái gì, ai là cấp trên của ai — điều trường học Việt Nam thường không dạy trực tiếp, chỉ được biết khi va vào thực tế.
 
@@ -88,7 +134,7 @@ Git log cho thấy toàn bộ phần được cấu trúc hoá lại (từ schem
 
 ---
 
-### 6. Kết luận ngắn
+### 7. Kết luận ngắn
 
 Dự án đã đi qua phần khó nhất về mặt kiến trúc và kỷ luật dữ liệu (Phase 0–9, 0 lỗi validate), nhưng phần "hoàn thiện" theo đúng mục tiêu ban đầu (giấy phép, biểu mẫu, trụ sở, đầy đủ thủ tục cho tất cả Bộ ngành, tách cơ quan Đảng, và mở rộng so sánh Mỹ/Trung Quốc) vẫn còn ở phía trước, tương đương Phase 10 trở đi. Điều đáng ghi nhận nhất không phải là con số 63 cơ quan hay 139 nguồn, mà là việc dự án tự phát hiện lỗi tổ chức của chính mình (đụng file, xung đột nguồn, PAT git) và biến mỗi lỗi thành một luật hoặc một bước quy trình cụ thể — đây là nền tảng tốt để dự án tiếp tục an toàn dù người/AI thực hiện có thay đổi.
 
@@ -112,3 +158,6 @@ Dự án đã đi qua phần khó nhất về mặt kiến trúc và kỷ luật
 [^14]: So sánh danh sách file `19-thu-tuc-*.md` đến `40-thu-tuc-*.md` trong thư mục dự án với nội dung `data/procedures.json` (3 thủ tục), 2026-09-19.
 [^15]: `Build-logs-sodobmhc.md`, mục ghi về việc gắn tạm chức vụ Bí thư Tỉnh/Thành uỷ vào entity tỉnh/thành với `level: "party_leadership"`.
 [^16]: `Build-logs-sodobmhc.md`, mục "2026-09-18 — Pro tự tra (WebFetch/WebSearch) làm rõ xung đột Thái Nguyên; commit lần 2 lên git; soạn Prompt #20-24", điểm 2 "Push lên GitHub THẤT BẠI".
+[^17]: Kiểm tra trực tiếp thư mục dự án ngày 2026-09-19: file `41-thu-tuc-hanh-chinh-va-xac-minh-bi-thu.md` (frontmatter có trường `ghi-chu-doi-ten: Đổi số từ 19 → 41 vào 2026-09-19 vì trùng số với 19-ten-day-du-nhom5-5tinh.md do một phiên làm việc khác tạo`) và rà lại toàn bộ danh sách file đánh số `01-...` đến `41-...` — không còn số nào bị trùng tại thời điểm kiểm tra.
+[^18]: Ước lượng dựa theo nhịp độ quan sát trực tiếp từ lịch sử của chính dự án này (ví dụ: 5 prompt Prompt #15–19 + 1 phiên ráp cho xong tổng quan cấp xã 34/34 tỉnh; 17 prompt Prompt #25–41 tốn khoảng 2–3 phiên cho thủ tục Mức 3 của 17 Bộ ngành) — xem `Roadmap-sodobmhc.md` mục "Tiến độ thu thập dữ liệu thô" và mục Phase 6. Không có công cụ đo token theo phiên trong dự án, nên đây là ước lượng công sức, không phải số đo.
+[^19]: `Roadmap-sodobmhc.md`, Phase 8: "Cảnh báo đỏ tự động cho mục có nguồn `unverified`; link gốc, không bịa link. 🎉 Phase 8 HOÀN TẤT." — cần xác nhận trực tiếp trên giao diện trước khi coi khoảng trống ở mục 4 là đã đóng hoàn toàn.

@@ -170,6 +170,29 @@ Không có cái nào trong 5 chỗ này là AI ‘dở'. Nó chỉ đơn giản 
 
 ---
 
-#### 10.2 — Mindset về hệ thống, phân bổ nguồn lực và cơ chế kiểm tra chéo (user tự bổ sung)
+#### 10.2 — Mindset về hệ thống, phân bổ nguồn lực và cơ chế kiểm tra chéo (16:30–19:00)
 
-*Để trống — bạn tự viết phần này: những mindset rút ra về cách tổ chức hệ thống, cách phân bổ nguồn lực giữa nhiều AI, và cơ chế kiểm tra chéo chống bịa dữ liệu mà bạn đã áp dụng qua dự án.*
+**Lời thoại:**
+"Cái thứ hai tôi mang về, không phải kỹ thuật, mà là cách nghĩ.
+
+Đầu tiên là mindset hệ thống: đừng nghĩ ‘làm sao cho AI vẽ ra một cái sơ đồ', mà nghĩ ‘dữ liệu để riêng, luật để riêng, giao diện để riêng'. Ngay từ đầu tôi đã tách hẳn ba lớp — dữ liệu thật nằm trong file JSON, quy định dữ liệu phải có dạng gì nằm trong schema riêng, còn giao diện chỉ có nhiệm vụ đọc và hiển thị, không được biết Việt Nam có bao nhiêu cơ quan. Nhờ vậy, sau này thêm dữ liệu không phải đập lại code, và một AI có thể sửa dữ liệu mà không đụng vào giao diện của AI khác đang làm. Tôi cũng không làm hết mọi thứ một lần — mọi việc được chia thành từng Phase, xong Phase này mới mở Phase sau, để lúc nào cũng biết rõ ‘đang đứng ở đâu', chứ không phải một mớ hỗn độn không biết đâu là điểm dừng.
+
+Thứ hai là cách phân bổ nguồn lực — đây có lẽ là phần tôi tốn công nghĩ nhất. Tôi không giao việc kiểu ai rảnh thì làm, mà phân theo đúng năng lực từng loại tài khoản: tài khoản Pro giữ toàn bộ bức tranh lớn, chỉ nó mới cần nhớ kiến trúc, mới cần ráp dữ liệu cuối cùng; còn tài khoản miễn phí thì chỉ nhận một mẩu việc nhỏ, khép kín, không cần hiểu gì ngoài phạm vi được giao. Tôi còn chia mỗi tài khoản free chạy trên một trình duyệt cố định, không đổi lẫn, để lúc nào cũng biết ai đang làm phần nào. Đây chính là bài học phân bổ nguồn lực: việc lớn không phải giao cho AI ‘mạnh nhất' làm hết, mà là cắt đúng khớp, giao đúng người — hay đúng tài khoản — cho từng khớp đó.
+
+Thứ ba, quan trọng không kém, là cơ chế kiểm tra chéo chống bịa dữ liệu. Tôi không tin một AI tự báo cáo ‘tôi đã kiểm chứng rồi' là đủ. Tôi bắt buộc mọi câu trả lời phải theo đúng một mẫu cố định — có nguồn, có ngày truy cập, có ghi rõ mức xác minh — để tài khoản Pro ráp lại còn dò được ngay chỗ nào thiếu nguồn. Khi hai nguồn độc lập cho ra kết quả khác nhau, tôi không để một AI tự quyết, mà tách thành một việc riêng để tra kỹ hơn, ưu tiên văn bản có số hiệu cụ thể. Và tôi có một công cụ kiểm tra dữ liệu tự động, chạy sau mỗi lần sửa, báo ngay nếu có quan hệ nào trỏ tới một cơ quan không tồn tại, hay entity nào thiếu nguồn — coi đó như một vọng gác đứng giữa dữ liệu thô và sản phẩm cuối, không tin tưởng mù quáng vào bất cứ AI nào, kể cả AI đang giữ vai điều phối."
+
+**[MINH CHỨNG / QUAY MÀN HÌNH]:**
+- Tách 3 lớp dữ liệu / schema / giao diện, chia theo Phase: doc `context-bmhc` trong Project claude.ai, mục "Nguyên tắc" và mục "23. Chia project thành các Phase cho AI".
+- Phân vai Pro giữ bức tranh lớn / Free tra từng mẩu nhỏ theo trình duyệt cố định: `Claude-sodobmhc.md`, mục 2 "Mô hình nhân sự AI", mục 3 và mục 4.
+- Mẫu trả lời chuẩn để dễ ráp + đánh dấu mức xác minh: `Claude-sodobmhc.md`, mục 6 "Template trả lời chuẩn".
+- Không để 1 AI tự chọn bên khi nguồn xung đột, ưu tiên văn bản có số hiệu: `Claude-sodobmhc.md`, mục 9, luật số 18.
+- Công cụ kiểm tra dữ liệu tự động chạy sau mỗi lần sửa: chạy trực tiếp `node tools/validate-data.js`, quay màn hình kết quả 0 ERRORS / 0 WARNINGS.
+
+---
+
+### Lưu ý dành cho phiên làm việc sau (đọc trước khi sửa file này)
+
+- File này (và cả thư mục dự án) từng có lúc bị **nhiều phiên Cowork chạy song song cùng lúc** (ghi nhận thực tế: 3 phiên cùng hoạt động ngày 2026-09-19) — đúng loại rủi ro mà mục 10.1 và `Build-logs-sodobmhc.md` đã cảnh báo (đụng file, ghi đè bản mới bằng bản cũ do đọc/ghi gần như đồng thời).
+- Trước khi sửa file này: đọc lại toàn bộ nội dung mới nhất trước, chỉ sửa đúng phần trống hoặc phần được giao, **không viết đè lên phần do phiên/AI khác đã viết**, kể cả khi thấy nội dung "chưa hoàn hảo" — nếu nghi ngờ có sai sót, ghi chú lại thay vì tự ý xoá/sửa.
+- Sau khi ghi file xong, nên đọc lại (hoặc kiểm tra checksum) để chắc chắn bản ghi cuối cùng đúng là bản mình vừa viết, không bị một phiên khác ghi đè lại gần như cùng lúc.
+- Việc phân công cụ thể cho từng phiên Cowork đang chạy song song (phiên nào phụ trách phần nào) nên do user quyết định và thông báo rõ ràng cho từng phiên, theo đúng bài học đã ghi trong `Build-logs-sodobmhc.md` (mục về 2 phiên Cowork từng tự làm trùng cả Phase 6).
