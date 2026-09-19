@@ -16,11 +16,49 @@ DATASETS = ["organizations","people","positions","relationships","procedures","d
 def key(path): return os.path.splitext(os.path.basename(path))[0]
 
 IMPORT_RE = re.compile(r'^\s*import\s*\{([^}]+)\}\s*from\s*["\']([^"\']+)["\'];?\s*$', re.M)
-EXPORT_DECL = re.compile(r'^\s*export\s+(async\s+function|function|const|let|class)\s+([A-Za-z0-9_$]+)', re.M)
+# function/class chi bao gio khai bao 1 ten sau "export"
+EXPORT_FN_CLASS = re.compile(r'^\s*export\s+(async\s+function|function|class)\s+([A-Za-z0-9_$]+)', re.M)
+# const/let co the khai bao NHIEU ten tren 1 dong, vd:
+#   export const NODE_W = 172, NODE_H = 46, GAP_X = 18;
+# -> phai tach het cac ten, khong chi lay ten dau tien
+EXPORT_VARS = re.compile(r'^\s*export\s+(?:const|let)\s+(.+?);', re.M | re.S)
+
+def split_top_level_commas(s):
+    """Tach chuoi theo dau phay o do sau 0 (bo qua dau phay trong {}, [], (), chuoi string)."""
+    parts, depth, cur, in_str, str_ch = [], 0, "", False, ""
+    for ch in s:
+        if in_str:
+            cur += ch
+            if ch == str_ch and not cur.endswith("\\" + str_ch):
+                in_str = False
+            continue
+        if ch in "'\"`":
+            in_str, str_ch = True, ch
+        elif ch in "([{":
+            depth += 1
+        elif ch in ")]}":
+            depth -= 1
+        if ch == "," and depth == 0:
+            parts.append(cur)
+            cur = ""
+            continue
+        cur += ch
+    if cur.strip():
+        parts.append(cur)
+    return parts
+
+def export_names(src):
+    """Lay TAT CA ten duoc export trong 1 module (ho tro ca khai bao nhieu bien/1 dong)."""
+    names = [m.group(2) for m in EXPORT_FN_CLASS.finditer(src)]
+    for m in EXPORT_VARS.finditer(src):
+        for part in split_top_level_commas(m.group(1)):
+            ident = re.match(r'\s*([A-Za-z0-9_$]+)', part)
+            if ident: names.append(ident.group(1))
+    return names
 
 def bundle_module(path):
     src = read(path)
-    names = [m.group(2) for m in EXPORT_DECL.finditer(src)]
+    names = export_names(src)
     def repl(m):
         imported = [x.strip().split(" as ")[0].strip() for x in m.group(1).split(",") if x.strip()]
         mod = key(m.group(2))

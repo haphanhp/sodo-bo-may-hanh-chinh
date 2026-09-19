@@ -315,7 +315,7 @@ __M["time"] = (function(){
   }
   const isPast = at => at < TODAY;
   const dmy = s => s ? String(s).split("-").reverse().join("/") : "";
-  return { TODAY, MILESTONES, activeAt, isPast, dmy };
+  return { activeAt, TODAY, MILESTONES, isPast, dmy };
 })();
 
 __M["config"] = (function(){
@@ -578,7 +578,7 @@ __M["search"] = (function(){
     }
     return [...out.entries()];
   }
-  return { norm, buildSearchIndex, search, groupResults };
+  return { buildSearchIndex, search, groupResults, norm };
 })();
 
 __M["graph-layout"] = (function(){
@@ -651,7 +651,7 @@ __M["graph-layout"] = (function(){
     };
     return { nodes, edges, pagers, bounds };
   }
-  return { NODE_W, buildTree, layout };
+  return { buildTree, layout, NODE_W, NODE_H, GAP_X, GAP_Y, PAGE_SIZE };
 })();
 
 __M["nodes"] = (function(){
