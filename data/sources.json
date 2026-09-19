@@ -2126,5 +2126,85 @@
     "accessed_date": "2026-09-18",
     "reliability": "secondary_source",
     "notes": ""
+  },
+  {
+    "id": "source-401",
+    "title": "Nghị quyết 202/2025/QH15 về sắp xếp đơn vị hành chính cấp tỉnh (toàn văn)",
+    "publisher": {
+      "organization_id": null,
+      "name": "thuvienphapluat.vn"
+    },
+    "type": "legal_database",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-202-2025-QH15-660927.aspx",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-19",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-402",
+    "title": "Nghị quyết 203/2025/QH15 sửa đổi, bổ sung một số điều của Hiến pháp 2013 (toàn văn)",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/nghi-quyet-203-2025-qh15-sua-doi-bo-sung-mot-so-dieu-cua-hien-phap-nuoc-cong-hoa-xa-hoi-chu-nghia-viet-nam-119250616181735552.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-19",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-403",
+    "title": "Toàn văn Luật số 72/2025/QH15 về tổ chức chính quyền địa phương",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-luat-so-72-2025-qh15-to-chuc-chinh-quyen-dia-phuong-119250618161434371.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-19",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-404",
+    "title": "Chính thức xác lập mô hình tổ chức chính quyền địa phương 2 cấp thống nhất trong cả nước",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Nhân Dân"
+    },
+    "type": "news",
+    "url": "https://nhandan.vn/chinh-thuc-xac-lap-mo-hinh-to-chuc-chinh-quyen-dia-phuong-2-cap-thong-nhat-trong-ca-nuoc-post887165.html",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-19",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-405",
+    "title": "Chi tiết 34 đơn vị hành chính cấp tỉnh từ 12/6/2025",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/chi-tiet-34-don-vi-hanh-chinh-cap-tinh-tu-12-6-2025-119250612141845533.htm",
+    "document_number": "",
+    "published_date": "",
+    "effective_date": "",
+    "accessed_date": "2026-09-19",
+    "reliability": "official",
+    "notes": ""
   }
 ]

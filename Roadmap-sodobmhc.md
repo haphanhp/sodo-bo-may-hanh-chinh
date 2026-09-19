@@ -18,7 +18,7 @@ updated: 2026-09-18
 
 #### Trạng thái tổng quan
 
-- Phase hiện tại: **Phase 6 ĐÃ XONG (giao diện + 3 thủ tục thật). App hiện có: 56 cơ quan / 89 người / 90 chức vụ / 3 thủ tục / 133 nguồn. Tiếp theo: Phase 7 (văn bản pháp luật) — đã có sẵn ~8 văn bản cần tạo entity từ `legal_basis` của 3 thủ tục**
+- Phase hiện tại: **Phase 7 ĐÃ XONG. App hiện có: 56 cơ quan / 89 người / 90 chức vụ / 3 thủ tục / 15 văn bản / 69 quan hệ / 138 nguồn, validate 0 lỗi 0 cảnh báo. Tiếp theo: Phase 8 (panel nguồn) hoặc Phase 9 (time machine)**
 - **⚠️ Phạm vi thu hẹp (user chốt 2026-09-18)**: chỉ đào sâu **cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương**. Cấp xã/phường/đặc khu **KHÔNG cần trụ sở/SĐT/lãnh đạo riêng từng xã** (việc đào sâu chi tiết đó dừng ở đây). Riêng phần **danh sách TÊN đầy đủ** cấp xã: user yêu cầu làm cho xong luôn ngay trong ngày — Pro tự tra 100% qua WebSearch/WebFetch (file 17-21), **đã hoàn tất cả nước 34/34 tỉnh/thành**. Prompt #20–#24 giữ nguyên trong `Promts-sodobmhc.md` nhưng KHÔNG giao acc Free (Pro đã tự làm xong). → Thu thập dữ liệu thô cấp xã xem như **ĐÃ ĐỦ HOÀN TOÀN** cho Phase 10. — song song, dữ liệu thô cấp tỉnh/thành (mục 03) vẫn tiếp tục thu thập độc lập
 - Cập nhật lần cuối: 2026-09-18
 
@@ -92,8 +92,13 @@ updated: 2026-09-18
 
 #### Phase 7 — Văn bản pháp luật (Documents)
 
-- [ ] Các loại: hiến pháp, luật, nghị quyết, nghị định, quyết định, thông tư, chỉ thị, công văn
-- [ ] Quan hệ pháp lý giữa văn bản (căn cứ, sửa đổi, thay thế)
+- [x] ✅ 15 văn bản đã nạp vào `data/documents.json`: Hiến pháp 2013; các luật (Lý lịch tư pháp, 107/2025/QH15, Doanh nghiệp 2020, 72/2025/QH15, Trật tự ATGT đường bộ 2024); nghị quyết (202/2025/QH15, 203/2025/QH15, 17/2026/QH16); nghị định (168/2025, 41/2025); thông tư (12/2025/TT-BCA, 101/2026/TT-BCA, 68/2025/TT-BTC, 154/2025/TT-BTC)
+- [x] ✅ Quan hệ pháp lý giữa văn bản: `amends` (sửa đổi, bổ sung), `guides` (hướng dẫn thi hành), `based_on` (ban hành trên cơ sở), `issues` (cơ quan ban hành) — 13 quan hệ mới, tổng 69 quan hệ
+- [x] ✅ Bảng danh sách văn bản sắp theo **thứ bậc hiệu lực pháp lý** (hiến pháp → luật → nghị quyết → nghị định → thông tư), có loại, số hiệu, cơ quan ban hành, ngày hiệu lực
+- [x] ✅ Bảng chi tiết văn bản: cơ quan ban hành (bấm được), ngày ban hành/hiệu lực, link toàn văn, quan hệ pháp lý 2 chiều, thủ tục áp dụng văn bản đó, ghi chú, nguồn
+- [x] ✅ Thủ tục nay liên kết văn bản bằng `legal_basis_ids` (bấm từ thủ tục sang văn bản và ngược lại), validator kiểm tra tham chiếu
+- [x] ✅ Tìm kiếm nhận **số hiệu văn bản** ("12/2025", "luật 107") và **từ đồng nghĩa dân gian** (bằng lái → giấy phép lái xe, lltp → lý lịch tư pháp, dkkd → đăng ký doanh nghiệp)
+- [ ] Ngày ban hành chính xác của 5 văn bản còn để trống/ước lượng (107/2025/QH15, 101/2026/TT-BCA, 168/2025/NĐ-CP, 68/2025/TT-BTC, 154/2025/TT-BTC) — đã ghi ⚠️ trong `notes`. **🎉 Phase 7 HOÀN TẤT phần chính.**
 
 #### Phase 8 — Nguồn thông tin (Sources)
 

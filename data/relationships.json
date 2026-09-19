@@ -894,5 +894,213 @@
     "effective_from": null,
     "effective_to": null,
     "notes": ""
+  },
+  {
+    "id": "rel-057",
+    "from": "doc-nq-203-2025-qh15",
+    "to": "doc-hien-phap-2013",
+    "type": "amends",
+    "label": {
+      "vi": "sửa đổi, bổ sung"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-402"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-058",
+    "from": "doc-luat-107-2025-qh15",
+    "to": "doc-luat-lltp-2009",
+    "type": "amends",
+    "label": {
+      "vi": "sửa đổi, bổ sung"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-310"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-059",
+    "from": "doc-luat-72-2025-qh15",
+    "to": "doc-nq-203-2025-qh15",
+    "type": "based_on",
+    "label": {
+      "vi": "ban hành trên cơ sở"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-404"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": "Luật 72/2025/QH15 cụ thể hóa việc bỏ cấp huyện đã được hiến định tại NQ 203/2025/QH15."
+  },
+  {
+    "id": "rel-060",
+    "from": "doc-tt-101-2026-ttbca",
+    "to": "doc-luat-107-2025-qh15",
+    "type": "guides",
+    "label": {
+      "vi": "hướng dẫn thi hành"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-311"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-061",
+    "from": "doc-tt-12-2025-ttbca",
+    "to": "doc-luat-ttatgtdb-2024",
+    "type": "guides",
+    "label": {
+      "vi": "hướng dẫn thi hành"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-330"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-062",
+    "from": "doc-nd-168-2025-ndcp",
+    "to": "doc-luat-doanh-nghiep-2020",
+    "type": "guides",
+    "label": {
+      "vi": "hướng dẫn thi hành"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-320"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-063",
+    "from": "doc-tt-68-2025-ttbtc",
+    "to": "doc-nd-168-2025-ndcp",
+    "type": "guides",
+    "label": {
+      "vi": "quy định phí, lệ phí kèm theo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-320"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-064",
+    "from": "doc-tt-154-2025-ttbtc",
+    "to": "doc-tt-12-2025-ttbca",
+    "type": "guides",
+    "label": {
+      "vi": "quy định lệ phí kèm theo"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-331"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-065",
+    "from": "org-quochoi-vn",
+    "to": "doc-nq-202-2025-qh15",
+    "type": "issues",
+    "label": {
+      "vi": "ban hành"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-401"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-066",
+    "from": "org-quochoi-vn",
+    "to": "doc-nq-203-2025-qh15",
+    "type": "issues",
+    "label": {
+      "vi": "ban hành"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-402"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-067",
+    "from": "org-quochoi-vn",
+    "to": "doc-luat-72-2025-qh15",
+    "type": "issues",
+    "label": {
+      "vi": "ban hành"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-403"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-068",
+    "from": "org-bo-cong-an",
+    "to": "doc-tt-12-2025-ttbca",
+    "type": "issues",
+    "label": {
+      "vi": "ban hành"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-330"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
+  },
+  {
+    "id": "rel-069",
+    "from": "org-bo-tai-chinh",
+    "to": "doc-tt-154-2025-ttbtc",
+    "type": "issues",
+    "label": {
+      "vi": "ban hành"
+    },
+    "legal_basis": [],
+    "source_ids": [
+      "source-331"
+    ],
+    "effective_from": null,
+    "effective_to": null,
+    "notes": ""
   }
 ]

@@ -98,7 +98,27 @@ export const VIEWS = {
         ]));
     }
   },
-  documents:     { label: "Văn bản", render: st => banner(st) + head("Văn bản pháp luật", "Hiến pháp, luật, nghị quyết, nghị định, quyết định, thông tư, chỉ thị, công văn.") + empty({ ico: "📜", title: "Chưa có văn bản", desc: "Đọc từ data/documents.json, kèm quan hệ pháp lý giữa các văn bản (căn cứ, sửa đổi, thay thế).", phase: "Phase 7" }) },
+  documents: {
+    label: "Văn bản",
+    render: st => {
+      const items = list(st, "documents");
+      const T = { constitution: "Hiến pháp", law: "Luật", resolution: "Nghị quyết", decree: "Nghị định",
+        decision: "Quyết định", circular: "Thông tư", directive: "Chỉ thị", regulation: "Quy định", official_letter: "Công văn" };
+      if (!items.length) return head("Văn bản pháp luật", "Hiến pháp, luật, nghị quyết, nghị định, quyết định, thông tư…") + banner(st) +
+        empty({ ico: "📜", title: "Chưa có văn bản", desc: "Đọc từ data/documents.json.", phase: "Phase 7" });
+      const order = ["constitution","law","resolution","decree","circular","decision","directive","regulation","official_letter"];
+      const sorted = [...items].sort((a, b) => order.indexOf(a.type) - order.indexOf(b.type) ||
+        String(b.effective_date).localeCompare(String(a.effective_date)));
+      return head("Văn bản pháp luật", `${items.length} văn bản đã nạp — sắp theo thứ bậc hiệu lực pháp lý`) + banner(st) +
+        table(["Loại", "Số hiệu", "Tên văn bản", "Cơ quan ban hành", "Hiệu lực"], sorted.map(d => [
+          `<span class="badge">${esc(T[d.type] ?? d.type)}</span>`,
+          esc(d.number) || "—",
+          `<strong data-entity="${esc(d.id)}">${esc(d.title.vi)}</strong>`,
+          nameOf(st.index.get(d.issuer_id)) || "—",
+          d.effective_date ? esc(String(d.effective_date).split("-").reverse().join("/")) : "—"
+        ]));
+    }
+  },
   licenses:      { label: "Giấy phép", render: st => banner(st) + head("Giấy phép / chứng chỉ / biểu mẫu", "Kết quả đầu ra của thủ tục: giấy phép, chứng chỉ, con dấu, biểu mẫu.") + empty({ ico: "📄", title: "Chưa có giấy phép", desc: "Đọc từ data/licenses.json và data/forms.json, liên kết ngược về thủ tục và cơ quan cấp.", phase: "Phase 6" }) },
   sources: {
     label: "Nguồn",
@@ -126,17 +146,27 @@ export const VIEWS = {
           <li><strong>Nút ◐</strong> góc phải: đổi giao diện sáng/tối.</li>
         </ul>
         <h2>3. Trạng thái hiện tại</h2>
-        <p>Đang ở <strong>Phase 6</strong>: đã có data engine, sơ đồ quan hệ, bảng chi tiết, tìm kiếm toàn cục và thủ tục hành chính. Dữ liệu thật gồm 5 cơ quan trung ương, 14 Bộ, 3 cơ quan ngang Bộ, 34 tỉnh/thành phố trực thuộc Trung ương (kèm Chủ tịch UBND và Bí thư Tỉnh/Thành ủy) và 3 thủ tục hành chính mẫu. Văn bản pháp luật (Phase 7) và dữ liệu lịch sử (Phase 9) chưa bật.</p><p class="muted-note">Ghi chú kỹ thuật: trình duyệt chặn đọc file JSON khi mở bằng <code>file://</code> — chạy <code>mo-app.bat</code> trong thư mục dự án (hoặc <code>python -m http.server 8080</code>) rồi mở <code>http://localhost:8080</code>.</p><p style="display:none">Phase 1: mới có khung giao diện, điều hướng và các trạng thái trống. Chưa nạp dữ liệu hành chính thật; dữ liệu thô đã tra cứu nằm trong các file <code>01–16-*.md</code> của dự án và chỉ được ráp vào <code>data/*.json</code> ở Phase 10.</p>
+        <p>Đang ở <strong>Phase 7</strong>: đã có data engine, sơ đồ quan hệ, bảng chi tiết, tìm kiếm toàn cục, thủ tục hành chính và văn bản pháp luật (kèm quan hệ sửa đổi / hướng dẫn thi hành giữa các văn bản). Dữ liệu thật gồm 5 cơ quan trung ương, 14 Bộ, 3 cơ quan ngang Bộ, 34 tỉnh/thành phố trực thuộc Trung ương (kèm Chủ tịch UBND và Bí thư Tỉnh/Thành ủy) 3 thủ tục hành chính mẫu và 15 văn bản pháp luật. Dữ liệu lịch sử / Time machine (Phase 9) chưa bật.</p><p class="muted-note">Ghi chú kỹ thuật: trình duyệt chặn đọc file JSON khi mở bằng <code>file://</code> — chạy <code>mo-app.bat</code> trong thư mục dự án (hoặc <code>python -m http.server 8080</code>) rồi mở <code>http://localhost:8080</code>.</p><p style="display:none">Phase 1: mới có khung giao diện, điều hướng và các trạng thái trống. Chưa nạp dữ liệu hành chính thật; dữ liệu thô đã tra cứu nằm trong các file <code>01–16-*.md</code> của dự án và chỉ được ráp vào <code>data/*.json</code> ở Phase 10.</p>
         <h2>4. Phạm vi</h2>
         <p>Đào sâu <strong>cấp thượng tầng</strong> (Quốc hội, Chủ tịch nước, Chính phủ, TAND tối cao, VKSND tối cao, 14 Bộ và 3 cơ quan ngang Bộ) và <strong>34 tỉnh/thành phố trực thuộc trung ương</strong>. Cấp xã/phường/đặc khu chỉ dừng ở mức liệt kê (tổng số và cơ cấu theo từng tỉnh). Cấp huyện đã kết thúc hoạt động từ 01/7/2025, chỉ giữ lại cho mục đích lịch sử.</p>
-        <h2>5. Nguyên tắc dữ liệu</h2>
+        <h2>5. Các mốc thay đổi bộ máy 2025–2026 cần nhớ</h2>
+        <p>Rất nhiều tài liệu và bài hướng dẫn trên mạng — kể cả bài đề năm 2026 — vẫn ghi cơ quan cũ. Khi tra cứu bất kỳ thủ tục nào, hãy đối chiếu với các mốc sau:</p>
+        <ul>
+          <li><strong>01/3/2025</strong> — hợp nhất, giải thể nhiều Bộ: Bộ Kế hoạch và Đầu tư → nhập vào <strong>Bộ Tài chính</strong>; Bộ Giao thông vận tải → <strong>Bộ Xây dựng</strong>; Bộ Thông tin và Truyền thông → chia về <strong>Bộ Khoa học và Công nghệ</strong> và <strong>Bộ Văn hóa, Thể thao và Du lịch</strong>; Bộ Tài nguyên và Môi trường + Bộ Nông nghiệp và PTNT → <strong>Bộ Nông nghiệp và Môi trường</strong>; Bộ Lao động – Thương binh và Xã hội giải thể; lập <strong>Bộ Dân tộc và Tôn giáo</strong>.</li>
+          <li><strong>01/3/2025</strong> — quản lý và cấp đổi <strong>giấy phép lái xe</strong> chuyển từ ngành Giao thông vận tải sang <strong>Bộ Công an</strong>: nộp tại Công an cấp xã hoặc Phòng Cảnh sát giao thông, không còn nộp ở Sở GTVT.</li>
+          <li><strong>01/7/2025</strong> — <strong>kết thúc hoạt động của cấp huyện</strong> trên cả nước, chuyển sang chính quyền địa phương 2 cấp (tỉnh – xã); 63 tỉnh/thành sáp nhập còn 34. Thủ tục nào còn ghi “UBND cấp huyện” là đã lỗi thời.</li>
+          <li><strong>30/4/2026</strong> — Đồng Nai lên <strong>thành phố trực thuộc Trung ương</strong> (thành phố thứ 7), cơ cấu hiện nay là 27 tỉnh + 7 thành phố.</li>
+          <li><strong>01/7/2026</strong> — cấp <strong>Phiếu lý lịch tư pháp</strong> chuyển từ Sở Tư pháp (Bộ Tư pháp) sang <strong>cơ quan Công an</strong> (Công an cấp tỉnh / Cục Hồ sơ nghiệp vụ Bộ Công an); bản điện tử có giá trị như bản giấy.</li>
+        </ul>
+        <p class="muted-note">Quy tắc thực dụng: với mọi thủ tục, <strong>mặc định nghi ngờ trường “nơi nộp hồ sơ”</strong> trong các bài hướng dẫn và kiểm tra lại theo 5 mốc trên.</p>
+        <h2>6. Nguyên tắc dữ liệu</h2>
         <ul>
           <li>Không bịa thông tin: thiếu thì để trống, không đoán.</li>
           <li>Mỗi đối tượng phải có ít nhất một nguồn trích dẫn.</li>
           <li>Ưu tiên nguồn chính thức <code>.gov.vn</code> khi các nguồn xung đột; nếu chưa chốt được thì đánh dấu "chưa xác minh", không tự chọn một bên.</li>
           <li>Giữ lịch sử khi cơ quan sáp nhập/đổi tên (<code>effective_from</code> / <code>effective_to</code>) thay vì xóa dữ liệu cũ.</li>
         </ul>
-        <h2>6. Nguồn thông tin lấy từ đâu</h2>
+        <h2>7. Nguồn thông tin lấy từ đâu</h2>
         <p>Danh mục nguồn đầy đủ (kèm link gốc và ngày truy cập) sẽ hiển thị ở mục <strong>Nguồn</strong> khi Phase 8 hoàn thành, lấy từ <code>data/sources.json</code>. Toàn bộ quy tắc và nhật ký build nằm trong <code>AGENTS.md</code>, <code>Claude-sodobmhc.md</code>, <code>Roadmap-sodobmhc.md</code>, <code>Build-logs-sodobmhc.md</code> của dự án.</p>
       </div></div>`
   }

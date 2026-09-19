@@ -87,7 +87,12 @@
       "source-312"
     ],
     "last_verified": "2026-09-18",
-    "notes": "⚠️ THAY ĐỔI LỚN: từ 01/7/2026, thẩm quyền cấp Phiếu lý lịch tư pháp chuyển từ Sở Tư pháp (Bộ Tư pháp) sang CƠ QUAN CÔNG AN (Cục Hồ sơ nghiệp vụ Bộ Công an và Công an cấp tỉnh) theo Luật 107/2025/QH15. Mọi hướng dẫn cũ ghi 'nộp tại Sở Tư pháp' đều đã lỗi thời. Thời hạn 05 ngày làm việc lấy từ báo chí, CHƯA đối chiếu trực tiếp điều luật — cần xác minh lại."
+    "notes": "⚠️ THAY ĐỔI LỚN: từ 01/7/2026, thẩm quyền cấp Phiếu lý lịch tư pháp chuyển từ Sở Tư pháp (Bộ Tư pháp) sang CƠ QUAN CÔNG AN (Cục Hồ sơ nghiệp vụ Bộ Công an và Công an cấp tỉnh) theo Luật 107/2025/QH15. Mọi hướng dẫn cũ ghi 'nộp tại Sở Tư pháp' đều đã lỗi thời. Thời hạn 05 ngày làm việc lấy từ báo chí, CHƯA đối chiếu trực tiếp điều luật — cần xác minh lại.",
+    "legal_basis_ids": [
+      "doc-luat-lltp-2009",
+      "doc-luat-107-2025-qh15",
+      "doc-tt-101-2026-ttbca"
+    ]
   },
   {
     "id": "procedure-dang-ky-thanh-lap-cong-ty-tnhh-mtv",
@@ -175,7 +180,12 @@
       "source-320"
     ],
     "last_verified": "2026-09-18",
-    "notes": "⚠️ Cơ quan tiếp nhận là 'Cơ quan đăng ký kinh doanh cấp tỉnh' — sau khi Bộ Kế hoạch và Đầu tư giải thể (01/3/2025), chức năng quản lý nhà nước về đăng ký kinh doanh thuộc Bộ Tài chính; ở địa phương do cơ quan đăng ký kinh doanh thuộc UBND cấp tỉnh thực hiện. Chưa gán `receiving_organization_id` cụ thể vì phụ thuộc tỉnh/thành nơi đặt trụ sở."
+    "notes": "⚠️ Cơ quan tiếp nhận là 'Cơ quan đăng ký kinh doanh cấp tỉnh' — sau khi Bộ Kế hoạch và Đầu tư giải thể (01/3/2025), chức năng quản lý nhà nước về đăng ký kinh doanh thuộc Bộ Tài chính; ở địa phương do cơ quan đăng ký kinh doanh thuộc UBND cấp tỉnh thực hiện. Chưa gán `receiving_organization_id` cụ thể vì phụ thuộc tỉnh/thành nơi đặt trụ sở.",
+    "legal_basis_ids": [
+      "doc-luat-doanh-nghiep-2020",
+      "doc-nd-168-2025-ndcp",
+      "doc-tt-68-2025-ttbtc"
+    ]
   },
   {
     "id": "procedure-cap-doi-gplx-hang-b",
@@ -260,6 +270,11 @@
       "source-331"
     ],
     "last_verified": "2026-09-18",
-    "notes": "⚠️ THAY ĐỔI LỚN: từ 01/3/2025, thẩm quyền quản lý và cấp đổi giấy phép lái xe chuyển từ ngành Giao thông vận tải (Sở GTVT) sang BỘ CÔNG AN — nộp tại Công an cấp xã hoặc Phòng Cảnh sát giao thông. Mọi hướng dẫn cũ ghi 'nộp tại Sở Giao thông vận tải' đều đã lỗi thời. Hạng B thay cho các hạng B1/B2 cũ theo Luật Trật tự, an toàn giao thông đường bộ 2024."
+    "notes": "⚠️ THAY ĐỔI LỚN: từ 01/3/2025, thẩm quyền quản lý và cấp đổi giấy phép lái xe chuyển từ ngành Giao thông vận tải (Sở GTVT) sang BỘ CÔNG AN — nộp tại Công an cấp xã hoặc Phòng Cảnh sát giao thông. Mọi hướng dẫn cũ ghi 'nộp tại Sở Giao thông vận tải' đều đã lỗi thời. Hạng B thay cho các hạng B1/B2 cũ theo Luật Trật tự, an toàn giao thông đường bộ 2024.",
+    "legal_basis_ids": [
+      "doc-luat-ttatgtdb-2024",
+      "doc-tt-12-2025-ttbca",
+      "doc-tt-154-2025-ttbtc"
+    ]
   }
 ]

@@ -1,1 +1,276 @@
-[]
+[
+  {
+    "id": "doc-hien-phap-2013",
+    "type": "constitution",
+    "number": "",
+    "title": {
+      "vi": "Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam năm 2013"
+    },
+    "issuer_id": "org-quochoi-vn",
+    "issued_date": "2013-11-28",
+    "effective_date": "2014-01-01",
+    "status": "active",
+    "url": "",
+    "related_entities": [],
+    "source_ids": [
+      "source-008"
+    ],
+    "notes": "Điều 86–87 quy định về Chủ tịch nước; Điều 94–96 về Chính phủ. Đã được sửa đổi, bổ sung bởi Nghị quyết 203/2025/QH15."
+  },
+  {
+    "id": "doc-nq-203-2025-qh15",
+    "type": "resolution",
+    "number": "203/2025/QH15",
+    "title": {
+      "vi": "Nghị quyết sửa đổi, bổ sung một số điều của Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam năm 2013"
+    },
+    "issuer_id": "org-quochoi-vn",
+    "issued_date": "2025-06-16",
+    "effective_date": "2025-07-01",
+    "status": "active",
+    "url": "https://xaydungchinhsach.chinhphu.vn/nghi-quyet-203-2025-qh15-sua-doi-bo-sung-mot-so-dieu-cua-hien-phap-nuoc-cong-hoa-xa-hoi-chu-nghia-viet-nam-119250616181735552.htm",
+    "related_entities": [],
+    "source_ids": [
+      "source-402",
+      "source-404"
+    ],
+    "notes": "Điều 2: kết thúc hoạt động của đơn vị hành chính cấp huyện từ 01/7/2025 — căn cứ hiến định cho mô hình chính quyền địa phương 2 cấp."
+  },
+  {
+    "id": "doc-luat-72-2025-qh15",
+    "type": "law",
+    "number": "72/2025/QH15",
+    "title": {
+      "vi": "Luật Tổ chức chính quyền địa phương"
+    },
+    "issuer_id": "org-quochoi-vn",
+    "issued_date": "2025-06-16",
+    "effective_date": "2025-07-01",
+    "status": "active",
+    "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-luat-so-72-2025-qh15-to-chuc-chinh-quyen-dia-phuong-119250618161434371.htm",
+    "related_entities": [],
+    "source_ids": [
+      "source-403",
+      "source-404"
+    ],
+    "notes": "Điều 1: chính quyền địa phương gồm 2 cấp — cấp tỉnh và cấp xã (xã, phường, đặc khu). Không còn cấp huyện."
+  },
+  {
+    "id": "doc-nq-202-2025-qh15",
+    "type": "resolution",
+    "number": "202/2025/QH15",
+    "title": {
+      "vi": "Nghị quyết về việc sắp xếp đơn vị hành chính cấp tỉnh năm 2025"
+    },
+    "issuer_id": "org-quochoi-vn",
+    "issued_date": "2025-06-12",
+    "effective_date": "2025-07-01",
+    "status": "active",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-202-2025-QH15-660927.aspx",
+    "related_entities": [],
+    "source_ids": [
+      "source-401",
+      "source-405"
+    ],
+    "notes": "Sắp xếp 63 tỉnh/thành xuống còn 34 đơn vị hành chính cấp tỉnh; Quốc hội biểu quyết thông qua 12/6/2025, các đơn vị mới chính thức vận hành từ 01/7/2025."
+  },
+  {
+    "id": "doc-luat-lltp-2009",
+    "type": "law",
+    "number": "",
+    "title": {
+      "vi": "Luật Lý lịch tư pháp"
+    },
+    "issuer_id": "org-quochoi-vn",
+    "issued_date": "2009-06-17",
+    "effective_date": "2010-07-01",
+    "status": "active",
+    "url": "",
+    "related_entities": [],
+    "source_ids": [
+      "source-311"
+    ],
+    "notes": "Đã được sửa đổi, bổ sung bởi Luật 107/2025/QH15 (hiệu lực 01/7/2026)."
+  },
+  {
+    "id": "doc-luat-107-2025-qh15",
+    "type": "law",
+    "number": "107/2025/QH15",
+    "title": {
+      "vi": "Luật sửa đổi, bổ sung một số điều của Luật Lý lịch tư pháp"
+    },
+    "issuer_id": "org-quochoi-vn",
+    "issued_date": "2025-01-01",
+    "effective_date": "2026-07-01",
+    "status": "active",
+    "url": "",
+    "related_entities": [],
+    "source_ids": [
+      "source-310",
+      "source-312"
+    ],
+    "notes": "⚠️ Ngày ban hành CHƯA XÁC MINH chính xác (chỉ chắc chắn hiệu lực 01/7/2026). Điểm c khoản 1 Điều 1: chuyển thẩm quyền cấp Phiếu lý lịch tư pháp sang Cục Hồ sơ nghiệp vụ Bộ Công an và Công an cấp tỉnh; bản điện tử có giá trị như bản giấy."
+  },
+  {
+    "id": "doc-tt-101-2026-ttbca",
+    "type": "circular",
+    "number": "101/2026/TT-BCA",
+    "title": {
+      "vi": "Thông tư quy định biểu mẫu, giấy tờ về lý lịch tư pháp"
+    },
+    "issuer_id": "org-bo-cong-an",
+    "issued_date": "",
+    "effective_date": "2026-07-01",
+    "status": "active",
+    "url": "",
+    "related_entities": [],
+    "source_ids": [
+      "source-311"
+    ],
+    "notes": "⚠️ Ngày ban hành chưa xác minh; áp dụng từ 01/7/2026 cùng Luật 107/2025/QH15."
+  },
+  {
+    "id": "doc-luat-doanh-nghiep-2020",
+    "type": "law",
+    "number": "59/2020/QH14",
+    "title": {
+      "vi": "Luật Doanh nghiệp"
+    },
+    "issuer_id": "org-quochoi-vn",
+    "issued_date": "2020-06-17",
+    "effective_date": "2021-01-01",
+    "status": "active",
+    "url": "",
+    "related_entities": [],
+    "source_ids": [
+      "source-320"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "doc-nd-168-2025-ndcp",
+    "type": "decree",
+    "number": "168/2025/NĐ-CP",
+    "title": {
+      "vi": "Nghị định về đăng ký doanh nghiệp"
+    },
+    "issuer_id": "org-chinhphu-vn",
+    "issued_date": "",
+    "effective_date": "2025-07-01",
+    "status": "active",
+    "url": "",
+    "related_entities": [],
+    "source_ids": [
+      "source-320"
+    ],
+    "notes": "⚠️ Ngày ban hành chưa xác minh chính xác."
+  },
+  {
+    "id": "doc-tt-68-2025-ttbtc",
+    "type": "circular",
+    "number": "68/2025/TT-BTC",
+    "title": {
+      "vi": "Thông tư quy định mức thu, chế độ thu, nộp phí, lệ phí đăng ký doanh nghiệp"
+    },
+    "issuer_id": "org-bo-tai-chinh",
+    "issued_date": "",
+    "effective_date": "2025-07-01",
+    "status": "active",
+    "url": "",
+    "related_entities": [],
+    "source_ids": [
+      "source-320"
+    ],
+    "notes": "Lệ phí đăng ký doanh nghiệp 25.000 đồng đến hết 2026, miễn khi đăng ký qua mạng điện tử. ⚠️ Ngày ban hành chưa xác minh."
+  },
+  {
+    "id": "doc-luat-ttatgtdb-2024",
+    "type": "law",
+    "number": "36/2024/QH15",
+    "title": {
+      "vi": "Luật Trật tự, an toàn giao thông đường bộ"
+    },
+    "issuer_id": "org-quochoi-vn",
+    "issued_date": "2024-06-27",
+    "effective_date": "2025-01-01",
+    "status": "active",
+    "url": "",
+    "related_entities": [],
+    "source_ids": [
+      "source-330"
+    ],
+    "notes": "Phân hạng lại giấy phép lái xe: hạng B thay cho B1/B2 cũ."
+  },
+  {
+    "id": "doc-tt-12-2025-ttbca",
+    "type": "circular",
+    "number": "12/2025/TT-BCA",
+    "title": {
+      "vi": "Thông tư quy định về sát hạch, cấp, đổi, cấp lại giấy phép lái xe"
+    },
+    "issuer_id": "org-bo-cong-an",
+    "issued_date": "2025-02-28",
+    "effective_date": "2025-03-01",
+    "status": "active",
+    "url": "",
+    "related_entities": [],
+    "source_ids": [
+      "source-330"
+    ],
+    "notes": "Điều 21 khoản 3: nộp hồ sơ đổi giấy phép lái xe tại Công an cấp xã nơi bố trí điểm tiếp nhận hoặc Phòng Cảnh sát giao thông. Phụ lục XII: mẫu đơn đề nghị đổi GPLX."
+  },
+  {
+    "id": "doc-tt-154-2025-ttbtc",
+    "type": "circular",
+    "number": "154/2025/TT-BTC",
+    "title": {
+      "vi": "Thông tư quy định mức thu lệ phí cấp, đổi giấy phép lái xe"
+    },
+    "issuer_id": "org-bo-tai-chinh",
+    "issued_date": "",
+    "effective_date": "2026-01-01",
+    "status": "active",
+    "url": "",
+    "related_entities": [],
+    "source_ids": [
+      "source-331"
+    ],
+    "notes": "Lệ phí cấp đổi giấy phép lái xe 115.000 đồng/lần (giảm từ 135.000 đồng). ⚠️ Ngày ban hành chưa xác minh."
+  },
+  {
+    "id": "doc-nd-41-2025-ndcp",
+    "type": "decree",
+    "number": "41/2025/NĐ-CP",
+    "title": {
+      "vi": "Nghị định quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Dân tộc và Tôn giáo"
+    },
+    "issuer_id": "org-chinhphu-vn",
+    "issued_date": "",
+    "effective_date": "2025-03-01",
+    "status": "active",
+    "url": "",
+    "related_entities": [],
+    "source_ids": [
+      "source-125"
+    ],
+    "notes": "Căn cứ thành lập Bộ Dân tộc và Tôn giáo trên cơ sở nâng cấp Ủy ban Dân tộc + tiếp nhận chức năng quản lý tôn giáo từ Bộ Nội vụ."
+  },
+  {
+    "id": "doc-nq-17-2026-qh16",
+    "type": "resolution",
+    "number": "17/2026/QH16",
+    "title": {
+      "vi": "Nghị quyết phê chuẩn bổ nhiệm các thành viên Chính phủ nhiệm kỳ 2026–2031"
+    },
+    "issuer_id": "org-quochoi-vn",
+    "issued_date": "2026-04-08",
+    "effective_date": "2026-04-08",
+    "status": "active",
+    "url": "",
+    "related_entities": [],
+    "source_ids": [
+      "source-111"
+    ],
+    "notes": "Căn cứ bổ nhiệm Bộ trưởng Bộ Tư pháp (Hoàng Thanh Tùng), Bộ trưởng Bộ KH&CN (Vũ Hải Quân), Bộ trưởng Bộ GD&ĐT (Hoàng Minh Sơn), Thống đốc NHNN (Phạm Đức Ấn)."
+  }
+]

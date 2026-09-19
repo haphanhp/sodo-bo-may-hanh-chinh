@@ -139,7 +139,7 @@ Không cần acc Free tự viết JSON đúng schema — acc Pro sẽ chuyển s
 
 ---
 
-#### 9. 19 luật nền áp dụng cho MỌI AI trong dự án
+#### 9. 20 luật nền áp dụng cho MỌI AI trong dự án
 
 (Trích từ kiến trúc đã chốt trong doc `context-bmhc`, áp dụng cho cả acc Pro và acc Free)
 
@@ -162,6 +162,7 @@ Không cần acc Free tự viết JSON đúng schema — acc Pro sẽ chuyển s
 17. Khi công cụ web search/web_fetch tích hợp của model gặp lỗi (trang cần chạy JS không đọc được, nội dung trả về là bản cache/cũ, hoặc công cụ tìm kiếm gán nhầm URL cho 1 đoạn nội dung) — KHÔNG lặp lại y nguyên cùng công cụ đó lần 3, cũng KHÔNG tự suy diễn/đoán kết quả. Ghi rõ "vẫn xung đột/chưa xác minh được qua công cụ tự động", đề xuất tra thủ công bằng trình duyệt thật, và coi đây là mục KHÔNG chặn tiến độ (non-blocking) nếu không phải field bắt buộc. (Rút ra từ Prompt #4 — 2026-09-18, xem `Build-logs-sodobmhc.md`.)
 18. Khi 2 (hoặc nhiều) lần tra độc lập cho ra kết quả THẬT SỰ khác nhau về 1 field định danh quan trọng (địa chỉ trụ sở, tên người giữ chức vụ...) — không phải do lỗi kỹ thuật rõ ràng (footer/cache/JS) mà là 2 dữ kiện khác nhau, cả 2 đều có nguồn — KHÔNG để 1 AI tự chọn 1 bên. Phải: (a) đánh dấu ❗ xung đột trong file dữ liệu, (b) giao 1 acc/lượt tra RIÊNG để giải quyết, ưu tiên tìm nguồn có SỐ VĂN BẢN + NGÀY CỤ THỂ (Nghị quyết Quốc hội, Quyết định, Thông báo chính thức) hơn là suy luận từ ngày đăng bài hoặc so sánh độ "có vẻ chính chủ". chinhphu.vn/baochinhphu.vn đặc biệt dễ giữ thông tin CŨ (địa chỉ, nhân sự) sau khi 1 cơ quan thay đổi — không tự động coi chinhphu.vn là nguồn "mới nhất" chỉ vì đó là trang chính phủ. (Rút ra từ Prompt #6 — 2026-09-18, giải quyết xung đột trụ sở Bộ Công an và Bộ trưởng Bộ Tư pháp, xem `Build-logs-sodobmhc.md`.)
 19. **Phạm vi**: chỉ đào sâu cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương. Cấp xã/phường/đặc khu chỉ dừng ở mức liệt kê (tổng số + cơ cấu theo tỉnh), KHÔNG tra tên đầy đủ từng đơn vị, KHÔNG tra trụ sở/SĐT/lãnh đạo cấp xã. Phần liệt kê này đã xong cho cả nước (34/34 tỉnh, tới An Giang). Cấp huyện chỉ giữ giá trị lịch sử. (User chốt 2026-09-18.)
+20. **Luôn kiểm tra lại CƠ QUAN CÓ THẨM QUYỀN trước khi tin một bài hướng dẫn thủ tục.** Giai đoạn 2025–2026 có hàng loạt thay đổi mà phần lớn tài liệu trên mạng chưa cập nhật: (a) 01/3/2025 — sáp nhập/giải thể nhiều Bộ (KH&ĐT → Tài chính; GTVT → Xây dựng; TT&TT → KH&CN + VHTTDL; TN&MT + NN&PTNT → NN&MT; LĐ-TB&XH giải thể; lập Bộ Dân tộc và Tôn giáo); (b) 01/3/2025 — giấy phép lái xe chuyển sang Bộ Công an (nộp tại Công an cấp xã / Phòng CSGT); (c) 01/7/2025 — kết thúc cấp huyện, chính quyền 2 cấp, 63 tỉnh còn 34; (d) 30/4/2026 — Đồng Nai lên thành phố trực thuộc TW (27 tỉnh + 7 TP); (e) 01/7/2026 — cấp Phiếu lý lịch tư pháp chuyển từ Sở Tư pháp sang cơ quan Công an (Luật 107/2025/QH15). Thấy tài liệu ghi "UBND cấp huyện", "Sở Giao thông vận tải", "Sở Tư pháp cấp phiếu LLTP" hoặc tên Bộ đã giải thể → coi như dữ liệu lỗi thời, phải tra lại. (Rút ra từ Prompt #25 — 2026-09-18, xem `19-thu-tuc-hanh-chinh-va-xac-minh-bi-thu.md`.)
 
 ---
 

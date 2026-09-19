@@ -233,6 +233,19 @@ updated: 2026-09-18
 
 ---
 
+#### 2026-09-19 — Phase 7: văn bản pháp luật + ghi 5 mốc thay đổi bộ máy vào tài liệu
+
+- **Việc làm**: (1) Đưa bài học về các mốc chuyển thẩm quyền 2025–2026 vào **tab Hướng dẫn của app** (mục "Các mốc thay đổi bộ máy 2025–2026 cần nhớ") và thành **luật nền số 20** trong `Claude-sodobmhc.md` — không chỉ nằm trong build-log. (2) Phase 7: nạp 15 văn bản pháp luật vào `data/documents.json`, thêm 13 quan hệ pháp lý (`amends`, `guides`, `based_on`, `issues`), nối thủ tục ↔ văn bản qua `legal_basis_ids`, viết bảng danh sách + bảng chi tiết văn bản, mở rộng validator kiểm tra tham chiếu văn bản/thủ tục.
+- **Vấn đề gặp**: (a) Tìm kiếm không nhận số hiệu văn bản — gõ "thông tư 12/2025" ra bài báo thay vì chính văn bản đó. (b) Thử thêm từ đồng nghĩa "ubnd → ủy ban nhân dân" thì hỏng: truy vấn "ubnd đà nẵng" bung ra 4 âm tiết phổ biến và khớp lung tung. (c) Nhiều văn bản chỉ tra được ngày hiệu lực, không có ngày ban hành chính xác.
+- **Cách xử lý**: (a) Thêm trường `keyN` (số hiệu văn bản / tên viết tắt cơ quan) vào chỉ mục tìm kiếm và cộng điểm riêng khi khớp; hạ điểm nhóm `sources` để văn bản/cơ quan nổi lên trước bài báo dẫn lại. (b) Chỉ giữ các từ đồng nghĩa có ánh xạ 1-1 rõ ràng (bằng lái → giấy phép lái xe, lltp, dkkd, cccd), bỏ các từ dễ gây nhiễu. (c) Để trống `issued_date` và ghi ⚠️ "chưa xác minh" trong `notes` thay vì đoán ngày.
+- **Bài học**:
+  - Bài học rút ra phải nằm ở **chỗ người dùng app đọc được** (tab Hướng dẫn) và ở **chỗ AI phiên sau đọc được** (file luật), chứ không chỉ trong build-log — build-log là nhật ký, không phải nơi tra cứu.
+  - Với dữ liệu pháp luật, **số hiệu văn bản là khoá tìm kiếm quan trọng hơn cả tên** — người ta nhớ "Nghị định 168" chứ ít khi nhớ tên đầy đủ. Phải lập chỉ mục riêng cho nó.
+  - Từ đồng nghĩa trong tìm kiếm tiếng Việt chỉ nên thêm khi ánh xạ 1-1 và cụm đích đủ dài; cụm ngắn phổ biến (ủy ban, nhân dân) làm nhiễu nhiều hơn lợi.
+  - Tách `legal_basis` (chuỗi, đọc được ngay) và `legal_basis_ids` (tham chiếu, bấm được) giúp dữ liệu cũ không vỡ trong khi vẫn nối được graph — nên áp dụng cùng cách khi nâng cấp các trường tham chiếu khác.
+
+---
+
 #### 2026-09-18 — Pro tự thực hiện Prompt #25: 3 thủ tục hành chính + xác minh xong 2 mục Bí thư
 
 - **Việc làm**: Các acc Free quá tải nên acc Pro tự tra bằng WebSearch/WebFetch. Kết quả: (1) xác minh Bí thư Thành ủy TP.HCM = Trần Lưu Quang, chỉ định 14/10/2025 nhiệm kỳ 2025–2030 (khớp lời user, đã gỡ cờ `unverified`); (2) Bí thư Tỉnh ủy Tây Ninh = Nguyễn Văn Quyết, chỉ định 30/6/2025, tiếp tục nhiệm kỳ mới công bố 10/10/2025 (thay nguồn Wikipedia bằng Cổng TTĐT tỉnh + Tuổi Trẻ); (3) ráp 3 thủ tục thật vào `data/procedures.json`. Lưu dữ liệu thô vào `19-thu-tuc-hanh-chinh-va-xac-minh-bi-thu.md`.

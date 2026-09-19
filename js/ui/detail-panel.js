@@ -24,6 +24,7 @@ export function renderDetail(id){
     : type === "people" ? personHTML(e, st)
     : type === "procedures" ? procedureHTML(e, st)
     : type === "positions" ? positionHTML(e, st)
+    : type === "documents" ? documentHTML(e, st)
     : genericHTML(e);
   body.scrollTop = 0;
 }
@@ -45,6 +46,34 @@ function positionHTML(p, st){
     <h4>Nguồn</h4>${sourcesHTML(p, st)}`;
 }
 
+const DOC_TYPE = { constitution: "Hiến pháp", law: "Luật", resolution: "Nghị quyết", decree: "Nghị định",
+  decision: "Quyết định", circular: "Thông tư", directive: "Chỉ thị", regulation: "Quy định", official_letter: "Công văn" };
+const REL_LABEL = { amends: "sửa đổi, bổ sung", guides: "hướng dẫn thi hành", based_on: "ban hành trên cơ sở",
+  issues: "ban hành", replaces: "thay thế" };
+const dmy = s => s ? String(s).split("-").reverse().join("/") : "";
+
+function documentHTML(doc, st){
+  const out = (st.index.outgoing.get(doc.id) ?? []).filter(r => r.to !== doc.id);
+  const inc = (st.index.incoming.get(doc.id) ?? []);
+  const relLine = r => {
+    const other = st.index.get(r.from === doc.id ? r.to : r.from);
+    const dir = r.from === doc.id ? "→" : "←";
+    return `<li>${dir} ${esc(REL_LABEL[r.type] ?? r.type)}: <strong data-entity="${esc(other?.id ?? "")}">${esc(other?.title?.vi ?? other?.name?.vi ?? "")}</strong></li>`;
+  };
+  const procs = [...st.index.perType.procedures.values()].filter(p => (p.legal_basis_ids ?? []).includes(doc.id));
+  return `<h3 class="d-title">${esc(doc.title.vi)}</h3>
+    ${unverifiedFlag(doc, st)}
+    <div class="d-badges"><span class="badge badge-accent">${esc(DOC_TYPE[doc.type] ?? doc.type)}</span>${doc.number ? `<span class="badge">${esc(doc.number)}</span>` : ""}</div>
+    ${row("Cơ quan ban hành", doc.issuer_id ? `<strong data-entity="${esc(doc.issuer_id)}">${esc(st.index.get(doc.issuer_id)?.name?.vi)}</strong>` : "")}
+    ${row("Ngày ban hành", dmy(doc.issued_date))}
+    ${row("Ngày hiệu lực", dmy(doc.effective_date))}
+    ${row("Toàn văn", doc.url ? `<a href="${esc(doc.url)}" target="_blank" rel="noopener">Xem văn bản</a>` : "")}
+    ${(out.length || inc.length) ? `<h4>Quan hệ pháp lý</h4><ul>${[...out, ...inc].map(relLine).join("")}</ul>` : ""}
+    ${procs.length ? `<h4>Thủ tục áp dụng</h4><ul>${procs.map(p => `<li><strong data-entity="${esc(p.id)}">${esc(p.name.vi)}</strong></li>`).join("")}</ul>` : ""}
+    ${doc.notes ? `<h4>Ghi chú</h4><p class="muted-note">${esc(doc.notes)}</p>` : ""}
+    <h4>Nguồn</h4>${sourcesHTML(doc, st)}`;
+}
+
 function procedureHTML(pr, st){
   const org = id => st.index.get(id)?.name?.vi ?? "";
   const steps = (pr.steps ?? []).sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
@@ -63,7 +92,10 @@ function procedureHTML(pr, st){
     <h4>Hồ sơ yêu cầu</h4>${li(pr.requirements)}
     <h4>Lệ phí</h4>${li(pr.fees)}
     <h4>Kết quả</h4>${li(pr.result)}
-    <h4>Căn cứ pháp lý</h4>${li(pr.legal_basis)}
+    <h4>Căn cứ pháp lý</h4>
+    ${(pr.legal_basis_ids ?? []).length
+      ? `<ul>${pr.legal_basis_ids.map(id => { const dd = st.index.get(id); return `<li><strong data-entity="${esc(id)}">${esc(dd?.number || dd?.title?.vi || id)}</strong>${dd?.number && dd?.title?.vi ? ` — ${esc(dd.title.vi)}` : ""}</li>`; }).join("")}</ul>`
+      : li(pr.legal_basis)}
     <h4>Nguồn</h4>${sourcesHTML(pr, st)}`;
 }
 

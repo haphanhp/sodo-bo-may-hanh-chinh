@@ -31,6 +31,24 @@ export function validateData(data){
     ref(r.to, `relationship ${r.id}.to`);
     (r.source_ids ?? []).forEach(s => ref(s, `relationship ${r.id}.source_ids`));
   }
+  for (const d of data.documents ?? []){
+    ref(d.issuer_id, `document ${d.id}.issuer_id`);
+    (d.source_ids ?? []).forEach(x => ref(x, `document ${d.id}.source_ids`));
+    if (!(d.source_ids ?? []).length) warnings.push(`document ${d.id} chưa có nguồn`);
+    if (d.url && !/^https?:\/\//i.test(d.url)) errors.push(`document ${d.id}.url không hợp lệ: ${d.url}`);
+  }
+  for (const pr of data.procedures ?? []){
+    ref(pr.responsible_organization_id, `procedure ${pr.id}.responsible_organization_id`);
+    ref(pr.receiving_organization_id, `procedure ${pr.id}.receiving_organization_id`);
+    (pr.legal_basis_ids ?? []).forEach(x => ref(x, `procedure ${pr.id}.legal_basis_ids`));
+    (pr.source_ids ?? []).forEach(x => ref(x, `procedure ${pr.id}.source_ids`));
+    (pr.steps ?? []).forEach(st => ref(st.organization_id, `procedure ${pr.id}.steps.organization_id`));
+    if (!(pr.source_ids ?? []).length) warnings.push(`procedure ${pr.id} chưa có nguồn`);
+    warnStale(pr, `procedure ${pr.id}`, warnings);
+  }
+  for (const o of data.organizations ?? [])
+    (o.documents ?? []).forEach(x => ref(x, `organization ${o.id}.documents`));
+
   for (const s of data.sources ?? [])
     if (s.url && !/^https?:\/\//i.test(s.url)) errors.push(`source ${s.id}.url không hợp lệ: ${s.url}`);
 

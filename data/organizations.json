@@ -34,7 +34,9 @@
     "responsibilities": [],
     "units": [],
     "procedures": [],
-    "documents": [],
+    "documents": [
+      "doc-hien-phap-2013"
+    ],
     "source_ids": [
       "source-001",
       "source-006"
@@ -129,7 +131,9 @@
     "responsibilities": [],
     "units": [],
     "procedures": [],
-    "documents": [],
+    "documents": [
+      "doc-hien-phap-2013"
+    ],
     "source_ids": [
       "source-003"
     ],
@@ -317,7 +321,9 @@
     "responsibilities": [],
     "units": [],
     "procedures": [],
-    "documents": [],
+    "documents": [
+      "doc-tt-12-2025-ttbca"
+    ],
     "source_ids": [
       "source-103",
       "source-104",
@@ -459,7 +465,9 @@
     "responsibilities": [],
     "units": [],
     "procedures": [],
-    "documents": [],
+    "documents": [
+      "doc-nq-17-2026-qh16"
+    ],
     "source_ids": [
       "source-110",
       "source-111"
@@ -881,7 +889,9 @@
     "responsibilities": [],
     "units": [],
     "procedures": [],
-    "documents": [],
+    "documents": [
+      "doc-nd-41-2025-ndcp"
+    ],
     "source_ids": [
       "source-125"
     ],
