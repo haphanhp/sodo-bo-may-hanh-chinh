@@ -7,7 +7,7 @@ updated: 2026-09-19
 
 ### Script Youtube — "Tôi vibe code sơ đồ bộ máy hành chính Việt Nam, và 35 lần thất bại đã dạy tôi điều gì"
 
-*Ghi chú trước khi quay: script viết ở ngôi thứ nhất (bạn = người kể). Thời lượng mục tiêu 8–12 phút. Mỗi đoạn có phần lời thoại và phần `[QUAY MÀN HÌNH / MINH CHỨNG]` — đây là chỗ chỉ rõ file/dòng nào trong dự án chứng minh cho điều vừa nói, để bạn quay screen-record đúng chỗ đó khi dựng video. Phần "35 phiên đầu thất bại" là trải nghiệm cá nhân của bạn trước khi có hệ thống file quản lý — không nằm trong Build-logs (vì lúc đó chưa có file này), nên khi kể đoạn đó, nói rõ đây là hồi tưởng, không đọc như thể có "bằng chứng file" cho riêng con số 35.*
+*Ghi chú trước khi quay: script viết ở ngôi thứ nhất (bạn = người kể). Thời lượng gốc mục tiêu 8–12 phút; sau khi thêm Đoạn 8–9 (đánh giá điểm mạnh/yếu + bảng công sức còn lại), video sẽ dài khoảng 14–15 phút — nếu muốn giữ đúng 8–12 phút, có thể cắt Đoạn 8–9 thành video riêng dạng "Behind the scenes / Hậu trường". Mỗi đoạn có phần lời thoại và phần `[QUAY MÀN HÌNH / MINH CHỨNG]` — đây là chỗ chỉ rõ file/dòng nào trong dự án chứng minh cho điều vừa nói, để bạn quay screen-record đúng chỗ đó khi dựng video. Phần "35 phiên đầu thất bại" là trải nghiệm cá nhân của bạn trước khi có hệ thống file quản lý — không nằm trong Build-logs (vì lúc đó chưa có file này), nên khi kể đoạn đó, nói rõ đây là hồi tưởng, không đọc như thể có "bằng chứng file" cho riêng con số 35.*
 
 ---
 
@@ -83,7 +83,44 @@ updated: 2026-09-19
 
 ---
 
-### Cảnh kết — Khiêm tốn + lời mời (10:45–11:45)
+### Đoạn 8 — Nhìn thẳng vào sản phẩm: cái nào được, cái nào chưa (10:45–12:30)
+
+**Lời thoại:**
+"Tới đây tôi muốn dừng lại, bỏ cái tông ‘khoe thành quả' xuống một chút, để nhìn thẳng vào sản phẩm như một người dùng bình thường sẽ nhìn — không phải như người đã bỏ công làm ra nó.
+
+Cái được, thì rõ ràng nhất là: mọi thông tin trong này đều có nguồn, và có một bộ luật buộc AI phải ghi ‘chưa xác minh' thay vì đoán bừa khi không chắc — đây không phải lời hứa suông, mà là quy trình bắt buộc, tôi kiểm tra được từng dòng. Kế đến là cách chia việc: một AI giữ bức tranh lớn, năm AI khác chỉ tra từng mẩu nhỏ, không AI nào phải ôm hết mọi thứ trong đầu cùng lúc — và mỗi lần có AI làm sai hay hai AI làm trùng việc, tôi không chỉ sửa cho xong mà biến nó thành một luật viết sẵn, để lần sau không ai — kể cả tôi — vấp lại chỗ cũ.
+
+Còn cái chưa được, thì cũng phải nói thẳng. Ba mảng lẽ ra phải có ngay từ đầu — giấy phép, biểu mẫu, và trụ sở/địa chỉ liên hệ cụ thể của từng cơ quan — hiện vẫn đang trống trơn. Số thủ tục hành chính thật sự đưa được vào sản phẩm mới chỉ có 3, trong khi tôi đã tra thô được dữ liệu cho khoảng 15 lĩnh vực Bộ ngành — nghĩa là phần ‘nguyên liệu' đã có nhiều hơn phần đã ‘nấu chín' rất nhiều. Chức vụ Bí thư Tỉnh uỷ, Thành uỷ hiện tôi vẫn đang gắn tạm vào entity của tỉnh, chưa tách cơ quan Đảng ra thành một nhánh riêng như đáng ra phải làm. Và có ít nhất hai lần, tôi chạy nhiều phiên AI cùng lúc mà không để ý, dẫn tới việc bị làm trùng nguyên một mảng công việc — vì tôi chưa có cách nào để một phiên biết phiên kia đang làm gì."
+
+**[MINH CHỨNG / QUAY MÀN HÌNH]:** Đoạn này diễn giải lại đúng nội dung mục 3 và mục 4 trong `Danh-gia-tong-ket-sodobmhc.md` (điểm mạnh thật sự / rủi ro và khoảng trống) — có thể quay màn hình cuộn qua 2 mục đó, hoặc quay `data/licenses.json`, `data/forms.json`, `data/facilities.json` để người xem thấy tận mắt 3 file đang trống (`[]`).
+
+---
+
+### Đoạn 9 — Nếu làm tiếp thì cần bao nhiêu công sức (12:30–14:00)
+
+**Lời thoại:**
+"Tôi hay bị hỏi: vậy chừng nào xong? Tôi không trả lời bằng ngày, tôi trả lời bằng số prompt và số phiên — vì đó là đơn vị đo công sức thật của dự án này. Cứ nhớ lại quy tắc tôi đặt ra: mỗi prompt giao cho 1 tài khoản free chỉ nên gồm 3 đến 7 cơ quan hoặc mục việc, không hơn — để tránh AI quá tải rồi tự bịa. Từ đó tôi ước lượng được phần việc còn lại sẽ tốn khoảng bao nhiêu."
+
+**[QUAY MÀN HÌNH]:** Hiện bảng dưới đây dạng đồ hoạ/overlay trong lúc lồng tiếng (không cần đọc hết số liệu bằng lời, chỉ cần nói ý chính, để khán giả tự đọc bảng).
+
+| Việc cần làm tiếp | Vì sao cần | Số prompt cần soạn | Số phiên acc Free cần chạy (5 acc song song) | Việc riêng của acc Pro / Claude Code |
+|---|---|---|---|---|
+| Giấy phép (licenses.json) | Đúng mục tiêu ban đầu của dự án, hiện đang trống hoàn toàn | ~10–14 prompt (mỗi prompt 3–7 giấy phép, ưu tiên nhóm giấy phép hay dùng: CCCD, hộ chiếu, GPLX, đăng ký kinh doanh, LLTP...) | ~10–14 phiên (chia đều 5 acc, mỗi acc chạy 2–3 phiên) | 1 phiên Pro ráp dữ liệu + chuẩn hoá schema |
+| Biểu mẫu (forms.json) | Đi kèm giấy phép/thủ tục, hiện trống hoàn toàn | ~8–10 prompt | ~8–10 phiên | 1 phiên Pro ráp dữ liệu |
+| Trụ sở/liên hệ cụ thể (facilities.json) | 63 cơ quan hiện có nhưng thiếu địa chỉ/SĐT/website tách riêng khỏi organization | ~10–13 prompt (63 cơ quan ÷ 5 mỗi prompt) | ~10–13 phiên | 1 phiên Pro ráp + chuẩn hoá `facility.schema.json` (đang PROPOSED, cần user duyệt trước) |
+| Ráp 3 → đầy đủ thủ tục hành chính vào procedures.json | Dữ liệu thô đã có sẵn ở 15 lĩnh vực (file `19-*.md` → `40-*.md`), chỉ cần chuẩn hoá | 0 prompt mới (không cần tra thêm) | 0 phiên Free | ~6–8 phiên Pro/Claude Code để đọc từng file thô, chuẩn hoá theo `procedure.schema.json`, validate lại |
+| Tách cơ quan Đảng (Tỉnh uỷ/Thành uỷ) thành entity riêng | Hiện đang gắn tạm vào entity tỉnh, là nợ kỹ thuật đã biết trước | ~6–8 prompt (34 tỉnh ÷ 5 mỗi prompt) | ~6–8 phiên | 1 phiên Pro thiết kế lại quan hệ + ráp |
+| Cơ chế khoá file / tránh đụng độ nhiều phiên chạy song song | Đã xảy ra 2 lần làm trùng việc, tốn token oan | 0 prompt tra cứu | 0 phiên Free | 1–2 phiên Claude Code (viết file lock đơn giản hoặc quy ước ‘khai báo đang làm gì' trong Promts-sodobmhc.md) |
+| Hiện cảnh báo "chưa xác minh" ngay trên giao diện (không chỉ trong dữ liệu ngầm) | Người xem cuối cần thấy cảnh báo ngay, không phải đọc JSON | 0 prompt tra cứu | 0 phiên Free | 1 phiên Claude Code (chỉnh UI panel chi tiết + panel nguồn) |
+| Tự động hoá backup GitHub | Từng thất bại 1 lần vì thiếu credential, hiện vẫn làm thủ công | 0 prompt tra cứu | 0 phiên Free | 1 phiên Claude Code (script backup + lịch chạy) |
+| Mở rộng so sánh hệ thống Mỹ, Trung Quốc | Đúng mục tiêu Project ghi ban đầu, chưa bắt đầu | Quy mô tương đương làm lại từ Phase 0 cho 1 quốc gia | Ước tính bằng khoảng công sức đã bỏ ra cho phần Việt Nam (~17 commit trong 1 ngày làm việc liên tục) nhân theo số quốc gia | Cần 1 phiên Pro thiết kế lại kiến trúc dữ liệu cho phù hợp hệ thống liên bang (Mỹ) / hệ thống Đảng-Nhà nước (Trung Quốc) trước khi bắt đầu tra cứu |
+
+**Lời thoại (chốt đoạn):**
+"Nhìn bảng này thì thấy phần khó nhất — thiết kế kiến trúc, đặt luật chơi, dựng khung ứng dụng — mình đã đi qua rồi. Phần còn lại chủ yếu là tra cứu thêm, đúng bài, đúng quy trình đã có sẵn. Không còn phải mò kiểu 35 lần như hồi đầu nữa."
+
+---
+
+### Cảnh kết — Khiêm tốn + lời mời (14:00–15:00)
 
 **Lời thoại:**
 "Tôi không phải lập trình viên. Tôi không tự viết một dòng code JavaScript nào theo nghĩa gõ tay từng dòng — toàn bộ là ‘vibe code', tức là mô tả điều mình muốn cho AI, rồi kiểm tra, rồi sửa lại yêu cầu. Nhưng chính vì không biết code, tôi buộc phải học cách đặt câu hỏi cho đúng, chia việc cho đúng, và kiểm tra kết quả thay vì tin mù. Dự án này chưa xong — phần giấy phép, biểu mẫu, trụ sở cụ thể từng cơ quan vẫn còn đang làm, và tôi có ý định làm thêm bản so sánh với hệ thống hành chính Mỹ, Trung Quốc sau này. Nếu bạn cũng đang mù mờ về bộ máy hành chính như tôi từng vậy, tôi để link bên dưới. Và nếu bạn cũng đang vibe code một dự án lớn mà cứ thất bại lặp đi lặp lại — bài học của tôi là: đừng cố nhét cả bài toán vào một prompt. Bẻ nó ra."
@@ -97,3 +134,42 @@ updated: 2026-09-19
 - Toàn bộ số liệu (63 cơ quan, 89 người, 90 chức vụ, 85 quan hệ, 139 nguồn, 0 lỗi validate) lấy từ kết quả chạy `node tools/validate-data.js` ngày 2026-09-19 — chạy lại trước khi quay để số liệu khớp đúng thời điểm phát hành video, vì Phase 10 vẫn đang mở và số liệu sẽ tăng.
 - Đoạn "35 phiên thất bại" là trải nghiệm kể lại, không có file bằng chứng trong dự án (vì xảy ra trước khi có hệ thống file quản lý) — khi lên kịch bản dựng hình, nên dùng giọng kể + có thể minh hoạ bằng ảnh chụp màn hình cũ nếu còn giữ, không gắn nhãn "theo Build-logs" cho đoạn này để tránh gây hiểu nhầm là có log ghi lại đúng con số 35.
 - Các đoạn có nhãn `[MINH CHỨNG]` đều trỏ tới file thật trong thư mục dự án hoặc doc `context-bmhc` trong Project claude.ai — có thể quay trực tiếp màn hình các file này, không cần dựng lại bằng hình minh hoạ.
+- Bảng công sức ở Đoạn 9 là ước tính dựa trên quy tắc "3–7 entity/prompt" đã ghi trong `Claude-sodobmhc.md` mục 7 — không phải cam kết chính xác, chỉ để hình dung độ lớn công việc còn lại.
+
+---
+
+### Phần 10 — Mindset rút ra sau khi tạm dừng dự án
+
+*Ghi chú: dự án hiện tạm dừng ở Phase 9, còn Phase 10 (mở rộng dữ liệu thật) để đó. Phần này gồm 2 mục — mục 10.1 (lỗ hổng AI chưa thay thế được con người) viết sẵn dưới đây, dựa đúng vào các sự cố có ghi trong `Build-logs-sodobmhc.md` và luật trong `Claude-sodobmhc.md`, không suy đoán thêm. Mục 10.2 (mindset hệ thống, phân bổ nguồn lực, cơ chế kiểm tra chéo) để trống — bạn tự viết theo trải nghiệm của bạn.*
+
+---
+
+#### 10.1 — Những lỗ hổng của AI mà con người chưa thể giao hẳn (14:00–16:30)
+
+**Lời thoại:**
+"Làm dự án này xong, tôi tin AI mạnh hơn tôi tưởng, nhưng cũng thấy rõ mấy chỗ nó chưa thay được con người — không phải vì nó lười, mà vì bản chất nó không có cách nào tự biết.
+
+Thứ nhất: AI không tự biết lúc nào mình đang quá tải. Tôi từng đưa một prompt quá lớn, và nó không dừng lại nói ‘tôi không chắc nữa' — nó cứ trả lời tiếp, rất tự tin, kể cả khi đang bắt đầu bịa. Tôi phải tự đặt giới hạn cứng — mỗi prompt chỉ 3 đến 7 cơ quan — vì AI không tự làm việc đó giúp tôi được.
+
+Thứ hai: AI không phân biệt được đâu là dữ liệu thật của một cơ quan, đâu là thông tin lặp lại kiểu chân trang của một trang báo. Có lần nó gán cùng một số điện thoại, cùng một địa chỉ, cho nhiều cơ quan hoàn toàn khác nhau — vì trang nào cũng có đoạn chân trang giống hệt nhau, và nó không tự nhận ra đó không phải dữ liệu của bài viết. Tôi phải viết hẳn một luật, kiểu: thấy số liệu lặp y hệt trên nhiều trang, dừng lại, coi là đáng ngờ.
+
+Thứ ba: khi hai nguồn thật sự mâu thuẫn nhau — không phải do lỗi kỹ thuật, mà là hai dữ kiện khác nhau, cả hai đều có nguồn — AI không có tư cách tự chọn một bên. Nó không biết văn bản nào có giá trị pháp lý cao hơn văn bản nào nếu tôi không dạy nó ưu tiên thứ có số hiệu, có ngày ban hành cụ thể. Việc phân xử cuối cùng vẫn phải là người.
+
+Thứ tư: nhiều AI làm việc song song mà hoàn toàn không biết tới sự tồn tại của nhau. Có một ngày, hai phiên Claude khác nhau tự làm nguyên một mảng công việc giống hệt nhau, độc lập, không ai biết ai đang làm gì — không phải vì AI tệ, mà vì nó không có kênh nào để hỏi ‘có ai đang làm phần này chưa'. Cái đó tôi phải tự bù bằng quy trình — bắt buộc kiểm tra lại thư mục ngay trước khi ghi file, chứ không trông chờ AI tự phối hợp được với nhau.
+
+Thứ năm: một trang chính thức của nhà nước không đồng nghĩa là thông tin mới nhất. Tôi từng thấy một trang chinhphu.vn cập nhật lần cuối sau cả tháng đề xuất thay đổi vẫn giữ nguyên số liệu cũ. AI có xu hướng tin ngay vì đó là ‘nguồn chính thức', nhưng chính thức không có nghĩa là cập nhật — phải tự kiểm tra ngày, chứ không phải tin vào tên miền.
+
+Không có cái nào trong 5 chỗ này là AI ‘dở'. Nó chỉ đơn giản là những việc cần một người đứng ngoài, tỉnh táo hơn, để đặt luật chơi từ trước — chứ đợi AI tự phát hiện ra thì đã muộn."
+
+**[MINH CHỨNG / QUAY MÀN HÌNH]:**
+- Giới hạn 3–7 entity/prompt để tránh quá tải: `Claude-sodobmhc.md`, mục 7 "Quy tắc chống overload / đốt token".
+- Nhầm lẫn số điện thoại/địa chỉ do trùng chân trang nhiều trang khác nhau: `Claude-sodobmhc.md`, mục 9, luật số 16.
+- Không tự chọn bên khi 2 nguồn xung đột thật, phải ưu tiên văn bản có số hiệu + ngày cụ thể: `Claude-sodobmhc.md`, mục 9, luật số 18 — minh hoạ bằng vụ xung đột trụ sở Bộ Công an và Bộ trưởng Bộ Tư pháp ghi trong `Build-logs-sodobmhc.md`.
+- Nhiều phiên AI làm trùng việc vì không biết về nhau: `Build-logs-sodobmhc.md`, mục "2026-09-18 — Phát hiện 2 phiên Cowork chạy song song hoàn thành TOÀN BỘ Phase 6 độc lập với nhau" — quay cảnh cuộn qua đoạn liệt kê 11 file bị trùng.
+- Trang chính thức nhưng giữ thông tin cũ: `Build-logs-sodobmhc.md`, mục về xung đột số liệu xã/phường Thái Nguyên (chinhphu.vn cập nhật 04/08/2025 vẫn giữ số liệu cũ hơn 1 tháng sau đề xuất thay đổi).
+
+---
+
+#### 10.2 — Mindset về hệ thống, phân bổ nguồn lực và cơ chế kiểm tra chéo (user tự bổ sung)
+
+*Để trống — bạn tự viết phần này: những mindset rút ra về cách tổ chức hệ thống, cách phân bổ nguồn lực giữa nhiều AI, và cơ chế kiểm tra chéo chống bịa dữ liệu mà bạn đã áp dụng qua dự án.*

@@ -11,7 +11,7 @@ cross-check-promt: Promts-sodobmhc.md#prompt-2, #prompt-4
 cross-check-model: Claude Sonnet 5 (Prompt #2, web search) · Claude không rõ phiên bản chính xác, có thể Sonnet 4.6 (Prompt #4, web_search/web_fetch)
 cross-check-acc: Free — Opera X (Prompt #2) · Free — Cốc Cốc (Prompt #4)
 cross-check-ngay: 2026-09-18
-trang-thai: 🔵 xung đột trụ sở VPCTN ĐÃ CHỐT (Prompt #4); còn 1 mục treo — email VKSND tối cao vẫn chưa xác minh được qua công cụ tự động
+trang-thai: ✅ HOÀN TẤT trong phạm vi khả thi — xung đột trụ sở VPCTN ĐÃ CHỐT (Prompt #4). Email VKSND tối cao: ĐÃ ĐÓNG LẠI, chấp nhận để trống (tra 3 lần bằng công cụ tự động đều thất bại, áp dụng luật 17 — không chặn tiến độ)
 ---
 
 ### 01 — Cơ quan cấp trung ương
@@ -121,7 +121,7 @@ Ghi chú chung của người tra cứu: số điện thoại / email đường 
 - [x] ✅ Xác nhận "Chủ tịch nước" = position, "Văn phòng Chủ tịch nước" = organization (theo Điều 86–87 Hiến pháp 2013) — áp dụng khi lên schema thật.
 - [x] ✅ Theo dõi lại địa chỉ trụ sở TAND tối cao & VKSND tối cao — cả 2 đã cross-check khớp dữ liệu cũ.
 - [x] ✅ Giải quyết xung đột trụ sở Văn phòng Chủ tịch nước (Prompt #4) — chốt: hiện tại 12 Ngô Quyền, trước 23/3/2026 là 1A/1B Hoàng Hoa Thám (không phải 2 Hùng Vương).
-- [ ] ❗ Xác minh lại email chính chủ VKSND tối cao — đã tra 2 lần (Prompt #2, #4) qua công cụ tự động, vẫn "vẫn xung đột chưa giải quyết được". Cần tra thủ công bằng trình duyệt thật hoặc văn bản chính thức. Không phải trường bắt buộc để tiếp tục Phase 10 — có thể để "chưa xác minh" và tiếp tục.
+- [x] ✅ **ĐÃ ĐÓNG LẠI** — email chính chủ VKSND tối cao: tra **3 lần** bằng công cụ tự động (Prompt #2, Prompt #4, và lần 3 do acc Pro tự fetch trực tiếp `vksndtc.gov.vn` ngày 2026-09-19 — trang không hiển thị thông tin liên hệ nào ở footer). Áp dụng **luật 17**: dừng, để trống trường email trong `data/organizations.json`, ghi rõ "chưa xác minh" trong `notes`. Chỉ mở lại nếu tra được bằng trình duyệt thật hoặc có văn bản chính thức (ví dụ Quyết định về Quy chế vận hành Cổng TTĐT VKSNDTC).
 - [ ] Tra thủ công (browser thật, không dùng công cụ web search) SĐT/email toàn cơ quan của Quốc hội & TAND tối cao — trang cần chạy JS hoặc chỉ có số bộ phận.
 - [ ] Khi ráp JSON: đổi ID `org-chutichnuoc-vn` → `org-vpctn-vn` (Văn phòng Chủ tịch nước), tách thêm `position-chu-tich-nuoc`; thêm `effective_from`/`effective_to` cho 2 trụ sở VPCTN (trước/sau 23/3/2026). Mỗi field cần map đúng `source_ids` tương ứng footnote dưới đây.
 

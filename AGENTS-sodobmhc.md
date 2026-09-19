@@ -1,4 +1,14 @@
-# AGENTS.md — Quy tắc cho AI code editor
+---
+tags: [sodobmhc]
+type: quy-tac
+nhom: agents-code-editor
+created: 2026-09-18
+updated: 2026-09-19
+---
+
+### AGENTS-sodobmhc — Quy tắc cho AI code editor
+
+> Đổi tên từ `AGENTS-sodobmhc.md` → `AGENTS-sodobmhc.md` (2026-09-19) để không lẫn với file `AGENTS-sodobmhc.md` của các dự án khác trong vault.
 
 File này dành cho AI **viết/sửa code** trong dự án "Sơ đồ bộ máy hành chính Việt Nam" (khác với `Claude-sodobmhc.md`, dùng cho AI **tra cứu dữ liệu**).
 

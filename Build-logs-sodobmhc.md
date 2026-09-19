@@ -112,9 +112,9 @@ updated: 2026-09-18
 
 #### 2026-09-18 — Phase 0 HOÀN TẤT qua Claude Code (schema + AGENTS.md + GitHub backup); Prompt #9 ráp xong danh sách 34 tỉnh/thành; phát hiện PAT bị git tự lưu vào .git/config
 
-- **Việc làm**: Chạy brief đã soạn cho Claude Code để hoàn tất 3 việc còn lại của Phase 0: (1) tạo 9 file `schemas/*.schema.json`, (2) tạo `AGENTS.md`, (3) git init repo riêng cho thư mục dự án + push backup đầu tiên lên `github.com/haphanhp/sodo-bo-may-hanh-chinh` (commit `ef8f239`). Song song, ráp dữ liệu Prompt #9 (danh sách 34 tỉnh/thành phố trực thuộc trung ương sau sáp nhập 12/6/2025, theo Nghị quyết 202/2025/QH15) vào `06-danh-sach-tinh-thanh.md`. Cập nhật "danh sách tổng" (mục 10, `Claude-sodobmhc.md`) để ghi rõ vị trí/vai trò của các file mới (`AGENTS.md`, `schemas/`, `.git`+remote).
+- **Việc làm**: Chạy brief đã soạn cho Claude Code để hoàn tất 3 việc còn lại của Phase 0: (1) tạo 9 file `schemas/*.schema.json`, (2) tạo `AGENTS-sodobmhc.md`, (3) git init repo riêng cho thư mục dự án + push backup đầu tiên lên `github.com/haphanhp/sodo-bo-may-hanh-chinh` (commit `ef8f239`). Song song, ráp dữ liệu Prompt #9 (danh sách 34 tỉnh/thành phố trực thuộc trung ương sau sáp nhập 12/6/2025, theo Nghị quyết 202/2025/QH15) vào `06-danh-sach-tinh-thanh.md`. Cập nhật "danh sách tổng" (mục 10, `Claude-sodobmhc.md`) để ghi rõ vị trí/vai trò của các file mới (`AGENTS-sodobmhc.md`, `schemas/`, `.git`+remote).
 - **Kết quả đáng chú ý**:
-  1. Toàn bộ 9 schema, `AGENTS.md`, và repo git đều xác minh nằm ĐÚNG trong thư mục dự án (`11.so-do-bo-may-hanh-chinh`), tách biệt hoàn toàn khỏi repo Obsidian Vault ở thư mục cha — đã kiểm tra lại qua `device_bash` sau khi Claude Code báo xong (không tin lời báo cáo suông, luôn verify lại bằng cách tự `ls`/`git log`/`git remote -v`).
+  1. Toàn bộ 9 schema, `AGENTS-sodobmhc.md`, và repo git đều xác minh nằm ĐÚNG trong thư mục dự án (`11.so-do-bo-may-hanh-chinh`), tách biệt hoàn toàn khỏi repo Obsidian Vault ở thư mục cha — đã kiểm tra lại qua `device_bash` sau khi Claude Code báo xong (không tin lời báo cáo suông, luôn verify lại bằng cách tự `ls`/`git log`/`git remote -v`).
   2. Danh sách 34 tỉnh/thành (28 tỉnh + 6 TP trực thuộc TW) xác minh chắc theo Nghị quyết 202/2025/QH15 (số + ngày cụ thể, 461/465 đại biểu tán thành) — phần merger (tỉnh nào hợp thành tỉnh nào) đã đối chiếu trực tiếp chính văn, đáng tin cao.
   3. Riêng "trung tâm hành chính" (tỉnh lỵ) của 22/34 đơn vị mới chỉ có nguồn là Nghị quyết 60-NQ/TW — **văn kiện của Đảng, không phải văn bản pháp luật nhà nước** — nên chỉ đánh dấu ⚠️ (tham khảo), không coi là chốt; 12/34 hoàn toàn chưa tra ra được tên cụ thể (❌). Đây là ví dụ tốt về phân biệt "văn kiện định hướng của Đảng" vs "văn bản pháp luật nhà nước" khi đánh giá độ tin cậy nguồn — cần thêm vào tiêu chí phân loại nguồn cho các lần tra sau.
 - **Vấn đề gặp**:
@@ -233,6 +233,19 @@ updated: 2026-09-18
 
 ---
 
+#### 2026-09-19 — Dọn tên file, chuẩn hoá front matter, đóng lại mục email VKSNDTC
+
+- **Việc làm**: Đổi `AGENTS.md` → `AGENTS-sodobmhc.md` (kèm front matter `tags: [sodobmhc]`) để không lẫn với file `AGENTS.md` của dự án khác trong vault; cập nhật mọi tham chiếu trong 5 file quản lý. Đổi `19-thu-tuc-hanh-chinh-va-xac-minh-bi-thu.md` → `41-...` vì trùng số 19 với `19-ten-day-du-nhom5-5tinh.md`. Rà toàn bộ 43 file `.md`: tất cả đều có front matter và tag `sodobmhc`. Tra lại email VKSND tối cao lần 3 rồi đóng mục này.
+- **Vấn đề gặp**: (a) Hai phiên làm việc song song (Cowork và Claude Code) cùng đánh số file dữ liệu nên đụng số 19 — không ai biết bên kia đã dùng. (b) File `01` ghi trạng thái 🔵 "còn 1 mục treo" khiến người đọc tưởng việc chưa làm, trong khi thực chất đã tra 2 lần và quyết định dừng theo luật 17.
+- **Cách xử lý**: (a) Đổi số file mới sang 41 (số lớn hơn mọi số đang dùng) và ghi rõ lý do đổi tên ngay trong front matter, thay vì chèn vào khoảng trống giữa dãy số. (b) Tra lần 3 bằng cách fetch trực tiếp `vksndtc.gov.vn` — trang vẫn không hiển thị thông tin liên hệ nào ở footer, xác nhận đây không phải việc "đã làm mà quên cập nhật". Đổi trạng thái file `01` thành ✅ "hoàn tất trong phạm vi khả thi", đánh dấu mục email là **ĐÃ ĐÓNG LẠI** kèm điều kiện mở lại (trình duyệt thật hoặc văn bản chính thức).
+- **Bài học**:
+  - Khi nhiều phiên AI cùng làm một thư mục, **số thứ tự file là tài nguyên tranh chấp** — phiên nào tạo file mới nên `ls` trước và lấy số lớn hơn số lớn nhất đang có, đừng lấp chỗ trống.
+  - Tên file dùng chung trong vault (`AGENTS.md`, `README.md`, `notes.md`) phải gắn hậu tố dự án ngay từ đầu, nếu không sẽ có ngày một AI đọc nhầm luật của dự án khác.
+  - Trạng thái "🔵 còn treo" và "✅ đã đóng lại, chấp nhận để trống" là hai thứ khác nhau — phải phân biệt rõ trong front matter, nếu không mỗi lần rà soát lại tưởng còn việc chưa làm và tốn thêm một lượt tra.
+  - Một mục không bắt buộc đã thất bại 3 lần bằng cùng một loại công cụ thì không nên thử lần 4 bằng cách đó; ghi rõ **điều kiện mở lại** (công cụ khác, loại nguồn khác) rồi đóng.
+
+---
+
 #### 2026-09-19 — Đóng gói 1 file để xuất bản + phát hiện lỗi `await` làm app KHÔNG chạy từ Phase 5
 
 - **Việc làm**: Viết `tools/build-single-file.py` — mini-bundler gộp 18 module ES + 5 file CSS + toàn bộ `data/*.json` thành **một file HTML chạy độc lập** (không cần web server, mở bằng `file://` cũng được), kèm `<title>`, `<meta description>` và footer `haphanhp — Tổng hợp · Tháng 9, 2026` đồng bộ với các bài khác trong repo `haphanhp/publish`. Copy sang thư mục publish và thêm mục đầu tiên vào `manifest.json`.
@@ -274,7 +287,7 @@ updated: 2026-09-18
 
 #### 2026-09-18 — Pro tự thực hiện Prompt #25: 3 thủ tục hành chính + xác minh xong 2 mục Bí thư
 
-- **Việc làm**: Các acc Free quá tải nên acc Pro tự tra bằng WebSearch/WebFetch. Kết quả: (1) xác minh Bí thư Thành ủy TP.HCM = Trần Lưu Quang, chỉ định 14/10/2025 nhiệm kỳ 2025–2030 (khớp lời user, đã gỡ cờ `unverified`); (2) Bí thư Tỉnh ủy Tây Ninh = Nguyễn Văn Quyết, chỉ định 30/6/2025, tiếp tục nhiệm kỳ mới công bố 10/10/2025 (thay nguồn Wikipedia bằng Cổng TTĐT tỉnh + Tuổi Trẻ); (3) ráp 3 thủ tục thật vào `data/procedures.json`. Lưu dữ liệu thô vào `19-thu-tuc-hanh-chinh-va-xac-minh-bi-thu.md`.
+- **Việc làm**: Các acc Free quá tải nên acc Pro tự tra bằng WebSearch/WebFetch. Kết quả: (1) xác minh Bí thư Thành ủy TP.HCM = Trần Lưu Quang, chỉ định 14/10/2025 nhiệm kỳ 2025–2030 (khớp lời user, đã gỡ cờ `unverified`); (2) Bí thư Tỉnh ủy Tây Ninh = Nguyễn Văn Quyết, chỉ định 30/6/2025, tiếp tục nhiệm kỳ mới công bố 10/10/2025 (thay nguồn Wikipedia bằng Cổng TTĐT tỉnh + Tuổi Trẻ); (3) ráp 3 thủ tục thật vào `data/procedures.json`. Lưu dữ liệu thô vào `41-thu-tuc-hanh-chinh-va-xac-minh-bi-thu.md`.
 - **Vấn đề gặp**: CẢ BA thủ tục đều vừa đổi cơ quan có thẩm quyền trong 2025–2026, nên phần lớn bài hướng dẫn trên mạng (kể cả bài đề năm 2026) vẫn ghi cơ quan CŨ. Ngoài ra `dichvucong.gov.vn` chặn truy cập tự động (robots.txt), không fetch được trang thủ tục gốc.
 - **Cách xử lý**: Với mỗi thủ tục, tra riêng một nguồn về THẨM QUYỀN hiện hành trước, rồi mới lấy chi tiết hồ sơ/lệ phí — không tin phần "nơi nộp" trong các bài tổng hợp. Thời hạn 05 ngày làm việc của lý lịch tư pháp chỉ có nguồn báo chí nên ghi rõ "chưa đối chiếu điều luật" ngay trong `notes` thay vì để như dữ liệu đã chốt. Gỡ luôn `source-900` (nguồn "user khai báo") vì không còn entity nào dùng.
 - **Bài học**:
@@ -375,7 +388,7 @@ updated: 2026-09-18
 
 - **Việc làm**: Tạo `index.html` (khung 3 vùng), 5 file CSS theo kiến trúc đã chốt, `js/core/` (config, event-bus, state, router hash), `js/ui/` (tabs, detail-panel, toast), `js/views/views.js` (render + empty state cho 9 tab) và `app.js` điều phối. Viết nội dung thật cho tab Hướng dẫn (cách dùng + nguyên tắc dữ liệu + nguồn lấy từ đâu). Thêm toggle giao diện sáng/tối lưu `localStorage`.
 - **Vấn đề gặp**: Roadmap ghi 8 tab nhưng schema tách riêng `position` khỏi `person`; nếu gộp Chức vụ vào tab Con người thì sau này Phase 4 phải sửa lại điều hướng.
-- **Cách xử lý**: Tăng lên 9 tab, thêm tab "Chức vụ" ngay từ Phase 1 và ghi rõ lý do trong Roadmap. Toàn bộ view đều render bằng JS từ `views.js`, `index.html` không chứa một chữ dữ liệu hành chính nào (giữ luật 1 và 6 trong `AGENTS.md`).
+- **Cách xử lý**: Tăng lên 9 tab, thêm tab "Chức vụ" ngay từ Phase 1 và ghi rõ lý do trong Roadmap. Toàn bộ view đều render bằng JS từ `views.js`, `index.html` không chứa một chữ dữ liệu hành chính nào (giữ luật 1 và 6 trong `AGENTS-sodobmhc.md`).
 - **Bài học**:
   - Điều hướng nên bám theo cấu trúc entity trong schema, không bám theo danh sách tab viết vội trong roadmap — lệch một tab là sau này phải sửa cả router, nav và view.
   - Mỗi empty state nên ghi rõ "sẽ có dữ liệu ở Phase nào": vừa là UI thật, vừa là tài liệu sống cho AI/người vào sau biết phần đó đã làm hay chưa.

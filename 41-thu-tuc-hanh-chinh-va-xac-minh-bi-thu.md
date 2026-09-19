@@ -1,16 +1,17 @@
 ---
 tags: [sodobmhc]
 type: du-lieu
-so-thu-tu: 19
+so-thu-tu: 41
 nhom: thu-tuc-hanh-chinh-mau-va-xac-minh-bi-thu
 nguon-tu-promt: Promts-sodobmhc.md#prompt-25 (acc Pro TỰ thực hiện, không giao acc Free)
 model: Claude Opus 5 (claude-opus-5) — acc Pro, qua Claude Cowork
 acc-trinh-duyet: Không qua browser của acc Free — Pro tự tra bằng công cụ WebSearch/WebFetch trong phiên Cowork
 ngay-tra-loi: 2026-09-18
+ghi-chu-doi-ten: Đổi số từ 19 → 41 vào 2026-09-19 vì trùng số với `19-ten-day-du-nhom5-5tinh.md` do một phiên làm việc khác tạo
 trang-thai: ✅ đã ráp thẳng vào data/procedures.json — 3 thủ tục + xác minh xong 2 mục Bí thư
 ---
 
-### 19 — 3 thủ tục hành chính mẫu + xác minh Bí thư TP.HCM và Tây Ninh
+### 41 — 3 thủ tục hành chính mẫu + xác minh Bí thư TP.HCM và Tây Ninh
 
 Nội dung Prompt #25 do **acc Pro tự thực hiện** (các acc Free đã quá tải), ngày 2026-09-18. Dữ liệu đã được ráp thẳng vào `data/procedures.json`, `data/people.json`, `data/sources.json`.
 

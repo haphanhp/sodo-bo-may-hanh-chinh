@@ -32,7 +32,7 @@ updated: 2026-09-18
 - [x] ✅ Tạo `Build-logs-sodobmhc.md`
 - [x] ✅ Tạo `Promts-sodobmhc.md` (prompt #1 cho acc Free)
 - [x] ✅ Chốt JSON schema chi tiết cho 9 loại entity (organization, person, position, relationship, procedure, document, license — dùng chung cho license/certificate/form, facility, source) — xem `schemas/*.schema.json`, tạo bởi Claude Code (2026-09-18). `facility.schema.json` còn PROPOSED, chưa duyệt chi tiết.
-- [x] ✅ Tạo `AGENTS.md` (15 luật rút gọn cho code editor) — xem file ở gốc thư mục dự án, tạo bởi Claude Code (2026-09-18).
+- [x] ✅ Tạo `AGENTS-sodobmhc.md` (15 luật rút gọn cho code editor) — xem file ở gốc thư mục dự án, tạo bởi Claude Code (2026-09-18).
 - [x] ✅ Backup lần đầu lên GitHub `haphanhp/sodo-bo-may-hanh-chinh` — commit `ef8f239`, nhánh `main`, tạo bởi Claude Code (2026-09-18). **🎉 Phase 0 HOÀN TẤT.**
 
 #### Phase 1 — Ứng dụng rỗng (chưa có dữ liệu thật)
@@ -50,7 +50,7 @@ updated: 2026-09-18
 - [x] ✅ `js/data/validator.js` — bắt ID trùng, mọi tham chiếu chết (parent_id, source_ids, leadership, positions, relationship from/to), URL nguồn sai định dạng; cảnh báo entity không nguồn / thiếu `last_verified` / quá 365 ngày chưa kiểm chứng
 - [x] ✅ `js/data/indexer.js` — Map theo id, chỉ mục quan hệ vào/ra, `childrenOf`, `sourcesOf`, `roots`
 - [x] ✅ `js/core/state.js` — thêm data/index/report/loadError
-- [x] ✅ `tools/validate-data.js` — chạy `node tools/validate-data.js` ở thư mục dự án, in báo cáo và exit code 1 nếu có lỗi (luật 9 trong `AGENTS.md`)
+- [x] ✅ `tools/validate-data.js` — chạy `node tools/validate-data.js` ở thư mục dự án, in báo cáo và exit code 1 nếu có lỗi (luật 9 trong `AGENTS-sodobmhc.md`)
 - [x] ✅ **Test bằng DỮ LIỆU THẬT thay vì entity giả** (user chọn): nạp xong cấp thượng tầng — **22 cơ quan** (Quốc hội, VP Chủ tịch nước, Chính phủ, TAND tối cao, VKSND tối cao + 14 Bộ + 3 cơ quan ngang Bộ), 21 người, 22 chức vụ, 22 quan hệ, 41 nguồn. `node tools/validate-data.js` → **0 lỗi, 0 cảnh báo**
 - [x] ✅ 4 view đã hiển thị dữ liệu thật dạng bảng: Cơ quan, Con người, Chức vụ, Nguồn (có cột nguồn + đánh số)
 - [x] ✅ `mo-app.bat` — mở app bằng web server tĩnh (trình duyệt chặn `fetch` file JSON khi mở trực tiếp bằng `file://`); app có banner báo lỗi rõ ràng nếu mở sai cách. **🎉 Phase 2 HOÀN TẤT.**
