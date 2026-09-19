@@ -233,6 +233,19 @@ updated: 2026-09-18
 
 ---
 
+#### 2026-09-19 — Đóng gói 1 file để xuất bản + phát hiện lỗi `await` làm app KHÔNG chạy từ Phase 5
+
+- **Việc làm**: Viết `tools/build-single-file.py` — mini-bundler gộp 18 module ES + 5 file CSS + toàn bộ `data/*.json` thành **một file HTML chạy độc lập** (không cần web server, mở bằng `file://` cũng được), kèm `<title>`, `<meta description>` và footer `haphanhp — Tổng hợp · Tháng 9, 2026` đồng bộ với các bài khác trong repo `haphanhp/publish`. Copy sang thư mục publish và thêm mục đầu tiên vào `manifest.json`.
+- **Vấn đề gặp**: 🚨 Khi chạy thử bundle bằng Node mới lộ ra: `js/app.js` có `await initData()` nằm trong `function init()` **không có `async`** → `SyntaxError: Unexpected reserved word`. Nguyên nhân: lượt sửa ở Phase 5 chèn `initSearch` dùng chuỗi neo `"function init(){"`, chuỗi này khớp vào **giữa** `"async function init(){"` nên `async` bị tách rời và gắn nhầm sang `initSearch`. Nghĩa là **app đã không chạy được trong trình duyệt kể từ Phase 5** — các phase sau chỉ được kiểm thử bằng script Node gọi thẳng hàm render nên không bắt được.
+- **Cách xử lý**: Trả `async` về `init()`, bỏ `async` thừa ở `initSearch()`. Thêm bước kiểm thử mới: sau khi build, chạy bundle bằng Node với DOM giả — bắt được mọi lỗi cú pháp và lỗi khởi tạo module, thứ mà kiểm thử "gọi hàm render" bỏ sót.
+- **Bài học**:
+  - **Không dùng chuỗi ngắn làm neo khi vá file bằng script** — `"function init(){"` nằm lọt trong `"async function init(){"`. Neo phải kèm ký tự đầu dòng hoặc đủ dài để duy nhất, và sau mỗi lần vá phải `node --check` lại file.
+  - `node --check` KHÔNG bắt được lỗi này vì file là ES module còn `--check` mặc định phân tích theo CommonJS — phải thực sự `import`/chạy file mới lộ. Từ nay: sau mỗi phase, chạy bundle bằng Node với DOM giả coi như bài kiểm tra bắt buộc.
+  - Kiểm thử "gọi hàm render và xem chuỗi HTML" rất tốt cho nội dung nhưng **mù hoàn toàn với lỗi khởi động app** — cần cả hai loại.
+  - Gộp 1 file để xuất bản cũng là một cách kiểm thử: nó buộc toàn bộ module phải nạp được theo đúng thứ tự phụ thuộc.
+
+---
+
 #### 2026-09-19 — Phase 8 (panel nguồn) + Phase 9 (Time Machine)
 
 - **Việc làm**: Phase 8 — thêm chỉ mục ngược `citedBy` trong indexer để biết mỗi nguồn đang được bao nhiêu mục trích dẫn; tab Nguồn có thống kê theo độ tin cậy và đánh dấu nguồn chưa ai dùng; mọi bảng chi tiết hiện nhãn độ tin cậy có màu + ngày kiểm chứng cuối. Phase 9 — viết `js/core/time.js` (`activeAt`), nạp 7 cơ quan đã kết thúc hoạt động 28/02/2025 kèm quan hệ `merged_into`, thêm Nghị quyết 176/2025/QH15, dựng thanh Time Machine ở tab Bản đồ (chọn ngày hoặc bấm mốc), sơ đồ và bảng Cơ quan lọc theo thời điểm.

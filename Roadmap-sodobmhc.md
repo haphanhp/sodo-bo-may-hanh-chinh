@@ -20,7 +20,7 @@ updated: 2026-09-18
 
 - Phase hiện tại: **Phase 0→9 ĐÃ XONG. App hiện có: 63 cơ quan (56 đang hoạt động + 7 đã kết thúc) / 89 người / 90 chức vụ / 3 thủ tục / 16 văn bản / 85 quan hệ / 139 nguồn, validate 0 lỗi 0 cảnh báo. Còn lại: Phase 10 — mở rộng dữ liệu thật (thủ tục, giấy phép, cơ quan Đảng, đơn vị trực thuộc Bộ)**
 - **⚠️ Phạm vi thu hẹp (user chốt 2026-09-18)**: chỉ đào sâu **cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương**. Cấp xã/phường/đặc khu **KHÔNG cần trụ sở/SĐT/lãnh đạo riêng từng xã** (việc đào sâu chi tiết đó dừng ở đây). Riêng phần **danh sách TÊN đầy đủ** cấp xã: user yêu cầu làm cho xong luôn ngay trong ngày — Pro tự tra 100% qua WebSearch/WebFetch (file 17-21), **đã hoàn tất cả nước 34/34 tỉnh/thành**. Prompt #20–#24 giữ nguyên trong `Promts-sodobmhc.md` nhưng KHÔNG giao acc Free (Pro đã tự làm xong). → Thu thập dữ liệu thô cấp xã xem như **ĐÃ ĐỦ HOÀN TOÀN** cho Phase 10. — song song, dữ liệu thô cấp tỉnh/thành (mục 03) vẫn tiếp tục thu thập độc lập
-- Cập nhật lần cuối: 2026-09-18
+- Cập nhật lần cuối: 2026-09-19
 
 ---
 
@@ -141,6 +141,14 @@ Việc tra cứu dữ liệu qua 5 acc Free (`Promts-sodobmhc.md`) chạy **song
 - [x] ✅ 05 — Cấp xã / phường / đặc khu (KHÔNG còn "thị trấn") — **cấp hành chính cuối/thấp nhất hiện hành**, thay vai trò cấp huyện cũ. **HOÀN TẤT tổng quan cấp xã (tổng số + cơ cấu xã/phường/đặc khu) cho toàn bộ 34/34 tỉnh/thành**, qua 5 nhóm chạy song song: #15 Brave → `12-cap-xa-nhom1-7tinh.md` (7 tỉnh), #16 Opera GX → `13-cap-xa-nhom2-7tinh.md` (7 tỉnh, 🟡 Thái Nguyên: Pro đã tự tra thêm, nghiêng rõ về 77x/15p (chinhphu.vn 04/08/2025 vẫn giữ số này), chưa 100% loại trừ đề xuất 69x/23p của HĐND tỉnh), #17 Microsoft Edge → `14-cap-xa-nhom3-7tinh.md` (7 tỉnh), #18 Cốc Cốc → `15-cap-xa-nhom4-7tinh.md` (7 tỉnh, có timeline chi tiết Đồng Nai), #19 Arc → `16-cap-xa-nhom5-va-danhsach-13-dackhu.md` (6 tỉnh + danh sách đầy đủ 13 đặc khu cả nước). Tổng cả nước: **3.321 đơn vị** (2.636 xã + 672 phường + 13 đặc khu, số liệu chốt 10/7/2025, xem file 10). **🛑 CHỐT DỪNG (2026-09-18)**: user thu hẹp phạm vi — cấp xã chỉ cần liệt kê tới đây là đủ. Liệt kê cấp xã đã phủ **đủ 34/34 tỉnh/thành, tới An Giang** — mục 05 **HOÀN TẤT**. Danh sách TÊN đầy đủ 3.321 đơn vị KHÔNG làm nữa; Prompt #20–#24 vẫn giữ nguyên nội dung trong `Promts-sodobmhc.md` (không giao), dùng lại được nếu mở lại phạm vi.
   **Bổ sung 2026-09-18**: user tự tra 1 phần qua acc Pro trực tiếp, lưu vào `17-...md`/`18-...md`/`19-...md` (17/34 tỉnh/thành). Sau đó user yêu cầu **tra cho hết luôn toàn bộ phần còn thiếu** (không dừng ở mức liệt kê nữa với riêng phần TÊN đầy đủ này) — Pro tự tra tiếp 100% qua WebSearch+WebFetch (nguồn chinhphu.vn), lưu vào `20-ten-day-du-nhom1-con-thieu-va-nhom4-con-thieu.md` (Hà Nội, Cao Bằng, Điện Biên, Hà Tĩnh, Lạng Sơn, Nghệ An, Đắk Lắk, Đồng Nai, Tây Ninh) và `21-ten-day-du-tphcm-hoan-tat-34-34.md` (TP.HCM). **🎉 KẾT QUẢ: 34/34 tỉnh/thành đã có ĐẦY ĐỦ danh sách TÊN cấp xã/phường/đặc khu — mục 05 HOÀN TẤT TOÀN DIỆN, không chỉ ở phạm vi rút gọn.** Prompt #20-24 (giao 5 acc Free) vẫn giữ trạng thái ❌ đã hủy trong `Promts-sodobmhc.md` vì việc này Pro đã tự làm xong, không cần giao acc Free nữa.
 - [x] ✅ 06 — Tên đầy đủ xã/phường (phần đã tra được trước khi thu hẹp phạm vi) — `17-ten-day-du-nhom1-va-nhom2.md` (Lai Châu + đủ 7/7 tỉnh nhóm 2), `18-ten-day-du-nhom4-4tinh.md` (Huế, Gia Lai, Khánh Hòa, Lâm Đồng). **DỪNG TẠI ĐÂY** theo phạm vi mới — không tra tiếp các tỉnh còn lại. Dữ liệu đã có vẫn giữ, dùng được nếu sau này mở lại phạm vi.
+
+---
+
+#### Xuất bản
+
+- [x] ✅ `tools/build-single-file.py` — gộp toàn bộ app thành 1 file HTML độc lập (~330 KB, đã nhúng CSS/JS/dữ liệu), dùng để đăng lên `haphanhp/publish` → hiển thị tại `notes.haphan.digital`
+- [x] ✅ Bản xuất bản: `publish/bo-may-hanh-chinh-viet-nam.html`, tiêu đề "Bộ máy hành chính Việt Nam", footer `haphanhp — Tổng hợp · Tháng 9, 2026`
+- [ ] Mỗi lần cập nhật dữ liệu: chạy lại `python3 tools/build-single-file.py`, copy sang thư mục publish, rồi push repo `haphanhp/publish`
 
 ---
 

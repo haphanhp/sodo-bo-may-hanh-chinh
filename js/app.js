@@ -50,7 +50,7 @@ async function initData(){
   setState({ data, index, report, searchDocs: buildSearchIndex(index) });
 }
 
-async function initSearch(){
+function initSearch(){
   const input = document.getElementById("global-search");
   const box = document.getElementById("search-results");
   const st = getState();
@@ -88,7 +88,7 @@ async function initSearch(){
   });
 }
 
-function init(){
+async function init(){
   initTheme();
   initNav();
   await initData();
