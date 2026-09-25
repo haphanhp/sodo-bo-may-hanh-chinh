@@ -10,14 +10,16 @@
         "position_id": "position-chu-tich-nuoc",
         "organization_id": "org-vpctn-vn",
         "from": null,
-        "to": null
+        "to": "2026-04-06"
       }
     ],
     "source_ids": [
-      "source-002"
+      "source-002",
+      "source-411",
+      "source-412"
     ],
-    "last_verified": "2026-09-18",
-    "notes": "⚠️ CHƯA ĐỐI CHIẾU CHÉO — ghi theo tin tức tại thời điểm tra cứu (2026-09-18), chưa xác minh bằng văn bản chính thức."
+    "last_verified": "2026-09-26",
+    "notes": "Nguyên Chủ tịch nước, Ủy viên Bộ Chính trị. Thôi giữ chức Chủ tịch nước khi Quốc hội khóa XVI bầu Chủ tịch nước mới ngày 07/4/2026; bàn giao công tác cho Chủ tịch nước Tô Lâm ngày 09/4/2026. Đã đối chiếu 2 nguồn độc lập ngày 26/9/2026."
   },
   {
     "id": "person-tran-thanh-man",
@@ -34,10 +36,12 @@
       }
     ],
     "source_ids": [
-      "source-001"
+      "source-001",
+      "source-413",
+      "source-414"
     ],
-    "last_verified": "2026-09-18",
-    "notes": "⚠️ CHƯA ĐỐI CHIẾU CHÉO — ghi theo tin tức tại thời điểm tra cứu (2026-09-18), chưa xác minh bằng văn bản chính thức."
+    "last_verified": "2026-09-26",
+    "notes": "Tái đắc cử Chủ tịch Quốc hội khóa XVI ngày 06/4/2026, nhiệm kỳ 2026–2031 (khóa XV cũng giữ chức Chủ tịch Quốc hội). Đã đối chiếu 2 nguồn độc lập ngày 26/9/2026."
   },
   {
     "id": "person-nguyen-van-quang",
@@ -54,10 +58,12 @@
       }
     ],
     "source_ids": [
-      "source-004"
+      "source-004",
+      "source-415",
+      "source-416"
     ],
-    "last_verified": "2026-09-18",
-    "notes": "⚠️ CHƯA ĐỐI CHIẾU CHÉO — ghi theo tin tức tại thời điểm tra cứu (2026-09-18), chưa xác minh bằng văn bản chính thức."
+    "last_verified": "2026-09-26",
+    "notes": "Tái đắc cử Chánh án Tòa án nhân dân tối cao ngày 07/4/2026, nhiệm kỳ 2026–2031 (496/496 đại biểu có mặt tán thành). Đã đối chiếu 2 nguồn độc lập ngày 26/9/2026."
   },
   {
     "id": "person-nguyen-huy-tien",
@@ -74,10 +80,12 @@
       }
     ],
     "source_ids": [
-      "source-005"
+      "source-005",
+      "source-417",
+      "source-418"
     ],
-    "last_verified": "2026-09-18",
-    "notes": "⚠️ CHƯA ĐỐI CHIẾU CHÉO — ghi theo tin tức tại thời điểm tra cứu (2026-09-18), chưa xác minh bằng văn bản chính thức. Dẫn theo Chỉ thị 01/CT-VKSTC."
+    "last_verified": "2026-09-26",
+    "notes": "Tái đắc cử Viện trưởng Viện kiểm sát nhân dân tối cao ngày 07/4/2026, nhiệm kỳ 2026–2031 (trước đó được bầu ngày 26/8/2024). Đã đối chiếu 2 nguồn độc lập ngày 26/9/2026. Ghi chú cũ \"dẫn theo Chỉ thị 01/CT-VKSTC\" chưa được đối chiếu lại trong đợt này."
   },
   {
     "id": "person-phan-van-giang",
@@ -1795,5 +1803,26 @@
     ],
     "last_verified": "2026-09-18",
     "notes": "✅ ĐÃ XÁC MINH (2026-09-18, Pro tự tra): Bộ Chính trị chỉ định ngày 14/10/2025 cho nhiệm kỳ 2025–2030; trước đó đã là Bí thư Thành ủy TP.HCM nhiệm kỳ 2020–2025 (tiểu sử công bố 25/8/2025). Không phải người mới thay ai."
+  },
+  {
+    "id": "person-to-lam",
+    "name": {
+      "vi": "Tô Lâm"
+    },
+    "type": "person",
+    "positions": [
+      {
+        "position_id": "position-chu-tich-nuoc",
+        "organization_id": "org-vpctn-vn",
+        "from": "2026-04-07",
+        "to": null
+      }
+    ],
+    "source_ids": [
+      "source-412",
+      "source-411"
+    ],
+    "last_verified": "2026-09-26",
+    "notes": "Tổng Bí thư Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam, đồng thời là Chủ tịch nước. Quốc hội khóa XVI bầu ngày 07/4/2026, nhiệm kỳ 2026–2031 (495/495 đại biểu có mặt tán thành). Đã đối chiếu 2 nguồn độc lập ngày 26/9/2026."
   }
 ]

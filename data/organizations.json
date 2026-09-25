@@ -74,6 +74,10 @@
     "leadership": [
       {
         "position_id": "position-chu-tich-nuoc",
+        "person_id": "person-to-lam"
+      },
+      {
+        "position_id": "position-chu-tich-nuoc",
         "person_id": "person-luong-cuong"
       }
     ],
@@ -89,12 +93,14 @@
       "source-002",
       "source-007",
       "source-011",
-      "source-012"
+      "source-012",
+      "source-412",
+      "source-411"
     ],
     "effective_from": null,
     "effective_to": null,
-    "last_verified": "2026-09-18",
-    "notes": "Trụ sở hiện tại có hiệu lực từ 23/3/2026 theo Thông báo 270/TB-VPCTN; trước đó (đến 22/3/2026) tại 1A/1B Hoàng Hoa Thám, phường Ba Đình. Địa chỉ '2 Hùng Vương' từng xuất hiện là dữ liệu cũ/nhầm — không dùng. Email dùng domain @gmail.com nhưng được niêm yết chính chủ."
+    "last_verified": "2026-09-26",
+    "notes": "Trụ sở hiện tại có hiệu lực từ 23/3/2026 theo Thông báo 270/TB-VPCTN; trước đó (đến 22/3/2026) tại 1A/1B Hoàng Hoa Thám, phường Ba Đình. Địa chỉ '2 Hùng Vương' từng xuất hiện là dữ liệu cũ/nhầm — không dùng. Email dùng domain @gmail.com nhưng được niêm yết chính chủ. | Cập nhật 26/9/2026: Chủ tịch nước hiện tại là Tô Lâm (từ 07/4/2026); tiền nhiệm là Lương Cường (đến 06/4/2026)."
   },
   {
     "id": "org-chinhphu-vn",

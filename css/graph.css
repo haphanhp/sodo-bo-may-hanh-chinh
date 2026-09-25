@@ -1,39 +1,72 @@
-/* graph.css — placeholder Phase 3 */
-.graph-canvas{position:relative;width:100%;height:100%;min-height:420px;border-radius:var(--r-lg);
-  background:var(--c-surface);border:1px solid var(--c-border);overflow:hidden}
-.graph-canvas::before{content:"";position:absolute;inset:0;opacity:.5;
+/* graph.css — sơ đồ bộ máy: nền nhạt + viền đậm + dải màu theo đúng 8 màu chú thích (legend) */
+:root{
+  --nc-legislature:#8e44ad; --nc-government:#c8102e; --nc-court:#2e86c1; --nc-procuracy:#1f7a4d;
+  --nc-ministry:#64748b; --nc-agency:#d4a017; --nc-municipality:#e67e22; --nc-province:#16a085;
+  --tint:13%; --tint-hi:27%;
+}
+[data-theme="dark"]{ --tint:26%; --tint-hi:40%; }
+.n-legislature{--nc:var(--nc-legislature)} .n-government{--nc:var(--nc-government)}
+.n-court{--nc:var(--nc-court)} .n-procuracy{--nc:var(--nc-procuracy)} .n-ministry{--nc:var(--nc-ministry)}
+.n-agency{--nc:var(--nc-agency)} .n-municipality{--nc:var(--nc-municipality)} .n-province{--nc:var(--nc-province)}
+.n-other{--nc:var(--c-border)}
+
+.graph-canvas{position:relative;display:flex;flex-direction:column;width:100%;height:calc(100vh - 292px);min-height:540px;
+  border-radius:var(--r-lg);background:var(--c-surface);border:1px solid var(--c-border);overflow:hidden;box-shadow:var(--shadow)}
+.graph-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  padding:10px 14px;background:var(--c-surface);border-bottom:1px solid var(--c-border)}
+.graph-legend{display:flex;flex-wrap:wrap;gap:8px;font-size:.76rem;color:var(--c-text)}
+.graph-legend span{display:inline-flex;align-items:center;gap:7px;padding:3px 11px 3px 7px;border-radius:999px;font-weight:600;
+  background:color-mix(in srgb,var(--nc) 12%,var(--c-surface));border:1px solid color-mix(in srgb,var(--nc) 55%,var(--c-border))}
+.graph-legend i.lg{display:inline-block;width:12px;height:12px;border-radius:4px;background:var(--nc)}
+.graph-toolbar{display:flex;gap:4px;padding:3px;background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-md)}
+.graph-stagebox{position:relative;flex:1;min-height:0;background:var(--c-bg)}
+.graph-stagebox::before{content:"";position:absolute;inset:0;opacity:.55;
   background-image:radial-gradient(var(--c-border) 1px,transparent 1px);background-size:22px 22px}
-.graph-toolbar{position:absolute;right:12px;top:12px;z-index:2;display:flex;gap:6px;
-  padding:4px;background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-md);box-shadow:var(--shadow)}
-.graph-node{position:absolute;padding:6px 12px;border-radius:999px;font-size:.8rem;
-  background:var(--c-surface-2);border:1px solid var(--c-border);color:var(--c-text-muted)}
-.graph-canvas{display:flex;flex-direction:column}
 .graph-svg{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}
 .graph-svg.is-dragging{cursor:grabbing}
-.graph-edge{fill:none;stroke:var(--c-border);stroke-width:1.6}
-.graph-node-g{cursor:pointer}
-.graph-node-g .node-box{fill:var(--c-surface);stroke:var(--c-border);stroke-width:1.4;filter:drop-shadow(0 1px 2px rgba(16,24,40,.08))}
-.graph-node-g:hover .node-box{stroke:var(--c-accent)}
-.graph-node-g.is-selected .node-box{stroke:var(--c-accent);stroke-width:2.4;fill:var(--c-accent-soft)}
-.graph-node-g .node-label{font-size:12.5px;font-weight:650;fill:var(--c-text)}
-.graph-node-g .node-sub{font-size:10.5px;fill:var(--c-text-muted)}
-.graph-node-g .node-box{stroke-dasharray:none}
-.n-legislature .node-box{border:0;stroke:#8e44ad}
-.n-government .node-box{stroke:#c8102e}
-.n-court .node-box{stroke:#2e86c1}
-.n-procuracy .node-box{stroke:#1f7a4d}
-.n-ministry .node-box{stroke:var(--c-border)}
-.n-agency .node-box{stroke:#d4a017}
+.graph-hint{position:absolute;left:12px;bottom:10px;z-index:2;font-size:.72rem;color:var(--c-text-muted);
+  background:var(--c-surface);padding:4px 10px;border-radius:999px;border:1px solid var(--c-border)}
+
+/* dải phân cấp */
+.band-bg{fill:color-mix(in srgb,var(--c-text) 3%,transparent);stroke:var(--c-border);stroke-width:1;stroke-dasharray:5 6}
+.band-0 .band-bg{fill:color-mix(in srgb,var(--c-text) 4.5%,transparent)}
+.band-1 .band-bg{fill:color-mix(in srgb,var(--nc-ministry) 9%,transparent)}
+.band-2 .band-bg{fill:color-mix(in srgb,var(--nc-province) 8%,transparent)}
+.band-title{font-size:11px;font-weight:800;letter-spacing:.14em;fill:var(--c-text-muted)}
+.band-sub{font-size:11px;font-weight:500;letter-spacing:.02em;fill:var(--c-text-muted);opacity:.85}
+
+/* đường nối tô theo màu cấp dưới */
+.graph-edge{fill:none;stroke:var(--c-border);stroke-width:1.9;stroke-linecap:round;stroke-opacity:.6}
+.e-ministry{stroke:var(--nc-ministry)} .e-ministry_level_agency,.e-agency{stroke:var(--nc-agency)}
+.e-municipality{stroke:var(--nc-municipality)} .e-province{stroke:var(--nc-province)}
+.e-legislature{stroke:var(--nc-legislature)} .e-government{stroke:var(--nc-government)}
+.e-court{stroke:var(--nc-court)} .e-procuracy{stroke:var(--nc-procuracy)}
+
+/* thẻ cơ quan */
+.graph-node-g{cursor:pointer;outline:none}
+.graph-node-g .node-box{fill:color-mix(in srgb,var(--nc) var(--tint),var(--c-surface));stroke:var(--nc);stroke-width:1.6;
+  filter:drop-shadow(0 2px 4px rgba(16,24,40,.10));transition:stroke-width .12s,filter .12s}
+.graph-node-g:hover .node-box,.graph-node-g:focus-visible .node-box{stroke-width:2.8;
+  filter:drop-shadow(0 4px 12px color-mix(in srgb,var(--nc) 45%,transparent))}
+.graph-node-g.is-selected .node-box{fill:color-mix(in srgb,var(--nc) var(--tint-hi),var(--c-surface));stroke-width:3.2;
+  filter:drop-shadow(0 0 9px color-mix(in srgb,var(--nc) 65%,transparent))}
+.graph-node-g.is-ended .node-box{stroke-dasharray:6 4}
+.node-cap{fill:none;stroke:var(--nc);stroke-width:5;stroke-linecap:butt;pointer-events:none}
+.node-stripe{fill:var(--nc);pointer-events:none}
+.node-tag{font-size:10.5px;font-weight:800;letter-spacing:.09em;fill:#fff;pointer-events:none}
+.node-tag-r{font-weight:700;letter-spacing:.03em;opacity:.95}
+.n-agency .node-tag{fill:#3a2d00}
+.graph-node-g .node-label{font-size:12.5px;font-weight:700;fill:var(--c-text);pointer-events:none}
+.graph-node-g.is-top .node-label{font-size:13.5px;font-weight:800}
+.graph-node-g .node-lead{font-size:11px;fill:var(--c-text-muted);pointer-events:none}
+.graph-node-g.is-top .node-lead{fill:var(--c-text);font-weight:600}
 .node-toggle{cursor:pointer}
-.node-toggle .toggle-bg{fill:var(--c-surface-2);stroke:var(--c-border)}
-.node-toggle .toggle-tx{font-size:13px;fill:var(--c-text-muted)}
-.graph-legend{position:absolute;left:12px;top:12px;z-index:2;display:flex;flex-wrap:wrap;gap:10px;padding:6px 10px;
-  background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-md);font-size:.72rem;color:var(--c-text-muted);box-shadow:var(--shadow)}
-.graph-legend i{display:inline-block;width:10px;height:10px;margin-right:5px;border-radius:3px;border:2px solid var(--c-border);vertical-align:-1px}
-.graph-legend .n-legislature{border-color:#8e44ad}.graph-legend .n-government{border-color:#c8102e}
-.graph-legend .n-court{border-color:#2e86c1}.graph-legend .n-procuracy{border-color:#1f7a4d}
-.graph-legend .n-agency{border-color:#d4a017}
-.graph-hint{position:absolute;left:12px;bottom:10px;z-index:2;font-size:.72rem;color:var(--c-text-muted);background:var(--c-surface);padding:4px 10px;border-radius:999px;border:1px solid var(--c-border)}
+.node-toggle .toggle-bg{fill:var(--c-surface);stroke:var(--nc);stroke-width:1.8}
+.node-toggle .toggle-tx{font-size:12px;font-weight:800;fill:var(--nc);pointer-events:none}
+.node-toggle:hover .toggle-bg{fill:var(--nc)}
+.node-toggle:hover .toggle-tx{fill:#fff}
+
+/* thanh lật trang 6 đơn vị */
 .graph-pager .pager-bg{fill:var(--c-surface);stroke:var(--c-border)}
 .graph-pager .pager-label{font-size:11px;fill:var(--c-text-muted);font-weight:600}
 .graph-pager .pager-btn{cursor:pointer}
@@ -42,7 +75,48 @@
 .graph-pager .pager-btn:hover .pager-hit{fill:var(--c-accent-soft)}
 .graph-pager .pager-btn.is-disabled{cursor:default;opacity:.3}
 .graph-pager .pager-btn.is-disabled:hover .pager-hit{fill:transparent}
-.n-municipality .node-box{stroke:#e67e22}
-.n-province .node-box{stroke:#16a085}
-.graph-legend .n-municipality{border-color:#e67e22}
-.graph-legend .n-province{border-color:#16a085}
+
+/* thẻ thông tin góc dưới phải (hiện khi bấm một cơ quan) */
+.graph-info{position:absolute;right:14px;bottom:14px;z-index:5;display:flex;width:min(372px,calc(100% - 28px));max-height:calc(100% - 28px)}
+.graph-info[hidden]{display:none}
+.ic{flex:1;min-width:0;display:flex;flex-direction:column;overflow:hidden;background:var(--c-surface);
+  border:1px solid color-mix(in srgb,var(--nc) 55%,var(--c-border));border-radius:14px;
+  box-shadow:0 16px 40px rgba(16,24,40,.24);animation:ic-in .18s ease-out}
+@keyframes ic-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.ic-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 8px 7px 14px;background:var(--nc)}
+.ic-tag{font-size:.7rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:#fff}
+.n-agency .ic-tag,.n-agency .ic-x{color:#3a2d00}
+.ic-x{width:26px;height:26px;border:0;border-radius:8px;background:rgba(255,255,255,.18);color:#fff;font-size:1.15rem;line-height:1;cursor:pointer}
+.ic-x:hover{background:rgba(255,255,255,.34)}
+.ic-body{flex:1;min-height:0;overflow:auto;padding:12px 14px 6px;background:color-mix(in srgb,var(--nc) 6%,var(--c-surface))}
+.ic-title{margin:0 0 6px;font-size:1.02rem;line-height:1.3;color:var(--c-text)}
+.ic-note{margin:0 0 6px;font-size:.78rem;font-weight:600;color:var(--c-accent)}
+.ic-lead{margin:0 0 4px;font-size:.84rem;color:var(--c-text)}
+.ic-lead strong{cursor:pointer;border-bottom:1px dotted var(--c-text-muted)}
+.ic-sec{margin-top:12px}
+.ic-k{margin-bottom:6px;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--c-text-muted)}
+.ic-stats{display:flex;gap:8px}
+.ic-stat{flex:1;display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:10px;
+  background:color-mix(in srgb,var(--nc) var(--tint),var(--c-surface));border:1px solid color-mix(in srgb,var(--nc) 35%,var(--c-border))}
+.ic-stat b{font-size:1.55rem;line-height:1;font-weight:800;color:var(--nc)}
+.ic-stat span{font-size:.72rem;line-height:1.25;color:var(--c-text-muted)}
+.ic-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.ic-chip{display:inline-flex;align-items:center;gap:6px;padding:2px 9px 2px 7px;border-radius:999px;font-size:.74rem;font-weight:600;color:var(--c-text);
+  background:color-mix(in srgb,var(--nc) 12%,var(--c-surface));border:1px solid color-mix(in srgb,var(--nc) 50%,var(--c-border))}
+.ic-chip i{width:9px;height:9px;border-radius:3px;background:var(--nc)}
+.ic-muted{margin:6px 0 0;font-size:.78rem;color:var(--c-text-muted)}
+.ic-fn{margin:0;padding-left:18px;font-size:.84rem;line-height:1.45;color:var(--c-text)}
+.ic-fn li{margin-bottom:4px}
+.ic-more{margin-top:2px;padding:0;border:0;background:none;font-size:.78rem;font-weight:600;color:var(--c-accent);cursor:pointer}
+.ic-more:hover{text-decoration:underline}
+.ic-actions{display:flex;gap:8px;justify-content:flex-end;padding:10px 14px 12px;border-top:1px solid var(--c-border);background:var(--c-surface)}
+.ic-btn{padding:6px 14px;border:1px solid var(--c-border);border-radius:999px;background:var(--c-surface);color:var(--c-text);font:inherit;font-size:.82rem;font-weight:600;cursor:pointer}
+.ic-btn:hover{border-color:var(--nc);color:var(--nc)}
+.ic-btn-primary{background:var(--nc);border-color:var(--nc);color:#fff}
+.ic-btn-primary:hover{color:#fff;filter:brightness(1.1)}
+.n-agency .ic-btn-primary{color:#3a2d00}
+@media (max-width:720px){
+  .graph-hint{display:none}
+  .graph-info{left:10px;right:10px;bottom:10px;width:auto;max-height:58%}
+}
+@media (prefers-reduced-motion:reduce){.ic{animation:none}}

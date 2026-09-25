@@ -21,12 +21,12 @@ const list = (st, key) => [...(st.index?.perType?.[key]?.values() ?? [])];
 const nameOf = e => esc(e?.name?.vi ?? e?.title ?? e?.id ?? "");
 const link = (url, text) => url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text ?? url)}</a>` : "—";
 
-const empty = ({ ico, title, desc, phase, extra = "" }) => `
+const empty = ({ ico, title, desc, phase, planned, extra = "" }) => `
   <div class="empty-state">
     <div class="empty-ico">${ico}</div>
     <div class="empty-title">${title}</div>
     <p class="empty-desc">${desc}</p>
-    <div class="empty-meta"><span class="badge badge-accent">Sẽ có ở ${phase}</span><span class="badge">Chưa nạp dữ liệu</span></div>
+    <div class="empty-meta"><span class="badge badge-accent">${planned ?? `Sẽ có ở ${phase}`}</span><span class="badge">${planned ? "Chưa có dữ liệu" : "Chưa nạp dữ liệu"}</span></div>
     ${extra}
   </div>`;
 
@@ -36,7 +36,7 @@ export const VIEWS = {
   map: {
     label: "Bản đồ",
     render: st => banner(st) + head("Bản đồ bộ máy", st.index
-      ? `Sơ đồ phân cấp — ${st.report.counts.organizations} cơ quan đã nạp. Bấm node để xem chi tiết bên phải.`
+      ? `Sơ đồ phân cấp — ${st.report.counts.organizations} cơ quan đã nạp. Bấm vào một ô để mở/thu gọn cấp dưới và xem thông tin ở góc dưới bên phải.`
       : "Sơ đồ quan hệ giữa các cơ quan.") +
       (st.index ? timeBarMarkup(st.asOf ?? TODAY) + graphMarkup() : empty({ ico: "🗺", title: "Chưa có dữ liệu để vẽ", desc: "Cần nạp được data/*.json trước.", phase: "Phase 2" })),
     mount: st => { if (st.index) mountGraph(); }
@@ -69,7 +69,7 @@ export const VIEWS = {
       return head("Con người", `${items.length} người đã nạp`) + banner(st) +
         table(["Họ tên", "Chức vụ", "Cơ quan", "Ghi chú"], items.map(p => {
           const pos = p.positions?.[0] ?? {};
-          return [`<strong data-entity="${esc(p.id)}">${nameOf(p)}</strong>`, nameOf(st.index.get(pos.position_id)) || "—",
+          return [`<strong data-entity="${esc(p.id)}">${nameOf(p)}</strong>`, (pos.to && pos.to < (st.asOf ?? TODAY) ? "Nguyên " : "") + (nameOf(st.index.get(pos.position_id)) || "—"),
             nameOf(st.index.get(pos.organization_id)) || "—",
             `<span class="muted-note">${esc(p.notes)}</span>`];
         }));
@@ -124,7 +124,7 @@ export const VIEWS = {
         ]));
     }
   },
-  licenses:      { label: "Giấy phép", render: st => banner(st) + head("Giấy phép / chứng chỉ / biểu mẫu", "Kết quả đầu ra của thủ tục: giấy phép, chứng chỉ, con dấu, biểu mẫu.") + empty({ ico: "📄", title: "Chưa có giấy phép", desc: "Đọc từ data/licenses.json và data/forms.json, liên kết ngược về thủ tục và cơ quan cấp.", phase: "Phase 6" }) },
+  licenses:      { label: "Giấy phép", render: st => banner(st) + head("Giấy phép / chứng chỉ / biểu mẫu", "Kết quả đầu ra của thủ tục: giấy phép, chứng chỉ, con dấu, biểu mẫu.") + empty({ ico: "📄", title: "Chưa có giấy phép", desc: "Đọc từ data/licenses.json và data/forms.json, liên kết ngược về thủ tục và cơ quan cấp. Hai tệp này hiện còn rỗng: giấy phép và biểu mẫu nằm trong kế hoạch Phase 10 (Phase 6 chỉ làm phần thủ tục hành chính).", planned: "Kế hoạch Phase 10" }) },
   sources: {
     label: "Nguồn",
     render: st => {
@@ -167,13 +167,13 @@ export const VIEWS = {
         <h2>2. Cách dùng</h2>
         <ul>
           <li><strong>Sơ đồ</strong>: một cấp hiển thị tối đa 6 ô; nếu nhiều hơn, dưới ô cha có thanh <code>‹ 1–6 / 51 ›</code> để lật sang 6 đơn vị tiếp theo. Nút ⇱ mở hết cấp dưới, ⤢ đưa sơ đồ vừa màn hình.</li><li><strong>Thanh bên trái</strong>: chuyển giữa các mục. Địa chỉ trên trình duyệt đổi theo (ví dụ <code>#/organizations</code>) nên có thể lưu/chia sẻ đúng mục đang xem.</li>
-          <li><strong>Ô tìm kiếm</strong> trên đầu trang (phím tắt <code>Ctrl + K</code>): tìm đồng thời trong cơ quan, người, chức vụ và nguồn. Gõ không dấu vẫn ra kết quả ("bo tai chinh"), tìm được cả tên viết tắt (BTC, VKSNDTC), địa chỉ, số điện thoại và email.</li>
-          <li><strong>Bảng chi tiết bên phải</strong>: hiện thông tin của đối tượng đang chọn, kèm danh sách nguồn và ngày kiểm chứng cuối.</li>
+          <li><strong>Ô tìm kiếm</strong> trên đầu trang (phím tắt <code>Ctrl + K</code>): tìm đồng thời trong cơ quan, người, chức vụ và nguồn. Gõ không dấu vẫn ra kết quả ("bo tai chinh"), tìm được cả tên viết tắt (BTC, VKSNDTC), địa chỉ, số điện thoại và email. Rê chuột vào ô (hoặc bấm vào) để chọn loại kết quả: Cơ quan, Con người, Chức vụ, Thủ tục, Văn bản, Nguồn — chọn một loại để lọc, hoặc duyệt toàn bộ danh sách khi chưa gõ gì.</li>
+          <li><strong>Bảng chi tiết</strong>: tự trượt ra từ bên phải khi bạn chọn một cơ quan, người hoặc thủ tục, kèm danh sách nguồn và ngày kiểm chứng cuối. Bấm ✕ hoặc phím <code>Esc</code> để đóng.</li>
           <li><strong>Time Machine</strong> (thanh 📅 ở tab Bản đồ): chọn một ngày bất kỳ hoặc bấm các mốc có sẵn để xem bộ máy <em>tại thời điểm đó</em> — ví dụ chọn 28/02/2025 sẽ thấy lại Bộ Kế hoạch và Đầu tư, Bộ Giao thông vận tải, Bộ Thông tin và Truyền thông… trước đợt sáp nhập. Danh sách ở tab Cơ quan cũng đổi theo.</li>
           <li><strong>Nút ◐</strong> góc phải: đổi giao diện sáng/tối.</li>
         </ul>
         <h2>3. Trạng thái hiện tại</h2>
-        <p>Đang ở <strong>Phase 9</strong>: đã có data engine, sơ đồ quan hệ, bảng chi tiết, tìm kiếm toàn cục, thủ tục hành chính, văn bản pháp luật và <strong>Time Machine</strong> — xem bộ máy tại một thời điểm bất kỳ trong quá khứ. Dữ liệu thật gồm 5 cơ quan trung ương, 14 Bộ, 3 cơ quan ngang Bộ, 34 tỉnh/thành phố trực thuộc Trung ương (kèm Chủ tịch UBND và Bí thư Tỉnh/Thành ủy) 3 thủ tục hành chính mẫu, 16 văn bản pháp luật và 7 cơ quan đã kết thúc hoạt động (giữ cho mục đích lịch sử).</p><p class="muted-note">Ghi chú kỹ thuật: trình duyệt chặn đọc file JSON khi mở bằng <code>file://</code> — chạy <code>mo-app.bat</code> trong thư mục dự án (hoặc <code>python -m http.server 8080</code>) rồi mở <code>http://localhost:8080</code>.</p><p style="display:none">Phase 1: mới có khung giao diện, điều hướng và các trạng thái trống. Chưa nạp dữ liệu hành chính thật; dữ liệu thô đã tra cứu nằm trong các file <code>01–16-*.md</code> của dự án và chỉ được ráp vào <code>data/*.json</code> ở Phase 10.</p>
+        <p>Đã hoàn thành <strong>Phase 0–9</strong> (phần giấy phép, biểu mẫu và cơ sở tiếp nhận hồ sơ thuộc Phase 10, hiện chưa có dữ liệu): đã có data engine, sơ đồ quan hệ, bảng chi tiết, tìm kiếm toàn cục, thủ tục hành chính, văn bản pháp luật và <strong>Time Machine</strong> — xem bộ máy tại một thời điểm bất kỳ trong quá khứ. Dữ liệu thật gồm 5 cơ quan trung ương, 14 Bộ, 3 cơ quan ngang Bộ, 34 tỉnh/thành phố trực thuộc Trung ương (kèm Chủ tịch UBND và Bí thư Tỉnh/Thành ủy) 3 thủ tục hành chính mẫu, 16 văn bản pháp luật và 7 cơ quan đã kết thúc hoạt động (giữ cho mục đích lịch sử).</p><p class="muted-note">Ghi chú kỹ thuật: trình duyệt chặn đọc file JSON khi mở bằng <code>file://</code> — chạy <code>mo-app.bat</code> trong thư mục dự án (hoặc <code>python -m http.server 8080</code>) rồi mở <code>http://localhost:8080</code>.</p><p style="display:none">Phase 1: mới có khung giao diện, điều hướng và các trạng thái trống. Chưa nạp dữ liệu hành chính thật; dữ liệu thô đã tra cứu nằm trong các file <code>01–16-*.md</code> của dự án và chỉ được ráp vào <code>data/*.json</code> ở Phase 10.</p>
         <h2>4. Phạm vi</h2>
         <p>Đào sâu <strong>cấp thượng tầng</strong> (Quốc hội, Chủ tịch nước, Chính phủ, TAND tối cao, VKSND tối cao, 14 Bộ và 3 cơ quan ngang Bộ) và <strong>34 tỉnh/thành phố trực thuộc trung ương</strong>. Cấp xã/phường/đặc khu chỉ dừng ở mức liệt kê (tổng số và cơ cấu theo từng tỉnh). Cấp huyện đã kết thúc hoạt động từ 01/7/2025, chỉ giữ lại cho mục đích lịch sử.</p>
         <h2>5. Các mốc thay đổi bộ máy 2025–2026 cần nhớ</h2>
@@ -194,7 +194,7 @@ export const VIEWS = {
           <li>Giữ lịch sử khi cơ quan sáp nhập/đổi tên (<code>effective_from</code> / <code>effective_to</code>) thay vì xóa dữ liệu cũ.</li>
         </ul>
         <h2>7. Nguồn thông tin lấy từ đâu</h2>
-        <p>Danh mục nguồn đầy đủ (kèm link gốc và ngày truy cập) sẽ hiển thị ở mục <strong>Nguồn</strong> khi Phase 8 hoàn thành, lấy từ <code>data/sources.json</code>. Toàn bộ quy tắc và nhật ký build nằm trong <code>AGENTS.md</code>, <code>Claude-sodobmhc.md</code>, <code>Roadmap-sodobmhc.md</code>, <code>Build-logs-sodobmhc.md</code> của dự án.</p>
+        <p>Danh mục nguồn đầy đủ (kèm link gốc và ngày truy cập) hiển thị ở mục <strong>Nguồn</strong> (đã có từ Phase 8), lấy từ <code>data/sources.json</code>. Toàn bộ quy tắc và nhật ký build nằm trong <code>AGENTS.md</code>, <code>Claude-sodobmhc.md</code>, <code>Roadmap-sodobmhc.md</code>, <code>Build-logs-sodobmhc.md</code> của dự án.</p>
       </div></div>`
   }
 };

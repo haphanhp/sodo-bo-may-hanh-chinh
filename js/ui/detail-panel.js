@@ -1,15 +1,13 @@
 import { getState } from "../core/state.js";
+import { leadersOf } from "../core/leaders.js";
+import { TODAY } from "../core/time.js";
 const esc = v => String(v ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const li = arr => (arr ?? []).length ? `<ul>${arr.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : `<p class="muted-note">Chưa có dữ liệu.</p>`;
 const row = (k, v) => `<div class="kv"><span class="k">${k}</span><span class="v">${v || "<em>chưa xác minh</em>"}</span></div>`;
 
 export function renderDetailEmpty(){
-  document.getElementById("detail-body").innerHTML = `
-    <div class="empty-state" style="min-height:200px;border:0;background:none;padding:0">
-      <div class="empty-ico">🔍</div>
-      <div class="empty-title">Chưa chọn đối tượng</div>
-      <p class="empty-desc">Bấm vào một cơ quan trong sơ đồ (hoặc trong bảng) để xem chức năng, nhiệm vụ, liên hệ và nguồn trích dẫn.</p>
-    </div>`;
+  document.getElementById("detail-body").innerHTML =
+    `<p class="muted-note">Chọn một cơ quan, người hoặc thủ tục để xem chức năng, liên hệ và nguồn trích dẫn.</p>`;
 }
 
 export function renderDetail(id){
@@ -114,12 +112,12 @@ function sourcesHTML(e, st){
 }
 
 function orgHTML(o, st){
-  const leaders = (o.leadership ?? []).map(l => {
-    const p = st.index.get(l.person_id), pos = st.index.get(l.position_id);
-    const from = p?.positions?.find(x => x.position_id === l.position_id)?.from;
-    return `${esc(pos?.name?.vi ?? "")}: <strong data-entity="${esc(p?.id ?? "")}">${esc(p?.name?.vi ?? "chưa xác minh")}</strong>` +
-      (from ? ` <span class="muted-note">(từ ${esc(from.split("-").reverse().join("/"))})</span>` : "");
-  });
+  const allLeaders = leadersOf(o, st.index, st.asOf ?? TODAY);
+  const who = l => `${esc(l.position?.name?.vi ?? "")}: <strong data-entity="${esc(l.person.id)}">${esc(l.person.name.vi)}</strong>`;
+  const leaders = allLeaders.filter(l => l.active).map(l => who(l) +
+    (l.from ? ` <span class="muted-note">(từ ${esc(dmy2(l.from))})</span>` : ""));
+  const formerLeaders = allLeaders.filter(l => l.former).map(l => who(l) +
+    ` <span class="muted-note">(đến ${esc(dmy2(l.to))})</span>`);
   const parent = o.parent_id ? st.index.get(o.parent_id) : null;
   const kids = [...st.index.perType.organizations.values()].filter(x => x.parent_id === o.id);
   const c = o.contact ?? {};
@@ -127,6 +125,7 @@ function orgHTML(o, st){
     ${unverifiedFlag(o, st)}
     <div class="d-badges"><span class="badge badge-accent">${esc(o.short_name || o.type)}</span><span class="badge">Kiểm chứng ${esc(o.last_verified)}</span></div>
     <h4>Lãnh đạo</h4>${leaders.length ? `<ul>${leaders.map(x => `<li>${x}</li>`).join("")}</ul>` : `<p class="muted-note">Chưa có dữ liệu.</p>`}
+    ${formerLeaders.length ? `<h4>Tiền nhiệm</h4><ul>${formerLeaders.map(x => `<li>${x}</li>`).join("")}</ul>` : ""}
     <h4>Chức năng, nhiệm vụ, quyền hạn</h4>${li(o.functions)}
     <h4>Liên hệ</h4>
     ${row("Trụ sở", esc(c.address))}
@@ -149,9 +148,10 @@ function personHTML(p, st){
   return `<h3 class="d-title">${esc(p.name.vi)}</h3>
     ${unverifiedFlag(p, st)}
     <h4>Chức vụ</h4>
-    ${row("Chức danh", esc(st.index.get(pos.position_id)?.name?.vi))}
+    ${row("Chức danh", (pos.to && pos.to < (st.asOf ?? TODAY) ? "Nguyên " : "") + esc(st.index.get(pos.position_id)?.name?.vi ?? ""))}
     ${row("Cơ quan", `<strong data-entity="${esc(pos.organization_id ?? "")}">${esc(st.index.get(pos.organization_id)?.name?.vi)}</strong>`)}
     ${row("Giữ chức từ", pos.from ? esc(pos.from.split("-").reverse().join("/")) : "")}
+    ${pos.to ? row("Giữ chức đến", esc(pos.to.split("-").reverse().join("/"))) : ""}
     ${(() => { const po = st.index.get(pos.position_id); return po?.notes ? `<p class="muted-note" style="margin-top:8px">${esc(po.notes)}</p>` : ""; })()}
     ${p.notes ? `<h4>Ghi chú</h4><p class="muted-note">${esc(p.notes)}</p>` : ""}
     <h4>Nguồn</h4>${sourcesHTML(p, st)}`;

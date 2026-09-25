@@ -21,6 +21,14 @@ const GROUPS = {
   sources: "Nguồn", procedures: "Thủ tục", documents: "Văn bản", licenses: "Giấy phép"
 };
 
+export const GROUP_LABELS = GROUPS;
+export const SEARCH_TYPES = ["organizations", "people", "positions", "procedures", "documents", "licenses", "sources"];
+
+// Duyệt toàn bộ một loại (khi chưa gõ gì): sắp theo tên.
+export function browse(docs, type, { limit = 40 } = {}){
+  return docs.filter(d => d.type === type).sort((a, b) => a.label.localeCompare(b.label, "vi")).slice(0, limit);
+}
+
 export function buildSearchIndex(index){
   const docs = [];
   const add = (type, e, label, sub, extra = []) =>

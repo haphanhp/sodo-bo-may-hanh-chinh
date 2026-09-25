@@ -6,9 +6,9 @@ import re, json, io, os, sys, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def read(p): return io.open(os.path.join(ROOT, p), encoding="utf-8").read()
 
-ORDER = ["js/core/time.js","js/core/config.js","js/core/event-bus.js","js/core/state.js","js/core/router.js",
+ORDER = ["js/core/time.js","js/core/leaders.js","js/core/config.js","js/core/event-bus.js","js/core/state.js","js/core/router.js",
  "js/data/loader.js","js/data/indexer.js","js/data/validator.js","js/search/search.js",
- "js/graph/graph-layout.js","js/graph/nodes.js","js/graph/edges.js","js/graph/graph.js",
+ "js/graph/graph-layout.js","js/graph/nodes.js","js/graph/edges.js","js/graph/info-card.js","js/graph/graph.js",
  "js/ui/toast.js","js/ui/tabs.js","js/ui/detail-panel.js","js/views/views.js","js/app.js"]
 CSS = ["css/main.css","css/layout.css","css/components.css","css/graph.css","css/responsive.css"]
 DATASETS = ["organizations","people","positions","relationships","procedures","documents","licenses","facilities","forms","sources"]

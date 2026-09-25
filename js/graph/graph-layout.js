@@ -1,11 +1,13 @@
 // graph-layout.js — tính toạ độ node theo cây phân cấp (thuần dữ liệu, không đụng DOM).
 import { activeAt } from "../core/time.js";
 
-export const NODE_W = 172, NODE_H = 46, GAP_X = 18, GAP_Y = 104, PAGE_SIZE = 6;
+export const NODE_W = 196, NODE_H = 68, TOP_W = 236, TOP_H = 92, GAP_X = 14, GAP_Y = 104, PAGE_SIZE = 6;
 
-const ORDER = { government: 0, legislature: 0, court: 0, procuracy: 0, agency: 1, ministry: 2, ministry_level_agency: 3, municipality: 4, province: 5 };
+// Thứ tự hiển thị: Quốc hội → Chủ tịch nước → Chính phủ → Tòa án → Kiểm sát → Bộ → cơ quan ngang Bộ → TP → Tỉnh
+export const TYPE_ORDER = ["legislature", "agency", "government", "court", "procuracy", "ministry", "ministry_level_agency", "municipality", "province"];
+const rank = t => { const i = TYPE_ORDER.indexOf(t); return i < 0 ? 99 : i; };
 const sortKids = list => [...list].sort((a, b) =>
-  (ORDER[a.type] ?? 9) - (ORDER[b.type] ?? 9) || a.name.vi.localeCompare(b.name.vi, "vi"));
+  rank(a.type) - rank(b.type) || a.name.vi.localeCompare(b.name.vi, "vi"));
 
 export function buildTree(index, { expanded, pages = new Map(), asOf = null }){
   const all = [...index.perType.organizations.values()].filter(o => !asOf || activeAt(o, asOf));
@@ -39,34 +41,44 @@ function groupLabel(slice){
   return "";
 }
 
+// Mỗi cấp (depth) là một "dải" ngang có nhãn riêng; cấp 0 dùng thẻ lớn hơn.
 export function layout(trees, { maxPerRow = PAGE_SIZE } = {}){
-  const nodes = [], edges = [], pagers = [];
-  let cursorY = 40;
+  const nodes = [], edges = [], pagers = [], bands = [];
+  let cursorY = 44, maxWidth = 0;
+  const sizeOf = n => n.depth === 0 ? [TOP_W, TOP_H] : [NODE_W, NODE_H];
   const placeRow = (items, y) => {
-    const rows = [];
-    for (let i = 0; i < items.length; i += maxPerRow) rows.push(items.slice(i, i + maxPerRow));
-    rows.forEach((row, ri) => {
-      const width = row.length * NODE_W + (row.length - 1) * GAP_X;
-      row.forEach((n, i) => { n.x = -width / 2 + i * (NODE_W + GAP_X); n.y = y + ri * (NODE_H + 22); });
-    });
-    return y + rows.length * (NODE_H + 22);
+    let cy = y, bottom = y;
+    for (let i = 0; i < items.length; i += maxPerRow){
+      const row = items.slice(i, i + maxPerRow);
+      row.forEach(n => { const s = sizeOf(n); n.w = s[0]; n.h = s[1]; });
+      const width = row.reduce((s, n) => s + n.w, 0) + (row.length - 1) * GAP_X;
+      maxWidth = Math.max(maxWidth, width);
+      let x = -width / 2;
+      row.forEach(n => { n.x = x; n.y = cy; x += n.w + GAP_X; });
+      const rowH = Math.max(...row.map(n => n.h));
+      bottom = cy + rowH;
+      cy += rowH + 24;
+    }
+    return bottom;
   };
-  let level = trees.slice();
+  let level = trees.slice(), depth = 0;
   while (level.length){
-    const bottom = placeRow(level, cursorY);
+    const top = cursorY;
+    const bottom = placeRow(level, top);
     level.forEach(n => nodes.push(n));
+    const hasPager = level.some(n => n.pager);
+    const y0 = top - 40, y1 = bottom + (hasPager ? 50 : 24);
+    bands.push({ depth, y0, y1, types: [...new Set(level.map(n => n.org.type))] });
     const next = [];
     level.forEach(p => {
       p.children.forEach(c => { edges.push({ from: p, to: c }); next.push(c); });
-      if (p.pager) pagers.push({ ...p.pager, x: p.x, y: p.y + NODE_H + 8 });
+      if (p.pager) pagers.push({ ...p.pager, x: p.x, y: p.y + p.h + 10, w: p.w });
     });
-    cursorY = bottom + GAP_Y - NODE_H;
-    level = next;
+    cursorY = y1 + 88;
+    level = next; depth++;
   }
-  const xs = nodes.map(n => n.x), ys = nodes.map(n => n.y);
-  const bounds = {
-    minX: Math.min(...xs, 0) - 60, maxX: Math.max(...xs, 0) + NODE_W + 60,
-    minY: 0, maxY: Math.max(...ys, 0) + NODE_H + 60
-  };
-  return { nodes, edges, pagers, bounds };
+  const halfW = maxWidth / 2 + 28;
+  const last = bands[bands.length - 1];
+  const bounds = { minX: -halfW, maxX: halfW, minY: bands.length ? bands[0].y0 : 0, maxY: last ? last.y1 + 20 : 0 };
+  return { nodes, edges, pagers, bands, bounds, halfW };
 }

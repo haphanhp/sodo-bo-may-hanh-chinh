@@ -2222,5 +2222,133 @@
     "accessed_date": "2026-09-19",
     "reliability": "official",
     "notes": "Các Bộ theo Nghị quyết 08/2021/QH15 hoạt động đến hết 28/02/2025; cơ cấu mới vận hành từ 01/3/2025."
+  },
+  {
+    "id": "source-411",
+    "title": "Bàn giao công tác giữa Tổng Bí thư, Chủ tịch nước Tô Lâm và nguyên Chủ tịch nước Lương Cường",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Điện tử Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://baochinhphu.vn/ban-giao-cong-tac-giua-tong-bi-thu-chu-tich-nuoc-to-lam-va-nguyen-chu-tich-nuoc-luong-cuong-102260409153353424.htm",
+    "document_number": "",
+    "published_date": "2026-04-09",
+    "effective_date": "",
+    "accessed_date": "2026-09-26",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-412",
+    "title": "Đồng chí Tổng Bí thư Tô Lâm được bầu làm Chủ tịch nước",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Nhân Dân"
+    },
+    "type": "news",
+    "url": "https://nhandan.vn/dong-chi-tong-bi-thu-to-lam-duoc-bau-lam-chu-tich-nuoc-post953764.html",
+    "document_number": "",
+    "published_date": "2026-04-07",
+    "effective_date": "",
+    "accessed_date": "2026-09-26",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-413",
+    "title": "Đồng chí Trần Thanh Mẫn tái đắc cử chức vụ Chủ tịch Quốc hội",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Điện tử Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://baochinhphu.vn/dong-chi-tran-thanh-man-tai-dac-cu-chuc-vu-chu-tich-quoc-hoi-102260406110838281.htm",
+    "document_number": "",
+    "published_date": "2026-04-06",
+    "effective_date": "",
+    "accessed_date": "2026-09-26",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-414",
+    "title": "Ông Trần Thanh Mẫn đắc cử Chủ tịch Quốc hội khóa XVI",
+    "publisher": {
+      "organization_id": null,
+      "name": "VOV"
+    },
+    "type": "news",
+    "url": "https://vov.vn/chinh-tri/ong-tran-thanh-man-dac-cu-chu-tich-quoc-hoi-khoa-xvi-post1281117.vov",
+    "document_number": "",
+    "published_date": "2026-04-06",
+    "effective_date": "",
+    "accessed_date": "2026-09-26",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-415",
+    "title": "Chánh án Tòa án nhân dân tối cao Nguyễn Văn Quảng tái đắc cử",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Tuổi Trẻ"
+    },
+    "type": "news",
+    "url": "https://tuoitre.vn/chanh-an-toa-an-nhan-dan-toi-cao-nguyen-van-quang-tai-dac-cu-20260407090043299.htm",
+    "document_number": "",
+    "published_date": "2026-04-07",
+    "effective_date": "",
+    "accessed_date": "2026-09-26",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-416",
+    "title": "Đồng chí Nguyễn Văn Quảng tái đắc cử Chánh án Tòa án nhân dân tối cao",
+    "publisher": {
+      "organization_id": null,
+      "name": "VTV"
+    },
+    "type": "news",
+    "url": "https://vtv.vn/dong-chi-nguyen-van-quang-tai-dac-cu-chanh-an-toa-an-nhan-dan-toi-cao-100260407150655628.htm",
+    "document_number": "",
+    "published_date": "2026-04-07",
+    "effective_date": "",
+    "accessed_date": "2026-09-26",
+    "reliability": "secondary_source",
+    "notes": ""
+  },
+  {
+    "id": "source-417",
+    "title": "Đồng chí Nguyễn Huy Tiến được bầu giữ chức Viện trưởng Viện kiểm sát nhân dân tối cao, nhiệm kỳ 2026-2031",
+    "publisher": {
+      "organization_id": null,
+      "name": "Cổng TTĐT Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://xaydungchinhsach.chinhphu.vn/dong-chi-nguyen-huy-tien-duoc-bau-giu-chuc-vien-truong-vien-kiem-sat-nhan-dan-toi-cao-nhiem-ky-2026-2031-119260407171429114.htm",
+    "document_number": "",
+    "published_date": "2026-04-07",
+    "effective_date": "",
+    "accessed_date": "2026-09-26",
+    "reliability": "official",
+    "notes": ""
+  },
+  {
+    "id": "source-418",
+    "title": "Viện trưởng Viện Kiểm sát nhân dân tối cao Nguyễn Huy Tiến tái đắc cử",
+    "publisher": {
+      "organization_id": null,
+      "name": "Báo Điện tử Chính phủ"
+    },
+    "type": "government_portal",
+    "url": "https://baochinhphu.vn/vien-truong-vien-kiem-sat-nhan-dan-toi-cao-nguyen-huy-tien-tai-dac-cu-102260407163944786.htm",
+    "document_number": "",
+    "published_date": "2026-04-07",
+    "effective_date": "",
+    "accessed_date": "2026-09-26",
+    "reliability": "official",
+    "notes": ""
   }
 ]
