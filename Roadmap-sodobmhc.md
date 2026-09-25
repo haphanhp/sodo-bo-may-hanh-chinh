@@ -2,7 +2,7 @@
 tags: [sodobmhc]
 type: roadmap
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-26
 ---
 
 ### Roadmap-sodobmhc — Theo dõi tiến trình dự án
@@ -20,7 +20,7 @@ updated: 2026-09-18
 
 - Phase hiện tại: **Phase 0→9 ĐÃ XONG. App hiện có: 63 cơ quan (56 đang hoạt động + 7 đã kết thúc) / 89 người / 90 chức vụ / 3 thủ tục / 16 văn bản / 85 quan hệ / 139 nguồn, validate 0 lỗi 0 cảnh báo. Còn lại: Phase 10 — mở rộng dữ liệu thật (thủ tục, giấy phép, cơ quan Đảng, đơn vị trực thuộc Bộ)**
 - **⚠️ Phạm vi thu hẹp (user chốt 2026-09-18)**: chỉ đào sâu **cấp thượng tầng + cấp tỉnh/thành phố trực thuộc trung ương**. Cấp xã/phường/đặc khu **KHÔNG cần trụ sở/SĐT/lãnh đạo riêng từng xã** (việc đào sâu chi tiết đó dừng ở đây). Riêng phần **danh sách TÊN đầy đủ** cấp xã: user yêu cầu làm cho xong luôn ngay trong ngày — Pro tự tra 100% qua WebSearch/WebFetch (file 17-21), **đã hoàn tất cả nước 34/34 tỉnh/thành**. Prompt #20–#24 giữ nguyên trong `Promts-sodobmhc.md` nhưng KHÔNG giao acc Free (Pro đã tự làm xong). → Thu thập dữ liệu thô cấp xã xem như **ĐÃ ĐỦ HOÀN TOÀN** cho Phase 10. — song song, dữ liệu thô cấp tỉnh/thành (mục 03) vẫn tiếp tục thu thập độc lập
-- Cập nhật lần cuối: 2026-09-19
+- Cập nhật lần cuối: 2026-09-26
 
 ---
 
@@ -148,7 +148,9 @@ Việc tra cứu dữ liệu qua 5 acc Free (`Promts-sodobmhc.md`) chạy **song
 
 - [x] ✅ `tools/build-single-file.py` — gộp toàn bộ app thành 1 file HTML độc lập (~330 KB, đã nhúng CSS/JS/dữ liệu), dùng để đăng lên `haphanhp/publish` → hiển thị tại `notes.haphan.digital`
 - [x] ✅ Bản xuất bản: `publish/bo-may-hanh-chinh-viet-nam.html`, tiêu đề "Bộ máy hành chính Việt Nam", footer `haphanhp — Tổng hợp · Tháng 9, 2026`
-- [ ] Mỗi lần cập nhật dữ liệu: chạy lại `python3 tools/build-single-file.py`, copy sang thư mục publish, rồi push repo `haphanhp/publish`
+- [x] ✅ Đồng bộ tự động sang repo `publish` bằng **git hook `pre-push`** (cài 19/9/2026, ghi nhận vào tài liệu 26/9/2026): `git push` repo nguồn → hook copy `publish/bo-may-hanh-chinh-viet-nam.html` sang `E:\DownloadsDocuments\publish` và commit cục bộ `sync: …`. Hook KHÔNG tự push repo `publish`. Chi tiết: `AGENTS-sodobmhc.md` luật 19–20, `Build-logs-sodobmhc.md` mục 26/9/2026 (đợt 3), `Ban-giao-sua-UI-sodobmhc.md` mục 8.
+- [ ] Quy trình mỗi lần đăng bản (KHÔNG copy tay): `validate-data.js` → `build-single-file.py` → test bundle → **commit cả file build** → `git push` repo nguồn từ Windows/Claude Code terminal (để hook chạy) → kiểm tra commit `sync:` ở `E:\DownloadsDocuments\publish` → `git push` repo `publish` → chờ Vercel 2–3 phút, hard-refresh kiểm tra `notes.haphan.digital`.
+- [ ] Chạy thử end-to-end lần đầu với bản 26/9/2026 (sơ đồ bấm-để-mở/thu gọn + thẻ thông tin góc dưới phải; Chủ tịch nước = Tô Lâm) và xác nhận trang công khai hiển thị đúng bản mới.
 
 ---
 

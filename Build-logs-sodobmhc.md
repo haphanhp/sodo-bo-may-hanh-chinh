@@ -527,3 +527,110 @@ updated: 2026-09-18
   - Khi phát hiện đụng số LẦN THỨ HAI trở lên trong cùng 1 buổi, không chỉ đổi số các file mới tạo — phải kiểm tra thêm xem các file KHÔNG đụng số (ví dụ 24, 25 ở đây) có bị phiên kia SỬA/BỔ SUNG thêm nội dung hay không (so sánh lại `size`/`mtimeMs` với thời điểm mình vừa ghi xong), vì phiên kia có thể ghi đè thêm "lượt 2" ngay trong lúc mình đang tra lượt 2 riêng cho cùng 1 Bộ — gây trùng lặp nội dung dù không trùng SỐ file.
   - Với dự án có nhiều phiên AI cùng chạy, nên cân nhắc: (a) luôn `ls` lại ngay trước và ngay sau MỖI lần ghi file (không phải chỉ 1 lần đầu/cuối cả lượt), và (b) nếu phát hiện phiên kia đang làm đúng lĩnh vực mình định làm tiếp (dựa vào file/mtime mới xuất hiện giữa chừng), nên dừng và đổi sang làm phần khác thay vì tiếp tục làm trùng, để tiết kiệm token cho cả 2 phiên.
   - Nguyên nhân gốc: user có thể đang chạy song song nhiều task Cowork trên cùng project (ví dụ 1 task "làm hết luôn" ở đây + 1 task khác cũng đang thao túng cùng thư mục) — nên hỏi user 1 lần duy nhất nếu nghi ngờ có phiên song song, thay vì cứ tiếp tục tự xử lý đụng số nhiều lần (tốn token đổi số qua lại).
+
+---
+
+### 2026-09-19 — Sự cố PAT bị gán nhầm vào Windows Credential Manager, làm gãy sync Obsidian Git plugin
+
+**Bối cảnh:** trong lúc xử lý lỗi push repo `sodobmhc`, một PAT tạm (PAT dùng
+riêng cho việc push 2 repo `sodobmhc`/`publish`, hạn dùng tới tháng 12) đã bị
+gán nhầm vào entry `git:https://github.com` trong Windows Credential Manager
+— entry dùng CHUNG cho mọi thao tác git qua HTTPS trên máy tới `github.com`,
+không tách riêng theo từng repo.
+Đã tạo một PAT mới tên là Sync Vault Obsidian to Github (https://github.com/settings/tokens/5518669422) 
+**Hậu quả:** Obsidian Git plugin (đang sync repo
+`Obsidian-Vault-colourful-not-syncthing`, dùng git hệ thống + Git Credential
+Manager) tự động đọc nhầm đúng entry đó → dùng PAT tạm (không có quyền trên
+repo vault) → lỗi `403 Write access to repository not granted`.
+
+**Điều dễ hiểu lầm:** người dùng đã tự tay "khôi phục" lại PAT lâu dài, nhưng
+việc khôi phục không ghi đè đúng vào entry mà GCM thực sự đọc (`git:https://
+github.com`, username `x-access-token`) — nên lỗi vẫn còn dù tưởng đã sửa.
+Xác minh chính xác bằng cách so sánh hash SHA-256 của token đang lưu với PAT
+tạm đã biết (không in giá trị token ra bất kỳ đâu) — khớp 100%, xác nhận đúng
+nguyên nhân trước khi sửa.
+
+**Đã sửa:** ghi đè đúng entry `git:https://github.com` trong Windows
+Credential Manager bằng PAT lâu dài, qua `git credential approve` (không lưu
+vào file nào). Xác nhận bằng GitHub API (`admin/push/pull: true` trên đúng
+repo vault) và test thật bằng `git fetch` + `git push` (đẩy thành công 4
+commit đang chờ).
+
+**Bài học rút ra:**
+1. Windows Credential Manager (qua Git Credential Manager) lưu credential
+   theo HOST (`github.com`), không theo từng repo — gán PAT cho 1 việc sẽ
+   ảnh hưởng tới MỌI repo khác trên máy dùng chung cơ chế xác thực này.
+2. Repo nào cần PAT riêng, ổn định, không lẫn với credential hệ thống → nên
+   nhúng PAT thẳng vào remote URL của riêng repo đó (như cách đang làm với
+   `sodobmhc`/`publish`), thay vì đụng vào Credential Manager dùng chung.
+3. Khi nghi ngờ sai credential, xác minh bằng hash/so khớp trước khi sửa,
+   không sửa theo suy đoán.
+4. Một PAT đã dán vào nội dung chat (dù chỉ dùng 1 lần, không lưu file, không
+   echo ra output) về mặt kỹ thuật vẫn đã đi qua hạ tầng xử lý — nếu coi đây
+   là rủi ro bảo mật, nên revoke + tạo PAT mới thay thế sau khi xử lý xong.
+
+---
+
+---
+
+#### 2026-09-26 — Xác minh 4 lãnh đạo cấp cao (phát hiện Chủ tịch nước đã đổi), đánh bóng UI sơ đồ, sửa lỗi bấm ô không mở được bảng chi tiết
+
+- **Việc làm**:
+  - **Xác minh dữ liệu** (mỗi người ≥ 2 nguồn độc lập, ngày kiểm chứng 26/9/2026): Trần Thanh Mẫn (tái đắc cử Chủ tịch Quốc hội khóa XVI ngày 06/4/2026), Nguyễn Văn Quảng (tái đắc cử Chánh án TAND tối cao 07/4/2026), Nguyễn Huy Tiến (tái đắc cử Viện trưởng VKSND tối cao 07/4/2026) — gỡ cảnh báo ⚠️. **Chủ tịch nước SAI**: Quốc hội khóa XVI bầu Tổng Bí thư **Tô Lâm** làm Chủ tịch nước ngày 07/4/2026, ông Lương Cường bàn giao công tác ngày 09/4/2026.
+  - **Sửa `data/`**: thêm `person-to-lam` (from 2026-04-07); `person-luong-cuong` đặt `positions[0].to = 2026-04-06` (giữ lịch sử, đúng luật 14); `org-vpctn-vn.leadership` có cả 2 người, giao diện tự lọc theo ngày giữ chức; thêm 8 nguồn `source-411 → source-418`. `node tools/validate-data.js`: 0 lỗi, 0 cảnh báo (90 người, 147 nguồn).
+  - **UI sơ đồ**: thẻ tô nền nhạt theo đúng 8 màu legend + viền đậm + dải màu đầu thẻ; 5 cơ quan cấp cao là thẻ lớn có dải nhãn (LẬP PHÁP, NGUYÊN THỦ QUỐC GIA, HÀNH PHÁP, TÒA ÁN, KIỂM SÁT); cấp Bộ dùng màu slate; dải phân cấp có nhãn "CẤP THƯỢNG TẦNG / CẤP BỘ / CẤP TỈNH · THÀNH PHỐ"; đường nối tô theo màu cấp dưới; thẻ hiện tên lãnh đạo đương nhiệm tại mốc Time Machine (module mới `js/core/leaders.js`); thứ tự Quốc hội → Chủ tịch nước → Chính phủ → Tòa án → Kiểm sát; cơ quan đã giải thể viền nét đứt.
+  - **Bảng Chi tiết** đổi thành ngăn kéo trượt từ phải, mặc định ẩn (Esc để đóng) — bản đồ chiếm trọn chiều rộng, bỏ biểu tượng kính lúp lớn dễ nhầm với ô tìm kiếm. Panel cơ quan có mục "Tiền nhiệm".
+  - **Ô tìm kiếm**: rê chuột hoặc bấm vào hiện các loại (Tất cả / Cơ quan / Con người / Chức vụ / Thủ tục / Văn bản / Nguồn) kèm số lượng; chọn loại để lọc hoặc duyệt toàn bộ khi chưa gõ; có "Xem gần đây", điều hướng ↑↓ + Enter.
+  - Sửa nhãn tab Giấy phép ("Sẽ có ở Phase 6" → "Kế hoạch Phase 10 · Chưa có dữ liệu"), badge chân menu ("Phase 1 — ứng dụng rỗng" → "Phase 9 hoàn tất · Phase 10 đang bổ sung dữ liệu"), đoạn "Trạng thái hiện tại" và mục 7 trong tab Hướng dẫn.
+- **Vấn đề gặp**:
+  1. Dữ liệu Chủ tịch nước lỗi thời từ 07/4/2026 nhưng đến 18/9 vẫn ghi theo tin cũ, chỉ được đánh dấu ⚠️ mà không ai xác minh — 5 tháng.
+  2. **Bấm vào ô trên sơ đồ không chọn được** (nên bảng Chi tiết không bao giờ mở): `graph.js` gọi `setPointerCapture` ngay lúc nhấn chuột, Chrome gửi sự kiện `click` tới khung SVG thay vì ô được bấm. Nút +/− và lật trang cũng cùng lỗi.
+  3. Thêm CSS `display:flex` cho ô kết quả tìm kiếm làm thuộc tính `hidden` mất tác dụng (ô không đóng lại được).
+  4. Lệnh `git status` trên máy để lại `.git/index.lock` rỗng (không xóa được vì chưa có quyền xóa).
+  5. Chưa xác minh được số điện thoại Quốc hội và TAND tối cao: trang liên hệ quochoi.vn trả nội dung rỗng, toaan.gov.vn chặn truy cập tự động (lỗi chứng chỉ SSL) — giữ nguyên "chưa xác minh".
+  6. `org-chinhphu-vn.leadership` đang rỗng: chưa có Thủ tướng (Lê Minh Hưng, bầu 07/4/2026) và 6 Phó Thủ tướng nhiệm kỳ 2026–2031 — chưa thêm vì ngoài phạm vi đã xác nhận.
+- **Cách xử lý**: (1) tra ≥ 2 nguồn cho từng người trước khi sửa, giữ người cũ với `to` thay vì xóa; (2) chỉ bắt con trỏ khi kéo quá 5px; (3) thêm `.search-results[hidden]{display:none}`; (4) xin quyền xóa đúng file `index.lock` rồi xóa; (5) giữ nguyên, ghi rõ lý do; (6) ghi lại để làm ở phiên sau.
+- **Bài học**:
+  - Cảnh báo ⚠️ "chưa đối chiếu chéo" phải đi kèm hạn xử lý — nếu không, nó nằm đó vô thời hạn. Với chức danh cấp cao, kiểm tra ngay sau mỗi kỳ họp Quốc hội thứ nhất của khóa mới.
+  - Test UI bằng DOM giả không bắt được lỗi hành vi trình duyệt thật (pointer capture). Nên chạy kiểm thử tương tác bằng trình duyệt thật (Playwright/Chromium) với bản build 1 file: bấm ô, kéo, lật trang, tìm kiếm.
+  - Khi thêm CSS `display:*` cho phần tử có thuộc tính `hidden`, phải thêm rule `[hidden]{display:none}` kèm theo.
+  - Trên máy này tránh `git status` thường; dùng `git --no-optional-locks status` để không để lại `index.lock`.
+  - Chưa đẩy lên GitHub/Vercel: bản build mới ở `publish/bo-may-hanh-chinh-viet-nam.html` (trong thư mục dự án), cần copy sang `E:\DownloadsDocuments\publish` và push repo `publish` khi bạn duyệt.
+
+---
+
+#### 2026-09-26 (đợt 2) — Sơ đồ bấm-để-mở/thu gọn + thẻ thông tin góc dưới phải
+
+- **Việc làm**:
+  - **Bấm thẻ = mở/thu gọn cấp dưới + hiện thẻ thông tin** ở góc dưới bên phải sơ đồ. Nút +/− trên thẻ đổi thành viên thuốc có số đơn vị (vd. `+ 51`). Mặc định sơ đồ **thu gọn**: chỉ 5 cơ quan thượng tầng (Quốc hội, Chủ tịch nước, Chính phủ, Tòa án, Kiểm sát), bấm để phóng ra từng cấp (từ lớn đến nhỏ). Thêm nút "Thu gọn hết" (⇲) cạnh "Mở hết" (⇱).
+  - **Thẻ thông tin** (module mới `js/graph/info-card.js`): tên + loại, lãnh đạo đương nhiệm tại mốc Time Machine, số đơn vị trực thuộc trực tiếp + tổng các cấp dưới + tách theo loại (Bộ / cơ quan ngang Bộ / TP / tỉnh), 3 chức năng đầu (còn lại: "+ N chức năng…"), nút "Thu gọn/Mở N đơn vị" và "Xem đầy đủ →" (mở ngăn Chi tiết có liên hệ, quan hệ, nguồn). Đóng bằng ×, Esc (Esc lần 1 đóng ngăn Chi tiết, lần 2 đóng thẻ) hoặc bấm nền trống. Kéo bản đồ không làm đóng thẻ.
+  - Sơ đồ tự căn lại khung nhìn khi mở thêm cấp làm nội dung tràn khỏi màn hình.
+  - Thêm `js/graph/info-card.js` vào `ORDER` của `tools/build-single-file.py`; sửa chữ hướng dẫn ở tab Bản đồ.
+- **Vấn đề gặp**:
+  1. Dữ liệu `organizations.json` mới có **2 cấp**: chỉ Chính phủ có đơn vị trực thuộc (51 tại 26/9/2026: 14 Bộ, 3 cơ quan ngang Bộ, 7 TP, 27 tỉnh). Quốc hội, VPCTN, TAND tối cao, VKSND tối cao và từng Bộ/tỉnh **chưa có cấp dưới** (ủy ban, vụ, cục, tổng cục, sở…), trường `units` rỗng ở cả 63 cơ quan → bấm các thẻ đó chỉ hiện thẻ thông tin, thẻ ghi rõ "Chưa nạp dữ liệu đơn vị trực thuộc".
+  2. Chính phủ vẫn chưa có lãnh đạo trong dữ liệu (chưa thêm Thủ tướng và 6 Phó Thủ tướng) nên thẻ Chính phủ không hiện dòng lãnh đạo.
+  3. Thẻ thông tin che một phần thẻ ở nửa phải sơ đồ khi màn hình hẹp; bản đồ vẫn kéo được, bấm nền trống hoặc × để đóng.
+- **Cách xử lý**: (1) thẻ thông tin nói thẳng phần nào chưa có dữ liệu thay vì hiện số 0; muốn mở sâu hơn cần bổ sung dữ liệu đơn vị cấp dưới (việc của Phase 10); (2) giữ trong danh sách việc còn tồn của tác vụ định kỳ; (3) chưa xử lý.
+- **Bài học**:
+  - Tính năng "phóng to từng cấp" chỉ có giá trị khi dữ liệu có nhiều cấp; nên kiểm tra độ sâu dữ liệu trước khi hứa hiệu ứng.
+  - Khi bấm một phần tử vừa chọn vừa đổi bố cục, phải phân biệt bấm với kéo (đã có cờ `moved` từ đợt trước) để kéo bản đồ không vô tình đóng thẻ.
+  - Ô có `display:flex` phải kèm `[hidden]{display:none}` (lỗi đã gặp ở ô tìm kiếm; áp dụng lại cho `.graph-info`).
+
+---
+
+#### 2026-09-26 (đợt 3) — Phát hiện cơ chế đồng bộ tự động (git hook `pre-push`) chưa từng được ghi lại; sửa quy trình đăng bản
+
+- **Việc làm**:
+  - Đọc `.git/hooks/pre-push` của repo nguồn (`haphanhp/sodo-bo-may-hanh-chinh`, cài 19/9/2026): mỗi lần `git push` repo nguồn, nếu file `publish/bo-may-hanh-chinh-viet-nam.html` nằm trong các commit đang đẩy thì hook copy nó sang `E:\DownloadsDocuments\publish\bo-may-hanh-chinh-viet-nam.html` và commit **cục bộ** ở repo `haphanhp/publish` với thông điệp `sync: cập nhật bo-may-hanh-chinh-viet-nam.html từ repo sodobmhc`. Hook luôn `exit 0`, **không tự push** repo `publish` (chủ đích: người dùng kiểm tra rồi push tay). Danh sách đồng bộ nằm ở mảng `WHITELIST` trong hook (hiện chỉ có file build; `manifest.json` chỉ tồn tại ở repo `publish` nên chưa đồng bộ được).
+  - Ghi cơ chế này vào: `AGENTS-sodobmhc.md` (luật 19–20), `Roadmap-sodobmhc.md` (mục Xuất bản), `Ban-giao-sua-UI-sodobmhc.md` (mục 1, 2, 3, 4, 7 sửa; thêm mục 8–10 gồm prompt mẫu cho Claude Code) — cả bản trong thư mục dự án và bản trong Project claude.ai.
+  - Commit bản build mới nhất ở repo nguồn (chưa push — người dùng giao cho Claude Code terminal đẩy để hook chạy).
+- **Vấn đề gặp**:
+  1. Hook được cài 19/9 nhưng **không được ghi vào bất kỳ tài liệu nào**. `Roadmap` (mục Xuất bản) và bản bàn giao 25/9 vẫn ghi quy trình cũ "copy sang thư mục publish rồi push". AI làm theo tài liệu và báo người dùng "cần copy tay sang `E:\DownloadsDocuments\publish`" — sai. Người dùng phát hiện vì nhớ có cơ chế đồng bộ.
+  2. Hook chạy bằng shell của Git for Windows (đường dẫn `/e/DownloadsDocuments/publish`). Máy ảo Linux của Cowork (`device_bash`) không có đường dẫn đó và thư mục `publish` chưa được kết nối vào phiên → nếu push từ Cowork thì hook chỉ in cảnh báo rồi bỏ qua. Chưa kiểm chứng được hook từng chạy thành công vì không mở được repo `publish` trong phiên này.
+  3. Hook nằm trong `.git/hooks` nên không được version trên GitHub; clone máy khác sẽ không có.
+  4. Remote `origin` của repo nguồn đang chứa token GitHub (PAT) trong URL, trái `AGENTS` luật 16. Người dùng xác nhận là token tạm (hết hạn sau 3 tháng), các repo đều private nên chấp nhận rủi ro. **Tuyệt đối không chạy `git remote -v` / `git remote get-url` trong phiên có người xem — sẽ in token ra màn hình.**
+- **Cách xử lý**: ghi cơ chế vào 4 file trên, thêm luật 19–20; quy trình mới = build → **commit cả file build** → push repo nguồn từ Windows/Claude Code terminal → kiểm tra commit `sync:` ở repo `publish` → push repo `publish` → Vercel deploy. Với (2): việc push giao cho Claude Code terminal chạy trên Windows; (3) đề xuất lưu bản sao hook vào repo (ví dụ `tools/hooks/pre-push`) — chưa làm, chờ người dùng quyết.
+- **Bài học**:
+  - Mọi cơ chế tự động (hook, GitHub Action, cron, tác vụ định kỳ) phải được ghi vào tài liệu ngay lúc cài — nếu không, tài liệu trở thành nguồn thông tin sai cho AI kế tiếp.
+  - Trước khi mô tả hoặc đề xuất quy trình xuất bản: đọc `.git/hooks`, `.github/workflows`, `git config` (không in URL remote) rồi mới trả lời; đừng tin riêng bản bàn giao.
+  - Cowork (máy ảo Linux) và Claude Code (Windows) có môi trường git khác nhau: những việc phụ thuộc hook/đường dẫn Windows phải giao cho Claude Code terminal.
