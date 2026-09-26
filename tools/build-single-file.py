@@ -3,6 +3,11 @@
 Chạy: python3 tools/build-single-file.py"""
 import re, json, io, os, sys, datetime
 
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def read(p): return io.open(os.path.join(ROOT, p), encoding="utf-8").read()
 
@@ -106,5 +111,5 @@ html = html.replace("</head>", "<style>\n%s\n</style>\n</head>" % css)
 html = html.replace("</body>", "%s\n<script>\n%s\n</script>\n<script type=\"module\">\n%s\n</script>\n</body>" % (FOOTER, embedded, js))
 
 out = os.path.join(ROOT, "publish", "bo-may-hanh-chinh-viet-nam.html")
-io.open(out, "w", encoding="utf-8").write(html)
+io.open(out, "w", encoding="utf-8", newline="\n").write(html)
 print("Đã tạo:", out, "|", round(os.path.getsize(out)/1024), "KB")
