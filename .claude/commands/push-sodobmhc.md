@@ -6,7 +6,7 @@ Bạn đang ở thư mục repo NGUỒN dự án sodobmhc trên máy Windows c�
 
 NHIỆM VỤ: đẩy bản mới lên GitHub và đăng lên notes.haphan.digital. KHÔNG sửa code/data — chỉ kiểm tra, push và xác nhận.
 
-ĐỌC TRƯỚC (ngắn): AGENTS-sodobmhc.md (luật 19–20), Roadmap-sodobmhc.md (mục "Xuất bản"), Build-logs-sodobmhc.md (2 mục cuối), Ban-giao-sua-UI-sodobmhc.md (mục 8).
+ĐỌC TRƯỚC (ngắn): AGENTS-sodobmhc.md (luật 19–20).
 
 BỐI CẢNH: repo nguồn có git hook `.git/hooks/pre-push`. Khi `git push` repo nguồn, nếu file `publish/bo-may-hanh-chinh-viet-nam.html` nằm trong các commit đang đẩy, hook tự copy sang `E:\DownloadsDocuments\publish` và commit CỤC BỘ ở đó ("sync: cập nhật … từ repo sodobmhc"). Hook KHÔNG push repo publish — bước đó là của bạn. Vì vậy KHÔNG copy tay file build, trừ khi hook báo bỏ qua VÀ tôi đồng ý. `manifest.json` chỉ tồn tại ở repo publish và KHÔNG nằm trong hook (xem bước 5).
 
