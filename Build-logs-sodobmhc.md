@@ -665,3 +665,13 @@ commit đang chờ).
   3. `Roadmap-sodobmhc.md` không có chỗ nào nhắc "hằng tháng"/"mỗi tháng" liên quan tác vụ này — không cần sửa.
 - **Cách xử lý**: giữ nguyên tên task thật, chỉ sửa phần mô tả lịch chạy; nếu muốn tên task khớp hoàn toàn, cần người dùng tự đổi tên task trong Cowork rồi báo lại để đồng bộ tài liệu.
 - **Bài học**: khi 1 object có TÊN chứa thông tin về lịch chạy (vd "...hằng tháng") nhưng lịch chạy đổi, tên và mô tả dễ lệch nhau nếu chỉ sửa tài liệu — cần phân biệt rõ "tên định danh" (không tự đổi được từ tài liệu) và "mô tả hành vi" (sửa được) khi nhận yêu cầu đổi tần suất.
+
+---
+
+#### Đợt 6 — 26/9/2026: hộp thoại Select an account của GCM
+
+- **Việc làm**: chẩn đoán hộp thoại GitHub "Select an account" cứ bật sau các lần push của Claude Code; ghim tài khoản mặc định; xóa mục PAT đã lưu; đặt `credential.helper` rỗng cấp repo.
+- **Vấn đề gặp**: GCM có 2 danh tính github.com (`haphanhp` và `x-access-token`). Plugin Obsidian Git chạy git nền không có username trong URL nên GCM hỏi chọn. Lỗi tái diễn nhiều lần.
+- **Nguyên nhân**: sau mỗi push thành công git báo helper hệ thống lưu thông tin vừa dùng, PAT tạm của Claude Code đi vào kho chung. Kết quả kiểm chứng bước 5: **đã xác nhận PAT KHÔNG bị lưu lại** — sau khi đặt `credential.helper ""` cấp repo cho cả `sodobmhc` và `publish`, chạy `git fetch origin` ở cả 2 repo, `git-credential-manager github list` chỉ còn `haphanhp`, không có `x-access-token` xuất hiện lại.
+- **Cách xử lý**: (1) `git config --global credential.https://github.com.username haphanhp`; (2) xóa mục `x-access-token` bằng `git credential reject`; (3) `git config --local credential.helper ""` ở 2 repo có PAT trong URL; (4) luật 23 `AGENTS-sodobmhc.md` và thêm kiểm tra vào `/push-sodobmhc` (bước 1 xác nhận helper rỗng, bước 9 kiểm tra GCM sau khi push).
+- **Bài học**: token tạm của agent phải cách ly khỏi kho credential dùng chung của người dùng; mọi cơ chế cấp quyền tạm cần ghi rõ khi cài.
