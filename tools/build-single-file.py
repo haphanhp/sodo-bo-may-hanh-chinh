@@ -100,10 +100,34 @@ css = "\n".join("/* %s */\n%s" % (c, read(c)) for c in CSS)
 
 TITLE = "Bộ máy hành chính Việt Nam"
 DESC = "giúp người xem hiểu cấu trúc và các đơn vị của bộ máy chính quyền Việt Nam"
-today = datetime.date.today()
+
+# Ngày hiển thị ở chân trang = last_verified LỚN NHẤT trong toàn bộ dữ liệu đã
+# nạp (bỏ qua bản ghi thiếu trường) — KHÔNG dùng ngày hiện tại của máy, để
+# build lặp lại nhiều lần ra file giống hệt nhau (byte-for-byte).
+LAST_VERIFIED_RE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
+def max_last_verified(all_data):
+    dates = []
+    for records in all_data.values():
+        if not isinstance(records, list):
+            continue
+        for rec in records:
+            if not isinstance(rec, dict):
+                continue
+            v = rec.get("last_verified")
+            if isinstance(v, str) and LAST_VERIFIED_RE.match(v):
+                dates.append(v)
+    return max(dates) if dates else None
+
+_lv = max_last_verified(data)
+if _lv:
+    _y, _m, _d = _lv.split("-")
+    LAST_VERIFIED_DISPLAY = "%s/%s/%s" % (_d, _m, _y)
+else:
+    LAST_VERIFIED_DISPLAY = "chưa có"
+
 FOOTER = ('<div style="text-align:center;font-family:\'Inter\',sans-serif;font-size:0.7rem;'
   'color:var(--c-text-muted);padding:18px 10px 26px;letter-spacing:0.03em;">'
-  'haphanhp — Tổng hợp · Tháng %d, %d</div>') % (today.month, today.year)
+  'haphanhp — Tổng hợp · Dữ liệu cập nhật đến %s</div>') % LAST_VERIFIED_DISPLAY
 
 html = html.replace("<title>VN Admin Map — Sơ đồ bộ máy hành chính Việt Nam</title>",
   '<title>%s</title>\n<meta name="description" content="%s">' % (TITLE, DESC))
