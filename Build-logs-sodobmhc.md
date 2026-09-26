@@ -634,3 +634,22 @@ commit đang chờ).
   - Mọi cơ chế tự động (hook, GitHub Action, cron, tác vụ định kỳ) phải được ghi vào tài liệu ngay lúc cài — nếu không, tài liệu trở thành nguồn thông tin sai cho AI kế tiếp.
   - Trước khi mô tả hoặc đề xuất quy trình xuất bản: đọc `.git/hooks`, `.github/workflows`, `git config` (không in URL remote) rồi mới trả lời; đừng tin riêng bản bàn giao.
   - Cowork (máy ảo Linux) và Claude Code (Windows) có môi trường git khác nhau: những việc phụ thuộc hook/đường dẫn Windows phải giao cho Claude Code terminal.
+
+---
+
+#### 2026-09-26 09:56 (đợt 4) — Chạy thử end-to-end đầu tiên của hook `pre-push`; sửa bug CRLF/encoding trong build; chân trang ghi ngày dữ liệu cập nhật; viết README.md + luật 21-22
+
+- **Việc làm**:
+  - Chạy `/push-sodobmhc` lần đầu (từ Claude Code terminal, Windows). Bước kiểm tra "build lại rồi `git status` phải sạch" phát hiện `publish/bo-may-hanh-chinh-viet-nam.html` luôn bị báo modified sau mỗi lần build, dù nội dung giống 100% (xác nhận bằng diff bỏ `\r` và sha256).
+  - Nguyên nhân 1: `tools/build-single-file.py` ghi file bằng `io.open(out, "w", encoding="utf-8")` không có `newline="\n"` — trên Windows, Python tự đổi `\n` thành `\r\n` khi ghi text mode, nên bản build mới luôn khác byte so với bản đã commit (LF).
+  - Nguyên nhân 2: `core.autocrlf=true` ở repo khiến `git status` vẫn báo modified dù file đã ghi đúng LF, vì git so sánh sau khi tự áp filter autocrlf.
+  - Sửa: thêm `newline="\n"` vào lệnh ghi file; thêm `.gitattributes` với `publish/*.html text eol=lf` + `git add --renormalize` để git thôi báo sai; thêm `sys.stdout.reconfigure(encoding="utf-8")` ở đầu script để sửa `UnicodeEncodeError` khi in "Đã tạo: ..." trên console cp1252. Build lại 2 lần liên tiếp, sha256 giống nhau — xác nhận idempotent.
+  - Thêm tính năng: chân trang bản build đổi từ "Tháng M, YYYY" (ngày hiện tại của máy) sang "Dữ liệu cập nhật đến DD/MM/YYYY" (giá trị `last_verified` lớn nhất trong toàn bộ dữ liệu đã nạp) — để ngày hiển thị phản ánh đúng dữ liệu, không phải ngày build.
+  - Chạy hết bước 3–7 của `/push-sodobmhc`: push repo nguồn → hook in đúng dòng `[pre-push sync] Da commit local trong repo dich: bo-may-hanh-chinh-viet-nam.html` (**lần đầu tiên xác nhận hook chạy thành công**, trước đó chỉ suy đoán) → repo `publish` chỉ đổi đúng 1 file `bo-may-hanh-chinh-viet-nam.html`, `manifest.json` vẫn còn mục cho file này (không sửa) → push repo `publish` → sau ~3 phút, `curl` trang công khai thấy `graph-info` (7 lần) và "Dữ liệu cập nhật đến 26/09/2026" — thành công ngay lần thử đầu.
+  - Viết `README.md` mới ở gốc repo (66 dòng, có marker `<!-- co-che-van-hanh -->`), thêm luật 21 (làm mới dữ liệu định kỳ) và luật 22 (ngoại lệ `manifest.json`) vào `AGENTS-sodobmhc.md`.
+- **Vấn đề gặp**: `manifest.json` ở repo `publish` vẫn ghi ngày "19 tháng 9, 2026" trong `date` và `footnote` — lỗi thời so với chân trang HTML mới ("26/09/2026"). Đúng ràng buộc "không sửa `manifest.json`" nên chỉ ghi nhận, chưa sửa.
+- **Cách xử lý**: chưa xử lý mục `manifest.json` lỗi thời — cần người dùng quyết có nên sửa tay ở repo `publish` hay không, và có nên đồng bộ hoá 2 nguồn ngày (footer HTML tự động vs. `date`/`footnote` trong manifest phải sửa tay) trong 1 phiên sau.
+- **Bài học**:
+  - `io.open(..., "w", encoding="utf-8")` trên Windows không an toàn cho file cần giống byte giữa các lần build — luôn cần `newline="\n"` khi file đó được git theo dõi và so sánh bằng diff/CI.
+  - `core.autocrlf=true` có thể làm `git status` báo sai ngay cả khi file đã đúng LF trên đĩa — `.gitattributes` khai báo `eol=lf` theo từng path cụ thể mới giải quyết gốc, không chỉ sửa script ghi file.
+  - Ngày hiển thị công khai (chân trang HTML) và ngày trong `manifest.json` là 2 nguồn tách biệt, không tự đồng bộ — dễ lệch nhau nếu chỉ nhớ sửa 1 chỗ.
