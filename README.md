@@ -31,11 +31,11 @@ Lệnh tắt: `/push-sodobmhc` (chạy trong Claude Code, thư mục repo này).
 
 #### 2. Cơ chế làm mới dữ liệu chống lỗi thời
 
-Có 1 **tác vụ định kỳ** trong Claude Cowork tên "Cập nhật dữ liệu sodobmhc hằng tháng": chạy 08:47 sáng ngày 1 hằng tháng (giờ Việt Nam), lần đầu 01/10/2026 — chỉ chạy khi máy user bật và app Claude đang mở.
+Có 1 **tác vụ định kỳ** trong Claude Cowork tên "Cập nhật dữ liệu sodobmhc hằng tháng": chạy 08:47 sáng ngày 1 hằng quý (các tháng 1, 4, 7, 10) (giờ Việt Nam), lần đầu 01/10/2026, chạy bù bằng tay khi có tin lớn — chỉ chạy khi máy user bật và app Claude đang mở.
 
 Nó làm: rà các bản ghi còn cờ ⚠️/"chưa đối chiếu chéo" hoặc `last_verified` cũ hơn 90 ngày (ưu tiên lãnh đạo cấp cao); tìm tin 45 ngày gần nhất về bổ nhiệm/miễn nhiệm/bầu cử, sáp nhập/đổi tên/giải thể cơ quan; **chỉ sửa khi có ≥ 2 nguồn độc lập**; **không xóa dữ liệu cũ** (đặt `positions[].to`/`effective_to`, thêm bản ghi mới, thêm nguồn vào `data/sources.json`, cập nhật `last_verified`); chạy `validate-data.js` + build lại; ghi 1 mục vào `Build-logs-sodobmhc.md`. Nó **không commit, không push, không deploy** — sau khi chạy, user tự xem rồi chạy `/push-sodobmhc` để đăng.
 
-Ngưỡng kiểm tra theo tầng dữ liệu (chi tiết đầy đủ: `Co-che-chong-loi-thoi-sodobmhc.md` mục 5) — tác vụ hằng tháng dày hơn mọi ngưỡng dưới đây:
+Ngưỡng kiểm tra theo tầng dữ liệu (chi tiết đầy đủ: `Co-che-chong-loi-thoi-sodobmhc.md` mục 5) — tác vụ hằng quý (các tháng 1, 4, 7, 10), chạy bù bằng tay khi có tin lớn, dày hơn mọi ngưỡng dưới đây:
 
 | Tầng | Cảnh báo vàng | Cảnh báo đỏ |
 |---|---|---|

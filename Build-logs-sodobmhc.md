@@ -653,3 +653,15 @@ commit đang chờ).
   - `io.open(..., "w", encoding="utf-8")` trên Windows không an toàn cho file cần giống byte giữa các lần build — luôn cần `newline="\n"` khi file đó được git theo dõi và so sánh bằng diff/CI.
   - `core.autocrlf=true` có thể làm `git status` báo sai ngay cả khi file đã đúng LF trên đĩa — `.gitattributes` khai báo `eol=lf` theo từng path cụ thể mới giải quyết gốc, không chỉ sửa script ghi file.
   - Ngày hiển thị công khai (chân trang HTML) và ngày trong `manifest.json` là 2 nguồn tách biệt, không tự đồng bộ — dễ lệch nhau nếu chỉ nhớ sửa 1 chỗ.
+
+---
+
+#### 2026-09-26 (đợt 5) — Đổi lịch tác vụ định kỳ làm mới dữ liệu từ hằng tháng sang hằng quý
+
+- **Việc làm**: sửa mọi chỗ trong tài liệu (`README.md` mục "Cơ chế vận hành", `AGENTS-sodobmhc.md` luật 21, `Ban-giao-sua-UI-sodobmhc.md`) mô tả lịch tác vụ "Cập nhật dữ liệu sodobmhc hằng tháng" thành **hằng quý (các tháng 1, 4, 7, 10)**, lần đầu vẫn 01/10/2026, thêm rõ "chạy bù bằng tay khi có tin lớn". Không đổi tên gọi của tác vụ (vẫn giữ chuỗi "Cập nhật dữ liệu sodobmhc hằng tháng" làm định danh, vì đây là tên thật của scheduled task trong Cowork — đổi tên trong tài liệu mà không đổi tên task thật sẽ gây lệch, xem Vấn đề gặp).
+- **Vấn đề gặp**:
+  1. Tên gọi của scheduled task ("...hằng tháng") vẫn còn chữ "hằng tháng" trong khi lịch chạy thật đã là hằng quý — tài liệu giờ mô tả đúng lịch chạy nhưng tên định danh task chưa khớp. Chưa đổi vì không có quyền/công cụ đổi tên task thật trong Cowork từ phiên này.
+  2. `Co-che-chong-loi-thoi-sodobmhc.md` mục 6 có 1 mục "1 tháng/lần" khác — đây là 1 tác vụ quét tin tức RẺ, riêng biệt (không sửa data, chỉ báo hiệu), không phải tác vụ "Cập nhật dữ liệu" đang đổi lịch → cố tình KHÔNG sửa mục này, giữ đúng "chỉ sửa chỗ nói lịch tác vụ tự động [đang đổi], không sửa chỗ hằng tháng nói việc khác".
+  3. `Roadmap-sodobmhc.md` không có chỗ nào nhắc "hằng tháng"/"mỗi tháng" liên quan tác vụ này — không cần sửa.
+- **Cách xử lý**: giữ nguyên tên task thật, chỉ sửa phần mô tả lịch chạy; nếu muốn tên task khớp hoàn toàn, cần người dùng tự đổi tên task trong Cowork rồi báo lại để đồng bộ tài liệu.
+- **Bài học**: khi 1 object có TÊN chứa thông tin về lịch chạy (vd "...hằng tháng") nhưng lịch chạy đổi, tên và mô tả dễ lệch nhau nếu chỉ sửa tài liệu — cần phân biệt rõ "tên định danh" (không tự đổi được từ tài liệu) và "mô tả hành vi" (sửa được) khi nhận yêu cầu đổi tần suất.
